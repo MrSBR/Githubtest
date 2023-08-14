@@ -1,0 +1,330 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Seminar uke 09: Amperes lov og magnetiske materialer">
+
+<title>Seminar uke 09: Amperes lov og magnetiske materialer</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Magnetisk felt', 1, None, '___sec1'),
+              ('Magnetisk fluks og Amperes lov', 2, None, '___sec2'),
+              ('Oppgave: Mulige og umulige magnetfelt', 2, None, '___sec3'),
+              ('Oppgave: Det kan umulig være et magnetfelt',
+               2,
+               None,
+               '___sec4'),
+              ('Oppgave: Noe galt med loven?', 2, None, '___sec5'),
+              ('Oppgave: Netto strøm', 2, None, '___sec6'),
+              ('Oppgave: Snurrige Ampere-sløyfer', 2, None, '___sec7'),
+              ('Oppgave: Amperes lov og symmetrier', 2, None, '___sec8'),
+              ('Magnetisering', 1, None, '___sec9'),
+              ('Magnetisering', 2, None, '___sec10'),
+              ('Oppgave: Hvor mye strøm går det i en permanent magnet',
+               2,
+               None,
+               '___sec11')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\nhat}{\mathbf{\hat{n}}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\y}{\mathbf{\hat{y}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\rhat}{\mathbf{\hat{r}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\phi}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="seminar-09.html">Seminar uke 09: Amperes lov og magnetiske materialer</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._seminar-09000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09001.html#___sec1" style="font-size: 80%;"><b>Magnetisk felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Magnetisk fluks og Amperes lov</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09002.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Mulige og umulige magnetfelt</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09003.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Det kan umulig være et magnetfelt</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09004.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Noe galt med loven?</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09005.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Netto strøm</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09006.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Snurrige Ampere-sløyfer</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09007.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Amperes lov og symmetrier</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09008.html#___sec9" style="font-size: 80%;"><b>Magnetisering</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-09008.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Magnetisering</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Hvor mye strøm går det i en permanent magnet</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0009"></a>
+<!-- !split -->
+<div class="panel panel-success">
+  <div class="panel-heading">
+  <h3 class="panel-title">Oppgave</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec11" class="anchor">Oppgave: Hvor mye str&#248;m g&#229;r det i en permanent magnet </h2>
+
+<p>
+Vi har l&#230;rt at str&#248;mmer lager magnetiske felt, men hvor mye str&#248;m kreves? Vi har n&#229; alle verkt&#248;yene som skal til for &#229; finne ut hvor mye bundet str&#248;m det er en i leket&#248;ysmagnet som i Geomag magnet. En Geomag magnet best&#229;r av to neodym magneter som er forbundet med en jernsylinder med h&#248;y permeabilitet. Vi skal bruke enkle hjelpemilder og litt fysikk til &#229; finne ut hvor stor bundet str&#248;m som g&#229;r i denne magneten for &#229; lage det permanente magnetfeltet.
+
+<p>
+<b>a)</b>
+Vi skal i denne oppgaven bruke et kompass. Du kan bruke kompasset som er innebygget i telefonen din eller du kan bruke et fysisk kompass hvis du har tilgang til det. Et fysisk kompass best&#229;r av en magnetisk n&#229;l som geomag magneten du har f&#229;tt l&#229;ne. Nordsiden av magneten er markert med nord eller ofte med en pil. Nordsiden svarer til den veien det magnetiske momentet \( \vec{m} = I \vec{S} \) peker som er gitt av str&#248;mretningen og h&#248;yreh&#229;ndsregelen. Figuren viser en kompassn&#229;l som ligger p&#229; jordens overflate der du er n&#229;. Hvor er den magnetiske nord og sydpolen p&#229; jorden?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_1" style="font-size: 80%;"></a>
+<a href="#exer_7_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_1">
+
+<p>
+Den magnetiske nordpolen er p&#229; sydsiden av jorden.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<br /><br /><center><p><img src="fig-magnetization/magnetization-magnetization-110.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<b>b)</b>
+I hvilken retning g&#229;r str&#248;mmen inne i jorden?
+
+<p>
+<b>c)</b>
+Hold kompasset/telefonen din slik at det peker mot nord. Hvis du holder magneten opp ved siden av kompasset/telefonen, hvilken pol p&#229; leket&#248;ysmagneten er n&#230;rmest kompasset?
+
+<p>
+<b>d)</b>
+Hvilken vei g&#229;r str&#248;mmen i magneten?
+
+<p>
+<b>e)</b>
+Hva tror du - er det en bundet overflatestr&#248;mm, bundet volumstr&#248;m eller begge deler i magneten?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_2" style="font-size: 80%;"></a>
+<a href="#exer_7_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_2">
+
+<p>
+Det er i hovedsak en overflatestr&#248;m p&#229; den krumme sylinderflaten.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>f)</b>
+Ved hjelp av kompasset, magnetetn (og jorda) orietert som i figuren, estimer det magnetiske momentet, \( \vec{m} \). Du trenger &#229; m&#229;le avstanden fra magneten til kompasset. Du vil ogs&#229; f&#229; bruk for et uttrykk for magnetfeltet fra magneten. For en magnet i origo er magnetfeltet fra magneten i et punkt \( \vec{r} \) tiln&#230;rmet gitt som
+$$
+\begin{equation}
+\vec{B}(\vec{r}) = \frac{\mu_0}{4 \pi} \left[ \frac{3 \rhat (\vec{m} \cdot \rhat) - \vec{m}}{r^3}\right]
+ \, \qquad \, \mu_0 = 4 \pi \times 10^{-7} \text{Tm/A} 
+\tag{1}
+\end{equation}
+$$
+
+hvor \( \vec{m} \) er det magnetiske momentet til magneten. Jordas magnetfelt er omtrent \( 5\times 10^{-5} \text{T} \) der hvor vi er.
+
+<p>
+<em>Diskuter med sidemannen eller gruppen rundt deg hvordan dere kan bruke dette til &#229; bestemme \( \vec{m} \) for magneten</em>. Finn et uttrykk for \( m \) basert p&#229; st&#248;rrelser du kan m&#229;le.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_3" style="font-size: 80%;"></a>
+<a href="#exer_7_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_3">
+
+<p>
+\( m = 2 \pi r^3 B_{jorda}/\mu_0 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>g)</b>
+Finn et estimat for den bundne str&#248;mmen, \( I_b \).
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>h)</b>
+Hva blir det magnetiske feltet inne i permanentmagneten?
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>i)</b>
+(<em>Ekstraoppgave</em>) Det er ogs&#229; mulig &#229; m&#229;le det magnetiske feltet direkte med telefonen din, f.eks. med programmet Phyphox som er tilgjengelig b&#229;de p&#229; iPhone og Android. Hvordan kan vi bruke en slik m&#229;ling sammen med teorien over for &#229; finne et estimat for den bundne str&#248;mmen \( I_b \)?
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ --></div>
+</div>
+
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._seminar-09008.html">&laquo;</a></li>
+  <li><a href="._seminar-09000.html">1</a></li>
+  <li><a href="._seminar-09001.html">2</a></li>
+  <li><a href="._seminar-09002.html">3</a></li>
+  <li><a href="._seminar-09003.html">4</a></li>
+  <li><a href="._seminar-09004.html">5</a></li>
+  <li><a href="._seminar-09005.html">6</a></li>
+  <li><a href="._seminar-09006.html">7</a></li>
+  <li><a href="._seminar-09007.html">8</a></li>
+  <li><a href="._seminar-09008.html">9</a></li>
+  <li class="active"><a href="._seminar-09009.html">10</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

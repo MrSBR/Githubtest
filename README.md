@@ -1,1 +1,2 @@
-# Githubtest
+# ChatGPTbot
+TestforChatGPTbot

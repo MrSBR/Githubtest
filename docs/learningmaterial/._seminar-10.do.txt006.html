@@ -1,0 +1,366 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Seminar uke 10: Emf og Faradays lov">
+
+<title>Seminar uke 10: Emf og Faradays lov</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Emf', 1, None, '___sec1'),
+              ('Emf og Faradays lov', 2, None, '___sec2'),
+              ('Oppgave: Smart-emf', 2, None, '___sec3'),
+              ('Bryteren er av', 3, None, '___sec4'),
+              ('Bryteren er på', 3, None, '___sec5'),
+              ('Oppgave: Finn fluksen', 2, None, '___sec6'),
+              ("Oppgave: Finn emf'en", 2, None, '___sec7'),
+              ('Oppgave: Klem og lad', 2, None, '___sec8'),
+              ('Oppgave: Emf på bussen', 2, None, '___sec9'),
+              ('Sett fra veien', 3, None, '___sec10'),
+              ('Sett fra bussen', 3, None, '___sec11'),
+              ('Oppgave: Sirkelstrømmer', 2, None, '___sec12')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\nhat}{\mathbf{\hat{n}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\phi}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="seminar-10.do.txt.html">Seminar uke 10: Emf og Faradays lov</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt001.html#___sec1" style="font-size: 80%;"><b>Emf</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Emf og Faradays lov</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt002.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Smart-emf</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt002.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bryteren er av</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt002.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bryteren er på</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt003.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Finn fluksen</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt004.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Finn emf'en</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt005.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Klem og lad</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Emf på bussen</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sett fra veien</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sett fra bussen</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt007.html#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Sirkelstrømmer</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0006"></a>
+<!-- !split -->
+<div class="panel panel-success">
+  <div class="panel-heading">
+  <h3 class="panel-title">Oppgave</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec9" class="anchor">Oppgave: Emf p&#229; bussen </h2>
+
+<p>
+Faradays lov gjelder uansett hvordan fluksen varierer &ndash; om det er kretsen som flytter p&#229; seg, om det er feltet som endrer seg med tiden, eller om det er formen p&#229; kretsen som endrer seg med tiden. Men hvordan henger dette sammen?
+
+<p>
+Vi lager en modell som vi skal studere i detalj. Figuren viser en buss som kj&#248;rer langs \( x \)-aksen med konstant hastighet \( v \). Inne i bussen er det en kvadratisk krets i \( xy \)-planet med sidekant \( d \). Det er et homogent magentisk felt \( \vec{B} = B_0 \z \) mellom \( x=a \) og \( x=a+b \). Du kan anta at \( a>d \).
+
+<p>
+Ved tiden \( t=0 \) passerer den h&#248;yre siden av kretsen \( x=0 \).
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-activelearning-bus-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<h3 id="___sec10" class="anchor">Sett fra veien </h3>
+
+<p>
+F&#248;rst ser vi p&#229; hvordan denne prosessen opptrer for en tilskuer som st&#229;r p&#229; veien.
+
+<p>
+<b>a)</b>
+Skisser det magnetiske feltet som funksjon av \( x \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_1" style="font-size: 80%;"></a>
+<a href="#exer_5_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_1">
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-activelearning-bus-020.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>b)</b>
+Finn posisjonen til h&#248;yre side av kretsen som funksjon av tiden, \( x(t) \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_2" style="font-size: 80%;"></a>
+<a href="#exer_5_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_2">
+
+$$x(t) = vt$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>c)</b>
+Finn fluksen gjennom kretsen som funksjon av tiden \( t \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_3" style="font-size: 80%;"></a>
+<a href="#exer_5_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_3">
+
+$$
+\Phi_B = \left\{ \begin{array}{cc}
+0 & \quad t<\frac{a}{v} \\ 
+B_0 d (vt-a) & \quad \frac{a}{v}<t<\frac{d+a}{v}\\ 
+B_0 d^2 & \quad \frac{d+a}{v}<t<(a+b)/v\\ 
+B_0 d (a+b - (vt-d)) & \quad \frac{a+b}{v}<t<(a+b+d)/v\\ 
+0 & \quad \frac{a+b+d}{v}<t
+\end{array} \right.
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>d)</b>
+Finn den induserte emf'en i kretsen som funksjon av tiden \( t \)
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<h3 id="___sec11" class="anchor">Sett fra bussen </h3>
+
+<p>
+S&#229; ser vi p&#229; hvordan denne prosessen opptrer for en tilskuer som st&#229;r inne i bussen.
+
+<p>
+<b>e)</b>
+Skisser det magnetiske feltet i p&#229; h&#248;yre og venstre side av kretsen som funksjon av tiden.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_4" style="font-size: 80%;"></a>
+<a href="#exer_5_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_4">
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-activelearning-bus-030.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>f)</b>
+Skisser den magnetiske fluksen i kretsen som funksjon av tiden.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_5" style="font-size: 80%;"></a>
+<a href="#exer_5_5" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_5">
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-activelearning-bus-030.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- Buss: Endre p&#229; formen p&#229; kretsen. Hvordan stemmer teorien. Hva hvis det er en skinne som beveger seg samme vei som bussen? -->
+
+<p>
+</div>
+</div>
+
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._seminar-10.do.txt005.html">&laquo;</a></li>
+  <li><a href="._seminar-10.do.txt000.html">1</a></li>
+  <li><a href="._seminar-10.do.txt001.html">2</a></li>
+  <li><a href="._seminar-10.do.txt002.html">3</a></li>
+  <li><a href="._seminar-10.do.txt003.html">4</a></li>
+  <li><a href="._seminar-10.do.txt004.html">5</a></li>
+  <li><a href="._seminar-10.do.txt005.html">6</a></li>
+  <li class="active"><a href="._seminar-10.do.txt006.html">7</a></li>
+  <li><a href="._seminar-10.do.txt007.html">8</a></li>
+  <li><a href="._seminar-10.do.txt007.html">&raquo;</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

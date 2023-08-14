@@ -1,0 +1,221 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Uke 11: Induktans">
+
+<title>Uke 11: Induktans</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Induktans', 1, None, '___sec1'),
+              ('Induktans', 2, None, '___sec2'),
+              ('Oppgave: En og to løkker', 2, None, '___sec3'),
+              ('Oppgave: Solenoide', 2, None, '___sec4'),
+              ('Oppgave: To solenoider', 2, None, '___sec5'),
+              ('Induktans i elektrisk krets', 2, None, '___sec6'),
+              ('Oppgave: Strøm gjennom krets', 2, None, '___sec7'),
+              ('Eksempel: Toroide', 2, None, '___sec8'),
+              ('Gjensidig induktans', 2, None, '___sec9'),
+              ('Oppgave: Gjensidig induktans', 2, None, '___sec10'),
+              ('Oppgave: To spoler', 2, None, '___sec11'),
+              ('Eksempel: Toroide', 2, None, '___sec12'),
+              ('Eksempel: Transformator', 2, None, '___sec13'),
+              ('Energi i magnetiske felt', 1, None, '___sec14'),
+              ('Energi i magnetiske felt', 2, None, '___sec15'),
+              ('Oppgave: To spoler etter hverandre', 2, None, '___sec16'),
+              ('Eksempel: Energi i koaksial kabel', 2, None, '___sec17')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="learningpath-11.html">Uke 11: Induktans</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec1" style="font-size: 80%;"><b>Induktans</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Induktans</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: En og to løkker</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Solenoide</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: To solenoider</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Induktans i elektrisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Strøm gjennom krets</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Toroide</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gjensidig induktans</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Gjensidig induktans</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: To spoler</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Toroide</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11001.html#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Transformator</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11002.html#___sec14" style="font-size: 80%;"><b>Energi i magnetiske felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11002.html#___sec15" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Energi i magnetiske felt</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11002.html#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: To spoler etter hverandre</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11002.html#___sec17" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Energi i koaksial kabel</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0000"></a>
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<div class="jumbotron">
+<center><h1>Uke 11: Induktans</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Anders Malthe-S&#248;renssen -->
+
+<center>
+<b>Anders Malthe-S&#248;renssen</b> 
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>Department of Physics, University of Oslo, Norway</b></center>
+<br>
+<p>
+<center><h4>Oct 31, 2022</h4></center> <!-- date -->
+<br>
+<p>
+</div> <!-- end jumbotron -->
+
+<h3 id="___sec0" class="anchor">L&#230;ringsm&#229;l </h3>
+
+<p>
+Denne uken fokuserer vi p&#229; induktans, gjensidig induktans og anvendelser p&#229; transformatorer, og energi og energi-tetthet for magnetiske systemer. Du skal l&#230;re (1) &#229; regne ut selv-induktansen, \( L \), til en krets, (2) &#229; anvende selv-induktansen i krets-likninger, (3) kjenne definisjonen av og kunne regne ut den gjensidige induktansen for to kretser, (4) kunne sette opp en transformator og forst&#229; hvordan den virker, (5) kjenne og kunne regne ut den magnetiske energien og den magnetiske energitettheten.
+
+<h1 id="table_of_contents">Table of contents</h2>
+
+<p>
+<a href="._learningpath-11001.html#___sec1"> Induktans </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec2"> Induktans </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec3"> Oppgave: En og to l&#248;kker </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec4"> Oppgave: Solenoide </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec5"> Oppgave: To solenoider </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec6"> Induktans i elektrisk krets </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec7"> Oppgave: Str&#248;m gjennom krets </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec8"> Eksempel: Toroide  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec9"> Gjensidig induktans </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec10"> Oppgave: Gjensidig induktans </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec11"> Oppgave: To spoler </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec12"> Eksempel: Toroide  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11001.html#___sec13"> Eksempel: Transformator  </a><br>
+<a href="._learningpath-11002.html#___sec14"> Energi i magnetiske felt </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11002.html#___sec15"> Energi i magnetiske felt </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11002.html#___sec16"> Oppgave: To spoler etter hverandre </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-11002.html#___sec17"> Eksempel: Energi i koaksial kabel  </a><br>
+</p>
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+  <li class="active"><a href="._learningpath-11000.html">1</a></li>
+  <li><a href="._learningpath-11001.html">2</a></li>
+  <li><a href="._learningpath-11002.html">3</a></li>
+  <li><a href="._learningpath-11001.html">&raquo;</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

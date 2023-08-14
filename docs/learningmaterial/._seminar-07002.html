@@ -1,0 +1,491 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Seminar uke 07: Kretser - del 1">
+
+<title>Seminar uke 07: Kretser - del 1</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Kretser og kretselementer', 1, None, '___sec1'),
+              ('Kretser er forenklede modeller av elektromagnetiske systemer',
+               2,
+               None,
+               '___sec2'),
+              ('Oppgave: Strøm og spenning i en elektrisk leder',
+               2,
+               None,
+               '___sec3'),
+              ('Oppgave: Modell for system', 2, None, '___sec4'),
+              ('Oppgave: Samme krets', 2, None, '___sec5'),
+              ('Oppgave: Spenningsfall over en motstand', 2, None, '___sec6'),
+              ('Oppgave: Spenningsfall over en kondensator',
+               2,
+               None,
+               '___sec7'),
+              ('Oppgave: Kirchoffs lov', 2, None, '___sec8'),
+              ('Oppgave: Hvilke strømmer er like?', 2, None, '___sec9'),
+              ('Oppgave: Batteri eller kondensator', 2, None, '___sec10'),
+              ('Oppgave: Må kretsen være lukket for at det skal gå en strøm?',
+               2,
+               None,
+               '___sec11')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="seminar-07.html">Seminar uke 07: Kretser - del 1</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._seminar-07000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07001.html#___sec1" style="font-size: 80%;"><b>Kretser og kretselementer</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Kretser er forenklede modeller av elektromagnetiske systemer</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Strøm og spenning i en elektrisk leder</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07003.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Modell for system</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07004.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Samme krets</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07005.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Spenningsfall over en motstand</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07006.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Spenningsfall over en kondensator</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07007.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Kirchoffs lov</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07008.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Hvilke strømmer er like?</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07009.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Batteri eller kondensator</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-07010.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Må kretsen være lukket for at det skal gå en strøm?</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0002"></a>
+<!-- !split -->
+<div class="panel panel-success">
+  <div class="panel-heading">
+  <h3 class="panel-title">Oppgave</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec3" class="anchor">Oppgave: Str&#248;m og spenning i en elektrisk leder </h2>
+
+<p>
+Figuren viser en elektrisk ikke-ideell leder formet som en rett leder (til venstre) og en fjerdedel av et sylinderskall (til h&#248;yre). (Vi antar systemet har en liten tykkelse inn i planet). Det en en spenningsforskjell mellom endeflatene som vist i figuren, \( V_1>V_0 \).
+
+<p>
+<br /><br /><center><p><img src="fig-circuits/circuits-activelearning-elfield-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Skisser det elektriske feltet inne i den rette lederen (til vestre).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_5" style="font-size: 80%;"></a>
+<a href="#exer_1_5" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_5">
+
+<p>
+Det er homogent og peker fra h&#248;y mot lav spenning.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>b)</b>
+Skisser ladningsfordelingen n&#229;r det g&#229;r en str&#248;m i den rette lederen (til venstre).
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_1" style="font-size: 80%;"></a>
+<a href="#exer_1_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_1">
+
+<p>
+Tenk deg at dette er en motstand. Hvordan er da det elektriske feltet og hvordan er ladningsfordelingen som lager dette elektriske feltet?
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_6" style="font-size: 80%;"></a>
+<a href="#exer_1_6" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_6">
+
+<p>
+Det er positiv ladning som er uniformt fordelt p&#229; den svarte overflaten ved potensialet \( V_1 \) og negativ ladning ved \( V_0 < V_1 \) som er uniform fordelt p&#229; den svarte overflaten.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+Du b&#248;yer s&#229; den rette lederen til den f&#229;r formen vist til h&#248;yre.
+
+<p>
+<b>c)</b>
+Hvordan blir det elektriske feltet inne i lederen?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_7" style="font-size: 80%;"></a>
+<a href="#exer_1_7" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_7">
+
+<p>
+Det elektriske feltet vil peke langsmed lederen inne i lederen, fra h&#248;yt til lavt potensiale/spenning.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>d)</b>
+Hvordan blir n&#229; ladningsfordelingen i lederen?
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_2" style="font-size: 80%;"></a>
+<a href="#exer_1_2" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_2">
+
+<p>
+Det er fremdeles ladningsfordelingen som setter opp det elektriske feltet inne i lederen.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_8" style="font-size: 80%;"></a>
+<a href="#exer_1_8" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_8">
+
+<p>
+Litt mer tricky, men ladningsfordelingen vil g&#229; fra positive ladninger n&#230;r \( V_1 \) til negative ladninger n&#230;r \( V_0 \) p&#229; et slikt vis at det elektriske feltet overalt peker langsmed lederen.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>e)</b>
+M&#229; det elektriske feltet utenfor lederen v&#230;re null?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_9" style="font-size: 80%;"></a>
+<a href="#exer_1_9" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_9">
+
+<p>
+Nei - og det vil det generelt heller ikke v&#230;re.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>f)</b>
+(<em>Litt vanskelig for de som vil ha en liten n&#248;tt</em>) Er det elektriske feltet homogent inne i den b&#248;yde lederen?
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_3" style="font-size: 80%;"></a>
+<a href="#exer_1_3" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_3">
+
+<p>
+Velg deg en sirkelformet bane med konstant radius fra den ene enden til den andre. Hva blir integralet av det elektriske feltet langs denne banen? Hva forteller det deg om det elektriske feltet?
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_10" style="font-size: 80%;"></a>
+<a href="#exer_1_10" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_10">
+
+$$E_{\phi} = \frac{V_0-V_1}{r (\pi/2)}$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>g)</b>
+Hvordan vil du modellere dette systemet som en elektrisk krets? Tegn kretsen.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_4" style="font-size: 80%;"></a>
+<a href="#exer_1_4" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_4">
+
+<p>
+Du skal gj&#248;re om systemet til en eller flere krets-komponenter som er koblet sammen med ideelle ledere som vi tegner som streker.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_11" style="font-size: 80%;"></a>
+<a href="#exer_1_11" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_11">
+
+<p>
+<br /><br /><center><p><img src="fig-circuits/circuits-activelearning-elfield-020.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+</div>
+</div>
+
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._seminar-07001.html">&laquo;</a></li>
+  <li><a href="._seminar-07000.html">1</a></li>
+  <li><a href="._seminar-07001.html">2</a></li>
+  <li class="active"><a href="._seminar-07002.html">3</a></li>
+  <li><a href="._seminar-07003.html">4</a></li>
+  <li><a href="._seminar-07004.html">5</a></li>
+  <li><a href="._seminar-07005.html">6</a></li>
+  <li><a href="._seminar-07006.html">7</a></li>
+  <li><a href="._seminar-07007.html">8</a></li>
+  <li><a href="._seminar-07008.html">9</a></li>
+  <li><a href="._seminar-07009.html">10</a></li>
+  <li><a href="._seminar-07010.html">11</a></li>
+  <li><a href="._seminar-07003.html">&raquo;</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

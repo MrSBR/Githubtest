@@ -1,0 +1,451 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Seminar uke 02: Elektrisk potensial">
+
+<title>Seminar uke 02: Elektrisk potensial</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Elektrisk potensial', 1, None, '___sec1'),
+              ('Introduksjon til elektrisk potensial', 2, None, '___sec2'),
+              ('Oppgave: Elektrisk potensial og potensiell energi',
+               2,
+               None,
+               '___sec3'),
+              ('Oppgave: Hvilken bane er best', 2, None, '___sec4'),
+              ('Oppgave: Potensialet for positive og negative ladninger',
+               2,
+               None,
+               '___sec5'),
+              ('Oppgave: Potensial, felt og krefter', 2, None, '___sec6'),
+              ('Oppgave: Enheter for elektrisk potensial og energi',
+               2,
+               None,
+               '___sec7'),
+              ('Elektrisk potensiale fra ladningsfordelinger',
+               1,
+               None,
+               '___sec8'),
+              ('Introduksjon til elektrisk potensiale fra ladningsfordelinger',
+               2,
+               None,
+               '___sec9'),
+              ('Oppgave: Potensialet fra en kvadrupol', 2, None, '___sec10'),
+              ('Installasjon og oppstart av en Jupyter notebook',
+               3,
+               None,
+               '___sec11'),
+              ('Visualisering av det elektriske potensialet',
+               3,
+               None,
+               '___sec12'),
+              ('Litt avansert', 3, None, '___sec13'),
+              ('Svært avansert og utenfor pensum', 3, None, '___sec14')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\y}{\mathbf{\hat{y}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="seminar-02.html">Seminar uke 02: Elektrisk potensial</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._seminar-02000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-02000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-02001.html#___sec1" style="font-size: 80%;"><b>Elektrisk potensial</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-02001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Introduksjon til elektrisk potensial</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-02002.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Elektrisk potensial og potensiell energi</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-02003.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Hvilken bane er best</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-02004.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Potensialet for positive og negative ladninger</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-02005.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Potensial, felt og krefter</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-02006.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Enheter for elektrisk potensial og energi</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-02007.html#___sec8" style="font-size: 80%;"><b>Elektrisk potensiale fra ladningsfordelinger</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-02007.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Introduksjon til elektrisk potensiale fra ladningsfordelinger</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Potensialet fra en kvadrupol</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Installasjon og oppstart av en Jupyter notebook</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visualisering av det elektriske potensialet</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Litt avansert</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Svært avansert og utenfor pensum</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0008"></a>
+<!-- !split -->
+<div class="panel panel-success">
+  <div class="panel-heading">
+  <h3 class="panel-title">Oppgave</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec10" class="anchor">Oppgave: Potensialet fra en kvadrupol </h2>
+
+<p>
+I elektrostatikken spiller dipolen omtrent samme rolle som den harmoniske oscillatoren gj&#248;r i mekanikk og kvantemekanikk. Stort sett har legemer ikke noen netto ladning, men ladningene i legemet kan v&#230;re fordelt p&#229; forskjellig vis inne i legemet. Dette gjelder helt fra et enkelt atom eller et molekyl til makroskopiske legemer som en brusboks, en ballong, en sky eller en stjerne. Den groveste m&#229;ten &#229; beskrive en slik ladningsfordeling p&#229; er som en dipol --- og det har vi sett p&#229; i l&#230;reboken. Men hva skjer hvis vi setter sammen to dipoler? Da f&#229;r vi en kvadrupol. Her skal vi se p&#229; det elektriske potensialet og feltet rundt en kvadrupol.
+
+<p>
+Vi ser p&#229; en kvadrupol som best&#229;r av fire ladninger: \( +Q \) i punktene i \( (a,a) \) og \( (-a,-a) \) og \( -Q \) i punktene \( (-a,a) \) og \( (a,-a) \).
+
+<p>
+<b>a)</b>
+Lag en skisse av systemet.
+
+<p>
+<b>b)</b>
+Hvor tror du det elektriske potensialet er null i dette systemet? Og hvor er det elektriske feltet null?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_2" style="font-size: 80%;"></a>
+<a href="#exer_6_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_2">
+
+<p>
+Potensialet er null langs \( x \) og \( y \) aksene. Det elektriske feltet er null i origo.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>c)</b>
+Skisser det elektriske potensialet langs \( x \)-aksen.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_3" style="font-size: 80%;"></a>
+<a href="#exer_6_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_3">
+
+<p>
+Det elektriske feltet er null langs \( x \)-aksen.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<h3 id="___sec11" class="anchor">Installasjon og oppstart av en Jupyter notebook </h3>
+
+Vi skal n&#229; lage en numerisk modell for det elektriske potensialet fra kvadrupolen. Til det trenger du &#229; &#229;pne en Jupyter Notebook. Det kan du gj&#248;re ved &#229; g&#229; til JupyterHub p&#229; UiO gjennom denne lenken: <a href="http://jupyterhub.uio.no" target="_blank">JupyterHub@UiO</a>. Signer inn. Alternativt kan du starte en Jupyter Notebook (eller JypyterLab) p&#229; din egen laptop. Det gj&#248;r du ved &#229; skrive <code>jupyter-notebook</code> p&#229; kommandolinjen p&#229; en Mac eller en linux pc, eller du velger Jupyter notebook App'en p&#229; en Windows PC. Et tredje alternativ er &#229; bruke Googles l&#248;sning som kalles <code>colab</code> og som du finner gjennom denne lenken <a href="https://colab.research.google.com" target="_blank">colab@Google</a>. Dette krever at du logger inn i Googles systemer.
+
+<h3 id="___sec12" class="anchor">Visualisering av det elektriske potensialet </h3>
+
+Du kan n&#229; velge &#229; skrive all koden fra scratch selv --- det anbefaler vi --- eller &#229; bruke kode-segmenter fra boken. Det f&#248;lgende programmet finner det elektriske potensialet i i ett punkt fra en liste med ladninger:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">epotlist</span>(r,Q,R):
+    <span style="color: #408080; font-style: italic"># Find V*4*pi*epsilon0 at r from a charges Q at positions R</span>
+    V<span style="color: #666666">=0</span>
+    <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #008000">len</span>(R)):
+        Ri <span style="color: #666666">=</span> r <span style="color: #666666">-</span> R[i]
+        qi <span style="color: #666666">=</span> Q[i]
+        Rinorm <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>norm(Ri)
+        V <span style="color: #666666">=</span> V <span style="color: #666666">+</span> qi<span style="color: #666666">/</span>Rinorm
+    <span style="color: #008000; font-weight: bold">return</span> V
+</pre></div>
+<p>
+Vi kan regne ut det elektriske potensialet i et omr&#229;de i rommet:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">findpotential</span>(R,Q,x0,x1,y0,y1,Nx,Ny):
+    x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(x0,x1,Nx)
+    y <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(y0,y1,Ny)
+    rx,ry <span style="color: #666666">=</span> np<span style="color: #666666">.</span>meshgrid(x,y)
+    V <span style="color: #666666">=</span> np<span style="color: #666666">.</span>zeros((Nx,Ny),<span style="color: #008000">float</span>)
+    <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #008000">len</span>(rx<span style="color: #666666">.</span>flat)):
+        r <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([rx<span style="color: #666666">.</span>flat[i],ry<span style="color: #666666">.</span>flat[i]])
+	V<span style="color: #666666">.</span>flat[i] <span style="color: #666666">=</span> epotlist(r,Q,R)
+    <span style="color: #008000; font-weight: bold">return</span> x,y,rx,ry,V
+</pre></div>
+<p>
+Og vi kan visualisere det elektriske potensialet fra en ladning i punktet \( (1,1) \) med:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>Q <span style="color: #666666">=</span> []
+R <span style="color: #666666">=</span> []
+r0 <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([<span style="color: #666666">1</span>,<span style="color: #666666">1</span>])
+q0 <span style="color: #666666">=</span> <span style="color: #666666">1</span>
+R<span style="color: #666666">.</span>append(r0)
+Q<span style="color: #666666">.</span>append(q0)
+x,y,rx,ry,V <span style="color: #666666">=</span> findpotential(R,Q,<span style="color: #666666">-2</span>,<span style="color: #666666">2</span>,<span style="color: #666666">-2</span>,<span style="color: #666666">2</span>,<span style="color: #666666">20</span>,<span style="color: #666666">20</span>)
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
+plt<span style="color: #666666">.</span>contourf(rx,ry,V)
+plt<span style="color: #666666">.</span>axis(<span style="color: #BA2121">&#39;equal&#39;</span>)
+</pre></div>
+<p>
+<b>d)</b>
+Visualiser potensialet fra de fire ladningene i kvadrupolen.
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>e)</b>
+Finn og visualiser det elektriske feltet. (Du skal ikke regne ut det elektriske feltet fra ladningsfordelingen, men finne det elektriske feltet fra potensialet du har regnet ut).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_4" style="font-size: 80%;"></a>
+<a href="#exer_6_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_4">
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>Ey,Ex <span style="color: #666666">=</span> np<span style="color: #666666">.</span>gradient(<span style="color: #666666">-</span>V)
+plt<span style="color: #666666">.</span>contourf(rx,ry,V)
+plt<span style="color: #666666">.</span>quiver(rx,ry,Ex,Ey)
+plt<span style="color: #666666">.</span>axis(<span style="color: #BA2121">&#39;equal&#39;</span>)
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>f)</b>
+Plot det elektriske potensialet som funksjon av avstanden til origo langs en linje \( \ell \) som danner en vinkel \( \pi/4 \) med \( x \)-aksen.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_5" style="font-size: 80%;"></a>
+<a href="#exer_6_5" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_5">
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>xp <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">-3</span>,<span style="color: #666666">3</span>,<span style="color: #666666">1000</span>)
+Vx <span style="color: #666666">=</span> xp<span style="color: #666666">.</span>copy()
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #008000">len</span>(xp)):
+    r <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([xp[i],xp[i]])
+    Vx[i] <span style="color: #666666">=</span> epotlist(r,Q,R)
+plt<span style="color: #666666">.</span>plot(xp<span style="color: #666666">*</span>np<span style="color: #666666">.</span>sqrt(<span style="color: #666666">2</span>),Vx)
+plt<span style="color: #666666">.</span>xlabel(<span style="color: #BA2121">&#39;r&#39;</span>)
+plt<span style="color: #666666">.</span>ylabel(<span style="color: #BA2121">&#39;V(x)&#39;</span>)
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<h3 id="___sec13" class="anchor">Litt avansert </h3>
+
+(<em>F&#248;lgende oppgave er litt mer avansert</em>)
+
+<p>
+<b>g)</b>
+Plot det elektriske potensialet langs linjen \( \ell \) for \( r \gg a \). Plot det i et dobbel-logaritmisk plot. Hva forteller dette plottet deg om hvordan oppf&#248;rselen til en kvadrupol er langt unna kvadrupolen?
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_1" style="font-size: 80%;"></a>
+<a href="#exer_6_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_1">
+
+<p>
+En enkeltladning har oppf&#248;rselen \( V \propto 1/r \) for \( r \gg a \) mens en dipol har oppf&#248;rselen \( V \propto 1/r^2 \) for \( r \gg a \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<h3 id="___sec14" class="anchor">Sv&#230;rt avansert og utenfor pensum </h3>
+
+(<em>eF&#248;lgende oppgave er sv&#230;rt avansert og utenfor pensum</em>). Vi karakteriserer en ladningsfordeling ved hjelp av dipolmomentet til fordelingen. Det er definert som:
+$$\vec{p} = \sum_i Q_i \vec{r}_i$$
+Hvis ladningsfordelingen har null netto ladning (er n&#248;ytralt) er dipolmomentet uavhengig av hvor origo er i koordinatsystemet.
+
+<p>
+<b>h)</b>
+Finn dipolmomenentet for kvadrupolen.
+
+<p>
+<b>i)</b>
+Hvordan kan vi i stedet karakterisere kvadrupolen? Sl&#229; opp <em>multipole expansion</em> og diskuter hvordan du ville karakterisere kvadrupolen og hvilken nytte du tror en slik multipol-ekspansjon kan ha.
+
+<p>
+</div>
+</div>
+
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._seminar-02007.html">&laquo;</a></li>
+  <li><a href="._seminar-02000.html">1</a></li>
+  <li><a href="._seminar-02001.html">2</a></li>
+  <li><a href="._seminar-02002.html">3</a></li>
+  <li><a href="._seminar-02003.html">4</a></li>
+  <li><a href="._seminar-02004.html">5</a></li>
+  <li><a href="._seminar-02005.html">6</a></li>
+  <li><a href="._seminar-02006.html">7</a></li>
+  <li><a href="._seminar-02007.html">8</a></li>
+  <li class="active"><a href="._seminar-02008.html">9</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

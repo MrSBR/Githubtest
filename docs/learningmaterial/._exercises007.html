@@ -1,0 +1,1976 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Oppgaver til Fys1120">
+
+<title>Oppgaver til Fys1120</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 0,
+ 'sections': [('Table of contents',
+               0,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Uke 01: Elektrisk felt', 0, None, '___sec0'),
+              ('Læringsmål', 3, None, '___sec1'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec2'),
+              ('Exercise 1.1: Introduce yourself to the group',
+               2,
+               None,
+               '___sec3'),
+              ('Exercise 1.2: Zero field', 2, None, '___sec4'),
+              ('Exercise 1.3: Peeling tape', 2, None, '___sec5'),
+              ('Exercise 1.4: Mechanisms for charge transfer',
+               2,
+               None,
+               '___sec6'),
+              ('Gruppeoppgaver', 1, None, '___sec7'),
+              ('Exercise 1.5: Electric dipole', 2, None, '___sec8'),
+              ('Exercise 1.6: Line charge', 2, None, '___sec9'),
+              ('Exercise 1.7: Visualization of the electric field',
+               2,
+               None,
+               '___sec10'),
+              ('Hjemmeoppgaver', 1, None, '___sec11'),
+              ('Exercise 1.8: Point charges',
+               2,
+               'exer:electricfield-pointcharge',
+               'exer:electricfield-pointcharge'),
+              ('Exercise 1.9: The electric field from groups of point charges',
+               2,
+               'exer:electricfield-groupofcharges',
+               'exer:electricfield-groupofcharges'),
+              ('Exercise 1.10: Half circle', 2, None, '___sec14'),
+              ('Exercise 1.11: The electric field above a finite disk',
+               2,
+               'exer:electricfield-fieldabovedisk',
+               'exer:electricfield-fieldabovedisk'),
+              ('Innleveringsoppgave', 1, None, '___sec16'),
+              ('Exercise 1.12: Linjer på kryss og tvers',
+               2,
+               'exer:electricfield-crossinglinges-norwegian',
+               'exer:electricfield-crossinglinges-norwegian'),
+              ('Ekstraoppgaver', 1, None, '___sec18'),
+              ('Exercise 1.13: Plane charge', 2, None, '___sec19'),
+              ('Exercise 1.14: Adding and subtracting using superposition',
+               2,
+               None,
+               '___sec20'),
+              ('Exercise 1.15: Work on point charges',
+               2,
+               'exer:electricfield-workonpointcharge',
+               'exer:electricfield-workonpointcharge'),
+              ('Exercise 1.16: Plate with a hole', 2, None, '___sec22'),
+              ('Exercise 1.17: Dipole in a uniform electric field',
+               2,
+               None,
+               '___sec23'),
+              ('Exercise 1.18: Milikan oil drop experiment',
+               2,
+               None,
+               '___sec24'),
+              ('Exercise 1.19: Field from a hemisphere shell',
+               2,
+               None,
+               '___sec25'),
+              ('Exercise 1.20: Paper on balloon',
+               2,
+               'exer:electricfield-paperonballoon',
+               'exer:electricfield-paperonballoon'),
+              ('Exercise 1.21: Wavy surface',
+               2,
+               'exer:electricfield-wavysurface',
+               'exer:electricfield-wavysurface'),
+              ('Exercise 1.22: Water models',
+               2,
+               'exer:electricfield-watermodels',
+               'exer:electricfield-watermodels'),
+              ('Exercise 1.23: Ionic bonds',
+               2,
+               'exer:electricfield-ionicbonds',
+               'exer:electricfield-ionicbonds'),
+              ('Uke 02: Elektrisk potensiale', 0, None, '___sec30'),
+              ('Læringsmål', 3, None, '___sec31'),
+              ('Test-deg-selv oppgaver', 1, None, '___sec32'),
+              ('Exercise 2.1: From field to potential', 2, None, '___sec33'),
+              ('Exercise 2.2: From potential to field', 2, None, '___sec34'),
+              ('Exercise 2.3: Maximum and minimum of the potential',
+               2,
+               None,
+               '___sec35'),
+              ('Exercise 2.4: Potentials and sparks', 2, None, '___sec36'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec37'),
+              ('Exercise 2.5: Finding the field from the potential',
+               2,
+               None,
+               '___sec38'),
+              ('Exercise 2.6: Zero field', 2, None, '___sec39'),
+              ('Exercise 2.7: The zero-field path', 2, None, '___sec40'),
+              ('Exercise 2.8: Motion in a simple field', 2, None, '___sec41'),
+              ('Gruppeoppgaver', 1, None, '___sec42'),
+              ('Exercise 2.9: Electric fields and electric potential',
+               2,
+               None,
+               '___sec43'),
+              ('Exercise 2.10: Line charge', 2, None, '___sec44'),
+              ('Exercise 2.11: Gradients', 2, None, '___sec45'),
+              ('Hjemmeoppgaver', 1, None, '___sec46'),
+              ('Exercise 2.12: Dipole and gradient', 2, None, '___sec47'),
+              ('Exercise 2.13: Potential and field above a disk',
+               2,
+               None,
+               '___sec48'),
+              ('Exercise 2.14: Plate with hole', 2, None, '___sec49'),
+              ('Innleveringsoppgave', 1, None, '___sec50'),
+              ('Exercise 2.15: En halv linje', 2, None, '___sec51'),
+              ("Uke 03: Gauss' lov og polarisasjon", 0, None, '___sec52'),
+              ('Læringsmål', 3, None, '___sec53'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec54'),
+              ('Exercise 3.1: Rubber balloon', 2, None, '___sec55'),
+              ('Exercise 3.2: No charges, no field?', 2, None, '___sec56'),
+              ('Exercise 3.3: Uniform charge density', 2, None, '___sec57'),
+              ("Exercise 3.4: A different Coulumb's law", 2, None, '___sec58'),
+              ('Gruppeoppgaver', 1, None, '___sec59'),
+              ('Exercise 3.5: Symmetries', 2, None, '___sec60'),
+              ('Exercise 3.6: Flux-trix', 2, None, '___sec61'),
+              ('Exercise 3.7: SLAC lightning strike', 2, None, '___sec62'),
+              ('Exercise 3.8: A simple model for polarization',
+               2,
+               None,
+               '___sec63'),
+              ('Hjemmeoppgaver', 1, None, '___sec64'),
+              ('Exercise 3.9: Felt fra ladningsfordelinger',
+               2,
+               None,
+               '___sec65'),
+              ('Exercise 3.10: Feltet fra et ladet plan', 2, None, '___sec66'),
+              ('Exercise 3.11: Dielectric sphere', 2, None, '___sec67'),
+              ('Innleveringsoppgave', 1, None, '___sec68'),
+              ('Exercise 3.12: En cellemembran', 2, None, '___sec69'),
+              ('Ekstraoppgaver', 1, None, '___sec70'),
+              ('Exercise 3.13: Corner charge flux', 2, None, '___sec71'),
+              ('Exercise 3.14: Planar dielectric', 2, None, '___sec72'),
+              ('Uke 04: Laplace og Poissons likning', 0, None, '___sec73'),
+              ('Læringsmål', 3, None, '___sec74'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec75'),
+              ('Exercise 4.1: Laplace operator', 2, None, '___sec76'),
+              ('Exercise 4.2: Discontinous potential', 2, None, '___sec77'),
+              ('Gruppeoppgaver', 1, None, '___sec78'),
+              ('Exercise 4.3: Spatial variation of potentials (Laplace '
+               'equation)',
+               2,
+               None,
+               '___sec79'),
+              ('Exercise 4.4: Surface charges', 2, None, '___sec80'),
+              ("Exercise 4.5: Laplace's equation in two dimensions",
+               2,
+               None,
+               '___sec81'),
+              ('Hjemmeoppgaver', 1, None, '___sec82'),
+              ('Exercise 4.6: To metallplater', 2, None, '___sec83'),
+              ('Exercise 4.7: Ladningsfordeling mellom metallplater',
+               2,
+               None,
+               '___sec84'),
+              ('Exercise 4.8: Repetisjon: Feltet fra en ladet stav',
+               2,
+               None,
+               '___sec85'),
+              ('Innleveringsoppgave', 1, None, '___sec86'),
+              ('Exercise 4.9: Laplace likning for en lang sylinder',
+               2,
+               None,
+               '___sec87'),
+              ('Uke 05: Ideelle ledere, kapasitans', 0, None, '___sec88'),
+              ('Læringsmål', 3, None, '___sec89'),
+              ('Test-deg-selv oppgaver', 1, None, '___sec90'),
+              ('Exercise 5.1: Ladningsfordeling på leder', 2, None, '___sec91'),
+              ('Exercise 5.2: Ladningsfordeling på ledende plater',
+               2,
+               None,
+               '___sec92'),
+              ('Exercise 5.3: Ladningsfordeling på ledende plater 2',
+               2,
+               None,
+               '___sec93'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec94'),
+              ('Exercise 5.4: Where are the charges', 2, None, '___sec95'),
+              ('Exercise 5.5: Dielectric materials', 2, None, '___sec96'),
+              ('Exercise 5.6: Capacitance in pieces', 2, None, '___sec97'),
+              ('Gruppeoppgaver', 1, None, '___sec98'),
+              ('Exercise 5.7: Understanding conductors', 2, None, '___sec99'),
+              ('Exercise 5.8: Capacitance of the axon', 2, None, '___sec100'),
+              ('Exercise 5.9: The electric field near conducting plates',
+               2,
+               None,
+               '___sec101'),
+              ('Hjemmeoppgaver', 1, None, '___sec102'),
+              ('Exercise 5.10: Coaxial cable', 2, None, '___sec103'),
+              ('Exercise 5.11: Punktladning over ledende plan',
+               2,
+               None,
+               '___sec104'),
+              ('Innleveringsoppgave', 1, None, '___sec105'),
+              ('Exercise 5.12: Kondensator av to kuler', 2, None, '___sec106'),
+              ('Lang innleveringsoppgave 01 (7 poeng)', 1, None, '___sec107'),
+              ('Exercise 5.13: Kondensator av to krester',
+               2,
+               None,
+               '___sec108'),
+              ('Uke 06: Strøm, motstand og enkle kretser',
+               0,
+               None,
+               '___sec109'),
+              ('Læringsmål', 3, None, '___sec110'),
+              ('Test-deg-selv oppgaver', 1, None, '___sec111'),
+              ('Exercise 6.1: Strøm av ioner', 2, None, '___sec112'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec113'),
+              ('Exercise 6.2: Strømtetthet og strøm', 2, None, '___sec114'),
+              ('Exercise 6.3: Ladningsoppsamling', 2, None, '___sec115'),
+              ('Gruppeoppgaver', 1, None, '___sec116'),
+              ('Exercise 6.4: Current density', 2, None, '___sec117'),
+              ('Exercise 6.5: Cylindrical resistor', 2, None, '___sec118'),
+              ('Hjemmeoppgaver', 1, None, '___sec119'),
+              ('Exercise 6.6: Lightning', 2, None, '___sec120'),
+              ('Exercise 6.7: Sfærisk symmetrisk strøm', 2, None, '___sec121'),
+              ('Exercise 6.8: Resistivitet i en konusformet leder',
+               2,
+               None,
+               '___sec122'),
+              ('Exercise 6.9: Leaky coaxial cable', 2, None, '___sec123'),
+              ('Innleveringsoppgave', 1, None, '___sec124'),
+              ('Exercise 6.10: Motstand av to sylindere', 2, None, '___sec125'),
+              ('Uke 07: Kretser og modellering', 0, None, '___sec126'),
+              ('Læringsmål', 3, None, '___sec127'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec128'),
+              ('Exercise 7.1: Strøm i en kondensator', 2, None, '___sec129'),
+              ('Exercise 7.2: Lynnedslag i et tre', 2, None, '___sec130'),
+              ('Gruppeoppgaver', 1, None, '___sec131'),
+              ('Exercise 7.3: RC circuits', 2, None, '___sec132'),
+              ('Exercise 7.4: Circuit model of conducting sphere',
+               2,
+               None,
+               '___sec133'),
+              ('Hjemmeoppgaver', 1, None, '___sec134'),
+              ('Exercise 7.5: A simple circuit', 2, None, '___sec135'),
+              ('Exercise 7.6: Wheatstone bridge', 2, None, '___sec136'),
+              ('Exercise 7.7: Lightning strike', 2, None, '___sec137'),
+              ('Innleveringsoppgave', 1, None, '___sec138'),
+              ('Exercise 7.8: Fra modell til krets', 2, None, '___sec139'),
+              ('Uke 08: Magnetisk felt', 0, None, '___sec140'),
+              ('Læringsmål', 3, None, '___sec141'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec142'),
+              ('Exercise 8.1: Symmetrier for magnetfeltet',
+               2,
+               None,
+               '___sec143'),
+              ('Exercise 8.2: Model for permanent magnet',
+               2,
+               None,
+               '___sec144'),
+              ('Exercise 8.3: Magnetisk nord', 2, None, '___sec145'),
+              ('Gruppeoppgaver', 1, None, '___sec146'),
+              ('Exercise 8.4: Finding $\\vec{B}$ from a line segment',
+               2,
+               None,
+               '___sec147'),
+              ('Exercise 8.5: Force on a current element',
+               2,
+               None,
+               '___sec148'),
+              ('Hjemmeoppgaver', 1, None, '___sec149'),
+              ('Exercise 8.6: Magnetfeltet over en sirkulær strømsløyfe',
+               2,
+               None,
+               '___sec150'),
+              ('Innleveringsoppgave', 1, None, '___sec151'),
+              ('Exercise 8.7: To halve linjer', 2, None, '___sec152'),
+              ('Ekstraoppgaver', 1, None, '___sec153'),
+              ('Exercise 8.8: Infinite bent wire', 2, None, '___sec154'),
+              ('Exercise 8.9: Modelling the magnetic field of Earth',
+               2,
+               None,
+               '___sec155'),
+              ('Exercise 8.10: Magnetfeltet fra et uendelig strømførende plan',
+               2,
+               None,
+               '___sec156'),
+              ('Uke 09: Ampères lov og magnetisering', 0, None, '___sec157'),
+              ('Læringsmål', 3, None, '___sec158'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec159'),
+              ('Exercise 9.1: Magnetisk storm', 2, None, '___sec160'),
+              ('Exercise 9.2: Varm paramagnet', 2, None, '___sec161'),
+              ('Exercise 9.3: Evig magnet', 2, None, '___sec162'),
+              ('Exercise 9.4: To halve magneter', 2, None, '___sec163'),
+              ('Gruppeoppgaver', 1, None, '___sec164'),
+              ("Exercise 9.5: Ampere's Law", 2, None, '___sec165'),
+              ("Exercise 9.6: Application of Ampere's Law",
+               2,
+               None,
+               '___sec166'),
+              ('Hjemmeoppgaver', 1, None, '___sec167'),
+              ('Exercise 9.7: Feltet fra en roterende ladd sylinder',
+               2,
+               None,
+               '___sec168'),
+              ('Exercise 9.8: Cylindrical magnet', 2, None, '___sec169'),
+              ('Innleveringsoppgave', 1, None, '___sec170'),
+              ('Exercise 9.9: En tykk plate', 2, None, '___sec171'),
+              ('Lang innleveringsoppgave 02 (7 poeng)', 1, None, '___sec172'),
+              ('Exercise 9.10: En kvadratisk krets', 2, None, '___sec173'),
+              ('Analytisk løsning av forenklet modell', 3, None, '___sec174'),
+              ('Analytisk løsning i et punkt', 3, None, '___sec175'),
+              ('Numerisk løsning for sirkulær krets', 3, None, '___sec176'),
+              ('Numerisk løsning for linje', 3, None, '___sec177'),
+              ('Numerisk løsning for kvadratisk krets', 3, None, '___sec178'),
+              ('Ekstraoppgaver', 1, None, '___sec179'),
+              ('Exercise 9.11: Similarities and differences between Gauss and '
+               'Ampere',
+               2,
+               None,
+               '___sec180'),
+              ('Exercise 9.12: Magnetfeltet fra en koaksialkabel',
+               2,
+               None,
+               '___sec181'),
+              ('Exercise 9.13: Solenoide', 2, None, '___sec182'),
+              ('Exercise 9.14: Magnetkrets', 2, None, '___sec183'),
+              ('Uke 10: Emf, Faradays lov og induktans', 0, None, '___sec184'),
+              ('Læringsmål', 3, None, '___sec185'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec186'),
+              ('Exercise 10.1: Rotasjon av en kvadratisk krets',
+               2,
+               None,
+               '___sec187'),
+              ('Exercise 10.2: Force on copper plate', 2, None, '___sec188'),
+              ('Exercise 10.3: Ring på linjen', 2, None, '___sec189'),
+              ('Gruppeoppgaver', 1, None, '___sec190'),
+              ('Exercise 10.4: Motional emf', 2, None, '___sec191'),
+              ("Exercise 10.5: Faraday's law", 2, None, '___sec192'),
+              ('Innleveringsoppgave', 1, None, '___sec193'),
+              ('Exercise 10.6: En voksende krets', 2, None, '___sec194'),
+              ('Frivillig ekstraoppgave', 3, None, '___sec195'),
+              ('Ekstraoppgaver', 1, None, '___sec196'),
+              ('Exercise 10.7: Stav på skinner i magnetfelt',
+               2,
+               None,
+               '___sec197'),
+              ('Uke 11: Induktans', 0, None, '___sec198'),
+              ('Læringsmål', 3, None, '___sec199'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec200'),
+              ('Exercise 11.1: Induktans', 2, None, '___sec201'),
+              ('Exercise 11.2: Energitetthet i magnetiserbare materialer',
+               2,
+               None,
+               '___sec202'),
+              ('Exercise 11.3: Energi i en spole', 2, None, '___sec203'),
+              ('Gruppeoppgaver', 1, None, '___sec204'),
+              ('Exercise 11.4: Self-inductance', 2, None, '___sec205'),
+              ('Exercise 11.5: Mutual inductance in a solenoid and a circular '
+               'circuit',
+               2,
+               None,
+               '___sec206'),
+              ('Exercise 11.6: Energy densities', 2, None, '___sec207'),
+              ('Innleveringsoppgave', 1, None, '___sec208'),
+              ('Exercise 11.7: To sirkler', 2, None, '___sec209'),
+              ('Uke 12: Kretser del 2', 0, None, '___sec210'),
+              ('Læringsmål', 3, None, '___sec211'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec212'),
+              ('Exercise 12.1: Snurrig motstand', 2, None, '___sec213'),
+              ('Exercise 12.2: En spole pluss en spole er fire spoler',
+               2,
+               None,
+               '___sec214'),
+              ('Exercise 12.3: Energioverføring', 2, None, '___sec215'),
+              ('Exercise 12.4: Kansellerende komponenter',
+               2,
+               None,
+               '___sec216'),
+              ('Gruppeoppgaver', 1, None, '___sec217'),
+              ('Exercise 12.5: LR circuit', 2, None, '___sec218'),
+              ('Exercise 12.6: Complex warm-up', 2, None, '___sec219'),
+              ('Exercise 12.7: Complex impedance', 2, None, '___sec220'),
+              ('Uke 13: Eksamensforberedelse', 0, None, '___sec221'),
+              ('Læringsmål', 3, None, '___sec222'),
+              ('Anbefalte tidligere eksamensoppgaver', 1, None, '___sec223'),
+              ('Eksempler på eksamensoppgaver', 1, None, '___sec224')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\nhat}{\mathbf{\hat{n}}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\y}{\mathbf{\hat{y}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\uhat}{\mathbf{\hat{u}}}
+\newcommand{\rhat}{\mathbf{\hat{r}}}
+\newcommand{\Rhat}{\mathbf{\hat{R}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\phi}}}
+\newcommand{\rhohat}{\boldsymbol{\hat{\rho}}}
+\newcommand{\rvec}{\mathbf{r}}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\pz}{\frac{\partial}{\partial z}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="exercises.html">Oppgaver til Fys1120</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._exercises000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec0" style="font-size: 80%;"><b>Uke 01: Elektrisk felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec1" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.1: Introduce yourself to the group</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.2: Zero field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.3: Peeling tape</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.4: Mechanisms for charge transfer</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.5: Electric dipole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.6: Line charge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.7: Visualization of the electric field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-pointcharge" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.8: Point charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-groupofcharges" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.9: The electric field from groups of point charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.10: Half circle</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-fieldabovedisk" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.11: The electric field above a finite disk</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-crossinglinges-norwegian" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.12: Linjer på kryss og tvers</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec19" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.13: Plane charge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec20" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.14: Adding and subtracting using superposition</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-workonpointcharge" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.15: Work on point charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec22" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.16: Plate with a hole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec23" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.17: Dipole in a uniform electric field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec24" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.18: Milikan oil drop experiment</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec25" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.19: Field from a hemisphere shell</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-paperonballoon" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.20: Paper on balloon</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-wavysurface" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.21: Wavy surface</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-watermodels" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.22: Water models</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-ionicbonds" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.23: Ionic bonds</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec30" style="font-size: 80%;"><b>Uke 02: Elektrisk potensiale</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec31" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec32" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Test-deg-selv oppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec33" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.1: From field to potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec34" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.2: From potential to field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec35" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.3: Maximum and minimum of the potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec36" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.4: Potentials and sparks</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec37" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec38" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.5: Finding the field from the potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec39" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.6: Zero field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec40" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.7: The zero-field path</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec41" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.8: Motion in a simple field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec42" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec43" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.9: Electric fields and electric potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec44" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.10: Line charge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec45" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.11: Gradients</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec46" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec47" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.12: Dipole and gradient</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec48" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.13: Potential and field above a disk</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec49" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.14: Plate with hole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec50" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec51" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.15: En halv linje</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec52" style="font-size: 80%;"><b>Uke 03: Gauss' lov og polarisasjon</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec53" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec54" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec55" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.1: Rubber balloon</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec56" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.2: No charges, no field?</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec57" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.3: Uniform charge density</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec58" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.4: A different Coulumb's law</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec59" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec60" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.5: Symmetries</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec61" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.6: Flux-trix</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec62" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.7: SLAC lightning strike</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec63" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.8: A simple model for polarization</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec64" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec65" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.9: Felt fra ladningsfordelinger</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec66" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.10: Feltet fra et ladet plan</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec67" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.11: Dielectric sphere</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec68" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec69" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.12: En cellemembran</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec70" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec71" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.13: Corner charge flux</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec72" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.14: Planar dielectric</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec73" style="font-size: 80%;"><b>Uke 04: Laplace og Poissons likning</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec74" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec75" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec76" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.1: Laplace operator</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec77" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.2: Discontinous potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec78" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec79" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.3: Spatial variation of potentials (Laplace equation)</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec80" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.4: Surface charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec81" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.5: Laplace's equation in two dimensions</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec82" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec83" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.6: To metallplater</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec84" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.7: Ladningsfordeling mellom metallplater</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec85" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.8: Repetisjon: Feltet fra en ladet stav</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec86" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec87" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.9: Laplace likning for en lang sylinder</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec88" style="font-size: 80%;"><b>Uke 05: Ideelle ledere, kapasitans</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec89" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec90" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Test-deg-selv oppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec91" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.1: Ladningsfordeling på leder</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec92" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.2: Ladningsfordeling på ledende plater</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec93" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.3: Ladningsfordeling på ledende plater 2</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec94" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec95" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.4: Where are the charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec96" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.5: Dielectric materials</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec97" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.6: Capacitance in pieces</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec98" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec99" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.7: Understanding conductors</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec100" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.8: Capacitance of the axon</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec101" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.9: The electric field near conducting plates</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec102" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec103" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.10: Coaxial cable</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec104" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.11: Punktladning over ledende plan</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec105" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec106" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.12: Kondensator av to kuler</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec107" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Lang innleveringsoppgave 01 (7 poeng)</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec108" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.13: Kondensator av to krester</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec109" style="font-size: 80%;"><b>Uke 06: Strøm, motstand og enkle kretser</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec110" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec111" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Test-deg-selv oppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec112" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.1: Strøm av ioner</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec113" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec114" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.2: Strømtetthet og strøm</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec115" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.3: Ladningsoppsamling</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec116" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec117" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.4: Current density</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec118" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.5: Cylindrical resistor</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec119" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec120" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.6: Lightning</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec121" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.7: Sfærisk symmetrisk strøm</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec122" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.8: Resistivitet i en konusformet leder</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec123" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.9: Leaky coaxial cable</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec124" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec125" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.10: Motstand av to sylindere</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec126" style="font-size: 80%;"><b>Uke 07: Kretser og modellering</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec127" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec128" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec129" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.1: Strøm i en kondensator</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec130" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.2: Lynnedslag i et tre</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec131" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec132" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.3: RC circuits</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec133" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.4: Circuit model of conducting sphere</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec134" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec135" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.5: A simple circuit</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec136" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.6: Wheatstone bridge</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec137" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.7: Lightning strike</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec138" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec139" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.8: Fra modell til krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec140" style="font-size: 80%;"><b>Uke 08: Magnetisk felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec141" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec142" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec143" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.1: Symmetrier for magnetfeltet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec144" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.2: Model for permanent magnet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec145" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.3: Magnetisk nord</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec146" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec147" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.4: Finding \( \vec{B} \) from a line segment</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec148" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.5: Force on a current element</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec149" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec150" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.6: Magnetfeltet over en sirkulær strømsløyfe</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec151" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec152" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.7: To halve linjer</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec153" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec154" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.8: Infinite bent wire</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec155" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.9: Modelling the magnetic field of Earth</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec156" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.10: Magnetfeltet fra et uendelig strømførende plan</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec157" style="font-size: 80%;"><b>Uke 09: Ampères lov og magnetisering</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec158" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec159" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec160" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.1: Magnetisk storm</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec161" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.2: Varm paramagnet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec162" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.3: Evig magnet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec163" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.4: To halve magneter</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec164" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec165" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.5: Ampere's Law</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec166" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.6: Application of Ampere's Law</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec167" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec168" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.7: Feltet fra en roterende ladd sylinder</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec169" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.8: Cylindrical magnet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec170" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec171" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.9: En tykk plate</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec172" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Lang innleveringsoppgave 02 (7 poeng)</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec173" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.10: En kvadratisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec174" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analytisk løsning av forenklet modell</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec175" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analytisk løsning i et punkt</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec176" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numerisk løsning for sirkulær krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec177" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numerisk løsning for linje</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec178" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numerisk løsning for kvadratisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec179" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec180" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.11: Similarities and differences between Gauss and Ampere</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec181" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.12: Magnetfeltet fra en koaksialkabel</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec182" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.13: Solenoide</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec183" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.14: Magnetkrets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec184" style="font-size: 80%;"><b>Uke 10: Emf, Faradays lov og induktans</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec185" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec186" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec187" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.1: Rotasjon av en kvadratisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec188" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.2: Force on copper plate</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec189" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.3: Ring på linjen</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec190" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec191" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.4: Motional emf</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec192" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.5: Faraday's law</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec193" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec194" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.6: En voksende krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec195" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frivillig ekstraoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec196" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec197" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.7: Stav på skinner i magnetfelt</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec198" style="font-size: 80%;"><b>Uke 11: Induktans</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec199" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec200" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec201" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.1: Induktans</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec202" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.2: Energitetthet i magnetiserbare materialer</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec203" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.3: Energi i en spole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec204" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec205" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.4: Self-inductance</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec206" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.5: Mutual inductance in a solenoid and a circular circuit</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec207" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.6: Energy densities</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec208" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec209" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.7: To sirkler</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec210" style="font-size: 80%;"><b>Uke 12: Kretser del 2</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec211" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec212" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec213" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.1: Snurrig motstand</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec214" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.2: En spole pluss en spole er fire spoler</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec215" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.3: Energioverføring</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec216" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.4: Kansellerende komponenter</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec217" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec218" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.5: LR circuit</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec219" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.6: Complex warm-up</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec220" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.7: Complex impedance</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec221" style="font-size: 80%;"><b>Uke 13: Eksamensforberedelse</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec222" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec223" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Anbefalte tidligere eksamensoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec224" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempler på eksamensoppgaver</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0007"></a>
+<!-- !split -->
+
+<center><h1 id="___sec126" class="anchor">Uke 07: Kretser og modellering </h1></center> <!-- chapter heading -->
+
+<h3 id="___sec127" class="anchor">L&#230;ringsm&#229;l </h3>
+
+Kjenne til hvordan det elektriske feltet oppst&#229;r og peker i en leder, kjenne til kretsdiagrammer med leder, spenningskilde, motstand og kondensator, kunne anvende Kirchoffs spennings og str&#248;mlov p&#229; et kretsdiagram. Analysere og finne dynamikken til kretser med motstander og kondensatorer. Kunne modellere kompliserte systemer som en cellemembran som en elektrisk krets. Kunne finne oppf&#248;rselen til en kabel eller membran med kabellikningen.
+
+<h1 id="___sec128" class="anchor">Diskusjonsoppgaver for gruppene </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec129" class="anchor">Exercise 7.1: Str&#248;m i en kondensator </h2>
+
+<p>
+Er str&#248;mmen p&#229; hver side av en plate-kondensator alltid den samme? Forklar hvorfor eller hvorfor ikke.
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec130" class="anchor">Exercise 7.2: Lynnedslag i et tre </h2>
+
+<p>
+Et lyn sl&#229;r ned i toppen av et grantre. Hvordan vil du modellere systemet som en krets hvis du er interessert i hvordan str&#248;mmen g&#229;r gjennom luften og treet?
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec131" class="anchor">Gruppeoppgaver </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec132" class="anchor">Exercise 7.3: RC circuits </h2>
+
+<p>
+(<em>Based on a tutorial from University of Wisconsin - Madison</em>)
+
+<p>
+In this tutorial we will address resistors and capacitors in a circuit.
+
+<p>
+The capacitor \( C_1 \) has a charge of \( 1 \, \mu\text{C} \) with the sign as indicated in Fig. <a href="#fig:circuits-RC-circuit-010">5</a>a.
+
+<p>
+<center> <!-- figure label: --> <div id="fig:circuits-RC-circuit-010"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 5:  Illustration of the RC circuit.  <!-- caption label: fig:circuits-RC-circuit-010 --> </p></center>
+<p><img src="fig-circuits/circuits-RC-circuit-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p>
+</center>
+
+<p>
+<b>a)</b>
+What is the potential difference \( V_C - V_D \)? (The circuit is as drawn, with A and B the ends of the wires, not connected to anything else).
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_87_1" style="font-size: 80%;"></a>
+<a href="#exer_87_1" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_87_1">
+
+<p>
+The potential difference is found from \( \Delta V = Q/C = 1 \mu \text{C} / 1 \mu \text{F} = 1 \text{V} \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+What is the potential difference \( V_A - V_B \)? (The circuit is as drawn, with A and B the ends of the wires, not connected to anything else).
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_87_2" style="font-size: 80%;"></a>
+<a href="#exer_87_2" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_87_2">
+
+<p>
+The potential difference must be the same as for \( V_C - V_D \). When there is no current, there is no potetial drop across the resistance, hence the potential in \( A \) and \( C \) must be the same and the potential in \( B \) and \( D \) is the same.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Now a 9V battery is connected to the circuit, the + terminal to A and the &#8211; terminal to B. What is the current through \( R_1 \) immediately after connecting the battery? (Current flowing toward the capacitor (from A to C) is defined to be positive).
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_87_3" style="font-size: 80%;"></a>
+<a href="#exer_87_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_87_3">
+
+<p>
+Kirchoff's law for potentials around the circuit gives that:
+$$
+\begin{equation}
+V_0 - R_1 I - \Delta V = 0 \; ,
+\tag{7.1}
+\end{equation}
+$$
+
+where \( V_0 \) is the emf of the battery and \( \Delta V \) is the voltage drop across the capacitor. We insert the values and find that
+$$
+\begin{equation}
+V_0 - \Delta V = 9 \text{V} - 1 \text{V} = 8 \text{V} = I R_1 \; \Rightarrow \; I = 8 \text{V}/(100 \text{k} \Omega) = 8 V/(10^5 \Omega) = 8 \times 10^{-5} \text{A} = 80 \mu \text{A} \; . 
+\tag{7.2}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+After a very long time, with the battery still connected, what is the total amount of charge that has flowed from the battery through \( R_1 \)?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_87_4" style="font-size: 80%;"></a>
+<a href="#exer_87_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_87_4">
+
+<p>
+After a long time, when the current is zero, Kirchoff's law for potentials around the circuit gives that:
+$$
+\begin{equation}
+V_0 - \Delta V = 0 \, \Rightarrow \, \Delta V = V_0 \; ,
+\tag{7.3}
+\end{equation}
+$$
+
+where \( I = 0 \) and hence the potential drop over \( R_1 \) is \( I R_1 = 0 \). We find the charge from \( Q = CV \), giving
+$$
+\begin{equation}
+Q = C V = 1 \mu \text{F} \, 9 \text{V} = 9 \mu \text{C} \; .
+\tag{7.4}
+\end{equation}
+$$
+
+Since we started with \( Q_0 = 1 \mu \text{C} \), we see that the amount of charge that has flowed through \( R_1 \) must be \( 8 \mu \text{C} \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>e)</b>
+After this very long time, the battery is disconnected, with terminals A and B open again. How much energy is stored in the capacitor?
+
+<p>
+A resistor \( R_2 = 50 \text{k}\Omega \) is then connected between A and B as shown in Fig. <a href="#fig:circuits-RC-circuit-010">5</a>c.
+
+<p>
+<b>f)</b>
+Immediately after connecting \( R_2 \), what is the current flowing through \( R_1 \)?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_87_5" style="font-size: 80%;"></a>
+<a href="#exer_87_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_87_5">
+
+<p>
+We apply Kirchoff's law for potentials in this case, in the opposite direction as before (counter-clockwise). In this case, the potential increases across the capacitor and drops over each of the resistors:
+$$
+\begin{equation}
+\Delta V - I R_1 - I R_2 = \Delta V - I (R_1 + R_2) = 0 \, \Rightarrow \, I = \frac{\Delta V}{R_1 + R_2} = \frac{9 \text{V}}{150 \text{k} \Omega} = 60 \mu \text{A} \; .
+\tag{7.5}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>g)</b>
+Will this current increase, decrease, or stay the same as time goes on?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_87_6" style="font-size: 80%;"></a>
+<a href="#exer_87_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_87_6">
+
+<p>
+The current will decrease. The current will reduce the charge across the capacitor, which will reduce the potential difference across the capacitor, which in turn will reduce the current. The current will approach zero as time approaches infinity.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec133" class="anchor">Exercise 7.4: Circuit model of conducting sphere </h2>
+
+<p>
+A conducting sphere consists of an inner conducting sphere of radius \( a \), and outer spherical shell with inner diameter \( b \). (You may think of this as a simple model for a In the region between \( a \) and \( b \), the material has a dieletric constant \( \epsilon \) and a conductivity \( \sigma \). A battery with a constant voltage difference \( V_0 \) is connected to the inner sphere and outer shell with a wire with resistance \( r \).
+
+<p>
+<b>a)</b>
+Make a drawing of the system.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_1" style="font-size: 80%;"></a>
+<a href="#exer_88_1" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_1">
+
+<p>
+<br /><br /><center><p><img src="fig-circuits/circuits-sphere-010.png" align="bottom" width=300 style='width: 100%; max-width: 300'></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+What is the resistance \( R \) of the sphere? (You may look up the result.)
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_2" style="font-size: 80%;"></a>
+<a href="#exer_88_2" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_2">
+
+<p>
+We have found this to be \( R = 1/(4 \pi \sigma) (1/a - 1/b) \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+What is the capacitance \( C \) of the sphere? (You may look up the result.)
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_3" style="font-size: 80%;"></a>
+<a href="#exer_88_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_3">
+
+<p>
+We have found this to be \( C = 4 \pi \epsilon /(1/a - 1/b) \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+Make a circuit model of the system. What components do you need? Should you add the components in series or in parallel --- provide an argument for you choice.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_4" style="font-size: 80%;"></a>
+<a href="#exer_88_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_4">
+
+<p>
+Some current will leak through the conducting part of the there sphere, so the sphere will act both as a resistor and as a capacitor. The inner sphere is the inner side of both the resistance and the capacitance of the system. They will therefore have the same potential, which means that they are connected in parallel.
+
+<p>
+<br /><br /><center><p><img src="fig-circuits/circuits-sphere-020.png" align="bottom" width=500 style='width: 100%; max-width: 500'></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+Now, we have created a circuit model of the system. Let us argue qualitative how this model will behave.
+
+<p>
+<b>e)</b>
+What is the current \( I \) through the battery immediately after you connect it?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_5" style="font-size: 80%;"></a>
+<a href="#exer_88_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_5">
+
+<p>
+Immediately after we connect the battery there will be no charge on the capacitor so that the voltage drop across the capacitor is zero. All the current will therefore flow into the capacitor, which has zero resistance. The current will therefore flow through the battery, through the resistor \( r \) and through the capacitor that has zero potential drop. Kirchoff's voltage law gives us \( V_0 - I r - 0 = 0 \) and \( I = V/r \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>f)</b>
+What is the current \( I \) through the battery after a very long time?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_6" style="font-size: 80%;"></a>
+<a href="#exer_88_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_6">
+
+<p>
+After a very long time the capacitor will be fully charged and there will be no more current flowing into the capacitor. All the current will therefore flow through the resistor \( R \). Kirchoff's voltage law for a circuit through the battery, resistor \( r \) and resistor \( R \) gives \( V_0 - I r - I R = 0 \) and \( I = V_0/(r + R) \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>g)</b>
+Sketch the time development of the current if you connect the battery to the system at \( t = 0 \).
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_7" style="font-size: 80%;"></a>
+<a href="#exer_88_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_7">
+
+<p>
+We expect it to fall off from \( V_0/r \) to \( V_0/(r + R) \) with an exponential time dependence as illustrated in the figure.
+
+<p>
+<br /><br /><center><p><img src="fig-circuits/circuits-sphere-030.png" align="bottom" width=300 style='width: 100%; max-width: 300'></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+We can also find the equations for this circuit and solve them. We introduce \( I \) as the current through the battery, \( I_R \) as the current through the resistance \( R \) and \( I_C = \d Q_C/\d t \) as the current through the capacitor.
+
+<p>
+<b>h)</b>
+How can you use Kirchoffs current law in this circuit?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_8" style="font-size: 80%;"></a>
+<a href="#exer_88_8" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_8">
+
+<p>
+We use Kirchoff's current law on the junction into the the \( R \) and \( C \) parts of the circuit, where \( -I + I_R + I_C = 0 \) or \( I = I_R+I_C \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>i)</b>
+Use Kirchoff's voltage law on a circuit through the resistor \( R \) and the capacitor \( C \). Show that if you combine this with Kirchoff's current law you get:
+$$
+\begin{equation}
+R\frac{\d I_R}{\d t} = \frac{1}{C}\left( I - I_R \right) \; .
+\tag{7.6}
+\end{equation}
+$$
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_9" style="font-size: 80%;"></a>
+<a href="#exer_88_9" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_9">
+
+<p>
+Kirchoff's voltage law on a circuit through the resistor \( R \) and the capacitor \( C \). This gives us: \( I_R R - V_C = 0 \), where \( V_C = Q_C/C \), so that \( I_R R = Q_C/C \). We take the time derivative on both sides to find \( I_C \):
+$$
+\begin{equation}
+\frac{\d I_R}{\d t}R = \frac{1}{C}\frac{\d Q_C}{\d t} = \frac{1}{C} I_C \; .
+\tag{7.7}
+\end{equation}
+$$
+
+We insert that \( I_C = I - I_R \), getting:
+$$
+\begin{equation}
+\frac{\d I_R}{\d t}R = \frac{1}{C} \left( I - I_R \right) \; .
+\tag{7.8}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>j)</b>
+Now use Kirchoff's voltage law for a path through the battery and both resistors to show that the differential equation for \( I_R \) is
+$$
+\begin{equation}
+RC\frac{\d I_R}{\d t} = \frac{V_0}{r} - \left( 1 + \frac{R}{r} \right) I_R \; .
+\tag{7.9}
+\end{equation}
+$$
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_10" style="font-size: 80%;"></a>
+<a href="#exer_88_10" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_10">
+
+<p>
+Kirchoff's voltage law for a part through the battery and both resistors gives: \( V_0 - I r - I_R R = 0 \), which gives that
+$$
+\begin{equation}
+I = \frac{V_0 - I_R R}{r} \; .
+\tag{7.10}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>k)</b>
+Show that you can combine the two equations from the last to exercises to find an equation for \( I_R \):
+$$
+\begin{equation}
+RC\frac{\d I_R}{\d t} = \frac{V_0}{r} - \left( 1 + \frac{R}{r} \right) I_R
+\tag{7.11}
+\end{equation}
+$$
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_11" style="font-size: 80%;"></a>
+<a href="#exer_88_11" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_11">
+
+<p>
+We insert
+$$
+\begin{equation}
+I = \frac{V_0 - I_R R}{r} \; .
+\tag{7.12}
+\end{equation}
+$$
+
+into
+$$
+\begin{equation}
+\frac{\d I_R}{\d t}R = \frac{1}{C} \left( I - I_R \right) \; .
+\tag{7.13}
+\end{equation}
+$$
+
+getting
+$$
+\begin{equation}
+RC\frac{\d I_R}{\d t} = \frac{V_0}{r} - I_R \frac{R}{r} - I_R = \frac{V_0}{r} - \left( 1 +  \frac{R}{r} \right) I_R \; .
+\tag{7.14}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>l)</b>
+We will not solve this equation here, but you can check that you get the expected limit in when \( t \rightarrow \infty \).
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_88_12" style="font-size: 80%;"></a>
+<a href="#exer_88_12" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_88_12">
+
+<p>
+In the limit when \( t \rightarrow \infty \) we expect \( \d I_R / \d t= 0 \) and
+$$
+\begin{equation}
+I_R = \frac{\frac{V_0}{r}}{ 1 +  \frac{R}{r}} = \frac{V_}{r + R} \; ,
+\tag{7.15}
+\end{equation}
+$$
+
+where we also realize that in this limit there is no current through the capacitor so that \( I = I_R \). This corresponds to what we found above.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec134" class="anchor">Hjemmeoppgaver </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec135" class="anchor">Exercise 7.5: A simple circuit </h2>
+
+<p>
+Fig. <a href="#fig:circuits-simplecircuit-010">6</a> illustrates a simple circuit driven by a battery with emf \( V_0 \), and consisting of two resistors \( R_1 \) and \( R_2 \).
+
+<p>
+<center> <!-- figure label: --> <div id="fig:circuits-simplecircuit-010"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 6:  Illustration of a simple circuit.  <!-- caption label: fig:circuits-simplecircuit-010 -->. </p></center>
+<p><img src="fig-circuits/circuits-simplecircuit-010.png" align="bottom" width=300 style='width: 100%; max-width: 300'></p>
+</center>
+
+<p>
+<b>a)</b>
+Find the current \( I \) through the battery expressed in terms of \( V_0 \), \( R_1 \) and \( R_2 \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_89_1" style="font-size: 80%;"></a>
+<a href="#exer_89_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_89_1">
+
+<p>
+\( I = \frac{R_1+R_2}{R_1R_2}V_0 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_89_5" style="font-size: 80%;"></a>
+<a href="#exer_89_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_89_5">
+
+<p>
+The simplest way to solve this problem, is to compute the equivalent resistance and then plug it into Ohm's law. We've got a parallel circuit on our hands, so the equivalent resistance is given by
+$$
+\begin{equation}
+R = \left(\frac{1}{R_1} + \frac{1}{R_2}\right)^{-1} = \left(\frac{R_1 + R_2}{R_1R_2}\right)^{-1} = \frac{R_1R_2}{R_1+R_2}.
+\tag{7.16}
+\end{equation}
+$$
+
+Ohm's law then yield
+$$
+\begin{equation}
+I = \frac{V_0}{R} = \frac{R_1+R_2}{R_1R_2}V_0,
+\tag{7.17}
+\end{equation}
+$$
+
+which is what we set out to find.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+What is the power develivered by the battery?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_89_2" style="font-size: 80%;"></a>
+<a href="#exer_89_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_89_2">
+
+<p>
+\( P = \frac{R_1+R_2}{R_1 R_2}V_0^2 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_89_6" style="font-size: 80%;"></a>
+<a href="#exer_89_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_89_6">
+
+<p>
+The power of the current is given by the usual formula \( P = VI \), so in our case the power delivered by the battery is
+$$
+\begin{equation}
+P = V_0I = \frac{R_1+R_2}{R_1 R_2}V_0^2.
+\tag{7.18}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec136" class="anchor">Exercise 7.6: Wheatstone bridge </h2>
+
+<p>
+Fig. <a href="#fig:circuits-wheatstone-010">7</a> illustrates a Wheatstone bridge, which is used to measure resistance. In the circuit, \( R_3 \) is variable resistance, \( R_x \) is the unknow resistance, and \( R_1 \) and \( R_2 \) are given, known resistances. The voltmeter has infinite resistance.
+
+<p>
+<center> <!-- figure label: --> <div id="fig:circuits-wheatstone-010"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 7:  Illustration of a Wheatstone bridge.  <!-- caption label: fig:circuits-wheatstone-010 -->. </p></center>
+<p><img src="fig-circuits/circuits-wheatstone-010.png" align="bottom" width=300 style='width: 100%; max-width: 300'></p>
+</center>
+
+<p>
+<b>a)</b>
+Find the voltage difference \( V_a - V_b \) which is read from the voltmeter expressed in terms of the four resistances.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_90_1" style="font-size: 80%;"></a>
+<a href="#exer_90_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_90_1">
+
+<p>
+\( V_a-V_b = \left(\frac{R_1}{R_1+R_3} - \frac{R_2}{R_2+R_x}\right)V_s = \frac{R_1R_x - R_2R_3}{(R_1+R_3)(R_2+R_x)}V_s. \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_90_5" style="font-size: 80%;"></a>
+<a href="#exer_90_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_90_5">
+
+<p>
+Let's denote the first node in the wheatstone bridge as \( c \) (that is, the node where the current enters the parallel part of the circuit).
+Let \( V_G \equiv V_a - V_b \). We assume that the resistance of the voltmeter is infinite such that no current flows through it. Since it's a parallel circuit, the voltage across \( R_1 \) and \( R_3 \)&#160;is the same as the voltage across \( R_2 \) and \( R_x \). Since \( R_1 \) and \( R_3 \) are connected in series, the same current flows through both resistors, which we'll denote as \( I_{1,3} \). The same goes for the current through \( R_2 \) and \( R_x \) which will be denoted \( I_{2,x} \).
+
+<p>
+First we need the currents flowing through the parallel circuit. These are obtained through Ohm's law:
+$$
+\begin{equation}
+I_{1,3} = \frac{V_s}{R_1+R_3} \; , \qquad \text{and} \qquad I_{2,x} = \frac{V_s}{R_2+R_x} \; ,
+\tag{7.19}
+\end{equation}
+$$
+
+Now, the voltage difference across \( R_1 \)&#160;is
+$$
+\begin{equation}
+V_a - V_c = R_1 I_{1,3} = \frac{R_1}{R_1+R_3}V_s \; .
+\tag{7.20}
+\end{equation}
+$$
+
+Similarly, the voltage difference across \( R_2 \)&#160;is given by
+$$
+\begin{equation}
+V_b - V_c = R_2 I_{2,x} = \frac{R_2}{R_2+R_x}V_s \; .
+\tag{7.21}
+\end{equation}
+$$
+
+Now we can obtain \( V_G \) by the following manipulation:
+$$
+\begin{align}
+V_G & = & V_a-V_b = (V_a - V_c) - (V_b-V_c) 
+\tag{7.22}\\ 
+& = & \left(\frac{R_1}{R_1+R_3} - \frac{R_2}{R_2+R_x}\right)V_s = \frac{R_1R_x - R_2R_3}{(R_1+R_3)(R_2+R_x)}V_s \; .
+\tag{7.23}
+\end{align}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+The variable resistance \( R_3 \) is adjusted until the measured voltage is zero. Find the unknown resistance \( R_x \) from the other resistances.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_90_2" style="font-size: 80%;"></a>
+<a href="#exer_90_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_90_2">
+
+<p>
+\( R_x = \frac{R_2R_3}{R_1} \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_90_6" style="font-size: 80%;"></a>
+<a href="#exer_90_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_90_6">
+
+<p>
+Since \( R_3 \)&#160;is adjusted until \( V_G = V_a-V_b = 0 \), we get the equation
+$$
+\begin{equation}
+V_G = \frac{R_1R_x - R_2R_3}{(R_1+R_3)(R_2+R_x)}V_s = 0 \; ,
+\tag{7.24}
+\end{equation}
+$$
+
+which is only zero if \( R_1R_x - R_2R_3 = 0 \), meaning
+$$
+\begin{equation}
+R_x = \frac{R_2R_3}{R_1} \; .
+\tag{7.25}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec137" class="anchor">Exercise 7.7: Lightning strike </h2>
+
+<p>
+In this problem we will develop a simple model for dielectric breakdown in a circuit. You may think of the system as a model for a lightning forming between clouds, or you may think of the model as an example of dielectric breakdown in a capacitor.
+
+<p>
+We start from the system illustrated in Fig. <a href="#fig:circuits-dielectricbreakdown-010">8</a>a consisting of a battery with emf \( V_0 \), a capacitor \( C \) and a resistor \( R_0 \).
+
+<p>
+<center> <!-- figure label: --> <div id="fig:circuits-dielectricbreakdown-010"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 8:  Illustration of the RC circuit.  <!-- caption label: fig:circuits-dielectricbreakdown-010 --> </p></center>
+<p><img src="fig-circuits/circuits-RC-circuit-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p>
+</center>
+
+<p>
+<b>a)</b>
+The circuit is open and has been open for a long time. Then at \( t = 0 \) the circuit becomes closed. What is the charge \( Q(0) \) on the capacitor and the potential fall \( V(0) \) over the capacitor immediately after the circuit is closed (at \( t=0 \))?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_91_1" style="font-size: 80%;"></a>
+<a href="#exer_91_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_91_1">
+
+<p>
+\( Q(0) = 0 \), \( V(0) = 0 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_91_7" style="font-size: 80%;"></a>
+<a href="#exer_91_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_91_7">
+
+<p>
+Immediately before the circuit is closed \( Q=0 \). Immediately after the circuit is closed, the charge is the same. The potential drop over the capacitor is then \( V = Q/C = 0 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+What is the potential fall \( V \) over the capacitor and the charge \( Q \) on the capacitor when there is no current flowing in the circuit? (A very long time after the battery has been connected to the circuit).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_91_2" style="font-size: 80%;"></a>
+<a href="#exer_91_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_91_2">
+
+<p>
+\( V = V_0 \), \( Q = C V_0 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_91_8" style="font-size: 80%;"></a>
+<a href="#exer_91_8" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_91_8">
+
+<p>
+After a long time, the current approaches zero and the potential fall over the capacitor is the same as the potential increase over the battery, \( V = V_0 \). The charge on the capacitor is then \( Q = C V_0 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Find the potential drop over the capacitor, \( V(t) \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_91_3" style="font-size: 80%;"></a>
+<a href="#exer_91_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_91_3">
+
+<p>
+\( V(t) = V_0 ( 1-\exp(-t/(R_0 C))) \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_91_9" style="font-size: 80%;"></a>
+<a href="#exer_91_9" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_91_9">
+
+<p>
+Kirchoff's law for the circuit gives that \( V_0 - I R_0 - V(t) = V_0 - R_0 dQ/dt - Q/C = 0 \), where \( Q(0) = 0 \).
+We rewrite this equation as \( dQ/dt = -1/(R_0 C) Q + V_0/R_0 \). We first solve the homogeneous equation: \( dQ/dt = -Q/(R_0 C) \), which has solutions \( Q(t) = Q_0 \exp(-t/\tau) \), where \( \tau = R_0 C \). We use this as a basis for the full solution, \( Q(t) = A + B \exp(-t/\tau) \). We know that \( Q(0) = 0 = A + B \), which gives \( A = -B \) and \( Q(t) = A ( 1 - \exp (-t/\tau)) \). Finally, we use that after a long time \( Q(t) = C V_0 \) hence \( A = C/V_0 \) and \( Q(t) = (C V_0) ( 1 - \exp(-t/\tau)) \). We use this to find the potential, \( V(t) = Q/C = V_0 (1 - \exp(-t/\tau)) \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+We will model the dielectric breakdown of the capacitor by introducing a voltage-dependent resistor, \( R \), in parallel to the capacitor as illustrated in Fig. <a href="#fig:circuits-dielectricbreakdown-010">8</a>b. The resistance depends on the voltage \( V \) across the resistor:
+$$
+\begin{equation}
+R(V) = \left\{ \begin{array}{cc}
+\infty & \quad V < V_0/2 \\ 
+xR_0 & \quad V \ge V_0/2
+\end{array}
+\right. \; .
+\tag{7.26}
+\end{equation}
+$$
+
+where \( x \) is a small number, such as \( 1/1000 \).
+
+<p>
+<b>d)</b>
+Write a python program to model the behavior of the system and plot the \( V(t) \), the current \( I_0(t) \) through resistor \( R_0 \) and the current \( I(t) \) through the resistor \( R \). Model the behavior from \( t=0 \) when the circuit is closed.
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec138" class="anchor">Innleveringsoppgave </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec139" class="anchor">Exercise 7.8: Fra modell til krets </h2>
+
+<p>
+Vi skal i denne oppgaven se p&#229; et system som best&#229;r av et batteri p&#229; \( e = 1.5 \text{V} \), to sv&#230;rt tynne kabler og en kondensator. Kablene er begge \( L = 10 \text{cm} \) lange og sylindriske tr&#229;der med radius \( a = 0.01 \text{mm} \) og er laget av kobber (\( \rho = 1.68 \, 10^{-8} \, \text{Ohm m} \)). Kondensatoren best&#229;r av to parallelle plater med areal \( A = (2 \text{mm})^2 \) og en avstand \( d = 1\text{mm} \) fylt med et materiale med \( \epsilon = 6 \epsilon_0 \).
+
+<p>
+<br /><br /><center><p><img src="fig-circuits/circuits-ex-simplemodelcircuits-005.png" align="bottom" width=400 style='width: 100%; max-width: 400'></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hvordan vil du modellere dette systemet som en krets? Lag en skisse av kretsen.
+
+<p>
+<b>b)</b>
+Du kobler til batteriet ved tiden \( t=0 \). Skisser det elektriske potensialet langs kretsen umiddelbart etter at du har koblet batteriet til.
+
+<p>
+<b>c)</b>
+Hva blir str&#248;mmen i kretsen umiddelbart etter at du har koblet til batteriet?
+
+<p>
+<b>d)</b>
+Hva blir spenningen over de forskjellige elementene i kretsen etter sv&#230;rt lang tid? Og hva blir str&#248;mmen?
+
+<p>
+<b>e)</b>
+Finn en differensiallikning for str&#248;mmen i kretsen. Hva er initialbetingelsene for likningen? (Du beh&#248;ver ikke l&#248;se likningen, men du kan godt gj&#248;re det hvis du vil ha litt &#248;velse).
+
+<p>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+<!-- Week06 -->
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+<!-- --- end exercise --- -->
+
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pager">
+
+  <li class="previous">
+    <a href="._exercises006.html">&larr; Prev</a>
+  </li>
+
+  <li class="next">
+    <a href="._exercises008.html">Next &rarr;</a>
+  </li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

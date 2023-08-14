@@ -1,0 +1,283 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Uke 03: Gauss lov og polarisasjon">
+
+<title>Uke 03: Gauss lov og polarisasjon</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ("Gauss' lov", 1, None, '___sec1'),
+              ("Gauss' lov på integralform og elektrisk fluks",
+               2,
+               None,
+               '___sec2'),
+              ('Oppgave: Fluks trekant', 2, None, '___sec3'),
+              ('Oppgave: Fluks kube', 2, None, '___sec4'),
+              ('Oppgave: Fluks sylinder', 2, None, '___sec5'),
+              ('Oppgave: Fluks og ladning', 2, None, '___sec6'),
+              ('Eksempel: Elektrisk felt fra en punktladning',
+               2,
+               None,
+               '___sec7'),
+              ("Metode for å finne elektrisk felt med Gauss' lov",
+               2,
+               None,
+               '___sec8'),
+              ('Oppgave: Dipol i en kule', 2, None, '___sec9'),
+              ('Oppgave: Kuleskall', 2, None, '___sec10'),
+              ('Eksempel: Elektrisk felt fra linjeladning',
+               2,
+               None,
+               '___sec11'),
+              ('Eksempel: Uniformt ladet kule', 2, None, '___sec12'),
+              ('Gauss lov på diffensial form', 2, None, '___sec13'),
+              ('Oppgave: Divergens', 2, None, '___sec14'),
+              ('Polarisasjon', 1, None, '___sec15'),
+              ('Innledning om polarisasjon', 2, None, '___sec16'),
+              ('Oppgave: Polarisasjon og dipolmoment', 2, None, '___sec17'),
+              ('Oppgave: Kraft fra polarisasjon', 2, None, '___sec18'),
+              ('Bundne ladninger', 2, None, '___sec19'),
+              ('Oppgave: Dipoler og bunden ladning', 2, None, '___sec20'),
+              ('Oppgave: Bunden overflateladning', 2, None, '___sec21'),
+              ("Generalisering av Gauss' lov", 2, None, '___sec22'),
+              ('Oppgave: Fri eller bunden ladning', 2, None, '___sec23'),
+              ('Oppgave: Sum av felt', 2, None, '___sec24'),
+              ('Oppgave: Punktladning i kule', 2, None, '___sec25'),
+              ('Eksempel: Punktladning i dielektrisk medium',
+               2,
+               None,
+               '___sec26'),
+              ('Eksempel: Bunden overflateladning på en kule',
+               2,
+               None,
+               '___sec27'),
+              ('Oppgave: Plan mellom plan', 2, None, '___sec28'),
+              ('Grensebetingelser', 2, None, '___sec29'),
+              ('Oppgave: Felt i hulrom', 2, None, '___sec30')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\nhat}{\mathbf{\hat{n}}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\y}{\mathbf{\hat{y}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\rhat}{\mathbf{\hat{r}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="learningpath-03.html">Uke 03: Gauss lov og polarisasjon</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec1" style="font-size: 80%;"><b>Gauss' lov</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gauss' lov på integralform og elektrisk fluks</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Fluks trekant</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Fluks kube</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Fluks sylinder</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Fluks og ladning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Elektrisk felt fra en punktladning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Metode for å finne elektrisk felt med Gauss' lov</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Dipol i en kule</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Kuleskall</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Elektrisk felt fra linjeladning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Uniformt ladet kule</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gauss lov på diffensial form</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03001.html#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Divergens</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec15" style="font-size: 80%;"><b>Polarisasjon</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innledning om polarisasjon</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec17" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Polarisasjon og dipolmoment</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Kraft fra polarisasjon</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec19" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Bundne ladninger</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec20" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Dipoler og bunden ladning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec21" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Bunden overflateladning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec22" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Generalisering av Gauss' lov</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec23" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Fri eller bunden ladning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec24" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Sum av felt</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec25" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Punktladning i kule</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec26" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Punktladning i dielektrisk medium</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec27" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Bunden overflateladning på en kule</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec28" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Plan mellom plan</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec29" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Grensebetingelser</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-03002.html#___sec30" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Felt i hulrom</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0000"></a>
+<!-- ------------------- main content ---------------------- -->
+
+<p>
+
+
+<div class="jumbotron">
+<center><h1>Uke 03: Gauss lov og polarisasjon</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Anders Malthe-S&#248;renssen -->
+
+<center>
+<b>Anders Malthe-S&#248;renssen</b> 
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>Department of Physics, University of Oslo, Norway</b></center>
+<br>
+<p>
+<center><h4>Oct 31, 2022</h4></center> <!-- date -->
+<br>
+<p>
+</div> <!-- end jumbotron -->
+
+<h3 id="___sec0" class="anchor">L&#230;ringsm&#229;l </h3>
+
+Kunne bruke Gauss' lov til &#229; finne det elektriske feltet b&#229;di i vakuum og i dielektriske materialer. (1) Forst&#229; og kunne anvende fluks-begrepet p&#229; forskjellige felt og flater, (2) Forst&#229; overflateintegraler og kunne beregne dem for symmetriske og enkle situasjoner, (3) Kunne anvende Gauss' lov for &#229; finne det elektriske feltet og kunne gjenkjenne og anvende symmetries, (4) Forst&#229; prosessene som leder til dielektrisitet og kunne finne polarisasjon, elektrisk felt og overflateladning i dielektriske materialer.
+
+<h1 id="table_of_contents">Table of contents</h2>
+
+<p>
+<a href="._learningpath-03001.html#___sec1"> Gauss' lov </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec2"> Gauss' lov p&#229; integralform og elektrisk fluks   </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec3"> Oppgave: Fluks trekant </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec4"> Oppgave: Fluks kube </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec5"> Oppgave: Fluks sylinder </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec6"> Oppgave: Fluks og ladning </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec7"> Eksempel: Elektrisk felt fra en punktladning </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec8"> Metode for &#229; finne elektrisk felt med Gauss' lov </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec9"> Oppgave: Dipol i en kule </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec10"> Oppgave: Kuleskall </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec11"> Eksempel: Elektrisk felt fra linjeladning </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec12"> Eksempel: Uniformt ladet kule </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec13"> Gauss lov p&#229; diffensial form </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03001.html#___sec14"> Oppgave: Divergens </a><br>
+<a href="._learningpath-03002.html#___sec15"> Polarisasjon </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec16"> Innledning om polarisasjon  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec17"> Oppgave: Polarisasjon og dipolmoment </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec18"> Oppgave: Kraft fra polarisasjon </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec19"> Bundne ladninger </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec20"> Oppgave: Dipoler og bunden ladning </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec21"> Oppgave: Bunden overflateladning </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec22"> Generalisering av Gauss' lov  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec23"> Oppgave: Fri eller bunden ladning </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec24"> Oppgave: Sum av felt </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec25"> Oppgave: Punktladning i kule </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec26"> Eksempel: Punktladning i dielektrisk medium </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec27"> Eksempel: Bunden overflateladning p&#229; en kule </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec28"> Oppgave: Plan mellom plan </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec29"> Grensebetingelser </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-03002.html#___sec30"> Oppgave: Felt i hulrom </a><br>
+</p>
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+  <li class="active"><a href="._learningpath-03000.html">1</a></li>
+  <li><a href="._learningpath-03001.html">2</a></li>
+  <li><a href="._learningpath-03002.html">3</a></li>
+  <li><a href="._learningpath-03001.html">&raquo;</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+
