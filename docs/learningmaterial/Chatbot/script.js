@@ -27,6 +27,11 @@ const systemMessage = "You are a physics professor with 20 years of experience i
 const chatHistory = []; //Created to append earlier information(context) to the next prompt. 
 let context = true; //small letters!
 
+const contextToggle = document.querySelector(".context-toggle");  // assuming you have an element with class "context-toggle"
+contextToggle.addEventListener("change", (e) => {
+    context = e.target.checked;  // this assumes contextToggle is a checkbox, otherwise modify accordingly
+});
+
 
 const generateResponse = (chatElement) => {
     const API_URL = "https://api.openai.com/v1/chat/completions";
@@ -110,8 +115,3 @@ chatInput.addEventListener("keydown", (e) => {
 sendChatBtn.addEventListener("click", handleChat);
 closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
-
-//const contextToggle = document.querySelector(".context-toggle");  // assuming you have an element with class "context-toggle"
-//contextToggle.addEventListener("change", (e) => {
-//    context = e.target.checked;  // this assumes contextToggle is a checkbox, otherwise modify accordingly
-//});
