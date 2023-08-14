@@ -199,7 +199,7 @@ header h2 {
 
 /* The switch container */
 .switch {
-  position: absolute;
+  position: relative;
   display: inline-block;
   width: 80px;
   height: 40px;
@@ -207,7 +207,7 @@ header h2 {
 }
 
 .context-toggle {
-  position: absolute;
+  position: relative;
   display: inline-block;
   width: 80px;
   height: 40px;
@@ -219,14 +219,14 @@ header h2 {
   opacity: 0;
   width: 60px;
   height: 34px;
-  position: absolute;  /* Make sure to include this */
+  position: relative;  /* Make sure to include this */
   z-index: 2;  /* Make sure the input sits above the slider for the click to register */
   cursor : pointer; 
 }
 
 /* The sliding button (slider) */
 .slider {
-  position: absolute;
+  position: relative;
   cursor: pointer;
   top: 0;
   left: 0;
@@ -237,7 +237,7 @@ header h2 {
 }
 
 .slider:before {
-  position: absolute;
+  position: relative;
   content: "";
   height: 26px;
   width: 26px;
