@@ -43,18 +43,18 @@ const generateResponse = (chatElement) => {
             messages: [
                 {role: "system", content: systemMessage}, 
                 {role: "user", content: userMessage},
-                //userInput.slice(0),
+                {role: "user", content: userInput},
             ],
         })
     }
-    //userInput.push({role: "user", content: userMessage});
+    userInput.push(userMessage);
 
     // Send POST request to API, get response and set the reponse as paragraph text
     fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
         messageElement.textContent  = data.choices[0].message.content.trim();
         
         // Update the conversation history with bot's response
-        //userInput.push({role: "user", content: messageElement.textContent});
+        userInput.push(messageElement.textContent);
 
     }).catch(() => {
         messageElement.classList.add("error");
