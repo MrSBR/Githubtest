@@ -24,8 +24,8 @@ const systemMessage = "You are a physics professor with 20 years of experience i
  The hints must be in the form of questions.\
  If you are asked anything outside Physics, tell the user to focus and stop wasting time."
 
-//const chatHistory = []; //Created to append earlier information(context) to the next prompt. 
-//let context = False; 
+const chatHistory = []; //Created to append earlier information(context) to the next prompt. 
+let context = False; 
 
 
 const generateResponse = (chatElement) => {
@@ -44,7 +44,7 @@ const generateResponse = (chatElement) => {
             model: "gpt-3.5-turbo",
             messages: [
                 {role: "system", content: systemMessage},
-                //...chatHistory, 
+                ...chatHistory, 
                 {role: "user", content: userMessage},
             
             ],
@@ -57,11 +57,11 @@ const generateResponse = (chatElement) => {
         messageElement.textContent  = data.choices[0].message.content.trim();
         botResponse = messageElement.textContent
 
-        // Update the conversation history with bot's response
-        //if (context) {
-        //    chatHistory.push({ role: "user", content: userMessage });
-        //    chatHistory.push({ role: "assistant", content: botResponse });
-        //}
+        //Update the conversation history with bot's response
+        if (context) {
+            chatHistory.push({ role: "user", content: userMessage });
+            chatHistory.push({ role: "assistant", content: botResponse });
+        }
 
     }).catch(() => {
         messageElement.classList.add("error");
@@ -90,11 +90,6 @@ const handleChat = () => {
     }, 600);
 }
 
-const contextToggle = document.querySelector(".context-toggle");  // assuming you have an element with class "context-toggle"
-contextToggle.addEventListener("change", (e) => {
-    context = e.target.checked;  // this assumes contextToggle is a checkbox, otherwise modify accordingly
-});
-
 chatInput.addEventListener("input", () => {
     // Adjust the height of the input textarea based on its content
     chatInput.style.height = `${inputInitHeight}px`;
@@ -113,3 +108,8 @@ chatInput.addEventListener("keydown", (e) => {
 sendChatBtn.addEventListener("click", handleChat);
 closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+
+//const contextToggle = document.querySelector(".context-toggle");  // assuming you have an element with class "context-toggle"
+//contextToggle.addEventListener("change", (e) => {
+//    context = e.target.checked;  // this assumes contextToggle is a checkbox, otherwise modify accordingly
+//});
