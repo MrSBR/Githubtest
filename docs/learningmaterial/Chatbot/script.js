@@ -25,6 +25,13 @@ const systemMessage = "You are a physics professor with 20 years of experience i
  If you are asked anything outside Physics, tell the user to focus and stop wasting time."
 
 const chatHistory = []; //Created to append earlier information(context) to the next prompt. 
+let context = False; 
+
+const contextToggle = document.querySelector(".context-toggle");  // assuming you have an element with class "context-toggle"
+contextToggle.addEventListener("change", (e) => {
+    context = e.target.checked;  // this assumes contextToggle is a checkbox, otherwise modify accordingly
+});
+
 
 const generateResponse = (chatElement) => {
     const API_URL = "https://api.openai.com/v1/chat/completions";
@@ -56,8 +63,10 @@ const generateResponse = (chatElement) => {
         botResponse = messageElement.textContent
 
         // Update the conversation history with bot's response
-        chatHistory.push({ role: "user", content: userMessage });
-        chatHistory.push({ role: "assistant", content: botResponse });
+        if (context) {
+            chatHistory.push({ role: "user", content: userMessage });
+            chatHistory.push({ role: "assistant", content: botResponse });
+        }
 
     }).catch(() => {
         messageElement.classList.add("error");
