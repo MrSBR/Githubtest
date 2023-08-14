@@ -25,7 +25,7 @@ const systemMessage = "You are a physics professor with 20 years of experience i
  If you are asked anything outside Physics, tell the user to focus and stop wasting time."
 
 const chatHistory = []; //Created to append earlier information(context) to the next prompt. 
-let context = False; 
+let context = True; 
 
 
 const generateResponse = (chatElement) => {
