@@ -201,49 +201,37 @@ header h2 {
 .switch {
   position: relative;
   display: inline-block;
-  width: 80px;
-  height: 40px;
-  border: 2px solid red /* Temporary*/
-}
-
-.context-toggle {
-  position: relative;
-  display: inline-block;
-  width: 80px;
-  height: 40px;
-  border: 2px solid rgb(51, 0, 255) /* Temporary*/
+  width: 60px;
+  height: 34px;
 }
 
 /* Hide the default checkbox */
 .switch input {
-  /*opacity: 0; */
-  width: 60px;
-  height: 34px;
-  position: relative;  /* Make sure to include this */
-  z-index: 2;  /* Make sure the input sits above the slider for the click to register */
-  cursor : pointer; 
+  /*opacity: 0;*/
+  width: 40px;
+  height: 20px;
 }
 
 /* The sliding button (slider) */
 .slider {
-  position: relative;
+  position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #a8a7a7; 
+  background-color: #ccc;
   transition: .4s;
 }
 
 .slider:before {
-  position: relative;
+  position: absolute;
   content: "";
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   transition: .4s;
 }
 
