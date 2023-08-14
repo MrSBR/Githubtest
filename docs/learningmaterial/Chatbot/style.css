@@ -206,6 +206,14 @@ header h2 {
   border: 2px solid red /* Temporary*/
 }
 
+.context-toggle {
+  position: absolute;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  border: 2px solid rgb(51, 0, 255) /* Temporary*/
+}
+
 /* Hide the default checkbox */
 .switch input {
   opacity: 0;
