@@ -220,12 +220,12 @@ header h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc !important;
+  background-color: #ccc; 
   transition: .4s;
 }
 
 .slider:before {
-  position: absolute;
+  position: fixed;
   content: "";
   height: 26px;
   width: 26px;
