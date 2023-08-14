@@ -44,7 +44,7 @@ const generateResponse = (chatElement) => {
             model: "gpt-3.5-turbo",
             messages: [
                 {role: "system", content: systemMessage},
-                ...chatHistory, 
+                //...chatHistory, 
                 {role: "user", content: userMessage},
             
             ],
