@@ -60,7 +60,7 @@ const generateResponse = (chatElement) => {
         //Update the conversation history with bot's response
         if (context) {
             chatHistory.push({ role: "user", content: userMessage });
-            chatHistory.push({ role: "assistant", content: botResponse });
+            chatHistory.push({ role: "system", content: botResponse });
         }
 
     }).catch(() => {
