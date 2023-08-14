@@ -22,7 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: #000000; /*#4bf00f*/
+  background: #ff5e5e; /*#4bf00f*/
   transition: all 0.2s ease;
 }
 body.show-chatbot .chatbot-toggler {
