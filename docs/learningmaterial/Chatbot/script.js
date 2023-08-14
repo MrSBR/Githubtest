@@ -53,7 +53,8 @@ const generateResponse = (chatElement) => {
     // Send POST request to API, get response and set the reponse as paragraph text
     fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
         messageElement.textContent  = data.choices[0].message.content.trim();
-        
+        botResponse = messageElement.textContent
+
         // Update the conversation history with bot's response
         chatHistory.push({ role: "user", content: userMessage });
         chatHistory.push({ role: "assistant", content: botResponse });
