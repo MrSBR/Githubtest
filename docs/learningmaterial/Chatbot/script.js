@@ -24,7 +24,7 @@ const systemMessage = "You are a physics professor with 20 years of experience i
  The hints must be in the form of questions.\
  If you are asked anything outside Physics, tell the user to focus and stop wasting time."
 
-//const userInput = []; //Created to append earlier information(context) to the next prompt. 
+const chatHistory = []; //Created to append earlier information(context) to the next prompt. 
 
 const generateResponse = (chatElement) => {
     const API_URL = "https://api.openai.com/v1/chat/completions";
@@ -41,20 +41,22 @@ const generateResponse = (chatElement) => {
             //model: "gpt-3.5-turbo",
             model: "gpt-3.5-turbo",
             messages: [
-                {role: "system", content: systemMessage}, 
+                {role: "system", content: systemMessage},
+                ...chathistory, 
                 {role: "user", content: userMessage},
             
             ],
         })
     }
-    //userInput.push(userMessage);
+    
 
     // Send POST request to API, get response and set the reponse as paragraph text
     fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
         messageElement.textContent  = data.choices[0].message.content.trim();
         
         // Update the conversation history with bot's response
-        //userInput.push(messageElement.textContent);
+        chatHistory.push({ role: "user", content: userMessage });
+        chatHistory.push({ role: "assistant", content: botResponse });
 
     }).catch(() => {
         messageElement.classList.add("error");
