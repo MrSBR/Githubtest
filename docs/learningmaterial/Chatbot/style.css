@@ -201,8 +201,8 @@ header h2 {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 40px;
+  height: 20px;
   border: 2px solid red /* Temporary*/
 }
 
@@ -224,7 +224,7 @@ header h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc; 
+  background-color: #a8a7a7; 
   transition: .4s;
 }
 
@@ -235,7 +235,7 @@ header h2 {
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   transition: .4s;
 }
 
