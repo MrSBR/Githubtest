@@ -25,7 +25,7 @@ const systemMessage = "You are a physics professor with 20 years of experience i
  If you are asked anything outside Physics, tell the user to focus and stop wasting time."
 
 const chatHistory = []; //Created to append earlier information(context) to the next prompt. 
-let context = True; 
+//let context = True; 
 
 
 const generateResponse = (chatElement) => {
@@ -58,10 +58,10 @@ const generateResponse = (chatElement) => {
         botResponse = messageElement.textContent
 
         //Update the conversation history with bot's response
-        if (context) {
-            chatHistory.push({ role: "user", content: userMessage });
-            chatHistory.push({ role: "system", content: botResponse });
-        }
+        //if (context) {
+        chatHistory.push({ role: "user", content: userMessage });
+        chatHistory.push({ role: "system", content: botResponse });
+        //}
 
     }).catch(() => {
         messageElement.classList.add("error");
