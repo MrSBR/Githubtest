@@ -43,7 +43,8 @@ const generateResponse = (chatElement) => {
             messages: [
                 {role: "system", content: systemMessage}, 
                 {role: "user", content: userMessage},
-                {role: "user", content: userInput},
+                for i in range(0,len(userInput)):
+                    {role: "user", content: userInput[i]},
             ],
         })
     }
