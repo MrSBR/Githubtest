@@ -27,11 +27,6 @@ const systemMessage = "You are a physics professor with 20 years of experience i
 const chatHistory = []; //Created to append earlier information(context) to the next prompt. 
 let context = False; 
 
-const contextToggle = document.querySelector(".context-toggle");  // assuming you have an element with class "context-toggle"
-contextToggle.addEventListener("change", (e) => {
-    context = e.target.checked;  // this assumes contextToggle is a checkbox, otherwise modify accordingly
-});
-
 
 const generateResponse = (chatElement) => {
     const API_URL = "https://api.openai.com/v1/chat/completions";
@@ -94,6 +89,11 @@ const handleChat = () => {
         generateResponse(incomingChatLi);
     }, 600);
 }
+
+const contextToggle = document.querySelector(".context-toggle");  // assuming you have an element with class "context-toggle"
+contextToggle.addEventListener("change", (e) => {
+    context = e.target.checked;  // this assumes contextToggle is a checkbox, otherwise modify accordingly
+});
 
 chatInput.addEventListener("input", () => {
     // Adjust the height of the input textarea based on its content
