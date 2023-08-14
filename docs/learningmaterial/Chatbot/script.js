@@ -90,10 +90,10 @@ const handleChat = () => {
     }, 600);
 }
 
-//const contextToggle = document.querySelector(".context-toggle");  // assuming you have an element with class "context-toggle"
-//contextToggle.addEventListener("change", (e) => {
-//    context = e.target.checked;  // this assumes contextToggle is a checkbox, otherwise modify accordingly
-//});
+const contextToggle = document.querySelector(".context-toggle");  // assuming you have an element with class "context-toggle"
+contextToggle.addEventListener("change", (e) => {
+    context = e.target.checked;  // this assumes contextToggle is a checkbox, otherwise modify accordingly
+});
 
 chatInput.addEventListener("input", () => {
     // Adjust the height of the input textarea based on its content
