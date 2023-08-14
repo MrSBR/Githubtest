@@ -201,8 +201,8 @@ header h2 {
 .switch {
   position: relative;
   display: inline-block;
-  width: 40px;
-  height: 20px;
+  width: 80px;
+  height: 40px;
   border: 2px solid red /* Temporary*/
 }
 
