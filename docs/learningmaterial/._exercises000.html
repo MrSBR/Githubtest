@@ -990,3 +990,41 @@ $$
 </html>
     
 
+<div id="content"></div>
+
+<script>
+  fetch('Chatbot/origin.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('content').innerHTML = data;
+
+        // Handle style.css
+        let styleLink = document.getElementById('content').querySelector('link[href="Chatbot/style.css"]');
+        if (styleLink) {
+            loadStylesheet(styleLink.href);
+            styleLink.remove();  // Optionally remove the original link tag
+        }
+
+        // Handle script.js
+        let specificScript = document.getElementById('content').querySelector('script[src="Chatbot/script.js"]');
+        if (specificScript) {
+            loadScript(specificScript.src, function() {
+                console.log('script.js loaded and executed!');
+            });
+            specificScript.remove();  // Optionally remove the original script tag
+        }
+    });
+  function loadStylesheet(url) {
+    let link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = url;
+    document.head.appendChild(link);
+}
+
+  function loadScript(url, callback) {
+    let script = document.createElement('script');
+    script.src = url;
+    script.onload = callback;
+    document.body.appendChild(script);
+}
+</script>
