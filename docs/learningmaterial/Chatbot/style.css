@@ -179,7 +179,7 @@ header h2 {
 .switch {
   display: inline-block;
   height: 0.01vw;
-  position: right;
+  position: relative;
   width: 0.02vw;
   
 }
