@@ -172,7 +172,29 @@ header h2 {
 }
 
 
-
+@media (max-width: 490px) {
+  .chatbot-toggler {
+    right: 20px;
+    bottom: 20px;
+  }
+  .chatbot {
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    border-radius: 0;
+    width: 100%;
+  }
+  .chatbot .chatbox {
+    height: 90%;
+    padding: 25px 15px 100px;
+  }
+  .chatbot .chat-input {
+    padding: 5px 15px;
+  }
+  .chatbot header span {
+    display: block;
+  }
+}
 
 
 /* Toggle Button CSS */
@@ -180,7 +202,7 @@ header h2 {
   display: inline-block;
   height: 2.5vw;
   position: relative;
-  width: 4.5vw;
+  width: 4.7vw;
   
 }
 
@@ -247,29 +269,3 @@ body {
 .container {
   margin: 0 auto;
 }
-
-
-@media (max-width: 490px) {
-  .chatbot-toggler {
-    right: 20px;
-    bottom: 20px;
-  }
-  .chatbot {
-    right: 0;
-    bottom: 0;
-    height: 50%;
-    border-radius: 0;
-    width: 100%;
-  }
-  .chatbot .chatbox {
-    height: 90%;
-    padding: 25px 15px 100px;
-  }
-  .chatbot .chat-input {
-    padding: 5px 15px;
-  }
-  .chatbot header span {
-    display: block;
-  }
-}
-
