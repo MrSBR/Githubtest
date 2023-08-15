@@ -25,12 +25,15 @@ const systemMessage = "You are a physics professor with 20 years of experience i
  If you are asked anything outside Physics, tell the user to focus and stop wasting time."
 
 const chatHistory = []; //Created to append earlier information(context) to the next prompt. 
-const context = false;
 
-const contextToggle = document.querySelector(".context-toggle");  // assuming you have an element with class "context-toggle"
+let context = false;  // Declare the context variable and set default value
+
+const contextToggle = document.querySelector(".switch input");  // Select the input inside the element with class "switch"
 contextToggle.addEventListener("change", (e) => {
-    context = e.target.checked;  // this assumes contextToggle is a checkbox, otherwise modify accordingly
+    context = e.target.checked;
+    console.log(`Context is now: ${context}`);  // This line logs the new value to the console for debugging purposes
 });
+
 
 
 const generateResponse = (chatElement) => {
