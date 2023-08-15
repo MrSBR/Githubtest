@@ -178,10 +178,10 @@ header h2 {
 /* Toggle Button CSS */
 .switch {
   display: inline-block;
-  height: 2vh;
-  position: relative;
+  height: 4vh;
+  position: right;
   width: 4vw;
-  align-items: end;
+  
 }
 
 .switch input {
