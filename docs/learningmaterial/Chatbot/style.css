@@ -178,9 +178,9 @@ header h2 {
 /* Toggle Button CSS */
 .switch {
   display: inline-block;
-  height: 0.2vw;
+  height: 0.01vw;
   position: right;
-  width: 0.2vw;
+  width: 0.02vw;
   
 }
 
