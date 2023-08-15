@@ -249,23 +249,16 @@ input:checked + .slider:before {
 }
 
 
-
-/* general styling */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #f1f2f3;
-  display: -webkit-box;
-  display: -ms-flexbox;
+/* New Styles for the switch-container and context-text */
+.switch-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px; /* provides some space between the close button and the switch */
 }
 
-.container {
-  margin: 0 auto;
+.context-text {
+  margin-top: 5px;
+  font-size: 0.8vw; /* setting the font size relative to viewport width for consistency */
+  color: #333; /* setting a default text color, you can change this as desired */
 }
