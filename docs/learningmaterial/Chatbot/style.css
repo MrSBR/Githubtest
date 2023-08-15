@@ -205,6 +205,7 @@ header h2 {
   width: 60px;
   height: 34px;
   color:chartreuse;
+  border-color:chartreuse;
 }
 
 /* Hide default HTML checkbox */
