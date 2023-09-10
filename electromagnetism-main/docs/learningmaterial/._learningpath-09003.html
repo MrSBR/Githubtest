@@ -1,0 +1,542 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Uke 09: Amperes lov og magnetiske materialer">
+
+<title>Uke 09: Amperes lov og magnetiske materialer</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Amperes lov', 1, None, '___sec1'),
+              ('Magnetisk fluks', 2, None, '___sec2'),
+              ('Oppgave: Magnetisk fluks', 2, None, '___sec3'),
+              ('Oppgave: Mulig magnetfelt?', 2, None, '___sec4'),
+              ('Amperes lov', 2, None, '___sec5'),
+              ('Oppgave: Er det noe der?', 2, None, '___sec6'),
+              ('Eksempel: Strøm i løkker', 2, None, '___sec7'),
+              ('Oppgave: Enkle strømsløyfer', 2, None, '___sec8'),
+              ('Oppgave: Komplisert strømsløyfe', 2, None, '___sec9'),
+              ('Eksempel: Strøm langs en linje', 2, None, '___sec10'),
+              ('Oppgave: Strøm rundt en sylinder', 2, None, '___sec11'),
+              ('Eksempel: Solenoide', 2, None, '___sec12'),
+              ('Oppgave: Tykk og tynn leder', 2, None, '___sec13'),
+              ('Magnetiske materialer', 1, None, '___sec14'),
+              ('Metode: Magnetisering', 2, None, '___sec15'),
+              ('Oppgave: Kraftmoment', 2, None, '___sec16'),
+              ('Oppgave: Magnetisering', 2, None, '___sec17'),
+              ('Metode: Omskriving av Amperes lov', 2, None, '___sec18'),
+              ('Oppgave: Magnetisering og strøm', 2, None, '___sec19'),
+              ('Oppgave: Linjeleder', 2, None, '___sec20'),
+              ('Oppgave: Magnetisk materiale', 2, None, '___sec21'),
+              ('Eksempel: Koaksial leder', 2, None, '___sec22'),
+              ('Metode: Bunden overflatestrøm', 2, None, '___sec23'),
+              ('Oppgave: Hvor er de bundne strømmene?', 2, None, '___sec24'),
+              ('Metode: Grensebetingelser for magnetfelt', 2, None, '___sec25'),
+              ('Oppgave: Grensebetingelser', 2, None, '___sec26'),
+              ('Metode: Magnetiske kretser', 2, None, '___sec27'),
+              ('Eksempel: Toroidal krets', 2, None, '___sec28'),
+              ('Oppgave: Flukser', 2, None, '___sec29'),
+              ('Eksempel: Varierende tverrsnitt og Kirchoffs lover',
+               2,
+               None,
+               '___sec30')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\nhat}{\mathbf{\hat{n}}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\y}{\mathbf{\hat{y}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\rhat}{\mathbf{\hat{r}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\phi}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="learningpath-09.html">Uke 09: Amperes lov og magnetiske materialer</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._learningpath-09000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec1" style="font-size: 80%;"><b>Amperes lov</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Magnetisk fluks</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Magnetisk fluks</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Mulig magnetfelt?</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Amperes lov</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Er det noe der?</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Strøm i løkker</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Enkle strømsløyfer</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Komplisert strømsløyfe</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Strøm langs en linje</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Strøm rundt en sylinder</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Solenoide</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09001.html#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Tykk og tynn leder</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec14" style="font-size: 80%;"><b>Magnetiske materialer</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec15" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Metode: Magnetisering</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Kraftmoment</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec17" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Magnetisering</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Metode: Omskriving av Amperes lov</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec19" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Magnetisering og strøm</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec20" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Linjeleder</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec21" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Magnetisk materiale</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec22" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Koaksial leder</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec23" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Metode: Bunden overflatestrøm</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec24" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Hvor er de bundne strømmene?</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec25" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Metode: Grensebetingelser for magnetfelt</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-09002.html#___sec26" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Grensebetingelser</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec27" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Metode: Magnetiske kretser</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec28" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Toroidal krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec29" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Flukser</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec30" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Varierende tverrsnitt og Kirchoffs lover</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0003"></a>
+<!-- !split -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+
+<h2 id="___sec27" class="anchor">Metode: Magnetiske kretser </h2>
+<!-- 12.1.3-12.1.7 -->
+
+<p>
+<!-- fig-magnetization/magnetization-lecture-magneticcircuits-12.3.1.mp4 Video 12.06 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/__xSmLA9mos" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 12.3.1)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+
+<h2 id="___sec28" class="anchor">Eksempel: Toroidal krets </h2>
+
+<p>
+<!-- fig-magnetization/magnetization-example-toroidcircuit-12.3.2.mp4 Video 12.07 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/h33AzFcrZRY" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 12.3.2)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec29" class="anchor">Oppgave: Flukser </h2>
+
+<p>
+Figuren viser en magnetisk krets som best&#229;r av en sylindrisk toroide med ferromagnetisk materiale med en stor \( \mu_r \). Den venstre halvdelen har en radius \( a \) slik at tverrsnittet er \( S_a = \pi a^2 \). Den h&#248;yre halvdelen har en radius \( b \) slik at tverrsnittet er \( S_b = \pi b^2 \). Radius til toroiden er \( c \). Anta at magnetfeltet i tverrsnittet \( S_1 \) er \( B_1 \).
+
+<p>
+<br /><br /><center><p><img src="fig-magnetization/magnetization-question-magneticcircuit-010.png" align="bottom" width=300></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hva er fluksen \( \Phi_{B,1} \) av magnetfeltet gjennom \( S_1 \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_15_1" style="font-size: 80%;"></a>
+<a href="#exer_15_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_15_1">
+
+<p>
+\( B_1 \pi a^2 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_15_11" style="font-size: 80%;"></a>
+<a href="#exer_15_11" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_15_11">
+
+<p>
+Vi antar at magnetfeltet er homogent over tverrsnittet. Fluksen er derfor
+$$
+\begin{equation}
+\Phi_{B,1} = \int_{S_1} \vec{B} \cdot \nhat_1 \d S = B_1 \pi a^2 \; .
+\tag{26}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Hva er fluksen \( \Phi_{B,2} \) gjennom \( S_2 \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_15_2" style="font-size: 80%;"></a>
+<a href="#exer_15_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_15_2">
+
+<p>
+\( B_1 \pi a^2 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_15_12" style="font-size: 80%;"></a>
+<a href="#exer_15_12" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_15_12">
+
+<p>
+Fluksen er bevart langs kretsen. Den er derfor det samme som for \( S_1 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Hva er fluksen \( \Phi_{B,3} \) gjennom \( S_3 \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_15_3" style="font-size: 80%;"></a>
+<a href="#exer_15_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_15_3">
+
+<p>
+\( B_1 \pi a^2 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_15_13" style="font-size: 80%;"></a>
+<a href="#exer_15_13" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_15_13">
+
+<p>
+Fluksen er bevart langs kretsen. Den er derfor det samme som for \( S_1 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+Hva er fluksen \( \Phi_{B,4} \) gjennom \( S_4 \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_15_4" style="font-size: 80%;"></a>
+<a href="#exer_15_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_15_4">
+
+<p>
+\( -B_1 \pi a^2 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_15_14" style="font-size: 80%;"></a>
+<a href="#exer_15_14" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_15_14">
+
+<p>
+Fluksen er bevart langs kretsen. Men her er flatenormalen tegnet i motsatt retning av \( \vec{B} \)-feltet. Fluksen gjennom overflaten med denne orienteringen er derfor minus den tilsvarende overflaten men med motsatt rettet overflatenormalt. Fluksen er derfor minus fluksen ved \( S_1 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>e)</b>
+Hva er magnetfeltet \( B_3 \) i tverrsnittet \( S_3 \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_15_5" style="font-size: 80%;"></a>
+<a href="#exer_15_5" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_15_5">
+
+<p>
+\( B_3 = (a/b)^2 B_1 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_15_15" style="font-size: 80%;"></a>
+<a href="#exer_15_15" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_15_15">
+
+<p>
+Siden fluksen er bevart og radius ved \( S_3 \) er \( b \) vil fluksen gjennom \( S_3 \) v&#230;re \( \Phi_{B,3} = B_3 \pi b^2 \). Denne er det samme som gjennom \( S_1 \) hvor \( \Phi_{B,1} = B_1 \pi a^2 \) slik at \( B_3 \pi b^2 = B_1 \pi a^2 \) og \( B_3 = (a/b)^2 B_1 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec30" class="anchor">Eksempel: Varierende tverrsnitt og Kirchoffs lover </h2>
+<!-- 12.3.3 - 12.3.4 -->
+
+<p>
+<!-- fig-magnetization/magnetization-example-kirchoff-12.3.3.mp4 Video 12.08 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/mj3taMi74j4" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 12.3.3)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._learningpath-09002.html">&laquo;</a></li>
+  <li><a href="._learningpath-09000.html">1</a></li>
+  <li><a href="._learningpath-09001.html">2</a></li>
+  <li><a href="._learningpath-09002.html">3</a></li>
+  <li class="active"><a href="._learningpath-09003.html">4</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

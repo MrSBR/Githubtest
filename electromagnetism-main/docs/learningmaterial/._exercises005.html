@@ -1,0 +1,2572 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Oppgaver til Fys1120">
+
+<title>Oppgaver til Fys1120</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 0,
+ 'sections': [('Table of contents',
+               0,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Uke 01: Elektrisk felt', 0, None, '___sec0'),
+              ('Læringsmål', 3, None, '___sec1'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec2'),
+              ('Exercise 1.1: Introduce yourself to the group',
+               2,
+               None,
+               '___sec3'),
+              ('Exercise 1.2: Zero field', 2, None, '___sec4'),
+              ('Exercise 1.3: Peeling tape', 2, None, '___sec5'),
+              ('Exercise 1.4: Mechanisms for charge transfer',
+               2,
+               None,
+               '___sec6'),
+              ('Gruppeoppgaver', 1, None, '___sec7'),
+              ('Exercise 1.5: Electric dipole', 2, None, '___sec8'),
+              ('Exercise 1.6: Line charge', 2, None, '___sec9'),
+              ('Exercise 1.7: Visualization of the electric field',
+               2,
+               None,
+               '___sec10'),
+              ('Hjemmeoppgaver', 1, None, '___sec11'),
+              ('Exercise 1.8: Point charges',
+               2,
+               'exer:electricfield-pointcharge',
+               'exer:electricfield-pointcharge'),
+              ('Exercise 1.9: The electric field from groups of point charges',
+               2,
+               'exer:electricfield-groupofcharges',
+               'exer:electricfield-groupofcharges'),
+              ('Exercise 1.10: Half circle', 2, None, '___sec14'),
+              ('Exercise 1.11: The electric field above a finite disk',
+               2,
+               'exer:electricfield-fieldabovedisk',
+               'exer:electricfield-fieldabovedisk'),
+              ('Innleveringsoppgave', 1, None, '___sec16'),
+              ('Exercise 1.12: Linjer på kryss og tvers',
+               2,
+               'exer:electricfield-crossinglinges-norwegian',
+               'exer:electricfield-crossinglinges-norwegian'),
+              ('Ekstraoppgaver', 1, None, '___sec18'),
+              ('Exercise 1.13: Plane charge', 2, None, '___sec19'),
+              ('Exercise 1.14: Adding and subtracting using superposition',
+               2,
+               None,
+               '___sec20'),
+              ('Exercise 1.15: Work on point charges',
+               2,
+               'exer:electricfield-workonpointcharge',
+               'exer:electricfield-workonpointcharge'),
+              ('Exercise 1.16: Plate with a hole', 2, None, '___sec22'),
+              ('Exercise 1.17: Dipole in a uniform electric field',
+               2,
+               None,
+               '___sec23'),
+              ('Exercise 1.18: Milikan oil drop experiment',
+               2,
+               None,
+               '___sec24'),
+              ('Exercise 1.19: Field from a hemisphere shell',
+               2,
+               None,
+               '___sec25'),
+              ('Exercise 1.20: Paper on balloon',
+               2,
+               'exer:electricfield-paperonballoon',
+               'exer:electricfield-paperonballoon'),
+              ('Exercise 1.21: Wavy surface',
+               2,
+               'exer:electricfield-wavysurface',
+               'exer:electricfield-wavysurface'),
+              ('Exercise 1.22: Water models',
+               2,
+               'exer:electricfield-watermodels',
+               'exer:electricfield-watermodels'),
+              ('Exercise 1.23: Ionic bonds',
+               2,
+               'exer:electricfield-ionicbonds',
+               'exer:electricfield-ionicbonds'),
+              ('Uke 02: Elektrisk potensiale', 0, None, '___sec30'),
+              ('Læringsmål', 3, None, '___sec31'),
+              ('Test-deg-selv oppgaver', 1, None, '___sec32'),
+              ('Exercise 2.1: From field to potential', 2, None, '___sec33'),
+              ('Exercise 2.2: From potential to field', 2, None, '___sec34'),
+              ('Exercise 2.3: Maximum and minimum of the potential',
+               2,
+               None,
+               '___sec35'),
+              ('Exercise 2.4: Potentials and sparks', 2, None, '___sec36'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec37'),
+              ('Exercise 2.5: Finding the field from the potential',
+               2,
+               None,
+               '___sec38'),
+              ('Exercise 2.6: Zero field', 2, None, '___sec39'),
+              ('Exercise 2.7: The zero-field path', 2, None, '___sec40'),
+              ('Exercise 2.8: Motion in a simple field', 2, None, '___sec41'),
+              ('Gruppeoppgaver', 1, None, '___sec42'),
+              ('Exercise 2.9: Electric fields and electric potential',
+               2,
+               None,
+               '___sec43'),
+              ('Exercise 2.10: Line charge', 2, None, '___sec44'),
+              ('Exercise 2.11: Gradients', 2, None, '___sec45'),
+              ('Hjemmeoppgaver', 1, None, '___sec46'),
+              ('Exercise 2.12: Dipole and gradient', 2, None, '___sec47'),
+              ('Exercise 2.13: Potential and field above a disk',
+               2,
+               None,
+               '___sec48'),
+              ('Exercise 2.14: Plate with hole', 2, None, '___sec49'),
+              ('Innleveringsoppgave', 1, None, '___sec50'),
+              ('Exercise 2.15: En halv linje', 2, None, '___sec51'),
+              ("Uke 03: Gauss' lov og polarisasjon", 0, None, '___sec52'),
+              ('Læringsmål', 3, None, '___sec53'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec54'),
+              ('Exercise 3.1: Rubber balloon', 2, None, '___sec55'),
+              ('Exercise 3.2: No charges, no field?', 2, None, '___sec56'),
+              ('Exercise 3.3: Uniform charge density', 2, None, '___sec57'),
+              ("Exercise 3.4: A different Coulumb's law", 2, None, '___sec58'),
+              ('Gruppeoppgaver', 1, None, '___sec59'),
+              ('Exercise 3.5: Symmetries', 2, None, '___sec60'),
+              ('Exercise 3.6: Flux-trix', 2, None, '___sec61'),
+              ('Exercise 3.7: SLAC lightning strike', 2, None, '___sec62'),
+              ('Exercise 3.8: A simple model for polarization',
+               2,
+               None,
+               '___sec63'),
+              ('Hjemmeoppgaver', 1, None, '___sec64'),
+              ('Exercise 3.9: Felt fra ladningsfordelinger',
+               2,
+               None,
+               '___sec65'),
+              ('Exercise 3.10: Feltet fra et ladet plan', 2, None, '___sec66'),
+              ('Exercise 3.11: Dielectric sphere', 2, None, '___sec67'),
+              ('Innleveringsoppgave', 1, None, '___sec68'),
+              ('Exercise 3.12: En cellemembran', 2, None, '___sec69'),
+              ('Ekstraoppgaver', 1, None, '___sec70'),
+              ('Exercise 3.13: Corner charge flux', 2, None, '___sec71'),
+              ('Exercise 3.14: Planar dielectric', 2, None, '___sec72'),
+              ('Uke 04: Laplace og Poissons likning', 0, None, '___sec73'),
+              ('Læringsmål', 3, None, '___sec74'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec75'),
+              ('Exercise 4.1: Laplace operator', 2, None, '___sec76'),
+              ('Exercise 4.2: Discontinous potential', 2, None, '___sec77'),
+              ('Gruppeoppgaver', 1, None, '___sec78'),
+              ('Exercise 4.3: Spatial variation of potentials (Laplace '
+               'equation)',
+               2,
+               None,
+               '___sec79'),
+              ('Exercise 4.4: Surface charges', 2, None, '___sec80'),
+              ("Exercise 4.5: Laplace's equation in two dimensions",
+               2,
+               None,
+               '___sec81'),
+              ('Hjemmeoppgaver', 1, None, '___sec82'),
+              ('Exercise 4.6: To metallplater', 2, None, '___sec83'),
+              ('Exercise 4.7: Ladningsfordeling mellom metallplater',
+               2,
+               None,
+               '___sec84'),
+              ('Exercise 4.8: Repetisjon: Feltet fra en ladet stav',
+               2,
+               None,
+               '___sec85'),
+              ('Innleveringsoppgave', 1, None, '___sec86'),
+              ('Exercise 4.9: Laplace likning for en lang sylinder',
+               2,
+               None,
+               '___sec87'),
+              ('Uke 05: Ideelle ledere, kapasitans', 0, None, '___sec88'),
+              ('Læringsmål', 3, None, '___sec89'),
+              ('Test-deg-selv oppgaver', 1, None, '___sec90'),
+              ('Exercise 5.1: Ladningsfordeling på leder', 2, None, '___sec91'),
+              ('Exercise 5.2: Ladningsfordeling på ledende plater',
+               2,
+               None,
+               '___sec92'),
+              ('Exercise 5.3: Ladningsfordeling på ledende plater 2',
+               2,
+               None,
+               '___sec93'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec94'),
+              ('Exercise 5.4: Where are the charges', 2, None, '___sec95'),
+              ('Exercise 5.5: Dielectric materials', 2, None, '___sec96'),
+              ('Exercise 5.6: Capacitance in pieces', 2, None, '___sec97'),
+              ('Gruppeoppgaver', 1, None, '___sec98'),
+              ('Exercise 5.7: Understanding conductors', 2, None, '___sec99'),
+              ('Exercise 5.8: Capacitance of the axon', 2, None, '___sec100'),
+              ('Exercise 5.9: The electric field near conducting plates',
+               2,
+               None,
+               '___sec101'),
+              ('Hjemmeoppgaver', 1, None, '___sec102'),
+              ('Exercise 5.10: Coaxial cable', 2, None, '___sec103'),
+              ('Exercise 5.11: Punktladning over ledende plan',
+               2,
+               None,
+               '___sec104'),
+              ('Innleveringsoppgave', 1, None, '___sec105'),
+              ('Exercise 5.12: Kondensator av to kuler', 2, None, '___sec106'),
+              ('Lang innleveringsoppgave 01 (7 poeng)', 1, None, '___sec107'),
+              ('Exercise 5.13: Kondensator av to krester',
+               2,
+               None,
+               '___sec108'),
+              ('Uke 06: Strøm, motstand og enkle kretser',
+               0,
+               None,
+               '___sec109'),
+              ('Læringsmål', 3, None, '___sec110'),
+              ('Test-deg-selv oppgaver', 1, None, '___sec111'),
+              ('Exercise 6.1: Strøm av ioner', 2, None, '___sec112'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec113'),
+              ('Exercise 6.2: Strømtetthet og strøm', 2, None, '___sec114'),
+              ('Exercise 6.3: Ladningsoppsamling', 2, None, '___sec115'),
+              ('Gruppeoppgaver', 1, None, '___sec116'),
+              ('Exercise 6.4: Current density', 2, None, '___sec117'),
+              ('Exercise 6.5: Cylindrical resistor', 2, None, '___sec118'),
+              ('Hjemmeoppgaver', 1, None, '___sec119'),
+              ('Exercise 6.6: Lightning', 2, None, '___sec120'),
+              ('Exercise 6.7: Sfærisk symmetrisk strøm', 2, None, '___sec121'),
+              ('Exercise 6.8: Resistivitet i en konusformet leder',
+               2,
+               None,
+               '___sec122'),
+              ('Exercise 6.9: Leaky coaxial cable', 2, None, '___sec123'),
+              ('Innleveringsoppgave', 1, None, '___sec124'),
+              ('Exercise 6.10: Motstand av to sylindere', 2, None, '___sec125'),
+              ('Uke 07: Kretser og modellering', 0, None, '___sec126'),
+              ('Læringsmål', 3, None, '___sec127'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec128'),
+              ('Exercise 7.1: Strøm i en kondensator', 2, None, '___sec129'),
+              ('Exercise 7.2: Lynnedslag i et tre', 2, None, '___sec130'),
+              ('Gruppeoppgaver', 1, None, '___sec131'),
+              ('Exercise 7.3: RC circuits', 2, None, '___sec132'),
+              ('Exercise 7.4: Circuit model of conducting sphere',
+               2,
+               None,
+               '___sec133'),
+              ('Hjemmeoppgaver', 1, None, '___sec134'),
+              ('Exercise 7.5: A simple circuit', 2, None, '___sec135'),
+              ('Exercise 7.6: Wheatstone bridge', 2, None, '___sec136'),
+              ('Exercise 7.7: Lightning strike', 2, None, '___sec137'),
+              ('Innleveringsoppgave', 1, None, '___sec138'),
+              ('Exercise 7.8: Fra modell til krets', 2, None, '___sec139'),
+              ('Uke 08: Magnetisk felt', 0, None, '___sec140'),
+              ('Læringsmål', 3, None, '___sec141'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec142'),
+              ('Exercise 8.1: Symmetrier for magnetfeltet',
+               2,
+               None,
+               '___sec143'),
+              ('Exercise 8.2: Model for permanent magnet',
+               2,
+               None,
+               '___sec144'),
+              ('Exercise 8.3: Magnetisk nord', 2, None, '___sec145'),
+              ('Gruppeoppgaver', 1, None, '___sec146'),
+              ('Exercise 8.4: Finding $\\vec{B}$ from a line segment',
+               2,
+               None,
+               '___sec147'),
+              ('Exercise 8.5: Force on a current element',
+               2,
+               None,
+               '___sec148'),
+              ('Hjemmeoppgaver', 1, None, '___sec149'),
+              ('Exercise 8.6: Magnetfeltet over en sirkulær strømsløyfe',
+               2,
+               None,
+               '___sec150'),
+              ('Innleveringsoppgave', 1, None, '___sec151'),
+              ('Exercise 8.7: To halve linjer', 2, None, '___sec152'),
+              ('Ekstraoppgaver', 1, None, '___sec153'),
+              ('Exercise 8.8: Infinite bent wire', 2, None, '___sec154'),
+              ('Exercise 8.9: Modelling the magnetic field of Earth',
+               2,
+               None,
+               '___sec155'),
+              ('Exercise 8.10: Magnetfeltet fra et uendelig strømførende plan',
+               2,
+               None,
+               '___sec156'),
+              ('Uke 09: Ampères lov og magnetisering', 0, None, '___sec157'),
+              ('Læringsmål', 3, None, '___sec158'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec159'),
+              ('Exercise 9.1: Magnetisk storm', 2, None, '___sec160'),
+              ('Exercise 9.2: Varm paramagnet', 2, None, '___sec161'),
+              ('Exercise 9.3: Evig magnet', 2, None, '___sec162'),
+              ('Exercise 9.4: To halve magneter', 2, None, '___sec163'),
+              ('Gruppeoppgaver', 1, None, '___sec164'),
+              ("Exercise 9.5: Ampere's Law", 2, None, '___sec165'),
+              ("Exercise 9.6: Application of Ampere's Law",
+               2,
+               None,
+               '___sec166'),
+              ('Hjemmeoppgaver', 1, None, '___sec167'),
+              ('Exercise 9.7: Feltet fra en roterende ladd sylinder',
+               2,
+               None,
+               '___sec168'),
+              ('Exercise 9.8: Cylindrical magnet', 2, None, '___sec169'),
+              ('Innleveringsoppgave', 1, None, '___sec170'),
+              ('Exercise 9.9: En tykk plate', 2, None, '___sec171'),
+              ('Lang innleveringsoppgave 02 (7 poeng)', 1, None, '___sec172'),
+              ('Exercise 9.10: En kvadratisk krets', 2, None, '___sec173'),
+              ('Analytisk løsning av forenklet modell', 3, None, '___sec174'),
+              ('Analytisk løsning i et punkt', 3, None, '___sec175'),
+              ('Numerisk løsning for sirkulær krets', 3, None, '___sec176'),
+              ('Numerisk løsning for linje', 3, None, '___sec177'),
+              ('Numerisk løsning for kvadratisk krets', 3, None, '___sec178'),
+              ('Ekstraoppgaver', 1, None, '___sec179'),
+              ('Exercise 9.11: Similarities and differences between Gauss and '
+               'Ampere',
+               2,
+               None,
+               '___sec180'),
+              ('Exercise 9.12: Magnetfeltet fra en koaksialkabel',
+               2,
+               None,
+               '___sec181'),
+              ('Exercise 9.13: Solenoide', 2, None, '___sec182'),
+              ('Exercise 9.14: Magnetkrets', 2, None, '___sec183'),
+              ('Uke 10: Emf, Faradays lov og induktans', 0, None, '___sec184'),
+              ('Læringsmål', 3, None, '___sec185'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec186'),
+              ('Exercise 10.1: Rotasjon av en kvadratisk krets',
+               2,
+               None,
+               '___sec187'),
+              ('Exercise 10.2: Force on copper plate', 2, None, '___sec188'),
+              ('Exercise 10.3: Ring på linjen', 2, None, '___sec189'),
+              ('Gruppeoppgaver', 1, None, '___sec190'),
+              ('Exercise 10.4: Motional emf', 2, None, '___sec191'),
+              ("Exercise 10.5: Faraday's law", 2, None, '___sec192'),
+              ('Innleveringsoppgave', 1, None, '___sec193'),
+              ('Exercise 10.6: En voksende krets', 2, None, '___sec194'),
+              ('Frivillig ekstraoppgave', 3, None, '___sec195'),
+              ('Ekstraoppgaver', 1, None, '___sec196'),
+              ('Exercise 10.7: Stav på skinner i magnetfelt',
+               2,
+               None,
+               '___sec197'),
+              ('Uke 11: Induktans', 0, None, '___sec198'),
+              ('Læringsmål', 3, None, '___sec199'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec200'),
+              ('Exercise 11.1: Induktans', 2, None, '___sec201'),
+              ('Exercise 11.2: Energitetthet i magnetiserbare materialer',
+               2,
+               None,
+               '___sec202'),
+              ('Exercise 11.3: Energi i en spole', 2, None, '___sec203'),
+              ('Gruppeoppgaver', 1, None, '___sec204'),
+              ('Exercise 11.4: Self-inductance', 2, None, '___sec205'),
+              ('Exercise 11.5: Mutual inductance in a solenoid and a circular '
+               'circuit',
+               2,
+               None,
+               '___sec206'),
+              ('Exercise 11.6: Energy densities', 2, None, '___sec207'),
+              ('Innleveringsoppgave', 1, None, '___sec208'),
+              ('Exercise 11.7: To sirkler', 2, None, '___sec209'),
+              ('Uke 12: Kretser del 2', 0, None, '___sec210'),
+              ('Læringsmål', 3, None, '___sec211'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec212'),
+              ('Exercise 12.1: Snurrig motstand', 2, None, '___sec213'),
+              ('Exercise 12.2: En spole pluss en spole er fire spoler',
+               2,
+               None,
+               '___sec214'),
+              ('Exercise 12.3: Energioverføring', 2, None, '___sec215'),
+              ('Exercise 12.4: Kansellerende komponenter',
+               2,
+               None,
+               '___sec216'),
+              ('Gruppeoppgaver', 1, None, '___sec217'),
+              ('Exercise 12.5: LR circuit', 2, None, '___sec218'),
+              ('Exercise 12.6: Complex warm-up', 2, None, '___sec219'),
+              ('Exercise 12.7: Complex impedance', 2, None, '___sec220'),
+              ('Uke 13: Eksamensforberedelse', 0, None, '___sec221'),
+              ('Læringsmål', 3, None, '___sec222'),
+              ('Anbefalte tidligere eksamensoppgaver', 1, None, '___sec223'),
+              ('Eksempler på eksamensoppgaver', 1, None, '___sec224')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\nhat}{\mathbf{\hat{n}}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\y}{\mathbf{\hat{y}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\uhat}{\mathbf{\hat{u}}}
+\newcommand{\rhat}{\mathbf{\hat{r}}}
+\newcommand{\Rhat}{\mathbf{\hat{R}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\phi}}}
+\newcommand{\rhohat}{\boldsymbol{\hat{\rho}}}
+\newcommand{\rvec}{\mathbf{r}}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\pz}{\frac{\partial}{\partial z}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="exercises.html">Oppgaver til Fys1120</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._exercises000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec0" style="font-size: 80%;"><b>Uke 01: Elektrisk felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec1" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.1: Introduce yourself to the group</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.2: Zero field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.3: Peeling tape</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.4: Mechanisms for charge transfer</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.5: Electric dipole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.6: Line charge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.7: Visualization of the electric field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-pointcharge" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.8: Point charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-groupofcharges" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.9: The electric field from groups of point charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.10: Half circle</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-fieldabovedisk" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.11: The electric field above a finite disk</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-crossinglinges-norwegian" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.12: Linjer på kryss og tvers</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec19" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.13: Plane charge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec20" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.14: Adding and subtracting using superposition</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-workonpointcharge" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.15: Work on point charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec22" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.16: Plate with a hole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec23" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.17: Dipole in a uniform electric field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec24" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.18: Milikan oil drop experiment</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec25" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.19: Field from a hemisphere shell</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-paperonballoon" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.20: Paper on balloon</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-wavysurface" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.21: Wavy surface</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-watermodels" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.22: Water models</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-ionicbonds" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.23: Ionic bonds</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec30" style="font-size: 80%;"><b>Uke 02: Elektrisk potensiale</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec31" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec32" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Test-deg-selv oppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec33" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.1: From field to potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec34" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.2: From potential to field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec35" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.3: Maximum and minimum of the potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec36" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.4: Potentials and sparks</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec37" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec38" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.5: Finding the field from the potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec39" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.6: Zero field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec40" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.7: The zero-field path</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec41" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.8: Motion in a simple field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec42" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec43" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.9: Electric fields and electric potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec44" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.10: Line charge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec45" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.11: Gradients</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec46" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec47" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.12: Dipole and gradient</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec48" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.13: Potential and field above a disk</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec49" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.14: Plate with hole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec50" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec51" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.15: En halv linje</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec52" style="font-size: 80%;"><b>Uke 03: Gauss' lov og polarisasjon</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec53" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec54" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec55" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.1: Rubber balloon</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec56" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.2: No charges, no field?</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec57" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.3: Uniform charge density</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec58" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.4: A different Coulumb's law</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec59" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec60" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.5: Symmetries</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec61" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.6: Flux-trix</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec62" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.7: SLAC lightning strike</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec63" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.8: A simple model for polarization</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec64" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec65" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.9: Felt fra ladningsfordelinger</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec66" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.10: Feltet fra et ladet plan</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec67" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.11: Dielectric sphere</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec68" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec69" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.12: En cellemembran</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec70" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec71" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.13: Corner charge flux</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec72" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.14: Planar dielectric</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec73" style="font-size: 80%;"><b>Uke 04: Laplace og Poissons likning</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec74" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec75" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec76" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.1: Laplace operator</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec77" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.2: Discontinous potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec78" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec79" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.3: Spatial variation of potentials (Laplace equation)</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec80" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.4: Surface charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec81" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.5: Laplace's equation in two dimensions</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec82" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec83" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.6: To metallplater</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec84" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.7: Ladningsfordeling mellom metallplater</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec85" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.8: Repetisjon: Feltet fra en ladet stav</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec86" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec87" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.9: Laplace likning for en lang sylinder</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec88" style="font-size: 80%;"><b>Uke 05: Ideelle ledere, kapasitans</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec89" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec90" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Test-deg-selv oppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec91" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.1: Ladningsfordeling på leder</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec92" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.2: Ladningsfordeling på ledende plater</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec93" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.3: Ladningsfordeling på ledende plater 2</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec94" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec95" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.4: Where are the charges</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec96" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.5: Dielectric materials</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec97" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.6: Capacitance in pieces</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec98" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec99" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.7: Understanding conductors</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec100" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.8: Capacitance of the axon</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec101" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.9: The electric field near conducting plates</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec102" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec103" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.10: Coaxial cable</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec104" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.11: Punktladning over ledende plan</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec105" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec106" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.12: Kondensator av to kuler</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec107" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Lang innleveringsoppgave 01 (7 poeng)</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec108" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.13: Kondensator av to krester</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec109" style="font-size: 80%;"><b>Uke 06: Strøm, motstand og enkle kretser</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec110" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec111" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Test-deg-selv oppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec112" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.1: Strøm av ioner</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec113" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec114" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.2: Strømtetthet og strøm</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec115" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.3: Ladningsoppsamling</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec116" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec117" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.4: Current density</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec118" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.5: Cylindrical resistor</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec119" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec120" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.6: Lightning</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec121" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.7: Sfærisk symmetrisk strøm</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec122" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.8: Resistivitet i en konusformet leder</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec123" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.9: Leaky coaxial cable</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec124" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec125" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.10: Motstand av to sylindere</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec126" style="font-size: 80%;"><b>Uke 07: Kretser og modellering</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec127" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec128" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec129" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.1: Strøm i en kondensator</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec130" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.2: Lynnedslag i et tre</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec131" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec132" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.3: RC circuits</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec133" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.4: Circuit model of conducting sphere</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec134" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec135" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.5: A simple circuit</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec136" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.6: Wheatstone bridge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec137" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.7: Lightning strike</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec138" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec139" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.8: Fra modell til krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec140" style="font-size: 80%;"><b>Uke 08: Magnetisk felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec141" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec142" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec143" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.1: Symmetrier for magnetfeltet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec144" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.2: Model for permanent magnet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec145" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.3: Magnetisk nord</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec146" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec147" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.4: Finding \( \vec{B} \) from a line segment</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec148" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.5: Force on a current element</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec149" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec150" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.6: Magnetfeltet over en sirkulær strømsløyfe</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec151" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec152" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.7: To halve linjer</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec153" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec154" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.8: Infinite bent wire</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec155" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.9: Modelling the magnetic field of Earth</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec156" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.10: Magnetfeltet fra et uendelig strømførende plan</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec157" style="font-size: 80%;"><b>Uke 09: Ampères lov og magnetisering</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec158" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec159" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec160" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.1: Magnetisk storm</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec161" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.2: Varm paramagnet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec162" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.3: Evig magnet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec163" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.4: To halve magneter</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec164" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec165" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.5: Ampere's Law</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec166" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.6: Application of Ampere's Law</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec167" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec168" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.7: Feltet fra en roterende ladd sylinder</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec169" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.8: Cylindrical magnet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec170" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec171" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.9: En tykk plate</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec172" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Lang innleveringsoppgave 02 (7 poeng)</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec173" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.10: En kvadratisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec174" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analytisk løsning av forenklet modell</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec175" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analytisk løsning i et punkt</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec176" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numerisk løsning for sirkulær krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec177" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numerisk løsning for linje</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec178" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numerisk løsning for kvadratisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec179" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec180" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.11: Similarities and differences between Gauss and Ampere</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec181" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.12: Magnetfeltet fra en koaksialkabel</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec182" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.13: Solenoide</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises009.html#___sec183" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.14: Magnetkrets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec184" style="font-size: 80%;"><b>Uke 10: Emf, Faradays lov og induktans</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec185" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec186" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec187" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.1: Rotasjon av en kvadratisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec188" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.2: Force on copper plate</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec189" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.3: Ring på linjen</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec190" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec191" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.4: Motional emf</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec192" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.5: Faraday's law</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec193" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec194" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.6: En voksende krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec195" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frivillig ekstraoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec196" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec197" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.7: Stav på skinner i magnetfelt</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec198" style="font-size: 80%;"><b>Uke 11: Induktans</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec199" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec200" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec201" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.1: Induktans</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec202" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.2: Energitetthet i magnetiserbare materialer</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec203" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.3: Energi i en spole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec204" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec205" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.4: Self-inductance</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec206" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.5: Mutual inductance in a solenoid and a circular circuit</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec207" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.6: Energy densities</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec208" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec209" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.7: To sirkler</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec210" style="font-size: 80%;"><b>Uke 12: Kretser del 2</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec211" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec212" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec213" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.1: Snurrig motstand</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec214" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.2: En spole pluss en spole er fire spoler</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec215" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.3: Energioverføring</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec216" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.4: Kansellerende komponenter</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec217" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec218" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.5: LR circuit</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec219" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.6: Complex warm-up</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec220" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.7: Complex impedance</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec221" style="font-size: 80%;"><b>Uke 13: Eksamensforberedelse</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec222" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec223" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Anbefalte tidligere eksamensoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec224" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempler på eksamensoppgaver</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0005"></a>
+<!-- !split -->
+
+<center><h1 id="___sec88" class="anchor">Uke 05: Ideelle ledere, kapasitans </h1></center> <!-- chapter heading -->
+
+<h3 id="___sec89" class="anchor">L&#230;ringsm&#229;l </h3>
+
+Denne uken bruker vi det vi har l&#230;rt til &#229; forst&#229; feltet inne i ideelle ledere og regne ut kapasitansen, \( C=Q/V \), til systemer av ledere.
+
+<h1 id="___sec90" class="anchor">Test-deg-selv oppgaver </h1>
+<em>(Disse oppgavene kan du se p&#229; f&#248;r gruppene for &#229; forberede deg til aktiviteten p&#229; gruppene.)</em>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec91" class="anchor">Exercise 5.1: Ladningsfordeling p&#229; leder </h2>
+
+<p>
+<em>(Fra Steven Pollock, UC-Boulder)</em> Gitt et par veldig store, flate, ledende kondensator-plater med totale ladninger \( +Q \) p&#229; den &#248;verste platen og \( -Q \) p&#229; den nederste platen. Hvis vi ser bort fra kant-effekter, hvordan er ladningen fordelt i likevekt? (A) Uniformt gjennom hver plate, (B) Uniformt p&#229; hver side av hver plate, (C) Uniformt p&#229; toppen av \( +Q \) platen og p&#229; bunnen av \( -Q \) platen, (D) uniformt p&#229; bunnen av \( +Q \)-platen og p&#229; toppen av \( -Q \)-platen, (E) Noe annet.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_62_1" style="font-size: 80%;"></a>
+<a href="#exer_62_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_62_1">
+
+<p>
+D
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec92" class="anchor">Exercise 5.2: Ladningsfordeling p&#229; ledende plater </h2>
+
+<p>
+Du har to veldig store, parallell-plate-kondensatorer, begge med samme areal \( A \) og med samme ladning \( Q \). Kondensator 1 har dobbelt s&#229; stort gap som kondensator 2. Hvilken har lagret mest energi? (A) 1 har lagret dobbet s&#229; mye som 2, (B) 1 har lagret mer enn dobbelt s&#229; mye som 2, (C) De har det samme, (D) 1 har dobbelt s&#229; mye som 1, (E) 2 har mer enn dobbelt s&#229; mye som 1.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_63_1" style="font-size: 80%;"></a>
+<a href="#exer_63_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_63_1">
+
+<p>
+A
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec93" class="anchor">Exercise 5.3: Ladningsfordeling p&#229; ledende plater 2 </h2>
+
+<p>
+Du har to parallell-plate-kondensatorer, begge med samme areal \( A \) og samme gap. Kondensator 1 har dobbelt s&#229; mye ladning som 2. Hvilken har st&#248;rst kapasitans, \( C \)? Og mest lagret energy, \( U \)? (A) \( C_1>C_2 \), \( U_1>U_2 \); (B) \( C_1>C_2 \), \( U_1=U_2 \); (C) \( C_1=C_2 \), \( U_1=U_2 \); (D) \( C_1 = C_2 \), \( U_1>U_2 \); (E) En annen kombinasjon.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_64_1" style="font-size: 80%;"></a>
+<a href="#exer_64_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_64_1">
+
+<p>
+D
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec94" class="anchor">Diskusjonsoppgaver for gruppene </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec95" class="anchor">Exercise 5.4: Where are the charges </h2>
+
+<p>
+"The free charges in a conductor are always on the external surface of the conductor". Is this statement always true? Sketch and explain.
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec96" class="anchor">Exercise 5.5: Dielectric materials </h2>
+
+<p>
+How can you explain with words why the capacitance of a parallel plate capacitor increases if you place a dielectric material with higher dielectric constant in the spacing between the plate.
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec97" class="anchor">Exercise 5.6: Capacitance in pieces </h2>
+
+<p>
+You have a parallel plate capacitor with sides \( L \) and a spacing of \( d \). You cut it into four identical pieces. What is the capacitance of one of the four pieces compared to the original capacitor?
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec98" class="anchor">Gruppeoppgaver </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec99" class="anchor">Exercise 5.7: Understanding conductors </h2>
+
+<p>
+(<em>From Steven Pollack, University of Colorado --- Boulder</em>).
+
+<p>
+A coax cable is essentially one long conducting cylinder surrounded by a conducting cylindrical shell (the shell has some thickness). The two conductors are separated by a small distance. (Neglect all fringing fields near the cable's ends).
+
+<p>
+<b>a)</b>
+Draw the charge distribution (little + and - signs) if the inner conductor has a total charge of \( +Q \) on it, and the outer conductor has a total charge \( -Q \). Be precise about exactly where the charge will be on these conductors, and how you know.
+
+<p>
+<br /><br /><center><p><img src="fig-conductors/pollock-conductor-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_68_3" style="font-size: 80%;"></a>
+<a href="#exer_68_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_68_3">
+
+<p>
+The charge distribution will have cylindrical symmetry since the system has cylindrical symmetry. Since the electrical field must be zero inside the inner cylinder, the charges must be on the surface of the inner cylinder. They must be uniformly distributed due to the cylindrical symmetry. Inside the outer cylinder, the electric field must be zero. This can be achieved by having all the \( -Q \) charge uniformly distributed on the inner surface so that a cylindrical Gauss surface inside the outer cylinder would have zero net charge inside it.
+
+<p>
+<br /><br /><center><p><img src="fig-conductors/pollock-conductor-010-sol.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+If you were calculating the potential difference, \( \Delta V \), (for the configuration above), between the center of the inner conductor (\( r=0 \)) and infinitely far away (\( r = \infty \)), what regions of space would have a (non-zero) contribution to your calculation?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_68_4" style="font-size: 80%;"></a>
+<a href="#exer_68_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_68_4">
+
+<p>
+Inside the inner cylinder, the electric field is zero, and the potential constant. In the region between the cylinders, the electric field can be found from Gauss law using a cylindrical Gauss surface. In the outer cylinder shell the electric field is zero, so potential is uniform. Outside the outer cylinder, we see that inside a cylindrical Gauss surface the net charge is zero, so that the electric field is zero. The potential is therefore constant from the inside of the outer cylinder and to infinity.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Now, draw the charge distribution (litte - and + signs) if the inner conductor has a total charge \( +Q \) on it, and the outer conductor is electrically neutral. Be precise about exactly where the charge will be on these conductors, and how you know.
+
+<p>
+<br /><br /><center><p><img src="fig-conductors/pollock-conductor-020.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_68_5" style="font-size: 80%;"></a>
+<a href="#exer_68_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_68_5">
+
+<p>
+In this case, we can use the same argument as above. The charge \( +Q \) must be uniformly distributed on the outside of the inner cylinder. And there must be a charge \( -Q \) uniformly distributed on the inside of the outer cylinder. However, for the out cylinder to be neutral, a charge \( +Q \) must also be present. It can only be on the outside of the outer cylinder, and it must be uniformly distributed due to the cylindrical symmetry.
+
+<p>
+<br /><br /><center><p><img src="fig-conductors/pollock-conductor-020-sol.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+Consider how the charge distribution would change if the inner conductor is shifted off-center, but still has \( +Q \) on it, and the outer conductor remains electrically neutral. Draw the new charge distribution (little + and - signs) and be precise about how you know.
+
+<p>
+<br /><br /><center><p><img src="fig-conductors/pollock-conductor-030.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_68_6" style="font-size: 80%;"></a>
+<a href="#exer_68_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_68_6">
+
+<p>
+This problem is much more tricky. We can no longer assume cylindrical symmetry. However, we still know that the charges can only be on the surfaces and that they must be organized so that there is no electric field inside the condutors. This means that the electric field is zero inside the outer cylinder and the outer surface of the outer cylinder is an equipotential surface. This means that the charges on the surface of the inner cylinder will be non-uniform, probably with a higher charge density where it is closest to the outer cylinder, because the electric field will be the largest here since the distance is the smallest. (And the electric field depends on the difference in potential divided by the distance). Similarly, the charge density on the inner part of the outer cylinder will be largest where it is closest to the inner cylinder. Inside the outer cylinder the electric field is zero. Because the outer cylinder is neutral, there must be a corresponding positive charge on the outside of the conductor. However, this distribution must be uniform, otherwise it would induce an electric field inside the cylinder.
+
+<p>
+We can calculate the surface charge density using a short python program. The resulting distribution is shown in the figure.
+
+<p>
+<br /><br /><center><p><img src="fig-conductors/pollock-conductor-030-python.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+This distribution was calculated by the following Python program (which you will need to find out how works for yourself. Notice how we have calculated the surface charge density as \( \vec{E} \cdot \rhat \), where \( \rhat \) is pointing outwards from the inner cylinder for the surface of the inner cylinder and inwards from outer cylinder for the inner surface of the outer cylinder.) This program only calculates the charges on the inner cylinder and on the inner part of the outer cylinder. We could use it to calculate the surface charge density on the outer part of the outer cylinder, but then we would need to make the boundaries far away (where the potential is zero) and to set the potential of the outer cylinder to a non-zero value. However, we know how the potential and the electric field will look like outside the outer cylinder: Similar to that of a cylinder with a net charge \( +Q \) on the outer surface, so we do not need to make this calculation.
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Definere randverdier</span>
+L <span style="color: #666666">=</span> <span style="color: #666666">200</span>
+b <span style="color: #666666">=</span> np<span style="color: #666666">.</span>zeros((L,L))
+b[:] <span style="color: #666666">=</span> np<span style="color: #666666">.</span>float(<span style="color: #BA2121">&#39;nan&#39;</span>)
+<span style="color: #408080; font-style: italic"># Make inner circle</span>
+a <span style="color: #666666">=</span> <span style="color: #666666">0.1*</span>L
+xca <span style="color: #666666">=</span> L<span style="color: #666666">*0.5</span>
+yca <span style="color: #666666">=</span> L<span style="color: #666666">*0.7</span>
+<span style="color: #008000; font-weight: bold">for</span> ix <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(L):
+    <span style="color: #008000; font-weight: bold">for</span> iy <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(L):
+        dx <span style="color: #666666">=</span> ix <span style="color: #666666">-</span> xca
+        dy <span style="color: #666666">=</span> iy <span style="color: #666666">-</span> yca
+        rr <span style="color: #666666">=</span> np<span style="color: #666666">.</span>sqrt(dx<span style="color: #666666">*</span>dx<span style="color: #666666">+</span>dy<span style="color: #666666">*</span>dy)
+        <span style="color: #008000; font-weight: bold">if</span> (rr<span style="color: #666666">&lt;</span>a):
+            b[ix,iy] <span style="color: #666666">=</span> <span style="color: #666666">1.0</span>
+<span style="color: #408080; font-style: italic"># Make outer circle</span>
+rb <span style="color: #666666">=</span> <span style="color: #666666">0.4*</span>L
+rc <span style="color: #666666">=</span> <span style="color: #666666">0.45*</span>L
+xc <span style="color: #666666">=</span> L<span style="color: #666666">/2</span>
+yc <span style="color: #666666">=</span> L<span style="color: #666666">/2</span>
+<span style="color: #008000; font-weight: bold">for</span> ix <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(L):
+    <span style="color: #008000; font-weight: bold">for</span> iy <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(L):
+        dx <span style="color: #666666">=</span> ix <span style="color: #666666">-</span> xc
+        dy <span style="color: #666666">=</span> iy <span style="color: #666666">-</span> yc
+        rr <span style="color: #666666">=</span> np<span style="color: #666666">.</span>sqrt(dx<span style="color: #666666">*</span>dx<span style="color: #666666">+</span>dy<span style="color: #666666">*</span>dy)
+        <span style="color: #008000; font-weight: bold">if</span> (rr<span style="color: #666666">&gt;=</span>rb <span style="color: #AA22FF; font-weight: bold">and</span> rr<span style="color: #666666">&lt;=</span>rc):
+            b[ix,iy] <span style="color: #666666">=</span> <span style="color: #666666">0.0</span>
+V <span style="color: #666666">=</span> solvepoissonvonneumann(b,<span style="color: #666666">10000</span>)
+Ey,Ex <span style="color: #666666">=</span> np<span style="color: #666666">.</span>gradient(<span style="color: #666666">-</span>V)
+<span style="color: #408080; font-style: italic"># Visualize the surface charge distribution</span>
+rhos <span style="color: #666666">=</span> Ex<span style="color: #666666">.</span>copy()
+rhos[:] <span style="color: #666666">=</span> <span style="color: #666666">0.0</span>
+<span style="color: #408080; font-style: italic"># Inner cylinder</span>
+dr <span style="color: #666666">=</span> <span style="color: #666666">1.0</span>
+<span style="color: #008000; font-weight: bold">for</span> ix <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(L):
+    <span style="color: #008000; font-weight: bold">for</span> iy <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(L):
+        dx <span style="color: #666666">=</span> ix <span style="color: #666666">-</span> xca
+        dy <span style="color: #666666">=</span> iy <span style="color: #666666">-</span> yca
+        rr <span style="color: #666666">=</span> np<span style="color: #666666">.</span>sqrt(dx<span style="color: #666666">*</span>dx<span style="color: #666666">+</span>dy<span style="color: #666666">*</span>dy)
+        <span style="color: #008000; font-weight: bold">if</span> (rr<span style="color: #666666">&gt;=</span>a <span style="color: #AA22FF; font-weight: bold">and</span> rr<span style="color: #666666">&lt;=</span>a<span style="color: #666666">+</span>dr):
+            ux <span style="color: #666666">=</span> dx<span style="color: #666666">/</span>rr
+            uy <span style="color: #666666">=</span> dy<span style="color: #666666">/</span>rr
+            rhos[ix,iy] <span style="color: #666666">=</span> Ey[ix,iy]<span style="color: #666666">*</span>ux <span style="color: #666666">+</span> Ex[ix,iy]<span style="color: #666666">*</span>uy
+<span style="color: #408080; font-style: italic"># Outer cylinder</span>
+<span style="color: #008000; font-weight: bold">for</span> ix <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(L):
+    <span style="color: #008000; font-weight: bold">for</span> iy <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(L):
+        dx <span style="color: #666666">=</span> ix <span style="color: #666666">-</span> xc
+        dy <span style="color: #666666">=</span> iy <span style="color: #666666">-</span> yc
+        rr <span style="color: #666666">=</span> np<span style="color: #666666">.</span>sqrt(dx<span style="color: #666666">*</span>dx<span style="color: #666666">+</span>dy<span style="color: #666666">*</span>dy)
+        <span style="color: #008000; font-weight: bold">if</span> (rr<span style="color: #666666">&gt;=</span>rb <span style="color: #AA22FF; font-weight: bold">and</span> rr<span style="color: #666666">&lt;=</span>rb<span style="color: #666666">+</span>dr):
+            ux <span style="color: #666666">=</span> dx<span style="color: #666666">/</span>rr
+            uy <span style="color: #666666">=</span> dy<span style="color: #666666">/</span>rr
+            rhos[ix,iy] <span style="color: #666666">=</span> <span style="color: #666666">-</span>(Ey[ix,iy]<span style="color: #666666">*</span>ux <span style="color: #666666">+</span> Ex[ix,iy]<span style="color: #666666">*</span>uy)
+plt<span style="color: #666666">.</span>figure(figsize<span style="color: #666666">=</span>(<span style="color: #666666">8</span>,<span style="color: #666666">8</span>))
+plt<span style="color: #666666">.</span>imshow(rhos)
+plt<span style="color: #666666">.</span>colorbar()
+</pre></div>
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>e)</b>
+Now, instead of the total charge \( +Q \) being on the inner conductor, sketch the charge distribution (little + and - signs) if the <em>outer</em> conductor has a total charge \( +Q \) on it, and the inner conductor is electrically neutral. Be precise about exactly where the charge will be on these conductors, and how you know.
+
+<p>
+<br /><br /><center><p><img src="fig-conductors/pollock-conductor-040.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_68_7" style="font-size: 80%;"></a>
+<a href="#exer_68_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_68_7">
+
+<p>
+Now, we are back to the symmetric case again, and we can use simpler arguments. We realize that all the charge \( +Q \) can be distributed uniformly on the outer surface of the outer cylinder. The electric field inside both cylinders (and in the region between them) will then be zero.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>f)</b>
+For this case (\( +Q \) on outer conductor, inner conductor neutral) what is the potential difference, \( \Delta V \), betwen the center of the inner conductor (\( r=0 \)) and the outer conductor (\( r=c \))?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_68_1" style="font-size: 80%;"></a>
+<a href="#exer_68_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_68_1">
+
+<p>
+0
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_68_8" style="font-size: 80%;"></a>
+<a href="#exer_68_8" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_68_8">
+
+<p>
+Because the electric field inside both conductors and inside the region between the conductors are zero, the potential is constant in this region and the potential difference \( \Delta V = 0 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- This tutorial continues with Faraday's ice pail, and may also be paired with an experimental demonstration in class. -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec100" class="anchor">Exercise 5.8: Capacitance of the axon </h2>
+
+<p>
+<!-- Describe the system and the model -->
+A nerve cell is illustrated in Fig. <a href="#fig:capacitor-axon">4</a>. The cell has a long axon, which is approximately cylindrical in shape. A cross section of the (cylindrical) axon shows that the cell consists of a center, a thin outer membrane and a myelin sheath outside the membrane. We will assume that the interior and the exterior of the cell can be considered as good conductors. We will model this system as a cylindrical capacitor: We model the inner cylindrical part of the cell as an ideal conductor (\( r < a \)); we model the cell membrane and the myelin sheath as a cylindrical shell with dielectric constant \( \epsilon \) (\( a < r < b \)); and we model the exterior as an ideal conductor (\( b < r \)).
+
+<p>
+We will find the capacitance of this system by (i) making a drawing of the system, (ii) drawing the expected charge distributions, (iii) finding the electric field for this charge distribution, (iv) finding the potential by integrating the electric field, and (v) finding the capacitance by relating the charges to k
+the potential difference.
+
+<p>
+<center> <!-- figure label: --> <div id="fig:capacitor-axon"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 4:  Illustration of a nerve cell.  <!-- caption label: fig:capacitor-axon --> </p></center>
+<p><img src="fig-capacitance/capacitor-axon-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p>
+</center>
+
+<p>
+We start from an initially neutral system. We then apply a potential difference \( V \) across the dielectric shell. In this process, a charge \( Q \) is transferred from the outer shell to the inner shell. Afterwards, the exterior of the dielectric shell is at \( V=0 \) and the inner part is at \( V \).
+
+<p>
+<b>a)</b>
+Make a sketch of the distribution of charges on a cross section of the cylinder. What principles do you use when you make this drawing? Is the surface charge density the same on the inner and outer surfaces?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_69_2" style="font-size: 80%;"></a>
+<a href="#exer_69_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_69_2">
+
+<p>
+No
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_69_10" style="font-size: 80%;"></a>
+<a href="#exer_69_10" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_69_10">
+
+<p>
+The surface charge density on the inner surface is \( Q/(2 \pi a L) \) and on the outer surface \( -Q/(2 \pi b L) \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Find the electric field everywhere in terms of \( Q \).
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_69_1" style="font-size: 80%;"></a>
+<a href="#exer_69_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_69_1">
+
+<p>
+Choose a Gaussian surface and use Gauss' law.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_69_3" style="font-size: 80%;"></a>
+<a href="#exer_69_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_69_3">
+
+<p>
+\( \vec{E} = (Q/L)/(2 \pi \epsilon r) \rhat \) for \( a < r < b \) and zero otherwise.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_69_11" style="font-size: 80%;"></a>
+<a href="#exer_69_11" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_69_11">
+
+<p>
+We notice that we expect the electric field to have cylindrical symmetry and that it only will have a radial component. We then find the electric field by using Gauss' law on a cylindrical surface with radius \( r \), getting
+$$
+\begin{equation}
+\oint_S \vec{E} \cdot d \vec{S} = E A = E 2 \pi r L = Q_{in}/\epsilon\; ,
+\tag{5.1}
+\end{equation}
+$$
+
+where \( r \) is the radius, \( L \) is the length of the cylinder, $ Q_{in} $ is the net, free charge inside the cylinder, and \( \epsilon \) is the dielectric constant for the material inside the cylinder.
+
+<p>
+For \( r < a \) $Q_{in} = 0$ and \( E = 0 \).
+
+<p>
+For \( a < r < b \), \( Q_{in} = Q \) and \( E = (Q/L)/(2 \pi \epsilon r) \).
+
+<p>
+For \( b < r \), \( Q_{in} = 0 \) and \( E = 0 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Find the potential \( V(r=a) \) at the inner cylinder, when the potential \( V(r=b)=0 \) at the outer cylinder.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_69_4" style="font-size: 80%;"></a>
+<a href="#exer_69_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_69_4">
+
+<p>
+\( V(a) = (Q/L)/(2 \pi \epsilon) \ln (b/a) \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_69_12" style="font-size: 80%;"></a>
+<a href="#exer_69_12" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_69_12">
+
+<p>
+We find the potential \( V(r) \) by integrating the line intergral from \( r \) to \( r=b \) where \( V=0 \):
+$$
+\begin{equation}
+V(r) - V(b) = \int_{r}^{b} \vec{E} \cdot \d \vec{l} = \int_{r}^{b} \frac{(Q/L)}{2 \pi \epsilon r}\d r = \frac{(Q/L)}{2 \pi \epsilon}\left( \ln b - \ln r \right) =  \frac{(Q/L)}{2 \pi \epsilon} \ln\left(\frac{b}{r}\right) \; .
+\tag{5.2}
+\end{equation}
+$$
+
+and
+$$
+\begin{equation}
+V(a) =  \frac{(Q/L)}{2 \pi \epsilon} \ln\left(\frac{b}{a}\right) \; .
+\tag{5.3}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+Find the capacitance of the cylindrical shell.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_69_5" style="font-size: 80%;"></a>
+<a href="#exer_69_5" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_69_5">
+
+<p>
+\( C = (2 \pi \epsilon L)/(\ln(b/a)) \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_69_13" style="font-size: 80%;"></a>
+<a href="#exer_69_13" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_69_13">
+
+<p>
+The capacitance is given as \( C=Q/V \), which gives
+$$
+\begin{equation}
+C = \frac{Q}{V} = \frac{2 \pi \epsilon L}{\ln(b/a)}
+\tag{5.4}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec101" class="anchor">Exercise 5.9: The electric field near conducting plates </h2>
+
+<p>
+(<em>From Tutorials in introductory physics, Lillian McDermott</em>)
+
+<p>
+<b>a)</b>
+A small portion near the center of a large thin conducting <em>plate</em> is show magnified below. The portion has a net charge \( Q_1 \) and each side has an area \( A_1 \).
+
+<p>
+Write an expression for the charge density on each side of the conducting plate.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_70_1" style="font-size: 80%;"></a>
+<a href="#exer_70_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_70_1">
+
+<p>
+\( Q_1/(2 A_1) \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_70_7" style="font-size: 80%;"></a>
+<a href="#exer_70_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_70_7">
+
+<p>
+The total charge of \( Q_1 \) will be distributed uniformly on both sides of the plate, that is, over an area \( 2A_1 \). The charge density is therefore \( \rho_a = Q_1/(2A_1) \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<br /><br /><center><p><img src="fig-capacitance/mcdermott-conductor-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<b>b)</b>
+Use the principle of superposition to determine the electric field inside the condutor (if you have not already done so).
+
+<p>
+Is you answer consistent with your knowledge of the electric field inside a conductor? Explain.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_70_8" style="font-size: 80%;"></a>
+<a href="#exer_70_8" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_70_8">
+
+<p>
+We can find the contribution from one surface charge density by applying Gauss' law on a small cylinder of area \( dA \). We place one end outside the surface and one end inside the conductor. We can make the sides infinitely small. Thus, the only contribution is from the surfaces and not from sides. The flux through the top and bottom surfaces are \( EdA + EdA = 2EdA = Q/\epsilon = dA \rho_a / \epsilon \), and thus \( E = \rho_a/(2\epsilon) \) is a constant. However, the contribution from each surface will cancel, making the field zero inside the conductor.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Use the principle of superposition to determine the electric field on each side of the plate.
+
+<p>
+Does the charge on the <em>upper</em> surface contribute to the electric field <em>below</em> the plate (even though metal separates the two regions)? Explain.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_70_2" style="font-size: 80%;"></a>
+<a href="#exer_70_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_70_2">
+
+<p>
+\( E = Q_1/(A_1\epsilon) \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_70_9" style="font-size: 80%;"></a>
+<a href="#exer_70_9" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_70_9">
+
+<p>
+We use the result from above. The field will be the field from the charge density on each side, giving a total field of \( E = 2 \rho_a/(2\epsilon) = Q_1/(A_1 \epsilon) \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+Consider instead a portion near the center of a large <em>sheet</em> or charge. Like the plate considered above, the portion of the sheet has a net charge \( Q_1 \) and area \( A_1 \).
+
+<p>
+How does the charge density \( \sigma' \) on this sheet compared to the charge density on each side of the plate above? Explain.
+
+<p>
+How does the electric field on one side fo the <em>sheet of charge</em> compare to the electric field on the same side of the <em>charged plate</em>? Explain.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_70_3" style="font-size: 80%;"></a>
+<a href="#exer_70_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_70_3">
+
+<p>
+\( \rho_a'=Q_1/A_1 \), \( E = Q_1/(A_1 \epsilon) \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_70_10" style="font-size: 80%;"></a>
+<a href="#exer_70_10" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_70_10">
+
+<p>
+The charge density is \( \rho_a' = Q_1/A_1 \). The electric field will be \( E = \rho_a'/\epsilon = Q_1/(A_1 \epsilon) \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec102" class="anchor">Hjemmeoppgaver </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec103" class="anchor">Exercise 5.10: Coaxial cable </h2>
+
+<p>
+A coaxial cable consists of an inner cylindrical conductor with radius \( a \) and outer cylindrical shell conductor with inner radius \( b \). A dielectric with permittivity \( \epsilon \) is placed between the conductors. The inner conductor has a potential \( V_0 \) while the outer conductor is grounded (has potential 0).
+
+<p>
+<b>a)</b>
+Find the \( \vec{E} \)-field between the conductors and the capacitance per unit length \( C' \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_71_1" style="font-size: 80%;"></a>
+<a href="#exer_71_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_71_1">
+
+<p>
+\( \vec{E} = V_0/(r \ln (b/a)) \rhat \), \( C' = 2 \pi \epsilon/\ln (b/a) \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_71_9" style="font-size: 80%;"></a>
+<a href="#exer_71_9" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_71_9">
+
+<p>
+We can choose to use either method 1 or method 2. Here, since we have given the potential, we attempt to use method 2 where we first find the potential and then find the electric field. Laplace equation in the region between the two conductors in cylindrical coordinates is
+$$
+\begin{equation}
+\frac{1}{r}\frac{\partial}{\partial r} \left( r \frac{\partial V}{\partial r} \right) = 0 \; ,
+\tag{5.5}
+\end{equation}
+$$
+
+where we only have included the radial component due to the cylindrical symmetry of the system. This means that
+$$
+\begin{equation}
+ r \frac{\partial V}{\partial r} = c_1 \; ,
+\tag{5.6}
+\end{equation}
+$$
+
+where \( c_1 \) is a constant. This gives us:
+$$
+\begin{equation}
+ \frac{\partial V}{\partial r} = \frac{c_1}{r} \; ,
+\tag{5.7}
+\end{equation}
+$$
+
+and therefore \( V = c_1 \ln r + c_2 \). We know that \( V(b) = 0 \), which means that \( V = c_1 \ln (r/b) \) and \( V(a) = c_1 \ln (a/b) = V_0 \), and \( c_1 = V_0/\ln (a/b) \). Therefore
+<!--  -->
+$$
+\begin{equation}
+V(r) = V_0 \ln (r/b)/\ln (a/b) \; .
+\tag{5.8}
+\end{equation}
+$$
+
+<!--  -->
+We now need to find the electric field, which is
+<!--  -->
+$$
+\begin{equation}
+\vec{E} = -\nabla V = \frac{\partial V}{\partial r} \rhat = -\frac{V_0}{r \ln (a/b)} \rhat \; ,
+\tag{5.9}
+\end{equation}
+$$
+
+<!--  -->
+which points outward since \( \ln(a/b) \) is negative. And we find the surface charge density on the inner cylinder to be
+<!--  -->
+$$
+\begin{equation}
+\rho_s =  \epsilon \vec{E} \cdot \rhat = -\frac{V_0}{a \ln (a/b)} \; .
+\tag{5.10}
+\end{equation}
+$$
+
+<!--  -->
+The total charge on a cylinder of radius \( a \) and length \( L \) is \( Q = \rho_s A \), where \( A = 2 \pi a L \), and therefore:
+<!--  -->
+$$
+\begin{equation}
+Q = A \rho_s = - \frac{V_0 \epsilon}{a \ln (a/b)} 2 \pi a L = - \frac{2 \pi V_0 L \epsilon}{ \ln (a/b)} \; .
+\tag{5.11}
+\end{equation}
+$$
+
+<!--  -->
+We change the sign by realizing that \( \ln(a/b) = - \ln(b/a) \) and that \( \ln(b/a) \) is positive. The capacitance of a length \( L \) of the cylinder is then:
+<!--  -->
+$$
+\begin{equation}
+C = Q/V_0 = \frac{2 \pi L \epsilon}{\ln(b/a)} \;.
+\tag{5.12}
+\end{equation}
+$$
+
+<!--  -->
+and the capacitance per unit length, \( C' \), is
+<!--  -->
+$$
+\begin{equation}
+C' = \frac{2 \pi \epsilon}{\ln (b/a)} \; .
+\tag{5.13}
+\end{equation}
+$$
+
+<!--  -->
+(You could try to solve the same problem using method 1).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Calculate the numerical value for \( C' \) when \( \epsilon = 3 \epsilon_0 \) and \( \frac{b}{a} = 7 \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_71_2" style="font-size: 80%;"></a>
+<a href="#exer_71_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_71_2">
+
+<p>
+\( C' = 8.58 \times 10^{-11}\text{F/m} \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_71_10" style="font-size: 80%;"></a>
+<a href="#exer_71_10" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_71_10">
+
+<p>
+We find that \( C' = 2 \pi 3 \epsilon_0/ \ln (b/a) = 2 \pi 3 \, 8.85 \times 10^{&#8722;12}/\ln(7) = 8.58 \times 10^{-11}\text{F/m} \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Find how much electric energy is stored per unit length of the cable.
+<!--  -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_71_3" style="font-size: 80%;"></a>
+<a href="#exer_71_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_71_3">
+
+<p>
+\( U' = \frac{\pi \epsilon}{\ln \frac{b}{a}}V_0^2 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_71_11" style="font-size: 80%;"></a>
+<a href="#exer_71_11" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_71_11">
+
+<p>
+We apply the formula for the energy stored in a capacitor:
+$$
+\begin{equation}
+U = \frac{1}{2} CV^2
+\tag{5.14}
+\end{equation}
+$$
+
+This means that the energy density (per unit length) must be:
+$$
+\begin{eqnarray}
+U' &=& \frac{1}{2} C'V^2 \\ 
+&=& \frac{\pi \epsilon}{\ln \frac{b}{a}}V_0^2
+\end{eqnarray}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+What is the net force acting on the outer conductor from the inner conductor?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_71_4" style="font-size: 80%;"></a>
+<a href="#exer_71_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_71_4">
+
+<p>
+Zero.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_71_12" style="font-size: 80%;"></a>
+<a href="#exer_71_12" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_71_12">
+
+<p>
+Due to symmetry, the total force must be zero.
+
+<p>
+Let us address this a bit closer. There cannot be any force along the cable, because the system has mirror symmetric along the \( z \)-axis: \( z \rightarrow -z \). Only a zero force has this symmetry. There cannot be any force in an azimuthal direction because the cable has rotational symmetry around the cable. There might by a force acting radially, but because the system has rotational symmetry, there would always be another equal force on the opposite site of the cable. The net radial force must therefore also be zero.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec104" class="anchor">Exercise 5.11: Punktladning over ledende plan </h2>
+
+<p>
+En punktladning \( Q \) befinner seg i en avstand \( h \) over et uendelig stort, ledende plan:
+
+<p>
+<br /><br /><center><p><img src="fig-conductors/ladning_over_ledende_plan.svg" align="bottom" width=400 style='width: 100%; max-width: 400'></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Finn potensialet \( V \) langs \( z \)-aksen for \( z \in [0, h) \). Finn ogs&#229; det elektriske feltet her.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_72_1" style="font-size: 80%;"></a>
+<a href="#exer_72_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_72_1">
+
+<p>
+Speilladningsmetoden
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_72_5" style="font-size: 80%;"></a>
+<a href="#exer_72_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_72_5">
+
+<p>
+La oss si at det ledende planet ligger i \( xy \)-planet.
+
+<p>
+Potensialet over \( xy \)-planet m&#229; v&#230;re likt som potensialet ville v&#230;rt dersom vi i stedet for &#229; ha et ledende plan, speilet ladningsfordelingen om \( xy \)-planet og satte motsatt ladning p&#229; ladningene p&#229; nedsiden.
+
+<p>
+Det skyldes at n&#229;r vi gj&#248;r dette f&#229;r vi konstant potensial akkurat i \( xy \)-planet. Det er flere m&#229;ter vi kan se det p&#229;. En av dem er &#229; innse at alle komponenter av det elektriske feltet i planet m&#229; kansellere mellom ladningene over og ladningene under \( xy \)-planet: For enhver ladning p&#229; oversiden finnes det en tilsvarende plassert ladning med motsatt fortegn p&#229; undersiden, og denne kansellerer komponenten i planet. Men den adderer til feltet normalt p&#229; planet, alts&#229; i \( z \)-retning.
+
+<p>
+Siden entydighetsteoremet sier oss at det kun skal v&#230;re &#233;n l&#248;sning for det elektrostatiske potensialet gitt randbetingelser og ladningsfordeling, og vi kan sette randbetingelsen til \( V= \)&nbsp;konstant i \( xy \)-planet uansett om det er pga. et ledende plan eller en motsatt ladning speilet, kan det ikke ha noe &#229; si om vi ser p&#229; situasjonen med et ladet plan, eller situasjonen med en speilet ladning. S&#229; lenge vi ser p&#229; feltet <em>over</em> \( xy \)-planet.
+
+<p>
+Dermed ser vi egentlig bare p&#229; potensialet fra en dipol, langs dipolaksen:
+$$
+\begin{equation}
+V = \frac{Q}{4\pi\epsilon_0 r_1} - \frac{Q}{4\pi\epsilon_0 r_2}
+\tag{5.15}
+\end{equation}
+$$
+
+<p>
+Vi skulle finne potensialet i omr&#229;det \( [0, h) \), og der f&#229;r vi 
+$$
+\begin{equation}
+V = \frac{Q}{4\pi\epsilon_0} \left( \frac{1}{h-z} - \frac{1}{h+z} \right).
+\tag{5.16}
+\end{equation}
+$$
+
+<p>
+Vi finner s&#229; det elektriske feltet. Av symmetri ser vi at feltet m&#229; virke kun i \( z \)-retning, slik at vi kun ser p&#229; \( z \)-komponenten:
+
+$$
+\begin{eqnarray}
+E_z &=& -\pz \frac{Q}{4\pi\epsilon_0} \left( \frac{1}{h-z} - \frac{1}{h+z} \right) \\ 
+&=& -\frac{Q}{4\pi\epsilon_0} \left( \frac{1}{(h-z)^2} + \frac{1}{(h+z)^2} \right) \\ 
+\mathbf{E} &=& -\frac{Q}{4\pi\epsilon_0} \left( \frac{1}{(h-z)^2} + \frac{1}{(h+z)^2} \right) \z \text{ for } 0 \leq z < h
+\end{eqnarray}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Finn den induserte ladningstettheten \( \rho_s(r) \) p&#229; lederens overflate.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_72_2" style="font-size: 80%;"></a>
+<a href="#exer_72_2" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_72_2">
+
+<p>
+Bruk \( \rho_s = \epsilon_0 E \), der \( E \) evalueres rett ovenfor lederen.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_72_3" style="font-size: 80%;"></a>
+<a href="#exer_72_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_72_3">
+
+<p>
+\( \rho_s = -\frac{Qh}{2\pi(r^2+h^2)^\frac{3}{2}} \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_72_6" style="font-size: 80%;"></a>
+<a href="#exer_72_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_72_6">
+
+<p>
+Vi kjenner til at feltet fra en dipol normalt p&#229; dipolens akse er
+$$
+\begin{equation}
+E = -\frac{Q h }{2\pi \epsilon_0 (r^2+h^2)^\frac{3}{2}}
+\tag{5.17}
+\end{equation}
+$$
+
+der \( r \) er avstanden over dipolen (her er det til side for), og \( h \) er halve avstanden mellom ladningene.
+
+<p>
+Videre vet vi at i grensen mellom en leder og vakuum, s&#229; er ladningstettheten gitt som \( \rho_s = \epsilon_0 E \). Dermed er ladningsteheten gitt som 
+$$
+\begin{equation}
+\rho_s = -\frac{Qh}{2\pi(r^2+h^2)^\frac{3}{2}}.
+\tag{5.18}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Vis at den totale induserte ladningen p&#229; overflaten er lik \( -Q \).
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_72_7" style="font-size: 80%;"></a>
+<a href="#exer_72_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_72_7">
+
+<p>
+Vi integrerer opp ladningsfordelingen. Her m&#229; vi huske p&#229; at vi skal integrere over hele \( xy \)-planet. Vi vekger &#229; gj&#248;re det i polarkoordinater, siden vi allerede har ladningsfordelingen uttrykt ved \( r \), avstanden fra \( z \)-aksen. 
+
+$$
+\begin{eqnarray}
+Q_{\text{indusert}} &=& \int_S \rho_s \d S \\ 
+&=& -\frac{Qh}{2\pi} \int_0^\infty \frac{2\pi r \d r }{(r^2 + h^2)^\frac{3}{2}} \\ 
+&=& \left[\frac{Qh}{\sqrt{r^2 + h^2}}\right]_0^\infty \\ 
+&=& -Q.
+\end{eqnarray}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+Skisser de elektriske feltlinjene overalt.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_72_8" style="font-size: 80%;"></a>
+<a href="#exer_72_8" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_72_8">
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span> 
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+
+x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">-5</span>, <span style="color: #666666">6</span>, <span style="color: #666666">50</span>)
+y <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">0</span>, <span style="color: #666666">8</span>, <span style="color: #666666">50</span>)
+X, Y <span style="color: #666666">=</span> np<span style="color: #666666">.</span>meshgrid(x, y)
+
+sx <span style="color: #666666">=</span> np<span style="color: #666666">.</span>asarray([<span style="color: #666666">-5</span>, <span style="color: #666666">-3</span>, <span style="color: #666666">-2</span>, <span style="color: #666666">-1</span>, <span style="color: #666666">-0.5</span>, <span style="color: #666666">0</span>, <span style="color: #666666">0.5</span>, <span style="color: #666666">1</span>, <span style="color: #666666">2</span>, <span style="color: #666666">3</span>, <span style="color: #666666">5</span>, <span style="color: #666666">-3</span>, <span style="color: #666666">-1</span>, <span style="color: #666666">0</span>, <span style="color: #666666">1</span>, <span style="color: #666666">3</span>])
+sy <span style="color: #666666">=</span> np<span style="color: #666666">.</span>asarray([<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>, <span style="color: #666666">3</span>, <span style="color: #666666">3</span>, <span style="color: #666666">3</span>, <span style="color: #666666">3</span>, <span style="color: #666666">3</span>])
+
+start_points <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([sx, sy])
+<span style="color: #008000; font-weight: bold">print</span>(start_points<span style="color: #666666">.</span>T)
+
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">V_dipol</span>(x, y): 
+    <span style="color: #008000; font-weight: bold">return</span> <span style="color: #666666">1.0/</span>np<span style="color: #666666">.</span>sqrt((y<span style="color: #666666">-1</span>)<span style="color: #666666">**2+</span>x<span style="color: #666666">**2</span>) <span style="color: #666666">-</span> <span style="color: #666666">1.0/</span>np<span style="color: #666666">.</span>sqrt((y<span style="color: #666666">+1</span>)<span style="color: #666666">**2+</span>x<span style="color: #666666">**2</span>)
+
+V <span style="color: #666666">=</span> V_dipol(X, Y)
+Ey, Ex <span style="color: #666666">=</span> np<span style="color: #666666">.</span>gradient(<span style="color: #666666">-</span>V) 
+plt<span style="color: #666666">.</span>figure(figsize<span style="color: #666666">=</span>(<span style="color: #666666">4</span>,<span style="color: #666666">4</span>))
+plt<span style="color: #666666">.</span>streamplot(x, y, Ex, Ey, start_points<span style="color: #666666">=</span>start_points<span style="color: #666666">.</span>T, density<span style="color: #666666">=10</span>)
+plt<span style="color: #666666">.</span>xticks([])
+plt<span style="color: #666666">.</span>yticks([])
+plt<span style="color: #666666">.</span>tight_layout()
+plt<span style="color: #666666">.</span>savefig(<span style="color: #BA2121">&quot;fig-conductors/punktladning_over_ledende_plan.svg&quot;</span>)
+plt<span style="color: #666666">.</span>savefig(<span style="color: #BA2121">&quot;fig-conductors/punktladning_over_ledende_plan.eps&quot;</span>)
+</pre></div>
+<p>
+<br /><br /><center><p><img src="fig-conductors/punktladning_over_ledende_plan.png" align="bottom" width=400 style='width: 100%; max-width: 400'></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>e)</b>
+Finn kraften p&#229; punktladningen.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_72_9" style="font-size: 80%;"></a>
+<a href="#exer_72_9" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_72_9">
+
+<p>
+Vi bruker Coulombs lov for &#229; finne kraften. Dette er kraften mellom to motsatt ladde partikler med ladning \( \pm Q \) og avstand \( 2h \):
+$$
+\begin{eqnarray}
+\mathbf{F} &=& \frac{1}{4\pi\epsilon_0}\frac{Q(-Q)}{(2h)^2} \z \\ 
+&=& -\frac{Q^2}{16 \pi \epsilon_0 h^2}\z
+\end{eqnarray}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec105" class="anchor">Innleveringsoppgave </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec106" class="anchor">Exercise 5.12: Kondensator av to kuler </h2>
+
+<p>
+<b>a)</b>
+Anta at du har en enkelt metallkule med ladning \( +Q \). Hvordan vil ladningen v&#230;re fordelt i kulen? (Du kan anta at kulen er en ideell leder). Begrunn svaret.
+
+<p>
+Vi skal n&#229; studere et system med to metallkuler. Begge kulene har radius \( a \) og de er plassert slik at det er en avstand \( d \) mellom sentrum i de to kulene. Du kan anta at \( d>2a \). Den ene kulen har ladning \( +Q \) og den andre har ladning \( -Q \).
+
+<p>
+<b>b)</b>
+Anta at ladningen er uniformt fordelt p&#229; overflaten av hver av kulene. Hva blir potensialforskjellen mellom kulene?
+
+<p>
+<b>c)</b>
+Hva er kapasitansen til systemet?
+
+<p>
+<b>d)</b>
+Vi har antatt at ladningen er uniformt fordelt. Er dette en korrekt antagelse? Tror du denne antagelsen har f&#248;rt til at uttrykket vi fant for kapasitansen er for stort eller for lite sammenliknet med en reell situasjon? Begrunn svaret.
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec107" class="anchor">Lang innleveringsoppgave 01 (7 poeng) </h1>
+
+<p>
+Denne oppgaven er laget slik at den vil likne p&#229; oppgaver dere kan f&#229; p&#229; 4-timers skole-eksamen med Jupyter notebooks. Det er derfor lurt &#229; l&#248;se den i en Jupyter notebook, men vi anbefaler &#229; levere som pdf. De siste diskusjonsdelene er kanskje noe vanskeligere enn vi forventer p&#229; eksamen, mens programmeringsdelen er helt innenfor det vi forventer at dere klarer &#229; l&#248;se p&#229; 4 timer p&#229; skolen. Mengden og typen p&#229; oppgitt kode p&#229; eksamen er ogs&#229; realistisk i forhold til eksamen. Lykke til!
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec108" class="anchor">Exercise 5.13: Kondensator av to krester </h2>
+
+<p>
+Vi skal i denne oppgaven studere en kondensator som best&#229;r av to ledere. Hver leder best&#229;r av 4 linjestykker av lengde \( 2a \). De to lederne er plassert i en avstand \( d=2a \) fra hverandre. Systemet er illustrert til venstre i figuren (a).
+
+<p>
+<br /><br /><center><p><img src="fig-capacitance/capacitance-twosquares-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+F&#248;rst skal vi se p&#229; et enkelt kvadrat, som vist til h&#248;yre (b) figuren, f&#248;r vi ser p&#229; systemet med begge kvadratene. Anta at kvadratet som best&#229;r av fire linjestykker har ladningen \( Q \).
+
+<p>
+<b>a)</b>
+Hva blir det elektriske feltet i origo? Hva kan vi si om det elektriske potensialet uten &#229; regne det ut? Begrunn svarene dine.
+
+<p>
+<b>b)</b>
+Vis at det elektriske potensialet langs \( z \)-aksen for kvadratet med ladning \( Q \) er \( V(z) = \frac{Q}{4 \pi \epsilon_0 a} \textrm{arcsinh} \frac{a}{\sqrt{z^2 + a^2}} \).
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_74_1" style="font-size: 80%;"></a>
+<a href="#exer_74_1" data-toggle="collapse">
+<b>Hint 1.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_74_1">
+
+<p>
+Se f&#248;rst p&#229; ett enkelt linjestykke og bruk deretter superposisjonsprinsippet.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_74_2" style="font-size: 80%;"></a>
+<a href="#exer_74_2" data-toggle="collapse">
+<b>Hint 2.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_74_2">
+
+<p>
+Du kan f&#229; bruk for integralet \( \int \frac{\d x}{\sqrt{C^2 + x^2}} = \textrm{arcsinh} \frac{x}{C} \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+Du f&#229;r oppgitt et program som finner det elektriske potensialet til en dipol i \( xy \)-planet. Du kan ta utgangspunkt i dette programmet n&#229;r du skal l&#248;se de neste oppgavene, men du m&#229; skrive det om slik at det passer til den oppgitte problemstillingen.
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Potensialet til en dipol i xy-planet</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">epotlist</span>(r,Q,R):
+    V<span style="color: #666666">=0</span>
+    <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #008000">len</span>(R)):
+        Ri <span style="color: #666666">=</span> r <span style="color: #666666">-</span> R[i]
+        qi <span style="color: #666666">=</span> Q[i]
+        Rinorm <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>norm(Ri)
+        V <span style="color: #666666">=</span> V <span style="color: #666666">+</span> qi<span style="color: #666666">/</span>Rinorm
+    <span style="color: #008000; font-weight: bold">return</span> V
+Q <span style="color: #666666">=</span> []
+R <span style="color: #666666">=</span> []
+Q<span style="color: #666666">.</span>append(<span style="color: #666666">1.0</span>)
+R<span style="color: #666666">.</span>append(np<span style="color: #666666">.</span>array([<span style="color: #666666">1</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>]))
+Q<span style="color: #666666">.</span>append(<span style="color: #666666">-1.0</span>)
+R<span style="color: #666666">.</span>append(np<span style="color: #666666">.</span>array([<span style="color: #666666">-1</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>]))
+Lx <span style="color: #666666">=</span> <span style="color: #666666">3</span>
+Ly <span style="color: #666666">=</span> <span style="color: #666666">3</span>
+N <span style="color: #666666">=</span> <span style="color: #666666">21</span>
+x <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">-</span>Lx,Lx,N)
+y <span style="color: #666666">=</span> np<span style="color: #666666">.</span>linspace(<span style="color: #666666">-</span>Ly,Ly,N)
+rx,ry <span style="color: #666666">=</span> np<span style="color: #666666">.</span>meshgrid(x,y)
+V <span style="color: #666666">=</span> np<span style="color: #666666">.</span>zeros((N,N),<span style="color: #008000">float</span>)
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #008000">len</span>(rx<span style="color: #666666">.</span>flat)):
+    r <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([rx<span style="color: #666666">.</span>flat[i],ry<span style="color: #666666">.</span>flat[i],<span style="color: #666666">0.0</span>])
+    V<span style="color: #666666">.</span>flat[i] <span style="color: #666666">=</span> epotlist(r,Q,R)
+plt<span style="color: #666666">.</span>contourf(rx,ry,V)
+</pre></div>
+<p>
+<b>c)</b>
+Skriv et program som finner det elektriske potensialet i \( yz \)-planet. Visualiser potensialet og det elektriske feltet.
+
+<p>
+<b>d)</b>
+Kontroller resultatet ditt ved &#229; sammenlikne med det analytiske uttrykket.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_74_3" style="font-size: 80%;"></a>
+<a href="#exer_74_3" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_74_3">
+
+<p>
+Visualiser det analytiske og det numeriske uttrykket \( V(z) \) i det samme plottet. (Hvis de ikke faller opp&#229; hverandre har du gjort noe galt).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+Vi skal n&#229; se p&#229; et system som best&#229;r av to slike kvadrater, ett med ladning \( +Q \) i \( z=0 \) og ett med ladning \( -Q \)  i \( z= 2a \) slik at de har en avstand \( d = 2a \) fra hverandre.
+
+<p>
+<b>e)</b>
+Vi &#248;nsker &#229; finne en tiln&#230;rming til potensialforskjellen mellom de to kvadratene for &#229; kunne estimere kapasitansen til systemet. Som en f&#248;rste tiln&#230;rming &#248;nsker vi &#229; bruke uttrykket vi har funnet for potensialet langs \( z \)-aksen. Vi antar at bidraget fra det positive kvadratet til potensialforskjellen mellom de to kvadratene kan tiln&#230;rmes som forskjellen i potensial mellom punktene \( (0,0,0) \) og \( (0,0,2a) \). Hva blir den totale potensialforskjellen mellom kvadratene med denne tiln&#230;rmingen? Hva blir kapasitansen til systemet med denne tiln&#230;rmingen?
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_74_4" style="font-size: 80%;"></a>
+<a href="#exer_74_4" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_74_4">
+
+<p>
+Det holder &#229; se p&#229; et av kvadratene og s&#229; bruke superposisjonsprinsippet for &#229; finne potensialforskjellen mellom de to kvadratene.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<b>f)</b>
+Du er ikke s&#229; veldig forn&#248;yd med denne tiln&#230;rmingen. Du tenker at du kan bruke den numeriske modellen til &#229; finne en bedre verdi ved &#229; bruke samme fremgangsm&#229;te, men i stedet for &#229; bruke potensialet fra det positive kvadratet i et punkt p&#229; \( z \)-aksen, &#248;nsker du i stedet &#229; finne potensialet fra det positive kvadratet i et punkt midt p&#229; en av linjene som utgj&#248;r en leder i det negative kvadratet. Deretter vil du s&#229; multiplisere med to for &#229; finne potensialforskjellen mellom de to kvadratene. Hva blir potensialforskjellen mellom de to kvadratene med denne tiln&#230;rmingen? Og hva blir kapasitansen?
+
+<p>
+<b>g)</b>
+Plot potensialet fra det positive kvadratet langs en av linjene som utgj&#248;r det negative kvadratet. Hva oppdager du? Hva forteller det deg? Forklar hvordan vi kan finne kapasitansen til dette systemet uten &#229; st&#248;te p&#229; dette problemet. (Du skal ikke gj&#248;re det, men forklare hvordan det skal gj&#248;res, slik at en kompetent person - alts&#229; en som har tatt Fys1120 - kunne gj&#248;re det).
+
+<p>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+<!-- Week06 -->
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+<!-- --- end exercise --- -->
+
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pager">
+
+  <li class="previous">
+    <a href="._exercises004.html">&larr; Prev</a>
+  </li>
+
+  <li class="next">
+    <a href="._exercises006.html">Next &rarr;</a>
+  </li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+  
+
+<!--Code that fetches the Chatbot into this Html page-->
+<div id="content"></div> 
+
+<script>
+  fetch('Chatbot/origin.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('content').innerHTML = data;
+
+        // Handle style.css
+        let styleLink = document.getElementById('content').querySelector('link[href="Chatbot/style.css"]');
+        if (styleLink) {
+            loadStylesheet(styleLink.href);
+            styleLink.remove();  // Optionally remove the original link tag
+        }
+
+        // Handle script.js
+        let specificScript = document.getElementById('content').querySelector('script[src="Chatbot/script.js"]');
+        if (specificScript) {
+            loadScript(specificScript.src, function() {
+                console.log('script.js loaded and executed!');
+            });
+            specificScript.remove();  // Optionally remove the original script tag
+        }
+    });
+  function loadStylesheet(url) {
+    let link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = url;
+    document.head.appendChild(link);
+}
+
+  function loadScript(url, callback) {
+    let script = document.createElement('script');
+    script.src = url;
+    script.onload = callback;
+    document.body.appendChild(script);
+}
+</script>

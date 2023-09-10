@@ -1,0 +1,359 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Seminar uke 08: Magnetisk felt">
+
+<title>Seminar uke 08: Magnetisk felt</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Magnetisk felt', 1, None, '___sec1'),
+              ('Magnetfelt og Biot-Savarts lov', 2, None, '___sec2'),
+              ('Oppgave: Magnetisk felt fra et strøm-element',
+               2,
+               None,
+               '___sec3'),
+              ('Oppgave: To strøm-elementer', 2, None, '___sec4'),
+              ('Oppgave: Sammenlikning av linjeladning og linjestrøm',
+               2,
+               None,
+               '___sec5'),
+              ('Oppgave: Strømsløyfe i magnetfelt', 2, None, '___sec6'),
+              ('Oppgave: Ladninger i en tokamak', 2, None, '___sec7'),
+              ('Oppgave: Eksplisitt parameterisert kurve', 2, None, '___sec8')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\y}{\mathbf{\hat{y}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\Rhat}{\mathbf{\hat{R}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\phi}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="seminar-08.html">Seminar uke 08: Magnetisk felt</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._seminar-08000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08001.html#___sec1" style="font-size: 80%;"><b>Magnetisk felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Magnetfelt og Biot-Savarts lov</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08002.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Magnetisk felt fra et strøm-element</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: To strøm-elementer</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08004.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Sammenlikning av linjeladning og linjestrøm</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08005.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Strømsløyfe i magnetfelt</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08006.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Ladninger i en tokamak</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08007.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Eksplisitt parameterisert kurve</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0003"></a>
+<!-- !split -->
+<div class="panel panel-success">
+  <div class="panel-heading">
+  <h3 class="panel-title">Oppgave</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec4" class="anchor">Oppgave: To str&#248;m-elementer </h2>
+
+<p>
+Figuren viser systemer hvor det er to str&#248;m-elementer.
+
+<p>
+<br /><br /><center><p><img src="fig-magneticfield/magneticfield-activelearning-makeafield-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<b>a)</b>
+For system A, hva blir retningen p&#229; det magnetiske feltet i punktet midt mellom elementene?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_1" style="font-size: 80%;"></a>
+<a href="#exer_2_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_1">
+
+$$+\z$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>b)</b>
+Str&#248;m-elementer kan ikke eksistere alene for et stasjon&#230;rt system. Hvordan tenker du det er mest naturlig &#229; tegne en hel krets p&#229; hvor de to str&#248;m-elementene i system A inng&#229;r?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_2" style="font-size: 80%;"></a>
+<a href="#exer_2_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_2">
+
+<p>
+F.eks. en sirkel rundt midtpunktet mellom de to elementene. (Det finnes mange l&#248;sninger!)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>c)</b>
+For system B, hva blir retningen p&#229; det magnetiske feltet i punktet midt mellom elementene?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_3" style="font-size: 80%;"></a>
+<a href="#exer_2_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_3">
+
+$$0$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>d)</b>
+Kan du tegne inn en eller flere kretser hvor de to str&#248;m-elementene i system B inng&#229;r p&#229; en slik m&#229;te at det ikke endrer svaret ditt? Det finnes flere ganske forskjellige l&#248;sninger - kan du finne mer enn en?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_4" style="font-size: 80%;"></a>
+<a href="#exer_2_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_4">
+
+<p>
+En l&#248;sning er &#229; forlenge hvert element til en uendelig lang linje. Kan du finne en annen l&#248;sning?
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>e)</b>
+For system C, hva blir retningen p&#229; det magnetiske feltet i punktet midt mellom elementene?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_5" style="font-size: 80%;"></a>
+<a href="#exer_2_5" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_5">
+
+<p>
+\( 0 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>f)</b>
+(<em>Litt vanskelig - kan hoppes over</em>) Kan du tegne inn en eller flere kretser hvor de to str&#248;m-elementene inng&#229;r slik at det ikke endrer p&#229; svaret ditt?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_6" style="font-size: 80%;"></a>
+<a href="#exer_2_6" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_6">
+
+<p>
+Vi utvider hver av de to kretsene til kvadratiske eller rektangul&#230;re kretser med sidekant lik str&#248;m-elementet. Sjekk at dette faktisk gir samme felt i punktet midt mellom str&#248;m-elementene.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+</div>
+</div>
+
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._seminar-08002.html">&laquo;</a></li>
+  <li><a href="._seminar-08000.html">1</a></li>
+  <li><a href="._seminar-08001.html">2</a></li>
+  <li><a href="._seminar-08002.html">3</a></li>
+  <li class="active"><a href="._seminar-08003.html">4</a></li>
+  <li><a href="._seminar-08004.html">5</a></li>
+  <li><a href="._seminar-08005.html">6</a></li>
+  <li><a href="._seminar-08006.html">7</a></li>
+  <li><a href="._seminar-08007.html">8</a></li>
+  <li><a href="._seminar-08004.html">&raquo;</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

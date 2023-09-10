@@ -1,0 +1,671 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Uke 12: Kretser --- del 2">
+
+<title>Uke 12: Kretser --- del 2</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Kretser i tidsdomenet', 1, None, '___sec1'),
+              ('Kretselementer', 2, None, '___sec2'),
+              ('Oppgave: Spenning', 2, None, '___sec3'),
+              ('Oppgave: Flere spoler', 2, None, '___sec4'),
+              ('Eksempel: RL og RLC krets', 2, None, '___sec5'),
+              ('Oppgave: RL krets 1', 2, None, '___sec6'),
+              ('Oppgave: RL krets 2', 2, None, '___sec7'),
+              ('Eksempel: Periodisk signal i RL-krets', 2, None, '___sec8'),
+              ('Kretser i frekvensdomenet', 1, None, '___sec9'),
+              ('Kretser i frekvensdomenet', 2, None, '___sec10'),
+              ('Oppgave: Komplekse tall', 2, None, '___sec11'),
+              ('Oppgave: Hvilket signal kommer først?', 2, None, '___sec12'),
+              ('Eksempel: Kompleks representasjon av en motstand',
+               2,
+               None,
+               '___sec13'),
+              ('Eksempel: Kompleks representasjon av en kondensator',
+               2,
+               None,
+               '___sec14'),
+              ('Eksempel: Kompleks representasjon av en spole og regler for '
+               'impedans',
+               2,
+               None,
+               '___sec15'),
+              ('Oppgave: Fasevinkel', 2, None, '___sec16'),
+              ('Eksempel: RC-krets i frekvensdomenet', 2, None, '___sec17'),
+              ('Oppgave: Total impedans', 2, None, '___sec18')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="learningpath-12.html">Uke 12: Kretser --- del 2</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._learningpath-12000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-12000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-12001.html#___sec1" style="font-size: 80%;"><b>Kretser i tidsdomenet</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-12001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Kretselementer</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-12001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Spenning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-12001.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Flere spoler</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-12001.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: RL og RLC krets</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-12001.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: RL krets 1</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-12001.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: RL krets 2</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-12001.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Periodisk signal i RL-krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec9" style="font-size: 80%;"><b>Kretser i frekvensdomenet</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Kretser i frekvensdomenet</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Komplekse tall</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Hvilket signal kommer først?</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Kompleks representasjon av en motstand</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Kompleks representasjon av en kondensator</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec15" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Kompleks representasjon av en spole og regler for impedans</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Fasevinkel</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec17" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: RC-krets i frekvensdomenet</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Total impedans</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0002"></a>
+<!-- !split -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- SECTION -->
+<!-- -------------------------------------------------------------------------------------------- -->
+
+<h1 id="___sec9" class="anchor">Kretser i frekvensdomenet </h1>
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+
+<h2 id="___sec10" class="anchor">Kretser i frekvensdomenet </h2>
+<!-- 15.3 -->
+
+<p>
+<!-- fig-circuits2/circuits2-lecture-frequencydomain-15.3.1.mp4 Video 15.04 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/da6yAp6hodQ" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 15.3.1)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec11" class="anchor">Oppgave: Komplekse tall </h2>
+
+<p>
+La oss kort repetere komplekse tall.
+
+<p>
+<b>a)</b>
+Hva er \( |2 + i| \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_1" style="font-size: 80%;"></a>
+<a href="#exer_5_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_1">
+
+<p>
+\( \sqrt{5} \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_3" style="font-size: 80%;"></a>
+<a href="#exer_5_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_3">
+
+<p>
+Det er
+$$
+\begin{equation}
+\left(|2|^2 + |i|^2 \right)^{1/2} = \sqrt{5} \; .
+\tag{4}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Tegn \( 2+i \) i det komplekse planet.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_4" style="font-size: 80%;"></a>
+<a href="#exer_5_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_4">
+
+<p>
+<br /><br /><center><p><img src="fig-circuits2/circuits2-question-complex-010.png" align="bottom" width=400></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Hvordan kan vi skrive \( 2+i \) som \( Ae^{i \phi} \)?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_5" style="font-size: 80%;"></a>
+<a href="#exer_5_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_5">
+
+<p>
+Vi kan skrive den p&#229; denne formen ved &#229; skrive \( A = |2 + i| \) og &#229; velge \( \phi \) slik at
+$$
+\begin{equation}
+\tan \phi = \frac{\text{Im}\{ 2+i \} }{\text{Re}\{ 2+i \} } = \frac{1}{2} \; ,
+\tag{5}
+\end{equation}
+$$
+
+som gir at \( \phi = \arctan (1/2) \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec12" class="anchor">Oppgave: Hvilket signal kommer f&#248;rst? </h2>
+
+<p>
+Figuren viser str&#248;mmen og spenningen i en krets.
+
+<p>
+<br /><br /><center><p><img src="fig-circuits2/circuits2-question-leading-010.png" align="bottom" width=400></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Ligger \( V \) f&#248;r \( I \) eller \( I \) f&#248;r \( V \)?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_1" style="font-size: 80%;"></a>
+<a href="#exer_6_1" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_1">
+
+<p>
+Dette havner i hovedsak om hvordan vi leser av denne figuren. Vi ser at \( V \) har et maksimum f&#248;r \( I \). Vi sier derfor at \( V \) ligger f&#248;r \( I \). Men det avhenger jo av hvordan man ser det. Vi kan jo ogs&#229; si at \( I \) ligger f&#248;r \( V \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Hvor stor er forskjellen i fase?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_2" style="font-size: 80%;"></a>
+<a href="#exer_6_2" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_2">
+
+<p>
+Vi antar at signalene har en sinus-form. Vi ser at str&#248;mmen \( I \) er maksimal n&#229;r \( V \) er null. Vi antar at \( V = 0 \) n&#229;r fasen er \( \pi/2 \). Det betyr at faseforskjellen er \( \pi/2 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Hvis \( V = V_0 e^{i \omega t} \) hva er er da \( I \)?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_3" style="font-size: 80%;"></a>
+<a href="#exer_6_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_3">
+
+<p>
+Real-verdien av \( V \) er \( V_0 \cos \omega t \) som stemmer overens med figuren. Vi antar at \( I = I_0 \cos (\omega t + \delta) \). Vi ser da at \( I \) n&#229;r den samme verdien som \( V \) men med en faseforskjell p&#229; \( \pi/2 \). Det betyr at n&#229;r \( t=0 \) s&#229; skal argumentet for \( I \) v&#230;re \( -\pi/2 \) slik at \( \delta = - \pi/2 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec13" class="anchor">Eksempel: Kompleks representasjon av en motstand </h2>
+
+<p>
+<!-- fig-circuits2/circuits2-example-impedanceR-15.3.2.mp4 Video 15.05 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/vGWJR_tEjTk" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 15.3.2)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+
+<h2 id="___sec14" class="anchor">Eksempel: Kompleks representasjon av en kondensator </h2>
+
+<p>
+<!-- fig-circuits2/circuits2-example-impedanceC -15.3.3.mp4 Video 15.06 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/dy83UNOltqI" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 15.3.3)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+
+<h2 id="___sec15" class="anchor">Eksempel: Kompleks representasjon av en spole og regler for impedans </h2>
+
+<p>
+<!-- fig-circuits2/circuits2-example-impedanceL-15.3.4.mp4 Video 15.07 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/rDxkagn0suA" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 15.3.4)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec16" class="anchor">Oppgave: Fasevinkel </h2>
+
+<p>
+For en spole er
+$$
+\begin{equation}
+I_0 e^{i \delta} = \frac{V_0}{i \omega L} = \frac{V_0}{\omega L} e^{i \delta} \; .
+\tag{6}
+\end{equation}
+$$
+
+<p>
+<b>a)</b>
+Hva er fasevinkelen \( \delta \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_1" style="font-size: 80%;"></a>
+<a href="#exer_7_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_1">
+
+<p>
+\( -\pi/2 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_3" style="font-size: 80%;"></a>
+<a href="#exer_7_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_3">
+
+<p>
+I dette tilfellet ser vi at
+$$
+\begin{equation}
+\frac{V_0}{i \omega L} = \frac{V_0}{\omega L} (-i) = \frac{V_0}{\omega L} e^{i \delta} \; .
+\tag{7}
+\end{equation}
+$$
+
+Vi ser derfor at \( e^{\delta} = -i \) og dermed er \( \delta = -\pi/2 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec17" class="anchor">Eksempel: RC-krets i frekvensdomenet </h2>
+
+<p>
+<!-- fig-circuits2/circuits2-example-impedanceRC-15.3.6.mp4 Video 15.08 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/WoyPjX_6mEk" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 15.3.6)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec18" class="anchor">Oppgave: Total impedans </h2>
+
+<p>
+Figuren viser en krets med en periodisk spenningskilde.
+
+<p>
+<br /><br /><center><p><img src="fig-circuits2/circuits2-question-impedance-020.png" align="bottom" width=400></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hva er en den totale impedansen til kretsen?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_8_1" style="font-size: 80%;"></a>
+<a href="#exer_8_1" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_8_1">
+
+<p>
+Impedansen til hvert enkelt element er
+$$
+\begin{equation}
+Z_R = R \quad , \quad Z_C = \frac{1}{i \omega C} = \frac{-i}{ \omega C}\quad , \quad Z_L = i \omega L  \; .
+\tag{8}
+\end{equation}
+$$
+
+Alle impedansenen er koblet i serie. Vi finner derfor den totale impedansen som
+$$
+\begin{equation}
+Z_T = Z_R + Z_C + Z_L = R + i \left( \omega L - \frac{1}{\omega C} \right) \; .
+\tag{9}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+<!-- --- end exercise --- -->
+
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._learningpath-12001.html">&laquo;</a></li>
+  <li><a href="._learningpath-12000.html">1</a></li>
+  <li><a href="._learningpath-12001.html">2</a></li>
+  <li class="active"><a href="._learningpath-12002.html">3</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

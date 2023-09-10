@@ -1,0 +1,281 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Forelesningsnotater i vektorkalkulus">
+
+<title>Forelesningsnotater i vektorkalkulus</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+/*
+in.collapse+a.btn.showdetails:before { content:'Hide details'; }
+.collapse+a.btn.showdetails:before { content:'Show details'; }
+*/
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 0,
+ 'sections': [('Table of contents',
+               0,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Forord', 1, None, '___sec0'),
+              ('Vektorer', 0, 'ch:vektorer', 'ch:vektorer'),
+              ('Notasjon', 1, None, '___sec2'),
+              ('Regneoperasjoner', 1, None, '___sec3'),
+              ('Addisjon', 2, None, '___sec4'),
+              ('Multiplikasjon med skalar', 2, None, '___sec5'),
+              ('Prikkprodukt/skalarprodukt', 2, None, '___sec6'),
+              ('Kryssprodukt:', 2, None, '___sec7'),
+              ('Koordinatsystemer',
+               0,
+               'ch:koordinatsystemer',
+               'ch:koordinatsystemer'),
+              ('Kartesiske koordinater $(x, y, z)$', 1, None, '___sec9'),
+              ('Kulekoordinater $(r, \\phi, \\theta)$', 1, None, '___sec10'),
+              ('Felter', 0, 'ch:felter', 'ch:felter'),
+              ('Skalarfelter', 1, None, '___sec12'),
+              ('Vektorfelter', 1, None, '___sec13'),
+              ('Operasjoner på felter',
+               0,
+               'ch:feltoperasjoner',
+               'ch:feltoperasjoner'),
+              ('Derivasjon av felter', 1, None, '___sec15'),
+              ('Gradient', 2, None, '___sec16'),
+              ('Divergens', 2, None, '___sec17'),
+              ('Curl (Virvling)', 2, None, '___sec18'),
+              ('Et par nyttige nuller', 2, None, '___sec19'),
+              ('Integrasjon av felter', 1, None, '___sec20'),
+              ('Linjeintegral/kurveintegral', 2, None, '___sec21'),
+              ('Framgangsmåte', 3, None, '___sec22'),
+              ('Fluksintegral', 2, None, '___sec23'),
+              ('Volumelementet i sfæriske koordinater', 3, None, '___sec24'),
+              ('Volumintegral', 2, None, '___sec25'),
+              ('Integraler av sentralsymmetriske felter', 2, None, '___sec26'),
+              ('Integralsatser', 0, 'ch:integralsatser', 'ch:integralsatser'),
+              ("Gauss' teorem/Divergensteoremet", 1, None, '___sec28'),
+              ("Stokes' teorem", 1, None, '___sec29'),
+              ('Eksempler', 0, 'ch:eksempler', 'ch:eksempler'),
+              ("Eksempel på bruk av Gauss' lov", 1, None, '___sec31')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\newcommand{\nhat}{\mathbf{\hat{n}}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\y}{\mathbf{\hat{y}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\rhat}{\mathbf{\hat{r}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\phi}}}
+\newcommand{\thetahat}{\boldsymbol{\hat{\theta}}}
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\xarr}{\begin{bmatrix} 1 \\ 0 \\ 0 \end{bmatrix}}
+\newcommand{\yarr}{\begin{bmatrix} 0 \\ 1 \\ 0 \end{bmatrix}}
+\renewcommand{\v}{\mathbf{v}}
+\newcommand{\rvec}{\mathbf{r}}
+\newcommand{\B}{\mathbf{B}}
+\newcommand{\E}{\mathbf{E}}
+\renewcommand{\d}{\mathrm{d}}
+\renewcommand{\l}{\mathbf{l}}
+\renewcommand{\S}{\mathbf{S}}
+\newcommand{\p}{\partial}
+\newcommand{\xyz}{(x, y, z)}
+\newcommand{\dxyz}{\d x \d y \d z}
+\newcommand{\rphitheta}{(r, \phi, \theta)}
+\newcommand{\drphitheta}{\d r \d\phi \d\theta}
+\newcommand{\nablaop}{\x \frac{\p}{\p x} + \y \frac{\p}{\p y} + \z \frac{\p}{\p z}}
+\newcommand{\curldet}[1]{\left|\begin{array}{ccc} \x & \y & \z \\ \frac{\p}{\p x} & \frac{\p}{\p y} & \frac{\p}{\p z} \\ #1_x & #1_y & #1_z \end{array}\right|}
+\newcommand{\curldetcustom}[1]{\left|\begin{array}{ccc} \x & \y & \z \\ \frac{\p}{\p x} & \frac{\p}{\p y} & \frac{\p}{\p z} \\ #1 \end{array}\right|}
+\newcommand{\ilr}[1]{\left[ #1 \right]}
+\newcommand{\px}{\frac{\p}{\p x}}
+\newcommand{\py}{\frac{\p}{\p y}}
+\newcommand{\pz}{\frac{\p}{\p z}}
+\newcommand{\pr}{\frac{\p}{\p r}}
+\newcommand{\pphi}{\frac{\p}{\p \phi}}
+\newcommand{\ptheta}{\frac{\p}{\p \theta}}
+\newcommand{\quickmatrix}[1]{\begin{bmatrix}#1\end{bmatrix}}
+\newcommand{\twodet}[1]{\left| \begin{array}{cc} #1\end{array}\right|}
+\newcommand{\threedet}[1]{\left| \begin{array}{ccc} #1\end{array}\right|}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="vektorkalkulus.html">Forelesningsnotater i vektorkalkulus</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="#table_of_contents" style="font-size: 80%;">Table of contents</a></li>
+     <!-- navigation toc: --> <li><a href="._vektorkalkulus001.html#ch:vektorer" style="font-size: 80%;">Vektorer</a></li>
+     <!-- navigation toc: --> <li><a href="._vektorkalkulus002.html#ch:koordinatsystemer" style="font-size: 80%;">Koordinatsystemer</a></li>
+     <!-- navigation toc: --> <li><a href="._vektorkalkulus003.html#ch:felter" style="font-size: 80%;">Felter</a></li>
+     <!-- navigation toc: --> <li><a href="._vektorkalkulus004.html#ch:feltoperasjoner" style="font-size: 80%;">Operasjoner på felter</a></li>
+     <!-- navigation toc: --> <li><a href="._vektorkalkulus005.html#ch:integralsatser" style="font-size: 80%;">Integralsatser</a></li>
+     <!-- navigation toc: --> <li><a href="._vektorkalkulus006.html#ch:eksempler" style="font-size: 80%;">Eksempler</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0000"></a>
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<div class="jumbotron">
+<center><h1>Forelesningsnotater i vektorkalkulus</h1></center>  <!-- document title -->
+
+<p>
+<center><h4>Sep 21, 2018</h4></center> <!-- date -->
+<br>
+<p>
+<!-- author(s): Henrik Andersen Sveinsson, and J&#248;rgen Eriksson Midtb&#248; -->
+
+<center>
+<b>Henrik Andersen Sveinsson</b> [1]
+</center>
+
+<center>
+<b>J&#248;rgen Eriksson Midtb&#248;</b> [1]
+</center>
+
+<p>
+<!-- institution(s) -->
+
+<center>[1] <b>Fysisk institutt, Universitetet i Oslo</b></center>
+<br>
+
+<p>
+</div> <!-- end jumbotron -->
+
+<h1 id="table_of_contents">Table of contents</h2>
+
+<p>
+&nbsp; &nbsp; &nbsp; <a href="#___sec0"> Forord </a><br>
+<a href="._vektorkalkulus001.html#ch:vektorer"> Vektorer </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus001.html#___sec2"> Notasjon </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus001.html#___sec3"> Regneoperasjoner </a><br>
+<a href="._vektorkalkulus002.html#ch:koordinatsystemer"> Koordinatsystemer </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus002.html#___sec9"> Kartesiske koordinater \( (x, y, z) \) </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus002.html#___sec10"> Kulekoordinater \( (r, \phi, \theta) \) </a><br>
+<a href="._vektorkalkulus003.html#ch:felter"> Felter </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus003.html#___sec12"> Skalarfelter </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus003.html#___sec13"> Vektorfelter </a><br>
+<a href="._vektorkalkulus004.html#ch:feltoperasjoner"> Operasjoner p&#229; felter </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus004.html#___sec15"> Derivasjon av felter </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus004.html#___sec20"> Integrasjon av felter </a><br>
+<a href="._vektorkalkulus005.html#ch:integralsatser"> Integralsatser </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus005.html#___sec28"> Gauss' teorem/Divergensteoremet </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus005.html#___sec29"> Stokes' teorem </a><br>
+<a href="._vektorkalkulus006.html#ch:eksempler"> Eksempler </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._vektorkalkulus006.html#___sec31"> Eksempel p&#229; bruk av Gauss' lov </a><br>
+</p>
+
+<h1 id="___sec0" class="anchor">Forord </h1>
+Dette er forelesningsnotater fra introduksjonsforelesninger i vektorkalkulus gitt i forbindelse med FYS1120 p&#229; Universitetet i Oslo.
+Innholdet er beregnet for 6 timer &#224; 45 minutter.
+
+<p>
+Poenget er &#229; l&#230;re/repetere det vi trenger av vektorkalkulus for &#229; klare elektromagnetisme. Her er fokuset p&#229; bruk og intuisjon, ikke p&#229; bevis.
+
+<p>
+Kompendiet i FYS1120 har ogs&#229; en gjennomgang av vektorkalkulus. Den er kompakt og formell. Hensikten med dette kurset er &#229; supplere, ved &#229; legge mer vekt p&#229; eksempler og regning.
+
+<p>
+Vi begynner med det helt basale, nemlig hva en vektor er, og hvilke regneoperasjoner vi kan gj&#248;re p&#229; en vektor. Dette er b&#229;de for &#229; sikre at alle er helt enige om hva en vektor er, og for at dere skal bli vant til den notasjonen vi kommer til &#229; bruke. Videre g&#229;r vi over p&#229; det som kanskje er det mest sentrale for FYS1120, nemlig derivasjon og integrasjon av felter, og to sentrale teoremer: Stokes' og Gauss' teoremer. Disse kan v&#230;re til stor nytte n&#229;r vi skal jobbe med integrasjon av felter.
+
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pager">
+
+  <li class="next">
+    <a href="._vektorkalkulus001.html">Next &rarr;</a>
+  </li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    

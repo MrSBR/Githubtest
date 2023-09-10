@@ -1,0 +1,1365 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Uke 10: Emf og Faradays lov">
+
+<title>Uke 10: Emf og Faradays lov</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Emf', 1, None, '___sec1'),
+              ('Emf', 2, None, '___sec2'),
+              ('Oppgave: Emf', 2, None, '___sec3'),
+              ('Eksempel: Mekanisk batteri', 2, None, '___sec4'),
+              ('Faradays lov', 1, None, '___sec5'),
+              ('Faradays lov', 2, None, '___sec6'),
+              ('Oppgave: Fluks gjennom en krets', 2, None, '___sec7'),
+              ('Oppgave: Firkantet krets', 2, None, '___sec8'),
+              ('Eksempel: Emf i en krets', 2, None, '___sec9'),
+              ('Oppgave: Er det en emf?', 2, None, '___sec10'),
+              ('Eksempel: Retning til indusert emf', 2, None, '___sec11'),
+              ('Oppgave: Retningen på strømmen', 2, None, '___sec12'),
+              ('Oppgave: Permanentmagnet', 2, None, '___sec13'),
+              ("Lenz' lov", 2, None, '___sec14'),
+              ('Eksempel: Deformert krets', 2, None, '___sec15'),
+              ('Oppgave: På vei inn', 2, None, '___sec16'),
+              ('Oppgave: Rotasjon', 2, None, '___sec17'),
+              ('Eksempel: Roterende krets', 2, None, '___sec18')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\nhat}{\mathbf{\hat{n}}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="learningpath-10.html">Uke 10: Emf og Faradays lov</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._learningpath-10000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-10000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-10001.html#___sec1" style="font-size: 80%;"><b>Emf</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-10001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Emf</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-10001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Emf</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-10001.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Mekanisk batteri</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec5" style="font-size: 80%;"><b>Faradays lov</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Faradays lov</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Fluks gjennom en krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Firkantet krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Emf i en krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Er det en emf?</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Retning til indusert emf</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Retningen på strømmen</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Permanentmagnet</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Lenz' lov</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec15" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Deformert krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: På vei inn</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec17" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Rotasjon</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Roterende krets</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0002"></a>
+<!-- !split -->
+
+<h1 id="___sec5" class="anchor">Faradays lov </h1>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+
+<h2 id="___sec6" class="anchor">Faradays lov </h2>
+<!-- 10.1.1-1 -->
+
+<p>
+<!-- fig-faradayslaw/faradayslaw-lecture-faradayslaw-13.2.mp4 Video 13.03 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/feK7q-KrhfI" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 13.2)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec7" class="anchor">Oppgave: Fluks gjennom en krets </h2>
+
+<p>
+Magnetfeltet i figuren er uniformt, \( \vec{B} = B_z \z \), for \( y > 0 \) og \( \vec{B} = 0 \) for \( y < 0 \).
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-activity-005.png" align="bottom" width=400></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hva er st&#248;rrelsen og fortegnet til fluksen av det magnetiske feltet gjennom \( 2a \times 2a \) kretsen i \( xy \)-planet som er vist i figuren?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_1" style="font-size: 80%;"></a>
+<a href="#exer_2_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_1">
+
+<p>
+\( -2B_z a^2 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_3" style="font-size: 80%;"></a>
+<a href="#exer_2_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_3">
+
+<p>
+Fluksen er gitt som
+$$
+\begin{equation}
+\Phi_B = \int_S \vec{B} \cdot \d \vec{S} \; .
+\tag{7}
+\end{equation}
+$$
+
+Retningen p&#229; overflatenormalen \( \nhat \) er gitt av retningen p&#229; str&#248;mmen i kretsen. Vi bruker h&#248;yreh&#229;nds-regelen, krummer de fire fingrene untatt tommelen i retning av str&#248;mmen og ser at tommelen da peker i retning av overflatenormalet som er nedover, dvs. i negativ \( z \)-retning. Alts&#229; er \( \nhat = -\z \).
+
+<p>
+Vi ser at det magnetiske feltet er homogent i omr&#229;det \( y > 0 \) og i \( y < 0 \). Vi kan derfor dele opp overflate-integralet i to deler, ett for \( S_1 \) som er for \( y < 0 \) og ett for \( S_2 \) som er for \( y > 0 \).
+$$
+\begin{equation}
+\int_S \vec{B} \cdot \d \vec{S} = \int_{S_1} \vec{B} \cdot \d \vec{S} + \int_{S_2} \vec{B} \cdot \d \vec{S} 
+\tag{8}
+\end{equation}
+$$
+
+Vi ser at for \( S_1 \) s&#229; er \( \vec{B} = 0 \) slik at \( \int_{S_1} \vec{B} \cdot \d \vec{S} = 0 \). For \( S_2 \) s&#229; er \( \vec{B} = B_z \z \) slik at \( \int_{S_2} \vec{B} \cdot \d \vec{S} = -B_z S_2 = -B_z 2a \, a = -2 B_z a^2 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec8" class="anchor">Oppgave: Firkantet krets </h2>
+
+<p>
+Magnetfeltet i figuren er uniformt inn i planet.
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-question-square-010.png" align="bottom" width=400></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hva er fortegnet til \( \Phi_B \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_1" style="font-size: 80%;"></a>
+<a href="#exer_3_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_1">
+
+<p>
+Positivt.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_5" style="font-size: 80%;"></a>
+<a href="#exer_3_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_5">
+
+<p>
+Overflatenormalen er gitt av positiv retning p&#229; kretsen. Vi bruker h&#248;yreh&#229;ndsregelen og krummer de fire fingrene p&#229; h&#248;yre h&#229;nd unntatt tommelen i positiv retnign langs kretsen og ser at tommelen da peker i retning av positiv overflatenormal, som er inn i planet. Dette er samme retning som magnetfeltet, slik at fluksen vil v&#230;re positiv.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Hvordan endres st&#248;rrelsen (\( |\Phi_B| \)) til den magnetiske fluksen gjennom kretsen seg hvis vi halverer st&#248;rrelsen p&#229; \( \vec{B} \)-feltet og dobler lengden p&#229; sidekanten i den kvadratiske str&#248;mkretsen?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_2" style="font-size: 80%;"></a>
+<a href="#exer_3_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_2">
+
+<p>
+Fluksen blir doblet.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_6" style="font-size: 80%;"></a>
+<a href="#exer_3_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_6">
+
+<p>
+Fluksen er gitt som
+$$
+\begin{equation}
+\Phi_B = \int_S \vec{B} \cdot \d \vec{S} \; ,
+\tag{9}
+\end{equation}
+$$
+
+hvor overflatenormalen peker i samme retning som magnetfeltet. Siden magnetfeltet er uniformt kan vi sette dette utenfor integralet:
+$$
+\begin{equation}
+\Phi_B = \int_S \vec{B} \cdot \d \vec{S} = B\int_S \d S = B S 
+\tag{10}
+\end{equation}
+$$
+
+Hvis vi dobler sidekanten vil \( S \) blir fire ganger st&#248;rre, mens vi kun halverer \( B \). Netto effekt blir derfor
+$$
+\begin{equation}
+\Phi_B' = (B/2)(4S) = 2BS
+\tag{11}
+\end{equation}
+$$
+
+Fluksen blir derfor doblet.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec9" class="anchor">Eksempel: Emf i en krets </h2>
+
+<p>
+<!-- fig-faradayslaw/faradayslaw-example-emfincircuit-13.2.1.mp4 Video 13.04 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/OvxRY-C8MbI" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 13.2.1)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec10" class="anchor">Oppgave: Er det en emf? </h2>
+
+<p>
+<b>a)</b>
+En ledningssl&#248;yfe beveger seg raskt gjennom et uniformt magnetfelt som vist i figuren. Blir det indusert en emf i sl&#248;yfen?
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-question-isthereanemf-010.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_1" style="font-size: 80%;"></a>
+<a href="#exer_4_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_1">
+
+<p>
+Nei
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_5" style="font-size: 80%;"></a>
+<a href="#exer_4_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_5">
+
+<p>
+Siden magnetfeltet er uniformt vil ikke fluksen gjennom sl&#248;yfen endre seg. Det er derfor ingen endringen i fluksen og derfor ingen indusert emf.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Hva hvis sl&#248;yfen er elliptisk og i stedet roteres om en akse som er normalt p&#229; planet til skjermen/papiret? Blir det indusert en emf i sl&#248;yfen?
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-question-isthereanemf-020.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_2" style="font-size: 80%;"></a>
+<a href="#exer_4_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_2">
+
+<p>
+Nei
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_6" style="font-size: 80%;"></a>
+<a href="#exer_4_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_6">
+
+<p>
+Ogs&#229; i dette tilfellet vil ikke fluksen endres: Magnetfeltet er uniformt og st&#248;rrelsen p&#229; sl&#248;yfen endres ikke, slik at fluksen er den samme. Dermed er den tidsderiverte av fluksen null. Det blir derfor ikke indusert noen emf.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec11" class="anchor">Eksempel: Retning til indusert emf </h2>
+
+<p>
+<!-- fig-faradayslaw/faradayslaw-example-directionofemf-13.2.2.mp4 Video 13.05 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/YDXr9yI0jas" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 13.2.2)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec12" class="anchor">Oppgave: Retningen p&#229; str&#248;mmen </h2>
+
+<p>
+Magnetfeltet i figuren er uniformt. Hva er retningen p&#229; str&#248;mmen hvis?
+
+<p>
+<b>a)</b>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-question-shapechange-010.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+St&#248;rrelsen p&#229; kretsen minker?
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_1" style="font-size: 80%;"></a>
+<a href="#exer_5_1" data-toggle="collapse">
+<b>Hint 1.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_1">
+
+<p>
+Definer en positiv retning for str&#248;mmen og bruk denne i dine argumenter/utregninger.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_2" style="font-size: 80%;"></a>
+<a href="#exer_5_2" data-toggle="collapse">
+<b>Hint 2.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_2">
+
+<p>
+Bruk Faradays lov til &#229; finne indusert emf.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_3" style="font-size: 80%;"></a>
+<a href="#exer_5_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_3">
+
+<p>
+Med klokken.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_7" style="font-size: 80%;"></a>
+<a href="#exer_5_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_7">
+
+<p>
+Her er ikke positiv retning p&#229; str&#248;mmen oppgitt. Vi velger positiv regning med klokken, slik at overflatenormalen peker inn i skjermen/arket. Fluksen gjennom kretsen er da
+$$
+\begin{equation}
+\Phi_B = \int_S \vec{B} \cdot \d \vec{S} = B_z S \; ,
+\tag{12}
+\end{equation}
+$$
+
+Vi ser at n&#229;r overflaten \( S \) minker vil \( \Phi_B \) minke. Faradays lov gir at den indusert emf'en da vil v&#230;re
+$$
+\begin{equation}
+e = - \frac{\d \Phi_B}{\d t}\;
+\tag{13}
+\end{equation}
+$$
+
+Vi ser derfor \( \d \Phi_B/\d t < 0 \) og at \( e > 0 \). Vi antar at sl&#248;yfen har en endelig motstand \( R \). Da vil str&#248;mmen som induseres v&#230;re gitt av Kirchoffs spenningslov, \( e - RI = 0 \), og derfor \( I = e/R \). Siden \( e > 0 \) vil derfor ogs&#229; \( I > 0 \). Str&#248;mmen vil g&#229; i det som vi har definert som positiv retning, som er med klokken.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-question-shapechange-020.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+St&#248;rrelsen p&#229; magnetfeltet &#248;ker?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_4" style="font-size: 80%;"></a>
+<a href="#exer_5_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_4">
+
+<p>
+Mot klokken.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_8" style="font-size: 80%;"></a>
+<a href="#exer_5_8" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_8">
+
+<p>
+Her er ikke positiv retning p&#229; str&#248;mmen oppgitt. Vi velger positiv regning med klokken, slik at overflatenormalen peker inn i skjermen/arket. Fluksen gjennom kretsen er da
+$$
+\begin{equation}
+\Phi_B = \int_S \vec{B} \cdot \d \vec{S} = B_z S \; ,
+\tag{14}
+\end{equation}
+$$
+
+Vi ser at n&#229;r st&#248;rrelsen p&#229; magnetfeltet &#248;ker vil \( \Phi_B \) minke. Faradays lov gir at den indusert emf'en da vil v&#230;re
+$$
+\begin{equation}
+e = - \frac{\d \Phi_B}{\d t}\;
+\tag{15}
+\end{equation}
+$$
+
+Vi ser derfor \( \d \Phi_B/\d t > 0 \) og at \( e < 0 \). Vi antar at sl&#248;yfen har en endelig motstand \( R \). Da vil str&#248;mmen som induseres v&#230;re gitt av Kirchoffs spenningslov, \( e - RI = 0 \), og derfor \( I = e/R \). Siden \( e < 0 \) vil derfor ogs&#229; \( I < 0 \). Str&#248;mmen vil g&#229; i det som vi har definert som negativ retning, som er mot klokken.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec13" class="anchor">Oppgave: Permanentmagnet </h2>
+
+<p>
+En permanentmagnet holdes under en horisontal str&#248;msl&#248;yfe som vist i figuren. Magneten trekkes s&#229; nedover, vekk fra sl&#248;yfen.
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-question-permenentmagnet-010.png" align="bottom" width=300></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Din medstudent, Kim, sier at siden det er en permanentmagnet s&#229; vil det ikke v&#230;re noen endring i fluksen, og derfor kan det ikke induseres noen str&#248;m i sl&#248;yfen. Har hen rett?
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_1" style="font-size: 80%;"></a>
+<a href="#exer_6_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_1">
+
+<p>
+Hva skjerm med magnetfeltet som g&#229;r gjennom str&#248;msl&#248;yfen?
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_2" style="font-size: 80%;"></a>
+<a href="#exer_6_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_2">
+
+<p>
+Nei
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_6" style="font-size: 80%;"></a>
+<a href="#exer_6_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_6">
+
+<p>
+Hva skjer i dette tilfellet? Magnetfeltet rundt magneten endrer seg ikke med tiden, men posisjonen til magneten endrer seg, slik at magnetfeltet som g&#229;r gjennom str&#248;msl&#248;yfen vil endre seg. Det blir derfor indusert en emf i sl&#248;yfen.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Hvilken retning f&#229;r den induserte str&#248;mmen n&#229;r kretsen sees ovenfra? (Med eller mot klokken, eller er den null?)
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_3" style="font-size: 80%;"></a>
+<a href="#exer_6_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_3">
+
+<p>
+Mot klokken.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_7" style="font-size: 80%;"></a>
+<a href="#exer_6_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_7">
+
+<p>
+La oss velge positiv retning slik at overflatenormalen peker oppover, dvs. mot klokken sett ovenfra. Magnetfeltet fra magneten vil peke oppover, slik at det vil v&#230;re en positiv fluks gjennom sl&#248;yfen. N&#229;r magneten flyttes nedover, vil magnetfeltet gjennom sl&#248;yfen bli mindre, slik at fluksen vil avta. Da vil den induserte emf'en, som er \( e = - \d \Phi/\d t \) v&#230;re positiv. Det vil derfor induseres en str&#248;m i positiv retning som er mot klokken sett ovenfra.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec14" class="anchor">Lenz' lov </h2>
+
+<p>
+<!-- fig-faradayslaw/faradayslaw-lecture-lenzlaw-13.2.3.mp4 Video 13.06 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/ce1BXtRIGRk" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 13.2.3)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+
+<h2 id="___sec15" class="anchor">Eksempel: Deformert krets  </h2>
+
+<p>
+<!-- fig-faradayslaw/faradayslaw-example-deformedcircuit-13.2.4.mp4 Video 13.07 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/vA1zU6TrOEQ" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 13.2.4)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec16" class="anchor">Oppgave: P&#229; vei inn </h2>
+
+<p>
+<b>a)</b>
+En ende av en rektangular kobberkrets beveger seg inn i et omr&#229;de med konstant og uniformt magnetisk felt \( \vec{B} \) med en hastighet \( \vec{v} \) som vist i figuren. Magnetfeltet er null utenfor det skraverte omr&#229;det.
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-question-wayin-010.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+I hvilken retning vil str&#248;mmen g&#229;?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_1" style="font-size: 80%;"></a>
+<a href="#exer_7_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_1">
+
+<p>
+Med klokken.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_9" style="font-size: 80%;"></a>
+<a href="#exer_7_9" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_9">
+
+<p>
+Vi velger positiv overflatenormal i samme retning som magnetfeltet, ut av planet, som svarer til positiv str&#248;mretning mot klokken. N&#229;r kretsen beveger seg inn i magnetfeltet vil derfor arealet av kretsen som er inne i magnetfeltet &#248;ke og fluksen gjennom kretsen vil &#248;ke slik at \( \d\Phi/\d t > 0 \). Det betyr at den induserte emf'en, som er \( e = - \d \Phi/\d t < 0 \). Den induserte str&#248;mmen vil derfor g&#229; i negativ retning. Det betyr at str&#248;mmen vil g&#229; med klokken. (Merk at i det hele kretsen er inne i omr&#229;det med magnetfelt vil det ikke lenger v&#230;re noen endring i fluksen, og dermed vil det ikke bli indusert noen str&#248;m).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+En ende av en rektangular kobberkrets beveger seg inn i et omr&#229;de med konstant og uniformt magnetisk felt \( \vec{B} \) med en hastighet \( \vec{v} \) som vist i figuren. Magnetfeltet er null utenfor det skraverte omr&#229;det.
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-question-wayin-020.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+Hva er fluksen gjennom l&#248;kken?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_2" style="font-size: 80%;"></a>
+<a href="#exer_7_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_2">
+
+<p>
+\( -xLB \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_10" style="font-size: 80%;"></a>
+<a href="#exer_7_10" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_10">
+
+<p>
+Vi ser at overflatenormalen til kretsen med den valgte str&#248;mretningen er inn i planet, mens magnetfeltet peker i motsatt retning ut av planet, slik at \( \vec{B} \cdot \d \vec{S} = - B\d S \). Fluksen er gitt som
+$$
+\begin{equation}
+\Phi = \int_S \vec{B} \cdot \d \vec{S} = -\int_S B \d S \; .
+\tag{16}
+\end{equation}
+$$
+
+Vi deler arealet i to deler, \( S_1 \) er arealet som er innenfor magnetfeltet. Dette har st&#248;rrelsen \( S_1 = xL \), mens \( S_2 \) er det gjenst&#229;ende arealet \( S_2 = (w-x)L \). Magnetfeltet er null i \( S_2 \). Fluksen er derfor
+$$
+\begin{equation}
+\Phi = -\left( \int_{S_1} B \d S + \int_{S_2} B \d S \right)= -S_1 B_1 - S_2 B_2 = -xL B_1 - (w-x)L 0 = -xL B \; . 
+\tag{17}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+En ende av en stasjon&#230;r rektangular kobberkrets er i et omr&#229;de med uniformt magnetisk felt \( \vec{B} = (B_0+kt)\z \). Magnetfeltet er null utenfor det skraverte omr&#229;det.
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-question-wayin-030.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+Hva er emf'en rund str&#248;msl&#248;yfen?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_3" style="font-size: 80%;"></a>
+<a href="#exer_7_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_3">
+
+<p>
+\( e = kxL \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_11" style="font-size: 80%;"></a>
+<a href="#exer_7_11" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_11">
+
+<p>
+Overflatenormalen til kretsen er inn i planet, mens magnetfeltet er ut av planet, slik at \( \vec{B} \cdot \d \vec{S} = - B\d S \). Fluksen gjennom kretsen er da:
+$$
+\begin{equation}
+\Phi = \int_S \vec{B} \cdot \d \vec{S} = -\int_S B \d S = \int_{S_1} B \d S - \int_{S_2} B \d S = -B_1 S_1 - B_2 S_2\; .
+\tag{18}
+\end{equation}
+$$
+
+hvor \( B_1 = B_0 + kt \) og \( B_2 = 0 \) slik at
+$$
+\begin{equation}
+\Phi = -(B_0 + kt) xL \; .
+\tag{19}
+\end{equation}
+$$
+
+Faradays lov gir da at den induserte emf'en er \( e = - \d \Phi / \d t \):
+$$
+\begin{equation}
+e = - \frac{\d\Phi}{\d t} = k x L \; .
+\tag{20}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+Vi ser p&#229; det samme systemet som i forrige oppgave (oppgave c). Hvilken retning har det magnetiske feltet som settes opp av den induserte str&#248;mmen i l&#248;kken --- i det plane omr&#229;det innenfor l&#248;kken?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_4" style="font-size: 80%;"></a>
+<a href="#exer_7_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_4">
+
+<p>
+Inn i planet.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_12" style="font-size: 80%;"></a>
+<a href="#exer_7_12" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_12">
+
+<p>
+Vi kan her f.eks. bruke Biot-Savarts lov p&#229; str&#248;mmen vi fant i forrige oppgave. Da ser vi at siden emf'en er positiv er str&#248;mmen positiv. Ved h&#248;yreh&#229;ndsregelen ser vi at magnetfeltet vil peke inn i planet. Alternativt kan vi argumentere ved hjelp av Lenz lov: Magnetfeltet som settes opp vil redusere endringen som induserte str&#248;mmen. Siden magnetfeltet som induserer str&#248;mmen &#248;ker ut av planet, betyr det at magnetfeltet som induseres vil virke i motsatt retning, inn i planet, slik at den induserte fluksen blir mindre.
+
+<p>
+(Vi ser ofte bort fra magnetfeltet fra str&#248;mmen som er indusert i en krets, men dette er ikke riktig. Det er den totale fluksen som inng&#229;r i Faradays lov --- fluksen fra b&#229;de det ytre magnetfeltet og fra magnetfeltet som settes opp av den induserte str&#248;mmen. Men magnetfeltet som settes opp av den induserte str&#248;mmen er ofte lite og kan derfor ignoreres. Vi skal i neste kapittel ser mer p&#229; denn effekten som kalles selv-induksjon, eller ofte bare induksjon).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec17" class="anchor">Oppgave: Rotasjon </h2>
+
+<p>
+En rektangul&#230;r str&#248;msl&#248;yfe roterer i et homogent ytre magnetfelt \( \vec{B} \). I &#248;yeblikket som er illustrert i figuren er sl&#248;yfen orientert slik at den venste delen av sl&#248;yfen er over planet i illustrasjonen og den h&#248;yre  siden er under planet. Sl&#248;yfen roterer slik at den venstre siden er p&#229; vei ut av planet.
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-question-rotating-010.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hvilken vei vil str&#248;mmen i str&#248;msl&#248;yfen g&#229;?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_8_1" style="font-size: 80%;"></a>
+<a href="#exer_8_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_8_1">
+
+<p>
+Med klokken.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_8_3" style="font-size: 80%;"></a>
+<a href="#exer_8_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_8_3">
+
+<p>
+Vi velger positiv str&#248;mretning med klokken. Fluksen gjennom overflaten vil da v&#230;re:
+$$
+\begin{equation}
+\Phi = \int_S \vec{B} \cdot \d \vec{S} = \vec{B} \cdot \vec{S} \; ,
+\tag{21}
+\end{equation}
+$$
+
+som vil v&#230;re positiv, men den vil v&#230;re avtagende fordi arealet \( \vec{S} \) blir mer og mer normalt p&#229; \( \vec{B} \). Fluksen avtar derfor. Faradays lov gir oss da at
+$$
+\begin{equation}
+e = - \frac{\d \Phi}{\d t} > 0 \; .
+\tag{22}
+\end{equation}
+$$
+
+Den induserte emf'en er derfor positiv og str&#248;mmen er positiv. Str&#248;mmen vil derfor med klokken. (Merk at dette vil bli annerledes n&#229;r sl&#248;yfen har rotert forbi posisjonen hvor sl&#248;yfen er normal p&#229; magnetfeltet. Se om du kan gjennomf&#248;re argumentet for denne situasjonen ogs&#229;.)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec18" class="anchor">Eksempel: Roterende krets  </h2>
+
+<p>
+<!-- fig-faradayslaw/faradayslaw-example-rotatingcircuit-13.2.5.mp4 Video 13.08 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/f3dEIN99dyQ" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 13.2.5)</em></p>
+
+<p>
+</div>
+
+
+<p>
+
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._learningpath-10001.html">&laquo;</a></li>
+  <li><a href="._learningpath-10000.html">1</a></li>
+  <li><a href="._learningpath-10001.html">2</a></li>
+  <li class="active"><a href="._learningpath-10002.html">3</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

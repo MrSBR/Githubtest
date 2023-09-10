@@ -1,0 +1,357 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Seminar uke 08: Magnetisk felt">
+
+<title>Seminar uke 08: Magnetisk felt</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Magnetisk felt', 1, None, '___sec1'),
+              ('Magnetfelt og Biot-Savarts lov', 2, None, '___sec2'),
+              ('Oppgave: Magnetisk felt fra et strøm-element',
+               2,
+               None,
+               '___sec3'),
+              ('Oppgave: To strøm-elementer', 2, None, '___sec4'),
+              ('Oppgave: Sammenlikning av linjeladning og linjestrøm',
+               2,
+               None,
+               '___sec5'),
+              ('Oppgave: Strømsløyfe i magnetfelt', 2, None, '___sec6'),
+              ('Oppgave: Ladninger i en tokamak', 2, None, '___sec7'),
+              ('Oppgave: Eksplisitt parameterisert kurve', 2, None, '___sec8')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\y}{\mathbf{\hat{y}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\Rhat}{\mathbf{\hat{R}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\phi}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="seminar-08.html">Seminar uke 08: Magnetisk felt</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._seminar-08000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08001.html#___sec1" style="font-size: 80%;"><b>Magnetisk felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Magnetfelt og Biot-Savarts lov</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08002.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Magnetisk felt fra et strøm-element</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08003.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: To strøm-elementer</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08004.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Sammenlikning av linjeladning og linjestrøm</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08005.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Strømsløyfe i magnetfelt</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-08006.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Ladninger i en tokamak</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Eksplisitt parameterisert kurve</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0007"></a>
+<!-- !split -->
+<div class="panel panel-success">
+  <div class="panel-heading">
+  <h3 class="panel-title">Oppgave</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec8" class="anchor">Oppgave: Eksplisitt parameterisert kurve </h2>
+
+<p>
+(<em>Du kan godt hoppe over denne oppgaven --- den g&#229;r litt mer i dybden p&#229; parameteriserte kurver og kurveintegralet</em>)
+I denne oppgaven skal vi eksplisitt sette opp et parameterisert kurveintegral langs en str&#248;msl&#248;yfe. Vi skal se p&#229; en sirkul&#230;r str&#248;m i \( xy \)-planet med sentrum i origo, radius \( a \) og en str&#248;m \( I \).
+
+<p>
+<b>a)</b>
+Finn en parameterisering av kurven som beskriver str&#248;msl&#248;yfen, \( \vec{r}'(\phi) \), hvor \( \phi \) er vinkelen fra \( x \)-aksen.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_1" style="font-size: 80%;"></a>
+<a href="#exer_6_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_1">
+
+$$\vec{r}(\phi) = a(\cos \phi, \sin \phi, 0)$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>b)</b>
+Vi skal finne det magnetiske feltet langs \( z \)-aksen. Hva er \( \vec{R} \)-vektor for et str&#248;melement i punktet \( \vec{r}'(\phi) \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_2" style="font-size: 80%;"></a>
+<a href="#exer_6_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_2">
+
+$$\vec{R} = (0,0,z)-a(\cos \phi, a \sin \phi,0) = (- a\cos \phi, - a\sin \phi, z)$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>c)</b>
+Hva blir \( \d \vec{l} \) uttrykt ved \( \phi \) og \( \d \phi \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_3" style="font-size: 80%;"></a>
+<a href="#exer_6_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_3">
+
+$$\d \vec{l} = \frac{\d \vec{r}'(\phi)}{\d \phi}\d \phi = a(- \sin \phi, \cos \phi) \d \phi$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>d)</b>
+Hva er bidraget til magnetfeltet i \( (0,0,z) \) fra et str&#248;melement i punktet \( \vec{r}'(\phi) \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_4" style="font-size: 80%;"></a>
+<a href="#exer_6_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_4">
+
+$$\d \vec{B} = \frac{\mu_0}{4 \pi} \frac{I a \d \phi (z \cos \phi, z \sin \phi, a)}{(z^2 + a^2)^{3/2}}$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>e)</b>
+Hva blir kurveintegralet over str&#248;msl&#248;yfen? Skriv integralet som et integral over \( \phi \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_5" style="font-size: 80%;"></a>
+<a href="#exer_6_5" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_5">
+
+$$\vec{B} = \frac{\mu_0}{4 \pi} \frac{I a 2 \pi \z }{(z^2 + a^2)^{3/2}} =
+\frac{\mu_0 I a }{2(z^2 + a^2)^{3/2}}\z$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>f)</b>
+Hvordan blir disse utregningene endret dersom vi i stedet parameteriserer kurven ved buelengden \( s \) slik at \( \vec{r}'(s) = a (\cos (s/a), \sin(s/a), 0) \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_6" style="font-size: 80%;"></a>
+<a href="#exer_6_6" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_6">
+
+<p>
+Utregningene blir n&#230;r identiske, men integralet blir n&#229; over \( s \) fra \( 0 \) til \( 2 \pi a \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+</div>
+</div>
+
+<!-- --- end exercise --- -->
+
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._seminar-08006.html">&laquo;</a></li>
+  <li><a href="._seminar-08000.html">1</a></li>
+  <li><a href="._seminar-08001.html">2</a></li>
+  <li><a href="._seminar-08002.html">3</a></li>
+  <li><a href="._seminar-08003.html">4</a></li>
+  <li><a href="._seminar-08004.html">5</a></li>
+  <li><a href="._seminar-08005.html">6</a></li>
+  <li><a href="._seminar-08006.html">7</a></li>
+  <li class="active"><a href="._seminar-08007.html">8</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

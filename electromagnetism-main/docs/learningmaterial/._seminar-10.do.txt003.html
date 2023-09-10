@@ -1,0 +1,372 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Seminar uke 10: Emf og Faradays lov">
+
+<title>Seminar uke 10: Emf og Faradays lov</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Emf', 1, None, '___sec1'),
+              ('Emf og Faradays lov', 2, None, '___sec2'),
+              ('Oppgave: Smart-emf', 2, None, '___sec3'),
+              ('Bryteren er av', 3, None, '___sec4'),
+              ('Bryteren er på', 3, None, '___sec5'),
+              ('Oppgave: Finn fluksen', 2, None, '___sec6'),
+              ("Oppgave: Finn emf'en", 2, None, '___sec7'),
+              ('Oppgave: Klem og lad', 2, None, '___sec8'),
+              ('Oppgave: Emf på bussen', 2, None, '___sec9'),
+              ('Sett fra veien', 3, None, '___sec10'),
+              ('Sett fra bussen', 3, None, '___sec11'),
+              ('Oppgave: Sirkelstrømmer', 2, None, '___sec12')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\nhat}{\mathbf{\hat{n}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\phi}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="seminar-10.do.txt.html">Seminar uke 10: Emf og Faradays lov</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt001.html#___sec1" style="font-size: 80%;"><b>Emf</b></a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Emf og Faradays lov</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt002.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Smart-emf</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt002.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bryteren er av</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt002.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bryteren er på</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Finn fluksen</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt004.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Finn emf'en</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt005.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Klem og lad</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt006.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Emf på bussen</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt006.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sett fra veien</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt006.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sett fra bussen</a></li>
+     <!-- navigation toc: --> <li><a href="._seminar-10.do.txt007.html#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Sirkelstrømmer</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0003"></a>
+<!-- !split -->
+<div class="panel panel-success">
+  <div class="panel-heading">
+  <h3 class="panel-title">Oppgave</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec6" class="anchor">Oppgave: Finn fluksen </h2>
+
+<p>
+Finn fluksen \( \Phi_B \) gjennom overflaten \( S \) for disse situasjonene med utgangspunkt i figuren. Orienteringen av overflaten \( S \) er gitt av retningen p&#229; kurven eller av en normalvektor p&#229; overflaten.
+
+<p>
+<br /><br /><center><p><img src="fig-faradayslaw/faradayslaw-activelearning-flux-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<b>a)</b>
+(Figur a): En plan, kvadratisk overflate i \( xy \)-planet fra \( -a \) til \( a \) i b&#229;de \( x \)- og \( y \)-retningen og et homogent magnetfelt \( \vec{B} = B_0 \z \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_1" style="font-size: 80%;"></a>
+<a href="#exer_2_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_1">
+
+<p>
+\( \Phi_B = 4 a^2 B_0 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>b)</b>
+(Figur B): En plan, kvadratisk overflate i \( xy \)-planet fra \( -a \) til \( a \) i b&#229;de \( x \)- og \( y \)-retninger og et magnetfelt \( \vec{B} = \frac{B_0}{b}x \z \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_2" style="font-size: 80%;"></a>
+<a href="#exer_2_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_2">
+
+<p>
+\( \Phi_B = 0 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>c)</b>
+(Figur C) En plan, rektangul&#230;r overflate i \( xy \)-planet fra \( x=0 \) til \( x=a \) og \( y=-a \) til \( y=a \) og et magnetfelt \( \vec{B} = \frac{B_0}{b}x \z \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_3" style="font-size: 80%;"></a>
+<a href="#exer_2_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_3">
+
+$$\Phi_B = \frac{B_0 a^2}{b}$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>d)</b>
+(Figur D) En plan, kvadratisk overflate med sidekanter \( 2a \) som er rotert en vinkel \( \theta \) om \( y \)-aksen. Et homogent magnetfelt \( \vec{B} = B_0 \z \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_4" style="font-size: 80%;"></a>
+<a href="#exer_2_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_4">
+
+$$\Phi_B = B_0 4 a^2 \cos \theta$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>e)</b>
+(Figur E) En overflate med form som en halvkuleflate med radius \( a \) og et homogent magnetfelt \( \vec{B} = B_0 \z \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_5" style="font-size: 80%;"></a>
+<a href="#exer_2_5" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_5">
+
+$$\Phi_B = \pi a^2 B_0$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+<b>f)</b>
+(Figur F) En overflate med form som en halvkuleflate med radius \( a \) og et magnetfelt \( \vec{B} = \frac{B_0}{b} r \z \) hvor \( r = \sqrt{x^2 + y^2} \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_6" style="font-size: 80%;"></a>
+<a href="#exer_2_6" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_6">
+
+$$\Phi_B = \frac{2 \pi a^3 B_0}{3b}$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- removed !bsol ... !esol environment (because of the command-line option --without_solutions)
+ -->
+<p>
+</div>
+</div>
+
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._seminar-10.do.txt002.html">&laquo;</a></li>
+  <li><a href="._seminar-10.do.txt000.html">1</a></li>
+  <li><a href="._seminar-10.do.txt001.html">2</a></li>
+  <li><a href="._seminar-10.do.txt002.html">3</a></li>
+  <li class="active"><a href="._seminar-10.do.txt003.html">4</a></li>
+  <li><a href="._seminar-10.do.txt004.html">5</a></li>
+  <li><a href="._seminar-10.do.txt005.html">6</a></li>
+  <li><a href="._seminar-10.do.txt006.html">7</a></li>
+  <li><a href="._seminar-10.do.txt007.html">8</a></li>
+  <li><a href="._seminar-10.do.txt004.html">&raquo;</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

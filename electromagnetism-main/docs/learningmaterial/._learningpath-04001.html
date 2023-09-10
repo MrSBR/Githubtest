@@ -1,0 +1,1268 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Uke 04: Laplaces og Poissons likninger">
+
+<title>Uke 04: Laplaces og Poissons likninger</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Laplace og Poissons likninger', 1, None, '___sec1'),
+              ('Innledning og utledning av Poissons og Laplace likninger',
+               2,
+               None,
+               '___sec2'),
+              ('Oppgave: Laplace operator', 2, None, '___sec3'),
+              ('Oppgave: Laplace og Poissons likning', 2, None, '___sec4'),
+              ('Oppgave: Potensielt potensiale', 2, None, '___sec5'),
+              ('Eksempel: Laplace likning i en dimensjon', 2, None, '___sec6'),
+              ('Eksempel: Poissons likning i en dimensjon', 2, None, '___sec7'),
+              ('Oppgave: Ikke Laplace', 2, None, '___sec8'),
+              ('Oppgave: Laplace likning i to dimensjoner', 2, None, '___sec9'),
+              ('Eksistens og unikhet av løsninger', 2, None, '___sec10'),
+              ('Oppgave: Hva betyr grensebetingelsene for potensialet?',
+               2,
+               None,
+               '___sec11'),
+              ('Grensebetingelser', 2, None, '___sec12'),
+              ('Oppgave: Passende grenseverdier', 2, None, '___sec13'),
+              ('Poissons likning i forskjellige koordinatsystemer',
+               2,
+               None,
+               '___sec14'),
+              ('Oppgave: Sfærisk løsning?', 2, None, '___sec15'),
+              ('Eksempel: Sylindrisk system', 2, None, '___sec16'),
+              ('Numerisk løsning av Laplace likning', 1, None, '___sec17'),
+              ('Diskretisering av Laplace likning', 2, None, '___sec18'),
+              ('Oppgave: Er det Laplace?', 2, None, '___sec19'),
+              ('Løsning av Laplace likning med Jacobi iterasjoner',
+               2,
+               None,
+               '___sec20'),
+              ('Oppgave: Topp i midten', 2, None, '___sec21'),
+              ('Eksempel: Von Neumann grensebetingelser', 2, None, '___sec22')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="learningpath-04.html">Uke 04: Laplaces og Poissons likninger</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._learningpath-04000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-04000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 80%;"><b>Laplace og Poissons likninger</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innledning og utledning av Poissons og Laplace likninger</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Laplace operator</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Laplace og Poissons likning</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Potensielt potensiale</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Laplace likning i en dimensjon</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Poissons likning i en dimensjon</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Ikke Laplace</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Laplace likning i to dimensjoner</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksistens og unikhet av løsninger</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Hva betyr grensebetingelsene for potensialet?</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Grensebetingelser</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Passende grenseverdier</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Poissons likning i forskjellige koordinatsystemer</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec15" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Sfærisk løsning?</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Sylindrisk system</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-04002.html#___sec17" style="font-size: 80%;"><b>Numerisk løsning av Laplace likning</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-04002.html#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskretisering av Laplace likning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-04002.html#___sec19" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Er det Laplace?</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-04002.html#___sec20" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Løsning av Laplace likning med Jacobi iterasjoner</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-04002.html#___sec21" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Topp i midten</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-04002.html#___sec22" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Von Neumann grensebetingelser</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0001"></a>
+<!-- !split -->
+
+<h1 id="___sec1" class="anchor">Laplace og Poissons likninger </h1>
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+
+<h2 id="___sec2" class="anchor">Innledning og utledning av Poissons og Laplace likninger  </h2>
+
+<p>
+<!-- fig-laplaceequation/laplaceequation-lecture-intro-5.1.1.mp4 Video 05.01 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/WbJEBLyO1JE" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 5.1.1)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec3" class="anchor">Oppgave: Laplace operator </h2>
+
+<p>
+<b>a)</b>
+Gjennomf&#248;r utregningen som viser hva Laplace likning blir i to dimensjoner i Kartesiske koordinater?
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_1" style="font-size: 80%;"></a>
+<a href="#exer_1_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_1">
+
+<p>
+\( \nabla = \left( \frac{\partial}{\partial x}, \frac{\partial}{\partial y}\right)  \) i to dimensjoner.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_2" style="font-size: 80%;"></a>
+<a href="#exer_1_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_2">
+
+<p>
+\( \frac{\partial^2  V}{\partial x^2} + \frac{\partial^2  V}{\partial y^2} = 0 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_4" style="font-size: 80%;"></a>
+<a href="#exer_1_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_4">
+
+<p>
+Vi finner f&#248;rst \( \nabla V \) og s&#229; \( \nabla \cdot (\nabla V) \):
+$$
+\begin{equation}
+\nabla V =  \left( \frac{\partial}{\partial x}, \frac{\partial}{\partial y}\right)V =  \left( \frac{\partial V}{\partial x}, \frac{\partial V}{\partial y}\right) \; ,
+\tag{1}
+\end{equation}
+$$
+
+og \( \nabla \cdot ( \nabla V ) \) er dermed
+$$
+\begin{align}
+\nabla \cdot ( \nabla V ) &=& \left( \frac{\partial}{\partial x}, \frac{\partial}{\partial y} \right) \cdot \left( \frac{\partial V}{\partial x}, \frac{\partial V}{\partial y}\right) 
+\tag{2}\\ 
+&=&   \left( \frac{\partial}{\partial x} \frac{\partial V}{\partial x} + \frac{\partial}{\partial y}  \frac{\partial V}{\partial y} \right) 
+\tag{3}\\ 
+&=& \frac{\partial^2 V}{\partial x^2} + \frac{\partial^2 V}{\partial y^2} \; .
+\tag{4}
+\end{align}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec4" class="anchor">Oppgave: Laplace og Poissons likning </h2>
+
+<p>
+Kan disse uttrykkene v&#230;re l&#248;sninger av Laplace likning eller Poissons likning i en dimensjon p&#229; intervallet \( -1 < x < 1 \)? Hvis det er en l&#248;sning av Poissons likning, hva er i s&#229; fall \( \rho(x) \)?
+
+<p>
+<b>a)</b>
+$$
+\begin{equation*}
+V(x) = 0
+\end{equation*}
+$$
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_1" style="font-size: 80%;"></a>
+<a href="#exer_2_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_1">
+
+<p>
+Mulig l&#248;sning av Laplace og Poissons likning.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_7" style="font-size: 80%;"></a>
+<a href="#exer_2_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_7">
+
+<p>
+I dette tilfellet er \( \frac{\d^2 V}{\d x^2} = 0 \) som er en l&#248;sning av Laplace likning. (Hvis det er en l&#248;sning av Laplace likning, er det ogs&#229; en l&#248;sning av Poissons likning, men da med \( \rho(x) = 0 \) i det oppgitte intervallet.)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+$$
+\begin{equation*}
+V(x) = 2 \sin x
+\end{equation*}
+$$
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_2" style="font-size: 80%;"></a>
+<a href="#exer_2_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_2">
+
+<p>
+Mulig l&#248;sning av Poissons likning.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_8" style="font-size: 80%;"></a>
+<a href="#exer_2_8" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_8">
+
+<p>
+Ved &#229; sette uttrykket inn i  \( \d^2 V/\d x^2 \) ser vi at
+$$
+\begin{equation}
+\frac{\partial^2 V}{\partial x^2} = - 2 \sin x \; .
+\tag{5}
+\end{equation}
+$$
+
+Dette kan ikke v&#230;re en l&#248;sning av Laplace likning, men kan v&#230;re en l&#248;sning av Poissons likning hvis ladningsfordelingen er \( \rho(x)/\epsilon_0 = - (-2 \sin x) = 2 \sin x \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+$$
+\begin{equation*}
+V(x) = 2x-3
+\end{equation*}
+$$
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_3" style="font-size: 80%;"></a>
+<a href="#exer_2_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_3">
+
+<p>
+Mulig l&#248;sning av Laplace og Poissons likning.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_9" style="font-size: 80%;"></a>
+<a href="#exer_2_9" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_9">
+
+<p>
+Vi setter uttrykket inn i \( \d^2 V/\d x^2 \) og finner
+$$
+\begin{equation}
+\frac{\partial^2 V}{\partial x^2} = 0 \; .
+\tag{6}
+\end{equation}
+$$
+
+Dette er en l&#248;sning av Laplace likning.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec5" class="anchor">Oppgave: Potensielt potensiale </h2>
+
+<p>
+Ladningsfordelingen \( \rho(x) \) er gitt som
+$$
+\begin{equation*}
+\rho(x) = \left\{ \begin{array}{cc}
+\rho_0 & \quad , \quad 0 < x < L/2 \\ 
+-\rho_0 & \quad , \quad L/2 < x < L
+\end{array} \right. 
+\end{equation*}
+$$
+
+<p>
+<br /><br /><center><p><img src="fig-laplaceequation/laplaceequation-question-charge-010.png" align="bottom" width=800></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hvilken skisse av det elektriske potensialet \( V(x) \) er riktig (A,B,C,D)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_1" style="font-size: 80%;"></a>
+<a href="#exer_3_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_1">
+
+<p>
+C
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_3" style="font-size: 80%;"></a>
+<a href="#exer_3_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_3">
+
+<p>
+Poissons likning relaterer ladningstettheten til den andrederiverte av potensialet:
+$$
+\begin{equation}
+\frac{\d^2 V}{\d x^2} = - \frac{\rho}{\epsilon}
+\tag{7}
+\end{equation}
+$$
+
+Hvis vi da ser p&#229; de fire forskjellige potensialene ser vi at:
+
+<ul>
+<li> for potensial A vil den annenderiverte v&#230;re null bortsett fra i punktet \( x = L/2 \)</li>
+<li> for potensial B vil den annenderiverte v&#230;re negativ i hele intervallet. Vi kan f.eks. lese dette av som krumningen til kurven, eller vi kan se at kurven er omtrent som \( V(x) = V_0 - c(x-(L/2))^2 \) og den annenderiverte av denne er nettopp konstant og negativ.</li>
+<li> for potensial C og D vil den annenderiverte endre fortegn ved \( x = L/2 \). For C vil den annenderiverte v&#230;re negativ for \( x < L/2 \) og positiv for \( x > L/2 \), mens for D vil den annenderiverte v&#230;re positiv for \( x < L/2 \) og negativ for \( x > L/2 \). Siden \( \rho = - \nabla^2 V \) betyr det at for C vil \( \rho \) v&#230;re positiv for \( x < L/2 \) og negativ for \( x > L/2 \) og for D vil \( \rho \) v&#230;re negativ for \( x < L/2 \) og positiv for \( x > L/2 \). Det er derfor C som passer best.</li>
+</ul>
+
+<b>Ekstrasp&#248;rsm&#229;l</b>: Kan du se hvilken funksjonsform C m&#229; ha for at den skal passe med den oppgitte ladningsfordelingen?
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec6" class="anchor">Eksempel: Laplace likning i en dimensjon </h2>
+
+<p>
+<!-- fig-laplaceequation/laplaceequation-example-onedimension-1-5.1.2.mp4 Video 05.02 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/uicYeSi5Vr8" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 5.1.2)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+
+<h2 id="___sec7" class="anchor">Eksempel: Poissons likning i en dimensjon </h2>
+
+<p>
+<!-- fig-laplaceequation/laplaceequation-example-onedimension-2-5.1.2.mp4 Video 05.03 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/8R1qmq493g8" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 5.1.2)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec8" class="anchor">Oppgave: Ikke Laplace </h2>
+
+<p>
+<br /><br /><center><p><img src="fig-laplaceequation/laplaceequation-question-notlaplace-010.png" align="bottom" width=600></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hvilke av potensialene i figuren over kan <em>ikke</em> v&#230;re en l&#248;sning av Laplace likning?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_1" style="font-size: 80%;"></a>
+<a href="#exer_4_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_1">
+
+<p>
+C
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_3" style="font-size: 80%;"></a>
+<a href="#exer_4_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_3">
+
+<p>
+Vi ser at C ikke kan ha en annenderivert som er null. A og D har klart en annenderivert som er null. Hva med B? Denne har en annenderivert som er lik null, med unntak av i ett punkt. Dette kan v&#230;re en grenseverdi som er bestemt. Vi vil i s&#229; fall si at B ogs&#229; tilfredsstiller Laplace likning.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec9" class="anchor">Oppgave: Laplace likning i to dimensjoner </h2>
+
+<p>
+Laplace likning er knyttet til den annenderiverte av potensialet i en dimensjon:
+$$
+\begin{equation}
+\frac{\d^2 V}{\d x^2 } = 0 \; .
+\tag{8}
+\end{equation}
+$$
+
+Det gj&#248;r at l&#248;sningen blir litt kjedelige. Men de blir ikke like kjedelige i to dimensjoner hvor Laplace likning er
+$$
+\begin{equation}
+\frac{\partial^2 V}{\partial x^2 } + \frac{\partial^2 V}{\partial y^2 } = 0 \; .
+\tag{9}
+\end{equation}
+$$
+
+Figuren viser et tverrsnitt \( V(x=0,y) \) gjennom et todimensjonalt potensiale.
+
+<p>
+<br /><br /><center><p><img src="fig-laplaceequation/laplaceequation-question-2dlaplacevariation-010.png" align="bottom" width=600></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hva er fortegnet til \( \frac{\partial^2 V}{\partial y^2 } \) i de fire punktene A, B, C, D?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_2" style="font-size: 80%;"></a>
+<a href="#exer_5_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_2">
+
+<p>
+A: \( \frac{\partial^2 V}{\partial y^2 } < 0 \), B: \( \frac{\partial^2 V}{\partial y^2 } \simeq 0 \), C: \( \frac{\partial^2 V}{\partial y^2 } > 0 \), D: \( \frac{\partial^2 V}{\partial y^2 } \simeq 0 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_4" style="font-size: 80%;"></a>
+<a href="#exer_5_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_4">
+
+<p>
+Vi leser av fortegnet til \( \frac{\partial^2 V}{\partial y^2 } \) som krumningen til kurven slik vi er vant til &#229; lese den av i funksjonsdr&#248;fting. Vi ser at punktet A er et lokalt topp-punkt, slik at \( \frac{\partial^2 V^2}{\partial y^2 } < 0 \). Punktet C er et lokalt bunn-punkt silk at \( \frac{\partial^2 V}{\partial y^2 } > 0 \). For B og D m&#229; vi foreta en tiln&#230;rming. I punktet B ser det ut til at \( V(0,y) \) g&#229;r fra &#229; ha et negativt fortegn n&#229;r A til &#229; ha et positivt fortegn n&#230;r C. Vi antar at B ligger midt mellom at at \( \frac{\partial^2 V}{\partial y^2 } \simeq 0 \). For punkt D er det vanskeligere &#229; vurdere. Vi kan bruke samme argument som for B, i s&#229; fall er \( \frac{\partial^2 V}{\partial y^2 } \simeq 0 \), eller vi kunne sagt at krumningen fremdeles er positiv, slik som i C, men at den er mindre, slik at \( \frac{\partial^2 V}{\partial y^2 } \) blir negativ, men mindre enn i C. Begge deler er ok tolkninger av den ikke helt presise kurven.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Skisser hvordan \( V(x,y) \) m&#229; variere i \( x \)-retningen i punktene som er markert i grafen, slik at potensialet tilfredsstiller Laplace likning.
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_1" style="font-size: 80%;"></a>
+<a href="#exer_5_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_1">
+
+<p>
+Summen av \( \frac{\partial^2 V}{\partial x^2 } \) og \( \frac{\partial^2 V}{\partial y^2 } \) skal til sammen bli null.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_5" style="font-size: 80%;"></a>
+<a href="#exer_5_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_5">
+
+<p>
+Ideen er at \( \frac{\partial^2 V}{\partial x^2 } \) m&#229; ha samme st&#248;rrelse (absoluttverdi), men motsatt fortegn av  \( \frac{\partial^2 V}{\partial y^2 } \). Det betyr at i punktet A m&#229; \( \frac{\partial^2 V}{\partial x^2 } > 0 \), i punktet C m&#229; \( \frac{\partial^2 V}{\partial x^2 } < 0 \) og i punktene B og D hvor \( \frac{\partial^2 V}{\partial y^2 } \simeq 0 \) m&#229; ogs&#229;  \( \frac{\partial^2 V}{\partial x^2 }\simeq 0 \). Dette er fors&#248;kt skissert i figuren under.
+
+<p>
+<br /><br /><center><p><img src="fig-laplaceequation/laplaceequation-question-2dlaplacevariation-020.png" align="bottom" width=600></p></center><br /><br />
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec10" class="anchor">Eksistens og unikhet av l&#248;sninger </h2>
+
+<p>
+<!-- fig-laplaceequation/laplaceequation-lecture-existence-5.3.1.mp4 Video 05.04 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/uqKVMFQoBag" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 5.3.1)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec11" class="anchor">Oppgave: Hva betyr grensebetingelsene for potensialet? </h2>
+
+<p>
+<br /><br /><center><p><img src="fig-laplaceequation/laplaceequation-question-boundary-050.png" align="bottom" width=600></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Omr&#229;det i del a i figuren inneholder ingen ladninger. Hva kan vi si om \( V \) i det indre av omr&#229;det?
+
+<ol>
+<li> Ikke mye, det er mange muligheter for \( V(\vec{r}) \) der.</li>
+<li> \( V(\vec{r})=0 \) overalt i det indre.</li>
+<li> \( V(\vec{r}) \) er en konstant i det indre.</li>
+</ol>
+
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_1" style="font-size: 80%;"></a>
+<a href="#exer_6_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_1">
+
+<p>
+1
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_5" style="font-size: 80%;"></a>
+<a href="#exer_6_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_5">
+
+<p>
+Det eneste vi vet om \( V \) p&#229; det indre av omr&#229;det er at den m&#229; tilfredsstille Laplace likning med en gitt grensebetingelse p&#229; randen (yttergrensen) av omr&#229;det. Det er mange muligheter for et slikt potensial avhengig av hva \( V \) er p&#229; yttergrensen.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Omr&#229;det i del b i figuren inneholder ingen ladninger og p&#229; randen (grensen) av omr&#229;det et \( V=0 \). Hva kan vi si om \( V \) i det indre av omr&#229;det?
+
+<ol>
+<li> Ikke mye, det er mange muligheter for \( V(\vec{r}) \) der.</li>
+<li> \( V(\vec{r})=0 \) overalt i det indre.</li>
+<li> \( V(\vec{r}) \) er en konstant i det indre.</li>
+</ol>
+
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_2" style="font-size: 80%;"></a>
+<a href="#exer_6_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_2">
+
+<p>
+2
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_6" style="font-size: 80%;"></a>
+<a href="#exer_6_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_6">
+
+<p>
+N&#229; er problemstillingen annerleder. Vi vet at \( V \) ikke kan ha en ekstremalverdi i det indre av omr&#229;det. Det betyr at \( V \) ikke kan v&#230;re st&#248;rre enn det \( V \) er p&#229; yttergrensen. Samtidig betyr det at \( V \) ikke kan v&#230;re mindre enn det \( V \) er p&#229; yttergrensen. Siden \( V = 0 \) p&#229; hele yttergrensen, betyr det at \( V = 0 \) i hele det indre.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec12" class="anchor">Grensebetingelser </h2>
+
+<p>
+<!-- fig-laplaceequation/laplaceequation-lecture-boundaries-5.3.2.mp4 Video 05.05 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/hzY2Xl7dt9E" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 5.3.2)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec13" class="anchor">Oppgave: Passende grenseverdier </h2>
+
+<p>
+Potensialet \( V(x) = 2x - 1 \) er en mulig l&#248;sning av Laplace likning --- hvis den bare passer til grensebetingelsene.
+
+<p>
+<b>a)</b>
+Kan \( V(x) \) v&#230;re en l&#248;sning av Laplace likning med grensebetingelsene \( V(0) = 0 \) og \( V(1) = 1 \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_1" style="font-size: 80%;"></a>
+<a href="#exer_7_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_1">
+
+<p>
+Nei
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_5" style="font-size: 80%;"></a>
+<a href="#exer_7_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_5">
+
+<p>
+Vi sjekker hva \( V(x) \) er: \( V(0) = 2\times 0 -1 = -1 \). Dette er forskjellig fra \( V(0) = 0 \). Det betyr at \( V(x) \) ikke er en l&#248;sning av Laplace likning med disse grensebetingelsene.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Hva m&#229; grensebetingelsen for \( V(x) \) v&#230;re i \( x=-1 \) for at \( V(x) = 2x-1 \) skal kunne v&#230;re en l&#248;sning av Laplace likning i intervallet \( -1 \le x \le 1 \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_2" style="font-size: 80%;"></a>
+<a href="#exer_7_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_2">
+
+<p>
+\( V(-1) = -3 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_7_6" style="font-size: 80%;"></a>
+<a href="#exer_7_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_7_6">
+
+<p>
+Vi finner dette ved &#229; sette inn i \( V(x) \). Da finner vi \( V(-1) = 2 (-1) -1 = -3 \). Grensebetingelsen m&#229; derfor v&#230;re \( V(-1) = -3 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec14" class="anchor">Poissons likning i forskjellige koordinatsystemer </h2>
+
+<p>
+<!-- fig-laplaceequation/laplaceequation-lecture-coordinatesystems-5.4.mp4 Video 05.06 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/HqecGEtlIkY" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 5.4)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec15" class="anchor">Oppgave: Sf&#230;risk l&#248;sning? </h2>
+
+<p>
+<b>a)</b>
+Er potensialet \( V(r) = C/r \), hvor \( C \) er en konstant, en mulig l&#248;sning av Laplace likning i kulekoordinater?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_8_1" style="font-size: 80%;"></a>
+<a href="#exer_8_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_8_1">
+
+<p>
+Ja
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_8_3" style="font-size: 80%;"></a>
+<a href="#exer_8_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_8_3">
+
+<p>
+Vi setter inn i uttrykket og finner
+$$
+\begin{equation}
+\frac{1}{r^2} \frac{\partial }{\partial r} \left( r^2 \frac{\partial V}{\partial r} \right) =
+\frac{1}{r^2} \frac{\partial }{\partial r} \left( r^2 \frac{-C}{r^2} \right) =
+\frac{1}{r^2} \frac{\partial }{\partial r} \left(C \right) = 0
+\tag{10}
+\end{equation}
+$$
+
+Dette er alltid null fordi den deriverte av konstanten \( C \) er null. Potensialet er derfor en mulig l&#248;sning av Laplace likning.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec16" class="anchor">Eksempel: Sylindrisk system </h2>
+
+<p>
+<!-- fig-laplaceequation/laplaceequation-example-cylinder-5.4.5.mp4 Video 05.07 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/UYpKyLzoFok" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 5.4.5)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._learningpath-04000.html">&laquo;</a></li>
+  <li><a href="._learningpath-04000.html">1</a></li>
+  <li class="active"><a href="._learningpath-04001.html">2</a></li>
+  <li><a href="._learningpath-04002.html">3</a></li>
+  <li><a href="._learningpath-04002.html">&raquo;</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

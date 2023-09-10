@@ -1,0 +1,245 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Uke 05: Ideelle ledere og kapasitans">
+
+<title>Uke 05: Ideelle ledere og kapasitans</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Ideelle ledere', 1, None, '___sec1'),
+              ('Ledere og ideelle ledere', 2, None, '___sec2'),
+              ('Oppgave: Rund leder', 2, None, '___sec3'),
+              ('Oppgave: Elektrisk felt', 2, None, '___sec4'),
+              ('Oppgave: Leder på leder', 2, None, '___sec5'),
+              ('Eksempel: Kuleformet leder', 2, None, '___sec6'),
+              ('Oppgave: Ladning i et ledende kuleskall', 2, None, '___sec7'),
+              ('Eksempel: Laplace likning og ideelle ledere',
+               2,
+               None,
+               '___sec8'),
+              ('Oppgave: Ladning i kvadrat', 2, None, '___sec9'),
+              ('Eksempel: Lynavleder', 2, None, '___sec10'),
+              ('Eksempel: Faradaybur', 2, None, '___sec11'),
+              ('Kapasitans', 1, None, '___sec12'),
+              ('Introduksjon av kapasitans', 2, None, '___sec13'),
+              ('Oppgave: Dobling', 2, None, '___sec14'),
+              ('Eksempel: Platekondensator', 2, None, '___sec15'),
+              ('Oppgave: Ladningsfordeling', 2, None, '___sec16'),
+              ('Oppgave: Dobbelt så stor', 2, None, '___sec17'),
+              ('Metode: Beregning av kapasitans', 2, None, '___sec18'),
+              ('Eksempel: Serie- og parallell-koblinger', 2, None, '___sec19'),
+              ('Oppgave: Sammenkobling', 2, None, '___sec20'),
+              ('Metode: Energi i elektrisk felt', 2, None, '___sec21'),
+              ('Oppgave: Dobbel avstand, dobbel energi?', 2, None, '___sec22'),
+              ('Eksempel: Kule-kondensator', 2, None, '___sec23')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\rhat}{\mathbf{\hat{r}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="learningpath-05.html">Uke 05: Ideelle ledere og kapasitans</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec1" style="font-size: 80%;"><b>Ideelle ledere</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ledere og ideelle ledere</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Rund leder</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Elektrisk felt</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Leder på leder</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Kuleformet leder</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Ladning i et ledende kuleskall</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Laplace likning og ideelle ledere</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Ladning i kvadrat</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Lynavleder</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05001.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Faradaybur</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec12" style="font-size: 80%;"><b>Kapasitans</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Introduksjon av kapasitans</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Dobling</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec15" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Platekondensator</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Ladningsfordeling</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec17" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Dobbelt så stor</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Metode: Beregning av kapasitans</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec19" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Serie- og parallell-koblinger</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec20" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Sammenkobling</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec21" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Metode: Energi i elektrisk felt</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec22" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Dobbel avstand, dobbel energi?</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-05002.html#___sec23" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Kule-kondensator</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0000"></a>
+<!-- ------------------- main content ---------------------- -->
+
+<p>
+
+
+<div class="jumbotron">
+<center><h1>Uke 05: Ideelle ledere og kapasitans</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Anders Malthe-S&#248;renssen -->
+
+<center>
+<b>Anders Malthe-S&#248;renssen</b> 
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>Department of Physics, University of Oslo, Norway</b></center>
+<br>
+<p>
+<center><h4>Oct 31, 2022</h4></center> <!-- date -->
+<br>
+<p>
+</div> <!-- end jumbotron -->
+
+<h3 id="___sec0" class="anchor">L&#230;ringsm&#229;l </h3>
+
+<p>
+Denne uken bruker vi det vi har l&#230;rt til &#229; forst&#229; feltet inne i ideelle ledere og regne ut kapasitansen, \( C=Q/V \), til systemer av ledere. Du skal kunne (1) kjenne egenskapene til en ideel leder, (2) anvende egenskapene til &#229; finne det elektriske feltet eller potensialet, (3) forst&#229; definisjonen av kapasitans, og (4) kunne anvende definisjonen til &#229; regne ut kapasitansen for en gitt struktur analytisk (og numerisk).
+
+<h1 id="table_of_contents">Table of contents</h2>
+
+<p>
+<a href="._learningpath-05001.html#___sec1"> Ideelle ledere </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05001.html#___sec2"> Ledere og ideelle ledere  </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05001.html#___sec3"> Oppgave: Rund leder </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05001.html#___sec4"> Oppgave: Elektrisk felt </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05001.html#___sec5"> Oppgave: Leder p&#229; leder </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05001.html#___sec6"> Eksempel: Kuleformet leder </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05001.html#___sec7"> Oppgave: Ladning i et ledende kuleskall </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05001.html#___sec8"> Eksempel: Laplace likning og ideelle ledere </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05001.html#___sec9"> Oppgave: Ladning i kvadrat </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05001.html#___sec10"> Eksempel: Lynavleder </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05001.html#___sec11"> Eksempel: Faradaybur </a><br>
+<a href="._learningpath-05002.html#___sec12"> Kapasitans </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec13"> Introduksjon av kapasitans </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec14"> Oppgave: Dobling </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec15"> Eksempel: Platekondensator </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec16"> Oppgave: Ladningsfordeling </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec17"> Oppgave: Dobbelt s&#229; stor </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec18"> Metode: Beregning av kapasitans </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec19"> Eksempel: Serie- og parallell-koblinger </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec20"> Oppgave: Sammenkobling </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec21"> Metode: Energi i elektrisk felt </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec22"> Oppgave: Dobbel avstand, dobbel energi? </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._learningpath-05002.html#___sec23"> Eksempel: Kule-kondensator </a><br>
+</p>
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+  <li class="active"><a href="._learningpath-05000.html">1</a></li>
+  <li><a href="._learningpath-05001.html">2</a></li>
+  <li><a href="._learningpath-05002.html">3</a></li>
+  <li><a href="._learningpath-05001.html">&raquo;</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

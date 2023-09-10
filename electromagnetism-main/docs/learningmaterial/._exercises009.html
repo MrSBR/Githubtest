@@ -1,0 +1,2648 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Oppgaver til Fys1120">
+
+<title>Oppgaver til Fys1120</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+/* Let inline verbatim have the same color as the surroundings */
+code { color: inherit; background-color: transparent; }
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 0,
+ 'sections': [('Table of contents',
+               0,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Uke 01: Elektrisk felt', 0, None, '___sec0'),
+              ('Læringsmål', 3, None, '___sec1'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec2'),
+              ('Exercise 1.1: Introduce yourself to the group',
+               2,
+               None,
+               '___sec3'),
+              ('Exercise 1.2: Zero field', 2, None, '___sec4'),
+              ('Exercise 1.3: Peeling tape', 2, None, '___sec5'),
+              ('Exercise 1.4: Mechanisms for charge transfer',
+               2,
+               None,
+               '___sec6'),
+              ('Gruppeoppgaver', 1, None, '___sec7'),
+              ('Exercise 1.5: Electric dipole', 2, None, '___sec8'),
+              ('Exercise 1.6: Line charge', 2, None, '___sec9'),
+              ('Exercise 1.7: Visualization of the electric field',
+               2,
+               None,
+               '___sec10'),
+              ('Hjemmeoppgaver', 1, None, '___sec11'),
+              ('Exercise 1.8: Point charges',
+               2,
+               'exer:electricfield-pointcharge',
+               'exer:electricfield-pointcharge'),
+              ('Exercise 1.9: The electric field from groups of point charges',
+               2,
+               'exer:electricfield-groupofcharges',
+               'exer:electricfield-groupofcharges'),
+              ('Exercise 1.10: Half circle', 2, None, '___sec14'),
+              ('Exercise 1.11: The electric field above a finite disk',
+               2,
+               'exer:electricfield-fieldabovedisk',
+               'exer:electricfield-fieldabovedisk'),
+              ('Innleveringsoppgave', 1, None, '___sec16'),
+              ('Exercise 1.12: Linjer på kryss og tvers',
+               2,
+               'exer:electricfield-crossinglinges-norwegian',
+               'exer:electricfield-crossinglinges-norwegian'),
+              ('Ekstraoppgaver', 1, None, '___sec18'),
+              ('Exercise 1.13: Plane charge', 2, None, '___sec19'),
+              ('Exercise 1.14: Adding and subtracting using superposition',
+               2,
+               None,
+               '___sec20'),
+              ('Exercise 1.15: Work on point charges',
+               2,
+               'exer:electricfield-workonpointcharge',
+               'exer:electricfield-workonpointcharge'),
+              ('Exercise 1.16: Plate with a hole', 2, None, '___sec22'),
+              ('Exercise 1.17: Dipole in a uniform electric field',
+               2,
+               None,
+               '___sec23'),
+              ('Exercise 1.18: Milikan oil drop experiment',
+               2,
+               None,
+               '___sec24'),
+              ('Exercise 1.19: Field from a hemisphere shell',
+               2,
+               None,
+               '___sec25'),
+              ('Exercise 1.20: Paper on balloon',
+               2,
+               'exer:electricfield-paperonballoon',
+               'exer:electricfield-paperonballoon'),
+              ('Exercise 1.21: Wavy surface',
+               2,
+               'exer:electricfield-wavysurface',
+               'exer:electricfield-wavysurface'),
+              ('Exercise 1.22: Water models',
+               2,
+               'exer:electricfield-watermodels',
+               'exer:electricfield-watermodels'),
+              ('Exercise 1.23: Ionic bonds',
+               2,
+               'exer:electricfield-ionicbonds',
+               'exer:electricfield-ionicbonds'),
+              ('Uke 02: Elektrisk potensiale', 0, None, '___sec30'),
+              ('Læringsmål', 3, None, '___sec31'),
+              ('Test-deg-selv oppgaver', 1, None, '___sec32'),
+              ('Exercise 2.1: From field to potential', 2, None, '___sec33'),
+              ('Exercise 2.2: From potential to field', 2, None, '___sec34'),
+              ('Exercise 2.3: Maximum and minimum of the potential',
+               2,
+               None,
+               '___sec35'),
+              ('Exercise 2.4: Potentials and sparks', 2, None, '___sec36'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec37'),
+              ('Exercise 2.5: Finding the field from the potential',
+               2,
+               None,
+               '___sec38'),
+              ('Exercise 2.6: Zero field', 2, None, '___sec39'),
+              ('Exercise 2.7: The zero-field path', 2, None, '___sec40'),
+              ('Exercise 2.8: Motion in a simple field', 2, None, '___sec41'),
+              ('Gruppeoppgaver', 1, None, '___sec42'),
+              ('Exercise 2.9: Electric fields and electric potential',
+               2,
+               None,
+               '___sec43'),
+              ('Exercise 2.10: Line charge', 2, None, '___sec44'),
+              ('Exercise 2.11: Gradients', 2, None, '___sec45'),
+              ('Hjemmeoppgaver', 1, None, '___sec46'),
+              ('Exercise 2.12: Dipole and gradient', 2, None, '___sec47'),
+              ('Exercise 2.13: Potential and field above a disk',
+               2,
+               None,
+               '___sec48'),
+              ('Exercise 2.14: Plate with hole', 2, None, '___sec49'),
+              ('Innleveringsoppgave', 1, None, '___sec50'),
+              ('Exercise 2.15: En halv linje', 2, None, '___sec51'),
+              ("Uke 03: Gauss' lov og polarisasjon", 0, None, '___sec52'),
+              ('Læringsmål', 3, None, '___sec53'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec54'),
+              ('Exercise 3.1: Rubber balloon', 2, None, '___sec55'),
+              ('Exercise 3.2: No charges, no field?', 2, None, '___sec56'),
+              ('Exercise 3.3: Uniform charge density', 2, None, '___sec57'),
+              ("Exercise 3.4: A different Coulumb's law", 2, None, '___sec58'),
+              ('Gruppeoppgaver', 1, None, '___sec59'),
+              ('Exercise 3.5: Symmetries', 2, None, '___sec60'),
+              ('Exercise 3.6: Flux-trix', 2, None, '___sec61'),
+              ('Exercise 3.7: SLAC lightning strike', 2, None, '___sec62'),
+              ('Exercise 3.8: A simple model for polarization',
+               2,
+               None,
+               '___sec63'),
+              ('Hjemmeoppgaver', 1, None, '___sec64'),
+              ('Exercise 3.9: Felt fra ladningsfordelinger',
+               2,
+               None,
+               '___sec65'),
+              ('Exercise 3.10: Feltet fra et ladet plan', 2, None, '___sec66'),
+              ('Exercise 3.11: Dielectric sphere', 2, None, '___sec67'),
+              ('Innleveringsoppgave', 1, None, '___sec68'),
+              ('Exercise 3.12: En cellemembran', 2, None, '___sec69'),
+              ('Ekstraoppgaver', 1, None, '___sec70'),
+              ('Exercise 3.13: Corner charge flux', 2, None, '___sec71'),
+              ('Exercise 3.14: Planar dielectric', 2, None, '___sec72'),
+              ('Uke 04: Laplace og Poissons likning', 0, None, '___sec73'),
+              ('Læringsmål', 3, None, '___sec74'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec75'),
+              ('Exercise 4.1: Laplace operator', 2, None, '___sec76'),
+              ('Exercise 4.2: Discontinous potential', 2, None, '___sec77'),
+              ('Gruppeoppgaver', 1, None, '___sec78'),
+              ('Exercise 4.3: Spatial variation of potentials (Laplace '
+               'equation)',
+               2,
+               None,
+               '___sec79'),
+              ('Exercise 4.4: Surface charges', 2, None, '___sec80'),
+              ("Exercise 4.5: Laplace's equation in two dimensions",
+               2,
+               None,
+               '___sec81'),
+              ('Hjemmeoppgaver', 1, None, '___sec82'),
+              ('Exercise 4.6: To metallplater', 2, None, '___sec83'),
+              ('Exercise 4.7: Ladningsfordeling mellom metallplater',
+               2,
+               None,
+               '___sec84'),
+              ('Exercise 4.8: Repetisjon: Feltet fra en ladet stav',
+               2,
+               None,
+               '___sec85'),
+              ('Innleveringsoppgave', 1, None, '___sec86'),
+              ('Exercise 4.9: Laplace likning for en lang sylinder',
+               2,
+               None,
+               '___sec87'),
+              ('Uke 05: Ideelle ledere, kapasitans', 0, None, '___sec88'),
+              ('Læringsmål', 3, None, '___sec89'),
+              ('Test-deg-selv oppgaver', 1, None, '___sec90'),
+              ('Exercise 5.1: Ladningsfordeling på leder', 2, None, '___sec91'),
+              ('Exercise 5.2: Ladningsfordeling på ledende plater',
+               2,
+               None,
+               '___sec92'),
+              ('Exercise 5.3: Ladningsfordeling på ledende plater 2',
+               2,
+               None,
+               '___sec93'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec94'),
+              ('Exercise 5.4: Where are the charges', 2, None, '___sec95'),
+              ('Exercise 5.5: Dielectric materials', 2, None, '___sec96'),
+              ('Exercise 5.6: Capacitance in pieces', 2, None, '___sec97'),
+              ('Gruppeoppgaver', 1, None, '___sec98'),
+              ('Exercise 5.7: Understanding conductors', 2, None, '___sec99'),
+              ('Exercise 5.8: Capacitance of the axon', 2, None, '___sec100'),
+              ('Exercise 5.9: The electric field near conducting plates',
+               2,
+               None,
+               '___sec101'),
+              ('Hjemmeoppgaver', 1, None, '___sec102'),
+              ('Exercise 5.10: Coaxial cable', 2, None, '___sec103'),
+              ('Exercise 5.11: Punktladning over ledende plan',
+               2,
+               None,
+               '___sec104'),
+              ('Innleveringsoppgave', 1, None, '___sec105'),
+              ('Exercise 5.12: Kondensator av to kuler', 2, None, '___sec106'),
+              ('Lang innleveringsoppgave 01 (7 poeng)', 1, None, '___sec107'),
+              ('Exercise 5.13: Kondensator av to krester',
+               2,
+               None,
+               '___sec108'),
+              ('Uke 06: Strøm, motstand og enkle kretser',
+               0,
+               None,
+               '___sec109'),
+              ('Læringsmål', 3, None, '___sec110'),
+              ('Test-deg-selv oppgaver', 1, None, '___sec111'),
+              ('Exercise 6.1: Strøm av ioner', 2, None, '___sec112'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec113'),
+              ('Exercise 6.2: Strømtetthet og strøm', 2, None, '___sec114'),
+              ('Exercise 6.3: Ladningsoppsamling', 2, None, '___sec115'),
+              ('Gruppeoppgaver', 1, None, '___sec116'),
+              ('Exercise 6.4: Current density', 2, None, '___sec117'),
+              ('Exercise 6.5: Cylindrical resistor', 2, None, '___sec118'),
+              ('Hjemmeoppgaver', 1, None, '___sec119'),
+              ('Exercise 6.6: Lightning', 2, None, '___sec120'),
+              ('Exercise 6.7: Sfærisk symmetrisk strøm', 2, None, '___sec121'),
+              ('Exercise 6.8: Resistivitet i en konusformet leder',
+               2,
+               None,
+               '___sec122'),
+              ('Exercise 6.9: Leaky coaxial cable', 2, None, '___sec123'),
+              ('Innleveringsoppgave', 1, None, '___sec124'),
+              ('Exercise 6.10: Motstand av to sylindere', 2, None, '___sec125'),
+              ('Uke 07: Kretser og modellering', 0, None, '___sec126'),
+              ('Læringsmål', 3, None, '___sec127'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec128'),
+              ('Exercise 7.1: Strøm i en kondensator', 2, None, '___sec129'),
+              ('Exercise 7.2: Lynnedslag i et tre', 2, None, '___sec130'),
+              ('Gruppeoppgaver', 1, None, '___sec131'),
+              ('Exercise 7.3: RC circuits', 2, None, '___sec132'),
+              ('Exercise 7.4: Circuit model of conducting sphere',
+               2,
+               None,
+               '___sec133'),
+              ('Hjemmeoppgaver', 1, None, '___sec134'),
+              ('Exercise 7.5: A simple circuit', 2, None, '___sec135'),
+              ('Exercise 7.6: Wheatstone bridge', 2, None, '___sec136'),
+              ('Exercise 7.7: Lightning strike', 2, None, '___sec137'),
+              ('Innleveringsoppgave', 1, None, '___sec138'),
+              ('Exercise 7.8: Fra modell til krets', 2, None, '___sec139'),
+              ('Uke 08: Magnetisk felt', 0, None, '___sec140'),
+              ('Læringsmål', 3, None, '___sec141'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec142'),
+              ('Exercise 8.1: Symmetrier for magnetfeltet',
+               2,
+               None,
+               '___sec143'),
+              ('Exercise 8.2: Model for permanent magnet',
+               2,
+               None,
+               '___sec144'),
+              ('Exercise 8.3: Magnetisk nord', 2, None, '___sec145'),
+              ('Gruppeoppgaver', 1, None, '___sec146'),
+              ('Exercise 8.4: Finding $\\vec{B}$ from a line segment',
+               2,
+               None,
+               '___sec147'),
+              ('Exercise 8.5: Force on a current element',
+               2,
+               None,
+               '___sec148'),
+              ('Hjemmeoppgaver', 1, None, '___sec149'),
+              ('Exercise 8.6: Magnetfeltet over en sirkulær strømsløyfe',
+               2,
+               None,
+               '___sec150'),
+              ('Innleveringsoppgave', 1, None, '___sec151'),
+              ('Exercise 8.7: To halve linjer', 2, None, '___sec152'),
+              ('Ekstraoppgaver', 1, None, '___sec153'),
+              ('Exercise 8.8: Infinite bent wire', 2, None, '___sec154'),
+              ('Exercise 8.9: Modelling the magnetic field of Earth',
+               2,
+               None,
+               '___sec155'),
+              ('Exercise 8.10: Magnetfeltet fra et uendelig strømførende plan',
+               2,
+               None,
+               '___sec156'),
+              ('Uke 09: Ampères lov og magnetisering', 0, None, '___sec157'),
+              ('Læringsmål', 3, None, '___sec158'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec159'),
+              ('Exercise 9.1: Magnetisk storm', 2, None, '___sec160'),
+              ('Exercise 9.2: Varm paramagnet', 2, None, '___sec161'),
+              ('Exercise 9.3: Evig magnet', 2, None, '___sec162'),
+              ('Exercise 9.4: To halve magneter', 2, None, '___sec163'),
+              ('Gruppeoppgaver', 1, None, '___sec164'),
+              ("Exercise 9.5: Ampere's Law", 2, None, '___sec165'),
+              ("Exercise 9.6: Application of Ampere's Law",
+               2,
+               None,
+               '___sec166'),
+              ('Hjemmeoppgaver', 1, None, '___sec167'),
+              ('Exercise 9.7: Feltet fra en roterende ladd sylinder',
+               2,
+               None,
+               '___sec168'),
+              ('Exercise 9.8: Cylindrical magnet', 2, None, '___sec169'),
+              ('Innleveringsoppgave', 1, None, '___sec170'),
+              ('Exercise 9.9: En tykk plate', 2, None, '___sec171'),
+              ('Lang innleveringsoppgave 02 (7 poeng)', 1, None, '___sec172'),
+              ('Exercise 9.10: En kvadratisk krets', 2, None, '___sec173'),
+              ('Analytisk løsning av forenklet modell', 3, None, '___sec174'),
+              ('Analytisk løsning i et punkt', 3, None, '___sec175'),
+              ('Numerisk løsning for sirkulær krets', 3, None, '___sec176'),
+              ('Numerisk løsning for linje', 3, None, '___sec177'),
+              ('Numerisk løsning for kvadratisk krets', 3, None, '___sec178'),
+              ('Ekstraoppgaver', 1, None, '___sec179'),
+              ('Exercise 9.11: Similarities and differences between Gauss and '
+               'Ampere',
+               2,
+               None,
+               '___sec180'),
+              ('Exercise 9.12: Magnetfeltet fra en koaksialkabel',
+               2,
+               None,
+               '___sec181'),
+              ('Exercise 9.13: Solenoide', 2, None, '___sec182'),
+              ('Exercise 9.14: Magnetkrets', 2, None, '___sec183'),
+              ('Uke 10: Emf, Faradays lov og induktans', 0, None, '___sec184'),
+              ('Læringsmål', 3, None, '___sec185'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec186'),
+              ('Exercise 10.1: Rotasjon av en kvadratisk krets',
+               2,
+               None,
+               '___sec187'),
+              ('Exercise 10.2: Force on copper plate', 2, None, '___sec188'),
+              ('Exercise 10.3: Ring på linjen', 2, None, '___sec189'),
+              ('Gruppeoppgaver', 1, None, '___sec190'),
+              ('Exercise 10.4: Motional emf', 2, None, '___sec191'),
+              ("Exercise 10.5: Faraday's law", 2, None, '___sec192'),
+              ('Innleveringsoppgave', 1, None, '___sec193'),
+              ('Exercise 10.6: En voksende krets', 2, None, '___sec194'),
+              ('Frivillig ekstraoppgave', 3, None, '___sec195'),
+              ('Ekstraoppgaver', 1, None, '___sec196'),
+              ('Exercise 10.7: Stav på skinner i magnetfelt',
+               2,
+               None,
+               '___sec197'),
+              ('Uke 11: Induktans', 0, None, '___sec198'),
+              ('Læringsmål', 3, None, '___sec199'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec200'),
+              ('Exercise 11.1: Induktans', 2, None, '___sec201'),
+              ('Exercise 11.2: Energitetthet i magnetiserbare materialer',
+               2,
+               None,
+               '___sec202'),
+              ('Exercise 11.3: Energi i en spole', 2, None, '___sec203'),
+              ('Gruppeoppgaver', 1, None, '___sec204'),
+              ('Exercise 11.4: Self-inductance', 2, None, '___sec205'),
+              ('Exercise 11.5: Mutual inductance in a solenoid and a circular '
+               'circuit',
+               2,
+               None,
+               '___sec206'),
+              ('Exercise 11.6: Energy densities', 2, None, '___sec207'),
+              ('Innleveringsoppgave', 1, None, '___sec208'),
+              ('Exercise 11.7: To sirkler', 2, None, '___sec209'),
+              ('Uke 12: Kretser del 2', 0, None, '___sec210'),
+              ('Læringsmål', 3, None, '___sec211'),
+              ('Diskusjonsoppgaver for gruppene', 1, None, '___sec212'),
+              ('Exercise 12.1: Snurrig motstand', 2, None, '___sec213'),
+              ('Exercise 12.2: En spole pluss en spole er fire spoler',
+               2,
+               None,
+               '___sec214'),
+              ('Exercise 12.3: Energioverføring', 2, None, '___sec215'),
+              ('Exercise 12.4: Kansellerende komponenter',
+               2,
+               None,
+               '___sec216'),
+              ('Gruppeoppgaver', 1, None, '___sec217'),
+              ('Exercise 12.5: LR circuit', 2, None, '___sec218'),
+              ('Exercise 12.6: Complex warm-up', 2, None, '___sec219'),
+              ('Exercise 12.7: Complex impedance', 2, None, '___sec220'),
+              ('Uke 13: Eksamensforberedelse', 0, None, '___sec221'),
+              ('Læringsmål', 3, None, '___sec222'),
+              ('Anbefalte tidligere eksamensoppgaver', 1, None, '___sec223'),
+              ('Eksempler på eksamensoppgaver', 1, None, '___sec224')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\nhat}{\mathbf{\hat{n}}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\y}{\mathbf{\hat{y}}}
+\newcommand{\z}{\mathbf{\hat{z}}}
+\newcommand{\uhat}{\mathbf{\hat{u}}}
+\newcommand{\rhat}{\mathbf{\hat{r}}}
+\newcommand{\Rhat}{\mathbf{\hat{R}}}
+\newcommand{\phihat}{\boldsymbol{\hat{\phi}}}
+\newcommand{\rhohat}{\boldsymbol{\hat{\rho}}}
+\newcommand{\rvec}{\mathbf{r}}
+\renewcommand{\d}{\mathrm{d}}
+\newcommand{\pz}{\frac{\partial}{\partial z}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="exercises.html">Oppgaver til Fys1120</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._exercises000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec0" style="font-size: 80%;"><b>Uke 01: Elektrisk felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec1" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.1: Introduce yourself to the group</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.2: Zero field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.3: Peeling tape</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.4: Mechanisms for charge transfer</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.5: Electric dipole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.6: Line charge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.7: Visualization of the electric field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-pointcharge" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.8: Point charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-groupofcharges" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.9: The electric field from groups of point charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.10: Half circle</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-fieldabovedisk" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.11: The electric field above a finite disk</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-crossinglinges-norwegian" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.12: Linjer på kryss og tvers</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec19" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.13: Plane charge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec20" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.14: Adding and subtracting using superposition</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-workonpointcharge" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.15: Work on point charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec22" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.16: Plate with a hole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec23" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.17: Dipole in a uniform electric field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec24" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.18: Milikan oil drop experiment</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#___sec25" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.19: Field from a hemisphere shell</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-paperonballoon" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.20: Paper on balloon</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-wavysurface" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.21: Wavy surface</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-watermodels" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.22: Water models</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises001.html#exer:electricfield-ionicbonds" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 1.23: Ionic bonds</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec30" style="font-size: 80%;"><b>Uke 02: Elektrisk potensiale</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec31" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec32" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Test-deg-selv oppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec33" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.1: From field to potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec34" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.2: From potential to field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec35" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.3: Maximum and minimum of the potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec36" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.4: Potentials and sparks</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec37" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec38" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.5: Finding the field from the potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec39" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.6: Zero field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec40" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.7: The zero-field path</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec41" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.8: Motion in a simple field</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec42" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec43" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.9: Electric fields and electric potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec44" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.10: Line charge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec45" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.11: Gradients</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec46" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec47" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.12: Dipole and gradient</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec48" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.13: Potential and field above a disk</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec49" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.14: Plate with hole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec50" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises002.html#___sec51" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 2.15: En halv linje</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec52" style="font-size: 80%;"><b>Uke 03: Gauss' lov og polarisasjon</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec53" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec54" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec55" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.1: Rubber balloon</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec56" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.2: No charges, no field?</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec57" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.3: Uniform charge density</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec58" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.4: A different Coulumb's law</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec59" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec60" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.5: Symmetries</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec61" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.6: Flux-trix</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec62" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.7: SLAC lightning strike</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec63" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.8: A simple model for polarization</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec64" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec65" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.9: Felt fra ladningsfordelinger</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec66" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.10: Feltet fra et ladet plan</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec67" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.11: Dielectric sphere</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec68" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec69" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.12: En cellemembran</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec70" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec71" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.13: Corner charge flux</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises003.html#___sec72" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 3.14: Planar dielectric</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec73" style="font-size: 80%;"><b>Uke 04: Laplace og Poissons likning</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec74" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec75" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec76" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.1: Laplace operator</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec77" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.2: Discontinous potential</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec78" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec79" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.3: Spatial variation of potentials (Laplace equation)</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec80" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.4: Surface charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec81" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.5: Laplace's equation in two dimensions</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec82" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec83" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.6: To metallplater</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec84" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.7: Ladningsfordeling mellom metallplater</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec85" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.8: Repetisjon: Feltet fra en ladet stav</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec86" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises004.html#___sec87" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 4.9: Laplace likning for en lang sylinder</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec88" style="font-size: 80%;"><b>Uke 05: Ideelle ledere, kapasitans</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec89" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec90" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Test-deg-selv oppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec91" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.1: Ladningsfordeling på leder</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec92" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.2: Ladningsfordeling på ledende plater</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec93" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.3: Ladningsfordeling på ledende plater 2</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec94" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec95" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.4: Where are the charges</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec96" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.5: Dielectric materials</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec97" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.6: Capacitance in pieces</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec98" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec99" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.7: Understanding conductors</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec100" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.8: Capacitance of the axon</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec101" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.9: The electric field near conducting plates</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec102" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec103" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.10: Coaxial cable</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec104" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.11: Punktladning over ledende plan</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec105" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec106" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.12: Kondensator av to kuler</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec107" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Lang innleveringsoppgave 01 (7 poeng)</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises005.html#___sec108" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 5.13: Kondensator av to krester</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec109" style="font-size: 80%;"><b>Uke 06: Strøm, motstand og enkle kretser</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec110" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec111" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Test-deg-selv oppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec112" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.1: Strøm av ioner</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec113" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec114" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.2: Strømtetthet og strøm</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec115" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.3: Ladningsoppsamling</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec116" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec117" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.4: Current density</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec118" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.5: Cylindrical resistor</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec119" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec120" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.6: Lightning</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec121" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.7: Sfærisk symmetrisk strøm</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec122" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.8: Resistivitet i en konusformet leder</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec123" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.9: Leaky coaxial cable</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec124" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises006.html#___sec125" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 6.10: Motstand av to sylindere</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec126" style="font-size: 80%;"><b>Uke 07: Kretser og modellering</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec127" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec128" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec129" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.1: Strøm i en kondensator</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec130" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.2: Lynnedslag i et tre</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec131" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec132" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.3: RC circuits</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec133" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.4: Circuit model of conducting sphere</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec134" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec135" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.5: A simple circuit</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec136" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.6: Wheatstone bridge</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec137" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.7: Lightning strike</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec138" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises007.html#___sec139" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 7.8: Fra modell til krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec140" style="font-size: 80%;"><b>Uke 08: Magnetisk felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec141" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec142" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec143" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.1: Symmetrier for magnetfeltet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec144" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.2: Model for permanent magnet</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec145" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.3: Magnetisk nord</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec146" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec147" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.4: Finding \( \vec{B} \) from a line segment</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec148" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.5: Force on a current element</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec149" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec150" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.6: Magnetfeltet over en sirkulær strømsløyfe</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec151" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec152" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.7: To halve linjer</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec153" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec154" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.8: Infinite bent wire</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec155" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.9: Modelling the magnetic field of Earth</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises008.html#___sec156" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 8.10: Magnetfeltet fra et uendelig strømførende plan</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec157" style="font-size: 80%;"><b>Uke 09: Ampères lov og magnetisering</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec158" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec159" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec160" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.1: Magnetisk storm</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec161" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.2: Varm paramagnet</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec162" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.3: Evig magnet</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec163" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.4: To halve magneter</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec164" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec165" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.5: Ampere's Law</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec166" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.6: Application of Ampere's Law</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec167" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Hjemmeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec168" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.7: Feltet fra en roterende ladd sylinder</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec169" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.8: Cylindrical magnet</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec170" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec171" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.9: En tykk plate</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec172" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Lang innleveringsoppgave 02 (7 poeng)</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec173" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.10: En kvadratisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec174" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analytisk løsning av forenklet modell</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec175" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analytisk løsning i et punkt</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec176" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numerisk løsning for sirkulær krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec177" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numerisk løsning for linje</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec178" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Numerisk løsning for kvadratisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec179" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec180" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.11: Similarities and differences between Gauss and Ampere</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec181" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.12: Magnetfeltet fra en koaksialkabel</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec182" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.13: Solenoide</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec183" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 9.14: Magnetkrets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec184" style="font-size: 80%;"><b>Uke 10: Emf, Faradays lov og induktans</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec185" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec186" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec187" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.1: Rotasjon av en kvadratisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec188" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.2: Force on copper plate</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec189" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.3: Ring på linjen</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec190" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec191" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.4: Motional emf</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec192" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.5: Faraday's law</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec193" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec194" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.6: En voksende krets</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec195" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frivillig ekstraoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec196" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Ekstraoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises010.html#___sec197" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 10.7: Stav på skinner i magnetfelt</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec198" style="font-size: 80%;"><b>Uke 11: Induktans</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec199" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec200" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec201" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.1: Induktans</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec202" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.2: Energitetthet i magnetiserbare materialer</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec203" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.3: Energi i en spole</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec204" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec205" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.4: Self-inductance</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec206" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.5: Mutual inductance in a solenoid and a circular circuit</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec207" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.6: Energy densities</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec208" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Innleveringsoppgave</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises011.html#___sec209" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 11.7: To sirkler</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec210" style="font-size: 80%;"><b>Uke 12: Kretser del 2</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec211" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec212" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Diskusjonsoppgaver for gruppene</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec213" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.1: Snurrig motstand</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec214" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.2: En spole pluss en spole er fire spoler</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec215" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.3: Energioverføring</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec216" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.4: Kansellerende komponenter</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec217" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gruppeoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec218" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.5: LR circuit</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec219" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.6: Complex warm-up</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises012.html#___sec220" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Exercise 12.7: Complex impedance</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec221" style="font-size: 80%;"><b>Uke 13: Eksamensforberedelse</b></a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec222" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec223" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Anbefalte tidligere eksamensoppgaver</a></li>
+     <!-- navigation toc: --> <li><a href="._exercises013.html#___sec224" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempler på eksamensoppgaver</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0009"></a>
+<!-- !split -->
+
+<center><h1 id="___sec157" class="anchor">Uke 09: Amp&#232;res lov og magnetisering </h1></center> <!-- chapter heading -->
+
+<h3 id="___sec158" class="anchor">L&#230;ringsm&#229;l </h3>
+
+Denne uken arbeider vi med &#229; bygge opp ferdigheter i &#229; anvende Amperes lov til &#229; finne det magnetiske feltet. Dette krever at du f&#229;r en god forst&#229;else for symmetrier og linjeintegraler. Vi skal ogs&#229; arbeide med &#229; forst&#229; magnetisering.
+
+<p>
+<!-- ======= Test-deg-selv oppgaver ======= -->
+
+<h1 id="___sec159" class="anchor">Diskusjonsoppgaver for gruppene </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec160" class="anchor">Exercise 9.1: Magnetisk storm </h2>
+
+<p>
+Elektrisk ladde partikler som str&#248;mmer ut fra solen kan i perioder med stor solaktivitet skape forstyrrelser i jordens magnetfelt. Hvordan kan dette skje?
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec161" class="anchor">Exercise 9.2: Varm paramagnet </h2>
+
+<p>
+Hvorfor forventer vi at permeabiliteten til et paramagnetisk materiale blir mindre ved h&#248;yere temperatur?
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec162" class="anchor">Exercise 9.3: Evig magnet </h2>
+
+<p>
+Else har akkurat f&#229;tt seg en flott, ny sylindrisk permanent-magnet. Hun har h&#248;rt at magneten har et magnetisk felt fordi det g&#229;r en netto str&#248;m \( I \) langs overflaten av magneten. Men hun har l&#230;rt i elektromagnetisme at en str&#248;m \( I \) i et materiale med motand \( R \) gir et effekttap \( R I^2 \). Hun m&#229;ler \( R \) mellom to punkter p&#229; overflaten og finner at denne ikke er null. Hvorfor blir ikke magneten da varm?
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec163" class="anchor">Exercise 9.4: To halve magneter </h2>
+
+<p>
+(<em>Repetisjon av tidligere oppgave</em>) Hans har f&#229;tt en permanent magnet formet som et rektangul&#230;rt, flatt prisme. Den ene halvdelen er faget r&#248;d og har bokstaven N p&#229; seg, den andre halvdelen er farget sort og har bokstaven S p&#229; seg. Hans deler magneten i to deler, en r&#248;d og en sort bit, men blir forundret da hver av bitene igjen oppf&#248;rer seg som en magnet med en nordpol og en sydpol. Hvordan kan du forklare Hans dette?
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec164" class="anchor">Gruppeoppgaver </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec165" class="anchor">Exercise 9.5: Ampere's Law </h2>
+
+<p>
+(<em>Based on a tutorial by Steven Pollock</em>)
+
+<p>
+<b>a)</b>
+Write down Ampere's Law in integral form.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_107_1" style="font-size: 80%;"></a>
+<a href="#exer_107_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_107_1">
+
+$$
+\begin{equation}
+\oint_C \vec{B} \cdot d \vec{l} = \mu_0 I \; .
+\tag{9.1}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_107_7" style="font-size: 80%;"></a>
+<a href="#exer_107_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_107_7">
+
+$$
+\begin{equation}
+\oint_C \vec{B} \cdot d \vec{l} = \mu_0 I \; .
+\tag{9.2}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Imagine there is a constant magnetic field whose direction is given by the field lines shown in Fig. <a href="#fig:week07-constfield-010">10</a>a. Find the integral \( \int \vec{B}\cdot \d\vec{l} \) for each of the four segments of the loop. What is the integral around the whole loop?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_107_2" style="font-size: 80%;"></a>
+<a href="#exer_107_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_107_2">
+
+<p>
+\( \int_{I}\vec{B} \cdot \d \vec{l} = -B_0 L_{I} \), \( \int_{II}\vec{B} \cdot \d \vec{l} = 0 \), \( \int_{III}\vec{B} \cdot \d \vec{l} = B_0 L_{III} \), \( \int_{IV}\vec{B} \cdot \d \vec{l} = 0 \), \( \oint_{C}\vec{B} \cdot \d \vec{l} = 0 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_107_8" style="font-size: 80%;"></a>
+<a href="#exer_107_8" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_107_8">
+
+<p>
+The field is given as \( \vec{B} = B_0 \y \) We find the integral for each of the segments. We integrate in positive direction according to the right hand rule.
+
+<p>
+<b>Segment I:</b>
+Along segment I, the line element \( \d \vec{l} \) is down along the \( y \)-axis and \( \d \vec{l} = -\d y \y \). The integral is therefore
+$$
+\begin{equation}
+\int_I \vec{B} \cdot \d \vec{l} = \int_I B_0 \y \cdot (-\d y \y) = -\int_I B_0 \d y = - B_0 L_I \; ,
+\tag{9.3}
+\end{equation}
+$$
+
+where \( L_I \) is the length of segment I.
+
+<p>
+<b>Segment II:</b>
+Along segment II, the line element \( \d \vec{l} \) is along the \( x \)-axis and \( \d \vec{l} = -\d x \x \). The integral is therefore zero since the line elements are orthogonal to the magnetic field:
+$$
+\begin{equation}
+\int_{II} \vec{B} \cdot \d \vec{l} = \int_{II} B_0 \y \cdot (-\d x \x) = 0 \; ,
+\tag{9.4}
+\end{equation}
+$$
+
+<p>
+<b>Segment III:</b>
+Along segment III, the line element \( \d \vec{l} \) is along the \( y \)-axis and \( \d \vec{l} = \d y \y \). The integral is therefore:
+$$
+\begin{equation}
+\int_{III} \vec{B} \cdot \d \vec{l} = \int_{III} B_0 \y \cdot (\d y \y) = \int_{III} B_0 \d y = B_0 L_{III} \; ,
+\tag{9.5}
+\end{equation}
+$$
+
+where \( L_{III} \) is the length along segment III.
+
+<p>
+<b>Segment IV:</b>
+
+Along segment IV, the line element \( \d \vec{l} \) is along the \( x \)-axis and \( \d \vec{l} = \d x \x \). The integral is therefore zero since the line elements are orthogonal to the magnetic field:
+$$
+\begin{equation}
+\int_{IV} \vec{B} \cdot \d \vec{l} = \int_{IV} B_0 \y \cdot (\d x \x) = 0 \; ,
+\tag{9.6}
+\end{equation}
+$$
+
+The integral is the sum of the integrals along the segments:
+$$
+\begin{eqnarray}
+\int_C \vec{B} \cdot \d \vec{l} &=& \int_{I} \vec{B} \cdot \d \vec{l} + int_{I} \vec{B} \cdot \d \vec{l} + int_{I} \vec{B} \cdot \d \vec{l} + int_{I} \vec{B} \cdot \d \vec{l} \\ 
+&=& -B_0 L_{I} + 0 + B_0 L_{III} + 0
+\end{eqnarray}
+$$
+
+Now, since \( L_{I} = L_{III} \) the integral is zero.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<center> <!-- figure label: --> <div id="fig:week07-constfield-010"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 10:  Two integration loops in a magnetic field.  <!-- caption label: fig:week07-constfield-010 --> </p></center>
+<p><img src="fig-ampereslaw/ampereslaw-drawfield-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p>
+</center>
+
+<p>
+<b>c)</b>
+Discuss what would happen if you instead chose a loop that was tilted an angle \( \theta \), as illustrated with the dotted line in Fig. <a href="#fig:week07-constfield-010">10</a>b.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_107_3" style="font-size: 80%;"></a>
+<a href="#exer_107_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_107_3">
+
+<p>
+The total integral will still be zero.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_107_9" style="font-size: 80%;"></a>
+<a href="#exer_107_9" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_107_9">
+
+<p>
+In this case, none of the integrals would be zero. Instead, the integrals would be along tilted line segments \( \d \vec{l} \). However, since the integral along segment I is in the opposite direction as along segment III and the megnatic field is the same everywhere (it is uniform), these integral would be identical in magnitude, but with opposite sign. The integrals along segments I and III would cancel and similarly for the integrals along segments II and IV. The total integral will still be zero.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+Qualitatively explain how your results for questions b) and c) would change if your Amperian loop was a circle instead of a rectangle. Why is a rectangular Amperian loop better for this problem than a circular Amperian loop? Explain. What sort of situation might you want a circular Amperian loop for and why? Be explicit.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_107_10" style="font-size: 80%;"></a>
+<a href="#exer_107_10" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_107_10">
+
+<p>
+First, if the amperian loop was a circle, there would be no difference if we rotated the circle by an angle \( \theta \). The results would therefore be the same for the original and the tilted circle.
+
+<p>
+Second, for a circle we could still argue that for every \( \d \vec{l} \) somewhere along the curve there would be an opposite line segment \( - \d \vec{l} \) on the other side of the circle. So if the magnetic field is zero, the contributions from \( \vec{B} \cdot \d \vec{l} \) and \( \vec{B} \cdot (-\d \vec{l}) \) would cancel and the integral along the whole, closed circle would be zero.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>e)</b>
+If \( \oint_c \vec{B} \cdot d \vec{l} = 0 \) for an Amperian loop (not necessarily the one in the questions above), can you conclude anything about the magnetic field \( \vec{B} \)? Explain.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_107_11" style="font-size: 80%;"></a>
+<a href="#exer_107_11" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_107_11">
+
+<p>
+No. We would need to know more about the magnetic field, such as its symmetries, to be able to conclude about the magnetic field.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>f)</b>
+What does it mean if \( \oint_c \vec{B} \cdot d \vec{l} \) is not zero?
+
+<p>
+<b>g)</b>
+Consider the long fat cylindrical wire with a known, azimuthally symmetric current density \( \vec{J} \) shown in Fig. <a href="#fig:week07-loopsymmetry-010">11</a>.
+Look at the various loops shown in the figure, and decide what information, if any, Ampere's law applied to each loop might provide about \( \vec{B} \). (i) Loop a (it is centered on the wire); (ii) loop b; (iii) loop c; (iv) loop d (also centered); (v) loop e (also centered); loop f.
+
+<p>
+<center> <!-- figure label: --> <div id="fig:week07-loopsymmetry-010"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 11:  Various integrations loops and a current density \( \vec{J} \).  <!-- caption label: fig:week07-loopsymmetry-010 --> </p></center>
+<p><img src="fig-ampereslaw/ampereslaw-loopsymmetry-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p>
+</center>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec166" class="anchor">Exercise 9.6: Application of Ampere's Law </h2>
+
+<p>
+While studying intensely for your physics final, you decide to take a break and listen to your stereo. As you unwind to a little music from your favourite Spotify list, your thoughts drift to newspaper stories about the dangers of household magnetic fields on the body. You examine your stereo wires and find that most of them are coaxial cables: essentially one conducting cylinder surrounded by a thin conducting cylindrical shell (the shell has some thickness). At some moment in time current is traveling up the inside conductor, and back down the conducting shell. As a way to practice for your physics final you decide to calculate the magnetic field at different radii.
+
+<p>
+<center> <!-- figure label: --> <div id="fig:week07-coaxampere-010"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 12:   <!-- caption label: fig:week07-coaxampere-010 --> </p></center>
+<p><img src="fig-ampereslaw/ampereslaw-coax-ampere-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p>
+</center>
+
+<p>
+<b>a)</b>
+How does the current density \( \vec{J} \) vary throughout the body of a conducting wire? Is all the current concentrated right at the center of the wire, does it only flow on the outer edges, or, does it spread out uniformly across the cross-sectional area?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_108_1" style="font-size: 80%;"></a>
+<a href="#exer_108_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_108_1">
+
+<p>
+Uniform.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_108_11" style="font-size: 80%;"></a>
+<a href="#exer_108_11" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_108_11">
+
+<p>
+We assume that the current is uniformly distributed across the cross-sectional areas so that \( \vec{J} \) is uniform in the inner cable and in the outer cable. (But is it not necessarily the same magnitude in the inner and outer cables).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------------------------------- -->
+
+<p>
+Now, using your model for \( \vec{J} \), calculate \( \vec{B} \) in the four regions (you may assume \( I_1 \) and \( I_2 \) have the same magnitude \( I \)):
+
+<p>
+<b>b)</b>
+\( s < a \)
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_108_2" style="font-size: 80%;"></a>
+<a href="#exer_108_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_108_2">
+
+<p>
+\( B_{\phi} =  \frac{\mu_0 I r}{2 \pi a^2} \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_108_12" style="font-size: 80%;"></a>
+<a href="#exer_108_12" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_108_12">
+
+<p>
+We assume that the magnetic field has cylindrical symmetry around an axis thorugh the center of the cylinder. This means that the field cannot depend on \( \phi \). Also, we assume that the system is infinitely (or very) long. We therefore do not expect the field to depend on \( z \). Since the current is in the \( z \)-direction, Biot-Savarts law implies that the magnetic field cannot have a component in the \( z \) direction. We also know that since the divergece of the magnetic field is zero, the magnetic field cannot have a component in the \( r \)-direction. This means that
+$$
+\begin{equation}
+\vec{B} = B_{\phi}(r) \; .
+\tag{9.7}
+\end{equation}
+$$
+
+Given the cylindrical symmetry, we choose an Amperian loop in the form of a circle around the \( z \)-axis in the \( xy \)-plane. Amperes law is then
+$$
+\begin{equation}
+\int_C \vec{B} \cdot \d \vec{l} = 2 \pi r B_{\phi} = \mu_0 I(r) = \mu_0 \int_S \vec{J} \cdot \d \vec{S} \; ,
+\tag{9.8}
+\end{equation}
+$$
+
+where the surface \( S \) has an area \( \pi r^2 \). The current density is uniform, \( \vec{J} = I/(\pi a^2) \z \) in this region (\( r < a \)). The integral on the right is therefore \( \pi r^2 I/(\pi a^2) \) and
+$$
+\begin{equation}
+\int_C \vec{B} \cdot \d \vec{l} = 2 \pi r B_{\phi} = \int_S \vec{J} \cdot \d \vec{S} = I \frac{r^2}{a^2} \; ,
+\tag{9.9}
+\end{equation}
+$$
+
+which gives
+$$
+\begin{equation}
+B_{\phi} = \mu_0 I \frac{r^2}{2 \pi r a^2} = \frac{\mu_0 I r}{2 \pi a^2} \; .
+\tag{9.10}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+\( a < s < b \)
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_108_3" style="font-size: 80%;"></a>
+<a href="#exer_108_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_108_3">
+
+<p>
+\( B_{\phi} = \frac{\mu_0 I}{2 \pi r} \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_108_13" style="font-size: 80%;"></a>
+<a href="#exer_108_13" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_108_13">
+
+<p>
+We use the same approach as above. Now, the current inside the Amperian loop is \( I \). The magnetic field is therefore found from Ampere's law:
+$$
+\begin{equation}
+\int_C \vec{B} \cdot \d \vec{l} = 2 \pi r B_{\phi} = \mu_0 I \; ,
+\tag{9.11}
+\end{equation}
+$$
+
+which gives
+$$
+\begin{equation}
+B_{\phi} = \frac{\mu_0 I}{2 \pi r} \; .
+\tag{9.12}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+\( b < s < c \)
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_108_4" style="font-size: 80%;"></a>
+<a href="#exer_108_4" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_108_4">
+
+<p>
+\( B_{\phi} = -\frac{\mu_0 I}{2 \pi r} \frac{r^2 - b^2}{c^2 - b^2} + \frac{\mu_0 I}{2 \pi r} \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_108_14" style="font-size: 80%;"></a>
+<a href="#exer_108_14" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_108_14">
+
+<p>
+The procedure follows the same approach as above, but we now need to include all the current flowing inside the Amperian loop. This includes both the current \( I \) and the current flowing in the outer cylinder inside a radius \( r \). The area inside a radius \( r \) is \( A(r) = \pi r^2 - \pi b^2 \) and the current density in this region is \( J = -I/(\pi c^2 - \pi b^2) \). Ampere's law therefore gives:
+$$
+\begin{equation}
+\int_C \vec{B} \cdot \d \vec{l} = 2 \pi r B_{\phi} = \mu_0 I(r) = -\mu_0 I \frac{\pi r^2 - \pi b^2}{\pi c^2 - \pi b^2} + \mu_0 I \; .
+\tag{9.13}
+\end{equation}
+$$
+
+This gives:
+$$
+\begin{equation}
+B_{\phi} = -\frac{\mu_0 I}{2 \pi r} \frac{r^2 - b^2}{c^2 - b^2} + \frac{\mu_0 I}{2 \pi r} \; .
+\tag{9.14}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>e)</b>
+\( s > c \)
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_108_5" style="font-size: 80%;"></a>
+<a href="#exer_108_5" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_108_5">
+
+<p>
+\( B_{\phi} = 0  \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_108_15" style="font-size: 80%;"></a>
+<a href="#exer_108_15" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_108_15">
+
+<p>
+In this case, the net current inside the Amperian loop is zero and the field is zero.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>f)</b>
+Based on your calculations, sketch a qualitative graph of \( B \).
+
+<p>
+<br /><br /><center><p><img src="fig-ampereslaw/ampereslaw-coax-ampere-drawb-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<!-- How does this graph compare with you prediction from above? -->
+
+<p>
+<b>g)</b>
+If \( I \) is 1 Amp (not an unreasonable size), what is the maximum value of \( B \) produced? Where is that maximum B produced? What is \( B \) at your location in the room? At either of these places, how does it compare with the earth's magnetic field (about \( 5 \times 10^{-5} \) T)? What do you think about the newspaper's concerns? You may find the following number useful: \( \mu_0 = 4 \pi \times 10^{-7} \text{N/A}^2 \).
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec167" class="anchor">Hjemmeoppgaver </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec168" class="anchor">Exercise 9.7: Feltet fra en roterende ladd sylinder </h2>
+
+<p>
+Vi har et langt sylinderskall med radius \( a \) og flateladningstetthet \( \rho_s \). Denne sylinderen roterer med vinkelhastighet \( \omega \)
+
+<p>
+<b>a)</b>
+Hvilke symmetrier har vi i dette systemet? Hva kan vi si om det magnetiske feltet basert p&#229; disse symmetriene?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_109_2" style="font-size: 80%;"></a>
+<a href="#exer_109_2" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_109_2">
+
+<p>
+Vi har translasjonssymmetri langs \( z \)-aksen. Vi har roasjonssymmetri om \( z-aksen \). Dette f&#248;rer til at feltet er uanhengig av \( z \), og at st&#248;rrelsen p&#229; feltet kun avhenger av \( r \), avstanden from sylinderaksen.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Dersom du skal bruke Amperes lov til &#229; finne det magnetiske feltet fra sylinderen. Hva vil v&#230;re et godt valg av Amp&#232;rel&#248;kke?
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_109_1" style="font-size: 80%;"></a>
+<a href="#exer_109_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_109_1">
+
+<p>
+N&#229;r sylinderen roterer med en ladningsfordeling p&#229; seg kan man se p&#229; det som en str&#248;m.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_109_3" style="font-size: 80%;"></a>
+<a href="#exer_109_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_109_3">
+
+<p>
+Vi &#248;nsker oss en l&#248;kke der vi har stykkevis konstante bidrag i linjeintegralet slik at vi kan kvitte oss med integraltegnet. Det kan vi oppn&#229; for eksempel ved &#229; velge en l&#248;kke som g&#229;r parallellt med sylinderaksen, deretter radielt ut fra sylinderaksen ut til uendeligheten, deretter tilbake igjen parallellt med sylinderaksen ute i uendeligheten, og s&#229; radielt inn igjen til startpunktet.
+
+<p>
+Vi kan umiddelbart se at \( B \) ikke kan ha noen radiell komponent. Da m&#229;tte \( \nabla \cdot \mathbf{B} \neq 0 \). Derfor har vi kun e \( z \)-komponent av \( B \)-feltet. 
+N&#229;r vi tar med oss trajslasjonssymmetrien i systemet ser vi at \( \mathbf{B} \cdot \d \mathbf{l} \) kommer til &#229; v&#230;re konstant lik \( B_z \d l \) parallellt med sylinderaksen p&#229; innsiden av sylinderskallet, og null langs alle de andre delene av amperel&#248;kka. For veien ut og inn er det fordi feltet st&#229;r normalt, og i uendeligheten er det fordi feltet blir null.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Finn magnetfeltet (st&#248;rrelse og retning) fra det roterende sylinderskallet.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_109_4" style="font-size: 80%;"></a>
+<a href="#exer_109_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_109_4">
+
+<p>
+Vi begynner med &#229; finn str&#248;mtettheten som settes opp av den roterende sylinderen: 
+$$
+\begin{equation}
+\mathbf{J}_l = \rho_s (\boldsymbol{\omega}\times \mathbf{r})
+\tag{9.15}
+\end{equation}
+$$
+
+<p>
+Vi setter opp Amp&#232;res lov:
+$$
+\begin{align}
+\oint_C \mathbf{B} \cdot \d \mathbf{l} = \int_l \mathbf{J} \cdot \d \mathbf{l} 
+\tag{9.16}
+\end{align}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+<!-- Tutorials moved here -->
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec169" class="anchor">Exercise 9.8: Cylindrical magnet </h2>
+
+<p>
+<em>In this tutorial we will focus on the relation between the external field \( \vec{B}_0 \), the magnetization, \( \vec{M} \), and the \( \vec{H} \)-field.</em>
+
+<p>
+A cylindrically shaped linearly magnetic material with magnetic susceptibility \( \xi_m \) is placed in an external, homogeneous magnetic field \( \vec{B}_0 \). The axis of the cylinder is directed along the magnetic field as illustrated in the figure. You can assume that the magnetic field is homogeneous and parallel to \( \vec{B}_0 \) inside the cylinder.
+
+<p>
+<br /><br /><center><p><img src="fig-magnetization/magnetization-magneticcylinder-010.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<b>a)</b>
+What is \( \vec{H} \) outside the cylinder?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_110_1" style="font-size: 80%;"></a>
+<a href="#exer_110_1" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_110_1">
+
+<p>
+Outside the cylinder the magnetic permeability if \( \mu_0 \). Hence, \( \vec{B}_0 = \mu_0 \vec{H} \), and \( \vec{H} = \vec{B}_0/\mu_0 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Write down Ampere's law for a magnetic material.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_110_2" style="font-size: 80%;"></a>
+<a href="#exer_110_2" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_110_2">
+
+$$
+\begin{equation}
+\oint_C \vec{H} \cdot d \vec{l} = I_{\text{free in C}}
+\tag{9.17}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+What type of Amperian loop would you choose to find \( \vec{H} \) inside the cylinder.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_110_3" style="font-size: 80%;"></a>
+<a href="#exer_110_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_110_3">
+
+<p>
+A loop that goes up parallel to the axis inside the cylinder and down parallel to the axis outside the cylinder.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+What is \( \vec{H} \) inside the cylinder?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_110_4" style="font-size: 80%;"></a>
+<a href="#exer_110_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_110_4">
+
+<p>
+We apply Ampere's law. There are no free currents. The only contributions to the integral are from the two paths along the axis. The other two paths do not contribute, since the \( \vec{H} \)-field is directed along the axis. We get
+$$
+\begin{equation}
+H \Delta l - (B_0/\mu_0) \Delta l = 0 \, \Rightarrow \, H = B_0/\mu_0 \; .
+\tag{9.18}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>e)</b>
+Check that your result is consistent with the boundary conditions at the boundary between the cylinder and the vacuum outside.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_110_5" style="font-size: 80%;"></a>
+<a href="#exer_110_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_110_5">
+
+<p>
+\( \vec{H} \) is the same on both sides. There is no normal component of either \( \vec{H} \) or \( \vec{B} \) on either side.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>f)</b>
+What is \( \vec{M} \) inside the cylinder for a diamagnetic and a paramagnetic material?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_110_6" style="font-size: 80%;"></a>
+<a href="#exer_110_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_110_6">
+
+<p>
+\( \vec{M} = \chi_m \vec{H} = \chi_m \vec{B}_0/\mu_0 \) where the sign depends on the sign of \( \chi_m \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>g)</b>
+What is the magnetic field \( \vec{B} \) inside the cylinder for a diamagnetic and a paramagnetic material?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_110_7" style="font-size: 80%;"></a>
+<a href="#exer_110_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_110_7">
+
+<p>
+The magnetic field \( \vec{B} = \mu \vec{H} = (\mu/\mu_0) \vec{B}_0 = (1+\chi_m) \vec{B}_0 \). The results therefore depend on the sign of \( \chi_m \). For a diamagnetic material \( \chi_m < 0 \) and \( B \) is smaller than \( B_0 \). For a paramagnetic material \( \chi_m>0 \) and \( B \) is larger than \( B_0 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>h)</b>
+How would you argue that the magnetic fields are homogeneous inside the cylinder?
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec170" class="anchor">Innleveringsoppgave </h1>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec171" class="anchor">Exercise 9.9: En tykk plate </h2>
+
+<p>
+Vi skal i denne oppgaven se p&#229; magnetfeltet fra en str&#248;mf&#248;rende plate med endelig tykkelse. Platen er uendelig stor i \( x \)- og \( y \)-retning og strekker seg fra \( -h \) til \( +h \) i \( z \)-retningen. Platen har en str&#248;mtetthet \( \vec{J} = J_0 |z| \x \) for \( z \in (-h,h) \) og \( 0 \) ellers (utenfor platen). (<em>Hvis du synes dette blir for vanskelig, er det ogs&#229; greit &#229; regne med uniform str&#248;mtetthet \( \vec{J} = J_0\x \) inne i platen og null str&#248;mtetthet utenfor platen</em>).
+
+<p>
+<b>a)</b>
+Hvorfor kan ikke \( \vec{B} \)-feltet ha en komponent i \( x \)-retningen?
+
+<p>
+<b>b)</b>
+Hvilken symmetrier finner du at \( \vec{B} \) har?
+
+<p>
+<b>c)</b>
+Hvorfor kan ikke \( \vec{B} \)-feltet ha en komponent i \( z \)-retningen?
+
+<p>
+<b>d)</b>
+Finn \( \vec{B} \)-feltet overalt i rommet (over, under og inni platen).
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec172" class="anchor">Lang innleveringsoppgave 02 (7 poeng) </h1>
+
+<p>
+Denne oppgaven er laget slik at den vil likne p&#229; oppgaver dere kan f&#229; p&#229; 4-timers skole-eksamen med Jupyter notebooks. Det er derfor lurt &#229; l&#248;se den i en Jupyter notebook, men vi anbefaler &#229; levere som pdf. De siste programmeringsoppgaven er kanskje noe vanskeligere enn vi forventer p&#229; eksamen. Mengden og typen p&#229; oppgitt kode p&#229; eksamen er ogs&#229; realistisk i forhold til eksamen. Lykke til!
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec173" class="anchor">Exercise 9.10: En kvadratisk krets </h2>
+
+<p>
+Vi skal i denne oppgaven se p&#229; en kvadratisk str&#248;m-l&#248;kke --- slik du vil finne i de fleste kretser man lager p&#229; kretskort. Str&#248;m-l&#248;kken er kvadratisk med sidekanter \( a \) og ligger i \( xy \)-planet som skissert i figuren. Planen er &#229; f&#248;rst se p&#229; magnetfeltet fra ett linjestykke og st&#229; legge sammen feltene fra alle de fire linjestykkene.
+
+<h3 id="___sec174" class="anchor">Analytisk l&#248;sning av forenklet modell </h3>
+
+<p>
+<b>a)</b>
+Hva er det magnetiske feltet fra en uendelig lang linje langs \( x \)-aksen med en str&#248;m \( I \) i positiv \( x \)-retning. Finn feltet, \( \vec{B} \), i et punkt \( (x,y,0) \)
+
+<h3 id="___sec175" class="anchor">Analytisk l&#248;sning i et punkt </h3>
+
+<p>
+<b>b)</b>
+Vi ser s&#229; p&#229; en linje langs \( x \)-aksen fra \( x=-a/2 \) til \( x = a/2 \). Det g&#229;r en str&#248;m \( I \) i positiv \( x \)-retning. Hva er bidraget \( \d \vec{B} \) til det magnetiske feltet i punktet \( (0,y,0) \) fra et str&#248;m-element \( I \d \vec{l} \) i punktet \( (x',0,0) \)?
+
+<p>
+<b>c)</b>
+L&#248;s integralet for &#229; finne det magnetiske feltet i punktet \( (0,y,0) \) fra en linje fra \( -a/2 \) til \( a/2 \).
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_112_1" style="font-size: 80%;"></a>
+<a href="#exer_112_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_112_1">
+
+$$\int \frac{\d u}{(a^2 + u^2)^{3/2}} = \frac{u}{a^2\sqrt{a^2 + u^2}}$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<h3 id="___sec176" class="anchor">Numerisk l&#248;sning for sirkul&#230;r krets </h3>
+
+<p>
+Som grunnlag for den numeriske l&#248;sningen f&#229;r du oppgitt f&#248;lgende program som finner det magnetiske feltet langs \( z \)-aksen fra en sirkul&#230;r krets i \( xy \)-planet.
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">numpy</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">np</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">matplotlib.pyplot</span> <span style="color: #008000; font-weight: bold">as</span> <span style="color: #0000FF; font-weight: bold">plt</span>
+
+<span style="color: #408080; font-style: italic"># Example: B-field from a circle</span>
+mu0 <span style="color: #666666">=</span> <span style="color: #666666">1.257e-6</span>
+K <span style="color: #666666">=</span> mu0<span style="color: #666666">/</span>(<span style="color: #666666">4*</span>np<span style="color: #666666">.</span>pi)
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">Bcircle</span>(r,a,I,N):
+    B <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,<span style="color: #666666">0</span>])
+    Idl <span style="color: #666666">=</span> I<span style="color: #666666">*</span>a<span style="color: #666666">*2*</span>np<span style="color: #666666">.</span>pi<span style="color: #666666">/</span>N
+    <span style="color: #008000; font-weight: bold">for</span> j <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(N):
+        theta <span style="color: #666666">=</span> (j<span style="color: #666666">/</span>N)<span style="color: #666666">*2*</span>np<span style="color: #666666">.</span>pi
+        rj <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([a<span style="color: #666666">*</span>np<span style="color: #666666">.</span>cos(theta),a<span style="color: #666666">*</span>np<span style="color: #666666">.</span>sin(theta),<span style="color: #666666">0</span>])
+        dlvec <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([<span style="color: #666666">-</span>np<span style="color: #666666">.</span>sin(theta),np<span style="color: #666666">.</span>cos(theta),<span style="color: #666666">0</span>])
+        R <span style="color: #666666">=</span> r<span style="color: #666666">-</span>rj
+        dB <span style="color: #666666">=</span> K<span style="color: #666666">*</span>Idl<span style="color: #666666">*</span>np<span style="color: #666666">.</span>cross(dlvec,R)<span style="color: #666666">/</span>np<span style="color: #666666">.</span>linalg<span style="color: #666666">.</span>norm(R)<span style="color: #666666">**3</span>
+        B <span style="color: #666666">=</span> B <span style="color: #666666">+</span> dB
+    <span style="color: #008000; font-weight: bold">return</span> B
+
+a <span style="color: #666666">=</span> <span style="color: #666666">0.1</span> <span style="color: #408080; font-style: italic"># Radius til sirkel (m)</span>
+I <span style="color: #666666">=</span> <span style="color: #666666">1.0</span> <span style="color: #408080; font-style: italic"># Strøm i sirkel (A)</span>
+N <span style="color: #666666">=</span> <span style="color: #666666">100</span> <span style="color: #408080; font-style: italic"># Antall punkter i plot</span>
+L <span style="color: #666666">=</span> <span style="color: #666666">0.3</span> <span style="color: #408080; font-style: italic"># Lengde på område for plot</span>
+z <span style="color: #666666">=</span> np<span style="color: #666666">.</span>zeros((N,<span style="color: #666666">1</span>))
+B <span style="color: #666666">=</span> np<span style="color: #666666">.</span>zeros((N,<span style="color: #666666">3</span>))
+<span style="color: #008000; font-weight: bold">for</span> iz <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(N):
+    ziz <span style="color: #666666">=</span> (L<span style="color: #666666">/</span>N)<span style="color: #666666">*</span>iz
+    r <span style="color: #666666">=</span> np<span style="color: #666666">.</span>array([<span style="color: #666666">0</span>,<span style="color: #666666">0</span>,ziz])
+    z[iz] <span style="color: #666666">=</span> ziz   
+    B[iz] <span style="color: #666666">=</span> Bcircle(r,a,I,<span style="color: #666666">30</span>)
+
+plt<span style="color: #666666">.</span>plot(z,B[:,<span style="color: #666666">2</span>]<span style="color: #666666">*1e6</span>)
+plt<span style="color: #666666">.</span>xlabel(<span style="color: #BA2121">&#39;$z$ (m)&#39;</span>)
+plt<span style="color: #666666">.</span>ylabel(<span style="color: #BA2121">&#39;$B_z$ ($\mu$T)&#39;</span>)
+</pre></div>
+
+<h3 id="___sec177" class="anchor">Numerisk l&#248;sning for linje </h3>
+
+<p>
+Vi skal n&#229; sammenlikne med en numerisk l&#248;sning for det magnetiske feltet rundt et linjestykke langs \( x \)-aksen fra \( -a/2 \) til \( a/2 \).
+
+<p>
+<b>d)</b>
+Skriv et program som finner det magnetiske feltet fra str&#248;mmen \( I \) langs en linje som starter i punktet \( \vec{a}_0 \) og g&#229;r til punktet \( \vec{a}_0 + \Delta \vec{a} \).
+
+<p>
+<b>e)</b>
+Bruk programmet til &#229; finne det magnetiske feltet fra str&#248;mmen \( I \) langs en linje fra \( -a/2 \) til \( a/2 \) langs \( x \)-aksen. Regn ut feltet lange en linje parallelt med \( x \)-aksen gjennom \( (0,a/10,0) \) og sammenlikn med resultatene b&#229;de fra et endelig linjestykke og fra den uendelig lange lederen. Du b&#248;r sammenlikne ved &#229; plotte det numeriske resultatet og de teoretiske resultatene i samme plot.
+
+<h3 id="___sec178" class="anchor">Numerisk l&#248;sning for kvadratisk krets </h3>
+
+<b>f)</b>
+Finn det magnetiske feltet \( B_z \) innenfor en kvadratisk krets med sidekant \( a \). Visualiser feltet.
+
+<p>
+<!-- --- end exercise --- -->
+
+<h1 id="___sec179" class="anchor">Ekstraoppgaver </h1>
+
+<p>
+<!-- Tutorials moved here -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec180" class="anchor">Exercise 9.11: Similarities and differences between Gauss and Ampere </h2>
+
+<p>
+<em>In this tutorial we will focus on the commonalities in the approaches to find the electric field using Gauss' law for a dielectric and to find the magnetic field using Ampere's law for a magnetizable material.</em>
+
+<p>
+We will study an infinitely long cylinder of radius \( a \) in two scenarios. In scenario A the cylinder has a constant charge density \( \rho \) and consists of a dielectric material with dielectric constant \( \epsilon \), while the space outside the cylinder is vacuum. In scenario B the cylinder has a constant current density \( \vec{J} \) directed along the axis of the cylinder with a magnetic permeability \( \mu \), while the space outside the cylinder is vacuum.
+
+<p>
+<br /><br /><center><p><img src="fig-magnetization/magnetization-magneticcylinder-110.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Write down Gauss' and Ampere's laws.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_113_5" style="font-size: 80%;"></a>
+<a href="#exer_113_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_113_5">
+
+<p>
+Gauss' law:
+$$
+\begin{equation}
+\oint_S \vec{D}\cdot d\vec{S} = Q_{\text{free}} \; .
+\tag{9.19}
+\end{equation}
+$$
+
+Ampere's law (in the stationary case):
+$$
+\begin{equation}
+\oint_C \vec{H} \cdot d\vec{l} = \int_S \vec{J}_{\text{free}} \cdot d\vec{S} \; .
+\tag{9.20}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+First, we will address the fields \( \vec{D} \) (scenario A) and \( \vec{H} \) (scenario B) outside the cylinder.
+
+<p>
+<b>b)</b>
+What symmetries would you use to apply Gauss' law to scenario A? What is the free charge? Find the field \( \vec{D} \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_113_1" style="font-size: 80%;"></a>
+<a href="#exer_113_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_113_1">
+
+<p>
+\( Q = v \rho = \pi a^2 L \rho \), \( \vec{D} = \frac{\rho a^2}{2 r} \rhat \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_113_6" style="font-size: 80%;"></a>
+<a href="#exer_113_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_113_6">
+
+<p>
+We notice that we have rotation and translation symmetry, therefore we can use cylindrical coordinates. We do not expect the field to have a \( \phi \)-dependence due to the rotational symmetry or a \( z \)-dependence due to the translational symmetry.
+
+<p>
+What about the components? We do not expect the field to have a \( z \)-component because we can rotate the system \( 180^{\circ} \) and get the same system back. The \( \vec{D} \)-field has the same symmetry as the electric field \( \vec{E} \). We do not exect the \( \vec{E} \)-field to have a \( \phi \)-component because \( \oint \vec{E} \cdot \d \vec{l} = 0 \). We therefore expect \( \vec{E} = E_r(r)\rhat \) and therefore \( \vec{D} = D_r(r) \rhat \).
+
+<p>
+We will use Gauss' law on a cylinder with radius \( r \). What is the free charge inside such a cylinder? If \( r > a \), the charge inside is the volume of the cylinder times the volume charge density, which is \( Q = v \rho = \pi a^2 L \rho \). If \( r < a \), the charge inside the volume of the cylinder times the volume charge density, which in this case is \( Q = v \rho = \pi r^2 L \rho \).
+
+<p>
+Now, we apply Gauss' law to a cylinder of radius \( r \) where \( r > a \):
+$$
+\begin{equation}
+\int_S \vec{D} \cdot \d \vec{S} = Q_{\text{free}} = \pi a^2 L \rho \; .
+\tag{9.21}
+\end{equation}
+$$
+
+There is no flux into or out of the top and bottom planar surfaces, because the field has no \( z \)-component. For the curved cylinder syrface \( \vec{D} \) points in the same direction as the surface normal and \( \vec{D} \cdot \rhat \) is constant in the integral because \( \vec{D} \) only depends on \( r \):
+$$
+\begin{equation}
+\int_S \vec{D} \cdot \d \vec{S} = D_r(r) 2 \pi r L = \pi a^2 L \rho \; ,
+\tag{9.22}
+\end{equation}
+$$
+
+which gives
+$$
+\begin{equation}
+D_r = \frac{\rho a^2}{2r}
+\tag{9.23}
+\end{equation}
+$$
+
+and
+$$
+\begin{equation}
+\vec{D} = \frac{\rho a^2}{2 r} \rhat \; .
+\tag{9.24}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+What symmetries would you use to apply Ampere's law to scenario B? What is the free current? Find the field \( \vec{H} \).
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_113_7" style="font-size: 80%;"></a>
+<a href="#exer_113_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_113_7">
+
+<p>
+We have the same symmetries as the previous exercise, but because the magnetic field can't have divergence we know it will point in \( \phi \)-direction. The free current is given by the current density, and we get the field:
+$$
+\begin{equation*}
+\vec{H}(r) = \frac{1}{2}\frac{a^2}{r}|\vec{J}|phihat
+\end{equation*}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+Second, we will address the fields \( \vec{D} \) (scenario A) and \( \vec{H} \) (scenario B) inside the cylinder.
+
+<p>
+<b>d)</b>
+What symmetries would you use to apply Gauss' law to scenario A? What is the free charge? Find the field \( \vec{D} \).
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_113_8" style="font-size: 80%;"></a>
+<a href="#exer_113_8" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_113_8">
+
+<p>
+The arguments are the same as in the part (b), but we now use the charge inside a cylinder of radius \( r \), where \( r < a \): \( Q = v \rho = \pi r^2 L \rho \). We apply Gauss' law and get:
+$$
+\begin{equation}
+\int_S \vec{D} \cdot \d \vec{S} = D_r(r) 2 \pi r L = \pi r^2 L \rho \; ,
+\tag{9.25}
+\end{equation}
+$$
+
+which gives
+$$
+\begin{equation}
+D_r = \frac{\rho r}{2}
+\tag{9.26}
+\end{equation}
+$$
+
+and
+$$
+\begin{equation}
+\vec{D} = \frac{\rho r}{2} \rhat \; .
+\tag{9.27}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>e)</b>
+What symmetries would you use to apply Ampere's law to scenario B? What is the free current? Find the field \( \vec{H} \).
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_113_2" style="font-size: 80%;"></a>
+<a href="#exer_113_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_113_2">
+
+$$
+\begin{equation*}
+\vec{H}(r) = \frac{1}{2}r|\vec{J}|\phihat
+\end{equation*}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec181" class="anchor">Exercise 9.12: Magnetfeltet fra en koaksialkabel </h2>
+
+<p>
+I denne oppgaven skal vi finne feltet fra en koaksialkabel. Dersom du har gjort tilsvarende oppgave fra ukens tutorial kan du g&#229; rett til deloppgave d.
+
+<p>
+<b>a)</b>
+Finn \( B \)-feltet fra en uendelig lang, rett, sylindrisk, leder med radius \( a \) n&#229;r du antar at en str&#248;m \( I \) er jevnt fordelt over lederens tverrsnitt.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_114_1" style="font-size: 80%;"></a>
+<a href="#exer_114_1" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_114_1">
+
+<p>
+Symmetrien i systemet tilsier at feltet m&#229; v&#230;re \( \mathbf{B} = B(r) \hat{\boldsymbol{\phi}} \). Det kommer av rotasjonssymmetri om sylinderens akse, og translasjonssymmetri langs sylinderens akse, samt at \( \nabla \cdot \mathbf{B} = 0 \). Vi legger derfor en Amp&#232;resl&#248;yfe som er en sirkel normalt p&#229; sylinderaksen. 
+
+$$
+\begin{align}
+\oint_C \mathbf{B} \cdot \d \mathbf{l} = \mu_0 \int_S \mathbf{J} \cdot \d \mathbf{S} 
+\tag{9.28}\\ 
+2\pi r B(r) = \frac{\mu_0 Ir^2}{a^2} 
+\tag{9.29}\\ 
+B(r) = \frac{\mu_0 Ir}{2\pi a^2} 
+\tag{9.30}\\ 
+\mathbf{B}(r) = \frac{\mu_0Ir}{2\pi a^2}\hat{\boldsymbol{\phi}}
+\tag{9.31}
+\end{align}
+$$
+
+for \( r \in [0, a] \).
+
+<p>
+For \( r > a \) har vi en fast innesluttet str&#248;m \( I \), slik at \( B \)-feltet blir \( \mathbf{B}(r) = \frac{\mu_0 I}{2\pi r}\hat{\boldsymbol{\phi}} \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Finn \( B \)-feltet fra et uendelig langt sylinderskall med indre radius \( b \) og ytre radius \( c \) n&#229;r det g&#229;r en str&#248;m \( I \) som er jevnt fordelt over lederens tverrsnitt.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_114_2" style="font-size: 80%;"></a>
+<a href="#exer_114_2" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_114_2">
+
+<p>
+Vi bruker samme Amp&#232;resl&#248;yfe som i forrige oppgave. Andelen str&#248;m som er innesluttet i en avstand \( r \in [b, c] \) er \( \frac{\pi (r^2-b^2)}{\pi (c^2 - b^2)} = \frac{r^2-b^2}{c^2 - b^2} \), slik at \( I_{encl} = I\frac{r^2-b^2}{c^2 - b^2} \). 
+
+$$
+\begin{align}
+\oint_C \mathbf{B} \cdot \d \mathbf{l} = \mu_0 \int_S \mathbf{J} \cdot \d \mathbf{S} 
+\tag{9.32}\\ 
+2\pi r B(r) = \mu_0 I\frac{r^2-b^2}{c^2 - b^2} 
+\tag{9.33}\\ 
+\mathbf{B}(r) = \mu_0 I\frac{r^2-b^2}{2\pi r(c^2 - b^2)} \hat{\boldsymbol{\phi}}
+\tag{9.34}
+\end{align}
+$$
+
+For \( r > c \) har vi fast innesluttet str&#248;m \( I \), slik at \( \mathbf{B}(r) = \frac{\mu_0 I}{2\pi r}\hat{\boldsymbol{\phi}} \). For \( r < b \) har vi ingen innesluttet str&#248;m. N&#229;r vi legger p&#229; det vi vet om symmetriene i systemet vet vi da at feltet der inne p&#229; v&#230;re \( \mathbf{0} \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Finn B-feltet fra en koaksialkabel der innerlederen har radius \( a \) og ytterlederen har indre radius \( b \) og ytre radius \( c \). Det g&#229;r en str&#248;m \( I \) i innerlederen, og en str&#248;m \( I \) i ytterlederen. Begge str&#248;mmene er jevt fordelt over kabelens respektive tverrsnitt. (Finn feltet i alle avstander \( r > 0 \))
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_114_3" style="font-size: 80%;"></a>
+<a href="#exer_114_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_114_3">
+
+<p>
+Vi har funnet feltet fra hver enkelt av lederene i koaksialkabelen i de forrige deloppgavene. N&#229; trenger vi kun &#229; sette dem sammen. Vi setter str&#248;mretningen i den indre lederen til &#229; v&#230;re positiv. Om vi kaller feltet i oppgave (a) for \( \mathbf{B}_{indre} \) og feltet fra (b) for \( \mathbf{B}_{ytre} \), s&#229; skal det totale feltet, ved superposisjon, v&#230;re
+$$
+\begin{equation}
+\mathbf{B}(r) = \mathbf{B}_{indre} - \mathbf{B}_{indre}
+\tag{9.35}
+\end{equation}
+$$
+
+der det negative fortegnet kommer av at det er motsatt str&#248;mretning i denne oppgaven sammenlignet med i oppgave b. Vi deler dette opp i 4 regioner: \( r < a \), \( r \in (a, b) \) og \( r \in [b, c] \) og \( r > c \): 
+
+$$
+\begin{align}
+\mathbf{B}(r) = 
+\left\{ \begin{array}{cc}
+\frac{\mu_0 I r}{2\pi a^2} \hat{\boldsymbol{\phi}} & \text{ for } r < a \\ 
+\frac{\mu_0 I}{2\pi r} \hat{\boldsymbol{\phi}} & \text{ for } r\in (a, b) \\ 
+I\frac{r^2-b^2}{2\pi(c^2 - b^2)} \hat{\boldsymbol{\phi}} & \text{ for } r\in(b, c) \\ 
+\mathbf{0} & \text{ for } r > c
+\end{array}
+\right.
+\tag{9.36}
+\end{align}$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>d)</b>
+Anta n&#229; at lederene forskyves slik at de blir liggende eksentrisk. Vi antar fortsatt at str&#248;mmen begge veier fordeler seg jevnt over henholdsvis inner- og ytterlederen. Figuren under viser seks forslag til grove skisser av det totale magnetiske feltet. Hvilken skisse er korrekt? Du kan gjerne begrunne svaret ved &#229; vise at de resterende fem alternativene er umulige. 
+<br /><br /><center><p><img src="fig-ampereslaw/bfields_eccentric_coaxial.png" align="bottom" width=600 style='width: 100%; max-width: 600'></p></center><br /><br />
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_114_4" style="font-size: 80%;"></a>
+<a href="#exer_114_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_114_4">
+
+<ol>
+<li> Figur IV utelukkes pga brutte feltlinjer, alts&#229; at den ikke overholder \( \nabla \cdot \mathbf{B}&#160;= 0 \)</li>
+<li> Figur V utelukkes fordi den viser et asimut symmetrisk felt fra en asymmetrisk str&#248;mfordeling.</li> 
+<li> Figur I og VI utelukkes fordi ytterlederen ikke skal p&#229;virke feltet p&#229; innsiden. (Kan vises med symmetrieargumenter, slik som i (b))</li>
+<li> Figur III utelukkes fordi det ikke er noe tegn til at ytterlederen p&#229;virker feltet.</li> 
+</ol>
+
+F&#248;lgelig gjenst&#229;r alternativ II, som er det korrekte alternativet.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec182" class="anchor">Exercise 9.13: Solenoide </h2>
+
+<p>
+Gitt en lang, tettviklet solenoide med totalt N viklinger p&#229; lengden \( l \). Viklingene f&#248;rer str&#248;mmen \( I \). Finn den magnetiske flukstettheten \( \mathbf{B} \) inne i solenoiden dersom
+
+<p>
+<b>a)</b>
+Solenoiden er en papirrull med relativ permeabilitet \( \mu_r \approx 1 \).
+
+<p>
+<b>b)</b>
+Solenoiden best&#229;r av en jernkjerne med \( \mu_r = 5000 \).
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_115_1" style="font-size: 80%;"></a>
+<a href="#exer_115_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_115_1">
+
+<p>
+Bruk Amp&#232;res lov. Symmetriargumentet for en solenoide kan du ta for gitt, dvs. du kan anta at feltet er i \( \z \)-retning (langs aksen), og at det er neglisjerbart utenfor solenoiden.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec183" class="anchor">Exercise 9.14: Magnetkrets </h2>
+
+<p>
+<em>(Fra Johannes Skaar)</em>
+
+<p>
+<br /><br /><center><p><img src="fig-magnetization/magnetkrets.svg" align="bottom" width=400 style='width: 100%; max-width: 400'></p></center><br /><br />
+
+<p>
+Figuren over viser en jernkjerne med alle m&#229;l gitt i cm. Kjernens tykkelse (vinkelrett p&#229; papirplanet) er \( 1 \)&nbsp;cm. Anta at den magnetiske flukstettheten \( \mathbf{B} \) er jevnt fordelt over alle tverrsnittsareal \( S \) av kjernen, slik at \( \Phi = \int_S \mathbf{B} \cdot \d \mathbf{S} = BS \). Kjernen har en relativ permeabilitet p&#229; \( 5000 \). Det er \( N=100 \) viklinger, og str&#248;mmen \( I \) er \( 1 \)&nbsp;mA.
+
+<p>
+<b>a)</b>
+Anta at fluksen er konstant gjennom kretsen, dvs. se bort fra spredning av flukslinjer. Bruk Amp&#232;res lov til &#229; vise at for denne magnetiske kretsen f&#229;r vi fluksen
+$$
+\begin{equation}
+\Phi_m = \frac{NI}{\sum_i R_{mi}},
+\tag{9.37}
+\end{equation}
+$$
+
+der \( R_{mi} \) er reluktansen til del \( i \) i kretsen, definert som
+$$
+\begin{equation}
+R_{mi} = \frac{l_i}{\mu_i S_i}.
+\tag{9.38}
+\end{equation}
+$$
+
+Her er \( l_i \), \( \mu_i \), og \( S_i \) henholdsvis lengden, permeabiliteten og tverrsnittsarealet til den \( i'te \) delen av kretsen. La integrasjonsveien v&#230;re i midten av jernkjernen, slik at for eksempel den &#248;verste delen av kretsen f&#229;r lengden \( 6 \)&nbsp;cm og ikk \( 8 \)&nbsp;cm.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_116_5" style="font-size: 80%;"></a>
+<a href="#exer_116_5" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_116_5">
+
+<p>
+Fluksen er den samme gjennom alle deler av kretsen. La oss indekseree st&#248;rrelsene med \( i \)&#160;for &#229; representere delkrets \( i \). Da har vi \( \Phi_m = B_1S_1 = B_2S_2 = \cdots = B_nS_n \), s&#229; \( \Phi = B_iS_i \)&#160;for \( i = 1, 2, ..., n \).
+Amperes lov gir oss
+$$
+\begin{equation}
+  \oint_C \boldsymbol{H}\cdot d\boldsymbol{l} = NI,
+\tag{9.39}
+\end{equation}
+$$
+
+og venstre siden kan omskrives slik:
+$$
+\begin{equation}
+  \begin{split}
+    \oint_C \boldsymbol{H}\cdot d\boldsymbol{l} & = \sum_i \int_{C_i}\boldsymbol{H}\cdot d\boldsymbol{l} = \sum_i H_i l_i \\ 
+    & = \sum_i \frac{l_i}{\mu_i}B_i = \frac{l_i}{\mu_i S_i}\underbrace{B_i S_i}_{=\Phi_m} = \Phi_m\sum_i\underbrace{\frac{l_i}{\mu_i S_i}}_{R_{mi}}.
+  \end{split}
+\tag{9.40}
+\end{equation}
+$$
+
+Setter vi dette inn i Amperes lov f&#229;r vi
+$$
+\begin{equation}
+  \Phi_m\sum_iR_{mi} = NI,
+\tag{9.41}
+\end{equation}
+$$
+
+som medf&#248;rer
+$$
+\begin{equation}
+  \Phi_m=\frac{NI}{\sum_iR_{mi} },
+\tag{9.42}
+\end{equation}
+$$
+
+som var det vi skulle vise.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Finn tallsvar for den magnetiske fluksen \( \Phi_m \) gjennom jernkjernen.
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_116_1" style="font-size: 80%;"></a>
+<a href="#exer_116_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_116_1">
+
+<p>
+\( 2.36 \cdot 10^{-8} \)&nbsp;Wb
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<b>c)</b>
+Hvor stor feil gj&#248;r vi om vi regner med uendelig relativ permeabilitet i jernkjernen?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_116_2" style="font-size: 80%;"></a>
+<a href="#exer_116_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_116_2">
+
+<p>
+7% feil.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+<!-- Week10 -->
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+<!-- --- end exercise --- -->
+
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pager">
+
+  <li class="previous">
+    <a href="._exercises008.html">&larr; Prev</a>
+  </li>
+
+  <li class="next">
+    <a href="._exercises010.html">Next &rarr;</a>
+  </li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+   
+
+<!--Code that fetches the Chatbot into this Html page-->
+<div id="content"></div> 
+
+<script>
+  fetch('Chatbot/origin.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('content').innerHTML = data;
+
+        // Handle style.css
+        let styleLink = document.getElementById('content').querySelector('link[href="Chatbot/style.css"]');
+        if (styleLink) {
+            loadStylesheet(styleLink.href);
+            styleLink.remove();  // Optionally remove the original link tag
+        }
+
+        // Handle script.js
+        let specificScript = document.getElementById('content').querySelector('script[src="Chatbot/script.js"]');
+        if (specificScript) {
+            loadScript(specificScript.src, function() {
+                console.log('script.js loaded and executed!');
+            });
+            specificScript.remove();  // Optionally remove the original script tag
+        }
+    });
+  function loadStylesheet(url) {
+    let link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = url;
+    document.head.appendChild(link);
+}
+
+  function loadScript(url, callback) {
+    let script = document.createElement('script');
+    script.src = url;
+    script.onload = callback;
+    document.body.appendChild(script);
+}
+</script>

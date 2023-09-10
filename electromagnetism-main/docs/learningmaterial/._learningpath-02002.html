@@ -1,0 +1,438 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Uke 02: Elektrisk potensial">
+
+<title>Uke 02: Elektrisk potensial</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Elektrisk potensial', 1, None, '___sec1'),
+              ('Konservative krefter og elektrisk potensial',
+               2,
+               None,
+               '___sec2'),
+              ('Oppgave: Arbeid', 2, None, '___sec3'),
+              ('Egenskaper til elektrisk potensial', 2, None, '___sec4'),
+              ('Oppgave: Krets', 2, None, '___sec5'),
+              ('Eksempel: Potensial til en ladning', 2, None, '___sec6'),
+              ('Oppgave: Ladning', 2, None, '___sec7'),
+              ('Oppgave: Ladning', 2, None, '___sec8'),
+              ('Oppgave: Uniformt felt', 2, None, '___sec9'),
+              ('Felt og potensial', 2, None, '___sec10'),
+              ('Tolkning av elektrisk potensial', 2, None, '___sec11'),
+              ('Oppgave: Proton', 2, None, '___sec12'),
+              ('Oppgave: Potensial og felt', 2, None, '___sec13'),
+              ('Oppgave: Maksimalt felt', 2, None, '___sec14'),
+              ('Oppgave: Gradient', 2, None, '___sec15'),
+              ('Eksempler', 1, None, '___sec16'),
+              ('Oppgave: Dipol', 2, None, '___sec17'),
+              ('Eksempel: Dipol (Analytisk løsning)', 2, None, '___sec18'),
+              ('Eksempel: Dipol (Numerisk løsning)', 2, None, '___sec19'),
+              ('Oppgave: Ringladning', 2, None, '___sec20'),
+              ('Eksempel: Ringladning (Analytisk løsning)',
+               2,
+               None,
+               '___sec21'),
+              ('Eksempel: Ringladning (Numerisk løsning)',
+               2,
+               None,
+               '___sec22')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\x}{\mathbf{\hat{x}}}
+\newcommand{\uhat}{\mathbf{\hat{u}}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="learningpath-02.html">Uke 02: Elektrisk potensial</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._learningpath-02000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec1" style="font-size: 80%;"><b>Elektrisk potensial</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Konservative krefter og elektrisk potensial</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Arbeid</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Egenskaper til elektrisk potensial</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Krets</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Potensial til en ladning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Ladning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Ladning</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Uniformt felt</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Felt og potensial</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Tolkning av elektrisk potensial</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Proton</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Potensial og felt</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Maksimalt felt</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-02001.html#___sec15" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Gradient</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec16" style="font-size: 80%;"><b>Eksempler</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec17" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Dipol</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec18" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Dipol (Analytisk løsning)</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec19" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Dipol (Numerisk løsning)</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec20" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Ringladning</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec21" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Ringladning (Analytisk løsning)</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec22" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Ringladning (Numerisk løsning)</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0002"></a>
+<!-- !split -->
+
+<h1 id="___sec16" class="anchor">Eksempler </h1>
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec17" class="anchor">Oppgave: Dipol </h2>
+
+<p>
+To ladninger \( Q \) og \( -Q \) er plassert p&#229; \( x \)-aksen som vist i figuren.
+
+<p>
+<br /><br /><center><p><img src="fig-electricpotential/electricpotential-question-dipole.png" align="bottom" width=600></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hva er det elektriske potensialet i punktet \( P \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_10_1" style="font-size: 80%;"></a>
+<a href="#exer_10_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_10_1">
+
+<p>
+\( \frac{Q}{4 \pi \epsilon_0 a} \left( 1 - \frac{1}{3}\right) \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_10_3" style="font-size: 80%;"></a>
+<a href="#exer_10_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_10_3">
+
+<p>
+Vi finner det elektriske potensialet ved superposisjonsprinsippet. Vi ser avstanden fra \( Q \) til \( P \) er \( a \) og avstanden fra \( -Q \) til punktet \( P \) er \( 3a \). Da er potensialet:
+$$
+\begin{equation}
+V = V_{Q} + V_{-Q} = \frac{Q}{4 \pi \epsilon_0 a} + \frac{-Q}{4 \pi \epsilon_0 3a} = \frac{Q}{4 \pi \epsilon_0 a} \left( 1 - \frac{1}{3}\right) \; .
+\tag{11}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec18" class="anchor">Eksempel: Dipol (Analytisk l&#248;sning) </h2>
+
+<p>
+<!-- fig-electricpotential/electricpotential-example-dipole-analytical.mp4 Video 02.06 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/2U7bRjwWQc0" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 2.5.2)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<hr>
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+
+<h2 id="___sec19" class="anchor">Eksempel: Dipol (Numerisk l&#248;sning) </h2>
+
+<p>
+<!-- fig-electricpotential/electricpotential-example-dipole-numerical.mp4 Video 02.07 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/Q9_zRnFkGjU" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 2.5.2)</em></p>
+
+<p>
+<a href="https://nbviewer.jupyter.org/url/malthent.github.io/electromagnetism/learningmaterial/fig-electricpotential/video-electricpotential-example-dipole.ipynb" target="_self">Lenke til Jupyter notebook</a>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec20" class="anchor">Oppgave: Ringladning </h2>
+
+<p>
+Figuren viser en ringladning med radius \( a \).
+
+<p>
+<br /><br /><center><p><img src="fig-electricpotential/electricpotential-question-ringcharge.png" align="bottom" width=600></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hva er bidraget \( \d V \) til potensialet i punktet \( (0,0,z) \) fra elementet med ladning \( \d Q \) p&#229; ringen?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_11_1" style="font-size: 80%;"></a>
+<a href="#exer_11_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_11_1">
+
+<p>
+\( \d V = \frac{\d Q}{4 \pi \epsilon_0 \left( a^2 + z^2\right)^{1/2}} \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_11_3" style="font-size: 80%;"></a>
+<a href="#exer_11_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_11_3">
+
+<p>
+Bidraget er gitt som
+$$
+\begin{equation}
+\d V = \frac{\d Q}{4 \pi \epsilon_0 R}
+\tag{12}
+\end{equation}
+$$
+
+hvor \( R \) i dette tilfellet er gitt av \( R^2 = a^2 + z^2 \) slik at
+$$
+\begin{equation}
+\d V = \frac{\d Q}{4 \pi \epsilon_0 \left( a^2 + z^2\right)^{1/2}} \; .
+\tag{13}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec21" class="anchor">Eksempel: Ringladning (Analytisk l&#248;sning) </h2>
+
+<p>
+<!-- fig-electricpotential/electricpotential-example-ringcharge-analytical.mp4 Video 02.08 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/sLzEsxCb-Sw" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 2.5.3)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+
+<h2 id="___sec22" class="anchor">Eksempel: Ringladning (Numerisk l&#248;sning) </h2>
+
+<p>
+<!-- fig-electricpotential/electricpotential-example-ringcharge-numerical.mp4 Video 02.09 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/4GikSf_SB6Y" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 2.5.3)</em></p>
+
+<p>
+<a href="https://nbviewer.jupyter.org/url/malthent.github.io/electromagnetism/learningmaterial/fig-electricpotential/video-electricpotential-example-ringcharge.ipynb" target="_self">Lenke til Jupyter notebook</a>
+
+<p>
+</div>
+
+
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._learningpath-02001.html">&laquo;</a></li>
+  <li><a href="._learningpath-02000.html">1</a></li>
+  <li><a href="._learningpath-02001.html">2</a></li>
+  <li class="active"><a href="._learningpath-02002.html">3</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+

@@ -1,0 +1,1219 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Uke 11: Induktans">
+
+<title>Uke 11: Induktans</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Læringsmål', 3, None, '___sec0'),
+              ('Induktans', 1, None, '___sec1'),
+              ('Induktans', 2, None, '___sec2'),
+              ('Oppgave: En og to løkker', 2, None, '___sec3'),
+              ('Oppgave: Solenoide', 2, None, '___sec4'),
+              ('Oppgave: To solenoider', 2, None, '___sec5'),
+              ('Induktans i elektrisk krets', 2, None, '___sec6'),
+              ('Oppgave: Strøm gjennom krets', 2, None, '___sec7'),
+              ('Eksempel: Toroide', 2, None, '___sec8'),
+              ('Gjensidig induktans', 2, None, '___sec9'),
+              ('Oppgave: Gjensidig induktans', 2, None, '___sec10'),
+              ('Oppgave: To spoler', 2, None, '___sec11'),
+              ('Eksempel: Toroide', 2, None, '___sec12'),
+              ('Eksempel: Transformator', 2, None, '___sec13'),
+              ('Energi i magnetiske felt', 1, None, '___sec14'),
+              ('Energi i magnetiske felt', 2, None, '___sec15'),
+              ('Oppgave: To spoler etter hverandre', 2, None, '___sec16'),
+              ('Eksempel: Energi i koaksial kabel', 2, None, '___sec17')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<!-- newcommands_keep.tex -->
+$$
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\d}{\mathrm{d}}
+$$
+
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="learningpath-11.html">Uke 11: Induktans</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="._learningpath-11000.html#table_of_contents" style="font-size: 80%;"><b>Table of contents</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11000.html#___sec0" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Læringsmål</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 80%;"><b>Induktans</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Induktans</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: En og to løkker</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Solenoide</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: To solenoider</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Induktans i elektrisk krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Strøm gjennom krets</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Toroide</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Gjensidig induktans</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: Gjensidig induktans</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: To spoler</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Toroide</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Transformator</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11002.html#___sec14" style="font-size: 80%;"><b>Energi i magnetiske felt</b></a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11002.html#___sec15" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Energi i magnetiske felt</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11002.html#___sec16" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Oppgave: To spoler etter hverandre</a></li>
+     <!-- navigation toc: --> <li><a href="._learningpath-11002.html#___sec17" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Eksempel: Energi i koaksial kabel</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0001"></a>
+<!-- !split -->
+
+<h1 id="___sec1" class="anchor">Induktans </h1>
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+
+<h2 id="___sec2" class="anchor">Induktans </h2>
+<!-- 14.1.1-14.1.2 -->
+
+<p>
+<!-- fig-inductance/inductance-lecture-inductance-14.1.1.mp4 Video 14.01 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/1P16FCxfiBk" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 14.1.1)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec3" class="anchor">Oppgave: En og to l&#248;kker </h2>
+
+<p>
+Figuren viser to kretser. Krets 2 er identisk med krets 1, men har to l&#248;kker p&#229; toppen av hverandre i stedet for en l&#248;kke.
+
+<p>
+<br /><br /><center><p><img src="fig-inductance/inductance-question-twoloops-010.png" align="bottom" width=400></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hva er det magnetiske feltet \( B_2 \) i sentrum av krets 2 sammenliknet med feltet \( B_1 \) i sentrum av krets 1?
+
+<ol>
+<li> \( B_2 = B_1 \)</li>
+<li> \( B_2 = 2B_1 \)</li>
+<li> \( B_2 = 4B_1 \)</li>
+<li> \( B_2 = B_1/2 \)</li>
+</ol>
+
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_1" style="font-size: 80%;"></a>
+<a href="#exer_1_1" data-toggle="collapse">
+<b>Hint 1.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_1">
+
+<p>
+Du beh&#248;ver ikke regne ut feltet. Det er tilstrekkelig &#229; bruke enkle fysiske prinsipper.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_2" style="font-size: 80%;"></a>
+<a href="#exer_1_2" data-toggle="collapse">
+<b>Hint 2.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_2">
+
+<p>
+Superposisjonsprinsippet.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_6" style="font-size: 80%;"></a>
+<a href="#exer_1_6" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_6">
+
+<p>
+\( B_2 = 2 B_1 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_10" style="font-size: 80%;"></a>
+<a href="#exer_1_10" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_10">
+
+<p>
+Vi tenker oss at en l&#248;kke gir magnetfeltet \( B_1 \) i midten av kretsen. Hvis vi legger to slike l&#248;kker p&#229; toppen av hverandre finner vi det totale feltet fra superposisjonsprinsippet. Vi legger alts&#229; sammen feltene, slik at \( B_2 = B_1 + B_1 = 2 B_1 \). Dette gjelder alle steder, slik at \( \vec{B}_2(x,y) = 2 \vec{B}_1(x,y) \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Hvordan forholder selv-induktansen til de to kretsene seg?
+
+<ol>
+<li> \( L_2 = 2 L_1 \)</li>
+<li> \( L_2 > 2 L_1 \)</li>
+<li> \( L_2 < 2 L_1 \).</li>
+</ol>
+
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_3" style="font-size: 80%;"></a>
+<a href="#exer_1_3" data-toggle="collapse">
+<b>Hint 1.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_3">
+
+<p>
+Husk at \( L = \Phi/I \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_4" style="font-size: 80%;"></a>
+<a href="#exer_1_4" data-toggle="collapse">
+<b>Hint 2.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_4">
+
+<p>
+Husk at \( \Phi = \int_S \vec{B} \cdot \d \vec{S} \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_5" style="font-size: 80%;"></a>
+<a href="#exer_1_5" data-toggle="collapse">
+<b>Hint 3.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_5">
+
+<p>
+Hva er arealet \( S_2 \) for krets 2?
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_7" style="font-size: 80%;"></a>
+<a href="#exer_1_7" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_7">
+
+<p>
+\( L_2 = 4 L_1 \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_1_11" style="font-size: 80%;"></a>
+<a href="#exer_1_11" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_1_11">
+
+<p>
+Vi vet at \( L_1 = \Phi_1/I \) og \( L_2 = \Phi_2/I \). Vi vet ogs&#229; at \( \Phi_1 \) er gitt som
+$$
+\begin{equation}
+\Phi_1 = \int_{S_1} \vec{B}_1 \cdot \d \vec{S} \; .
+\tag{1}
+\end{equation}
+$$
+
+og
+$$
+\begin{equation}
+\Phi_2 = \int_{S_2} \vec{B}_2 \cdot \d \vec{S} \; .
+\tag{2}
+\end{equation}
+$$
+
+Fra superposisjonsprinsippet vet vi at \( \vec{B}_2 = 2 \vec{B}_1 \) slik at:
+$$
+\begin{equation}
+\Phi_2 = \int_{S_2} 2\vec{B}_1 \cdot \d \vec{S} \; .
+\tag{3}
+\end{equation}
+$$
+
+MEN!! integrasjonsarealet \( S_2 \) er ikke det samme som \( S_1 \). Arealet \( S_2 \) er arealet til de to kretsene som ligger opp&#229; hverandre. Vi kan derfor skrive at
+$$
+\begin{equation}
+\int_{S_2} 2\vec{B}_1 \cdot \d \vec{S} = \int_{S_1} 2\vec{B}_1 \cdot \d \vec{S} + \int_{S_1} 2\vec{B}_1 \cdot \d \vec{S} = 4 \int_{S_1} \vec{B}_1 \cdot \d \vec{S} 
+\tag{4}
+\end{equation}
+$$
+
+Det betyr at \( \Phi_2 = 4 \Phi_1 \). Str&#248;mmen \( I \) er den samme i begge tilfeller slik at
+$$
+\begin{equation}
+L_2 = \frac{\Phi_2}{I} = \frac{4 \Phi_1}{I} = 4 L_1 \; .
+\tag{5}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec4" class="anchor">Oppgave: Solenoide </h2>
+
+<p>
+For en solenoide med lengde \( b \), tverrsnittareal \( S \) og \( N \) viklinger er det magnetiske feltet \( B = \mu_0 (N/b) I \), hvor \( I \) er str&#248;mmen som g&#229;r gjennom solenoiden.
+
+<p>
+<b>a)</b>
+Hva er fluksen gjennom en enkelt vinding?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_1" style="font-size: 80%;"></a>
+<a href="#exer_2_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_1">
+
+<p>
+\( \Phi = BS \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_7" style="font-size: 80%;"></a>
+<a href="#exer_2_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_7">
+
+<p>
+Magnetfeltet er uniformt inne i solenoiden. Fluksen gjennom et tverrsnitt gjennom solenoiden, som svarer til en enkelt vinding, er 
+$$
+\begin{equation}
+\Phi = \int_S \vec{B} \cdot \d \vec{S} = BS  \; ,
+\tag{6}
+\end{equation}
+$$
+
+hvor \( S \) er tverrsnittarealet til solenoiden.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Hva er fluksen gjennom hele solenoiden med \( N \) vindinger?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_2" style="font-size: 80%;"></a>
+<a href="#exer_2_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_2">
+
+<p>
+\( \Phi = NBS \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_8" style="font-size: 80%;"></a>
+<a href="#exer_2_8" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_8">
+
+<p>
+Hele solenoiden best&#229;r av \( N \) vindinger. Vi finner fluksen som
+$$
+\begin{equation}
+\Phi_N = \int_{S_N} \vec{B} \cdot \d \vec{S} = N \int_S \vec{B} \cdot \d \vec{S} = N BS \; .
+\tag{7}
+\end{equation}
+$$
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>c)</b>
+Hva er induktansen til solenoiden?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_3" style="font-size: 80%;"></a>
+<a href="#exer_2_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_3">
+
+<p>
+\( L = \mu_0 N^2 S/b \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_2_9" style="font-size: 80%;"></a>
+<a href="#exer_2_9" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_2_9">
+
+<p>
+Vi finner induktansen
+$$
+\begin{equation}
+L = \frac{\Phi_N}{I} = \frac{NBS}{I} = \frac{N \mu_0 (N/b) I S}{I} = \frac{\mu_0 N^2 S}{b}
+\tag{8}
+\end{equation}
+$$
+
+hvor vi har satt inn at \( B = \mu_0 (N/b) I \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec5" class="anchor">Oppgave: To solenoider </h2>
+
+<p>
+Two lange solenoider, hver med en induktans \( L \), kobles sammen s&#229; de danner en enkel, lang solenoide med induktans \( L_T \) som vist i figuren.
+
+<p>
+<br /><br /><center><p><img src="fig-inductance/inductance-question-twosolenoids-010.png" align="bottom" width=400></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hva er \( L_T \)?
+
+<ol>
+<li> \( L_T = L \)</li>
+<li> \( L_T = 2L \)</li>
+<li> \( L_T = 4L \)</li>
+<li> \( L_T = 8L \)</li>
+<li> \( L_T = L/2 \)</li>
+</ol>
+
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_1" style="font-size: 80%;"></a>
+<a href="#exer_3_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_1">
+
+<p>
+Bruk resultatet fra forrige oppgave, \( L = \mu_0 N^2 S/b \) eller at \( B = \mu_0 NI/b \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_2" style="font-size: 80%;"></a>
+<a href="#exer_3_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_2">
+
+<p>
+\( L_T = 2 L \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_3_4" style="font-size: 80%;"></a>
+<a href="#exer_3_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_3_4">
+
+<p>
+Vi kan bruke resultatet fra forrige oppgave eller vi kan ta utgangspunkt i at feltet inne i en solenoide er \( B = \mu_0 NI/b \).
+
+<p>
+La oss f&#248;rst bruke uttrykket for feltet. For den doble solenoiden vil antall viklinger v&#230;re \( 2N \) og lengden v&#230;re \( 2b \). Da blir feltet \( B_L = \mu_0 (2N) I /(2b) = \mu_0 NI/b \). Feltet blir derfor det samme i den doble solenoiden. Hva blir fluksen gjennom \( 2N \) viklinger? Den blir \( \Phi_{2N} = (2N) \mu_0 NI/b S \). Da blir selv-induktansen \( L_T = \Phi_{2N}/I = \mu_0 2 N^2 I S/ (bI) =  \mu_0 2 N^2 I S/ b = 2 L \). Vi kunne sett dette direkte fordi magnetfeltet er det samme, men arealet er dobbelt s&#229; stort (fordi antallet viklinger er dobbelt s&#229; stort). Dermed blir ogs&#229; induktansen dobbelt s&#229; stor.
+
+<p>
+La oss i stedet bruke uttrykket for induktansen \( L = \mu_0 N^2 S/b \). For den doble solenoiden er lengden \( 2b \) og antallet viklinger \( 2N \) slik at induktansen blir \( L_T = \mu_0 (2N)^2 S/(2b) = 2 \mu_0 N^2S/b = 2 L \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec6" class="anchor">Induktans i elektrisk krets </h2>
+<!-- 14.1.3-14.1.4 -->
+
+<p>
+<!-- fig-inductance/inductance-lecture-circuit-14.1.3.mp4 Video 14.02 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/mhtPzTq5lsQ" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 14.1.3)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec7" class="anchor">Oppgave: Str&#248;m gjennom krets </h2>
+
+<p>
+En del av en krets har en selv-induktans \( L \) som illustrert i figuren.
+
+<p>
+<br /><br /><center><p><img src="fig-inductance/inductance-question-Lincircuit-010.png" align="bottom" width=400></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hvis potensialet \( V_A > V_B \), hva kan vi da si om str&#248;mmen \( I \) gjennom spolen?
+
+<ol>
+<li> \( I \) str&#248;mmer fra A til B og er konstant</li>
+<li> \( I \) str&#248;mmer fra A til B og er &#248;kende</li>
+<li> \( I \) str&#248;mmer fra A til B og er avtagende</li>
+<li> \( I \) str&#248;mmer fra B til A og er konstant</li>
+<li> \( I \) str&#248;mmer fra B til A og er &#248;kende</li>
+<li> \( I \) str&#248;mmer fra B til A og er avtagende</li>
+</ol>
+
+<!-- --- begin hint in exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_1" style="font-size: 80%;"></a>
+<a href="#exer_4_1" data-toggle="collapse">
+<b>Hint.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_1">
+
+<p>
+Hva er relasjonen mellom spenningsforskjell og str&#248;m for en induktans \( L \)?
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end hint in exercise --- -->
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_2" style="font-size: 80%;"></a>
+<a href="#exer_4_2" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_2">
+
+<p>
+\( I \) str&#248;mmer fra A til B og er &#248;kende
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_6" style="font-size: 80%;"></a>
+<a href="#exer_4_6" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_6">
+
+<p>
+For en induktans \( L \) vet vi at spenningsforskjellen er relatert til den tidsderiverte av fluksen:
+$$
+\begin{equation}
+e = - \frac{\d \Phi}{\d t} \; ,
+\tag{9}
+\end{equation}
+$$
+
+og at fluksen er relatert til str&#248;mmen \( \Phi = L I \), slik at
+$$
+\begin{equation}
+e = - \frac{\d \Phi}{\d t} = - L \frac{\d I}{\d t}\; ,
+\tag{10}
+\end{equation}
+$$
+
+hvor vi har antatt at \( L \) ikke endrer seg med tiden. Merk at emf'en \( e \) er en spennings-<em>&#248;kning</em> langs kretsen. Spennings-<em>fallet</em> over \( L \) vil derfor v&#230;re
+$$
+\begin{equation}
+V_A - V_B = -e = L \frac{\d I}{\d t} \; .
+\tag{11}
+\end{equation}
+$$
+
+Vi ser at fordi \( V_A > V_B \) vil \( V_A - V_B > 0 \) og \( \d I/\d t \) m&#229; derfor v&#230;re positiv og str&#248;mmen m&#229; &#248;ke. Str&#248;mmen g&#229;r derfor fra h&#248;yt til lavt potensial og er &#248;kende.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Hvis str&#248;mmen \( I \) er avtagende, hva kan vi da si om spenningfallet \( V_A - V_B \) over \( L \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_3" style="font-size: 80%;"></a>
+<a href="#exer_4_3" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_3">
+
+<p>
+\( V_A-V_B < 0 \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_4_7" style="font-size: 80%;"></a>
+<a href="#exer_4_7" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_4_7">
+
+<p>
+Vi kan bruke de samme argumentet som ovenfor. Spenningsfallet \( V_A - V_B \) er gitt som
+$$
+\begin{equation}
+V_A - V_B = -e = L \frac{\d I}{\d t} \; .
+\tag{12}
+\end{equation}
+$$
+
+Hvis \( I \) er avtagende s&#229; er \( \d I/\d t < 0 \) og dermed er spenningsfallet negativt. Det betyr at \( V_B > V_A \).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec8" class="anchor">Eksempel: Toroide  </h2>
+
+<p>
+<!-- fig-inductance/inductance-example-toroid-14.1.5.mp4 Video 14.03 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/WYJT2ZTwWQU" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 14.1.5)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Lecture -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-danger alert-text-normal"><b>Forelesning.</b>
+
+<h2 id="___sec9" class="anchor">Gjensidig induktans </h2>
+<!-- 14.2.1-14.2.2 -->
+
+<p>
+<!-- fig-inductance/inductance-lecture-mutualindutance-14.2.1.mp4 Video 14.04 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/ZfDKbwZjAEs" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 14.2.1)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec10" class="anchor">Oppgave: Gjensidig induktans </h2>
+
+<p>
+Figuren viser to identiske sirkul&#230;re kretser.
+
+<p>
+<br /><br /><center><p><img src="fig-inductance/inductance-question-mutual-010.png" align="bottom" width=400></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hvilken relativ plassering av de to kretsene gir st&#248;rst gjensidig induktans? Begrunn svaret ditt.
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_5_1" style="font-size: 80%;"></a>
+<a href="#exer_5_1" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_5_1">
+
+<p>
+Den gjensidige induktansen er avhengig av fluksen til magnetfeltet fra den ene kretsen gjennom den andre kretsen. Alle felt-linjene g&#229;r gjennom kretsen som setter opp feltet. Hvis den andre kretsen ligger direkte over kretsen som setter opp feltet, vil fluksen v&#230;re stor. Hvis den andre kretsen ligger et stykke utenfor kretsen som setter opp feltet, slik tilfellet er i figur A, vil kun noen av felt-linjene g&#229; gjennom kretsen. Fluksen vil derfor v&#230;re mindre for systemet i figur A enn i figur B, og derfor vil ogs&#229; den gjensidige induktansen, som er gitt som \( L_{12} = \Phi_{12}/I \), bli mindre for systemet i figur A enn for systemet i figur B.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Exercise -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-info alert-text-normal"><b>Oppgave.</b>
+
+<p>
+<!-- --- end exercise --- -->
+
+<p>
+<!-- --- begin exercise --- -->
+
+<h2 id="___sec11" class="anchor">Oppgave: To spoler </h2>
+
+<p>
+Figuren viser to spoler. En spole med to vindinger med stor diameter ligger rundt en lang solenoide med en mindre diameter som vist i figuren.
+
+<p>
+<br /><br /><center><p><img src="fig-inductance/inductance-question-mutual-020.png" align="bottom" width=400></p></center><br /><br />
+
+<p>
+<b>a)</b>
+Hva er st&#248;rst \( L_{12} \) eller \( L_{21} \)?
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_3" style="font-size: 80%;"></a>
+<a href="#exer_6_3" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_3">
+
+<p>
+Den gjensidige induktansen er symmetrisk at \( L_{12} = L_{21} \)
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+<b>b)</b>
+Hvis antall viklinger i spole 2 dobles, hva skjer med den gjensidige induktansen \( L_{12} \)?
+
+<p>
+<!-- --- begin answer of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_1" style="font-size: 80%;"></a>
+<a href="#exer_6_1" data-toggle="collapse">
+<b>Answer.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_1">
+
+<p>
+Den blir dobbelt s&#229; stor.
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end answer of exercise --- -->
+
+<p>
+<!-- --- begin solution of exercise --- -->
+
+<p>
+<a class="glyphicon glyphicon-hand-right showdetails" data-toggle="collapse"
+ data-target="#exer_6_4" style="font-size: 80%;"></a>
+<a href="#exer_6_4" data-toggle="collapse">
+<b>Solution.</b>
+</a>
+<div class="collapse-group">
+<p><div class="collapse" id="exer_6_4">
+
+<p>
+I dette tilfellet vil magnetfeltet som settes opp av solenoiden ikke endres. Det som endres er st&#248;rrelsen p&#229; overflaten \( S \) som man regner fluksen for, denne overflaten vil v&#230;re proporsjonal med antall viklinger \( N \). Hvis vi dobler antall viklinger, vil vi doble overflaten \( S \) og dermed og dermed ogs&#229; doble fluksen, \( \Phi_{12} \). Den gjensidige induktansen \( L_{12} = \Phi_{12}/I_1 \) blir derfor dobbelt s&#229; stor.
+
+<p>
+Vi husker at for selv-induktansen s&#229; er \( L \) avhengig av \( N^2 \), men det er fordi antall viklinger b&#229;de bidrar til magnetfeltet og til fluksen. Her bidrar antall viklinger \( N \) kun til fluksen (eller til magnetfeltet).
+
+<p>
+</div></p>
+</div>
+</p>
+
+<p>
+<!-- --- end solution of exercise --- -->
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+<!-- --- end exercise --- -->
+
+<h2 id="___sec12" class="anchor">Eksempel: Toroide  </h2>
+
+<p>
+<!-- fig-inductance/inductance-example-mutualtoroid-14.2.3.mp4 Video 14.05 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/wxKSi3W2sLk" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 14.2.3)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<!-- -------------------------------------------------------------------------------------------- -->
+<!-- Example -->
+<!-- -------------------------------------------------------------------------------------------- -->
+<div class="alert alert-block alert-success alert-text-normal"><b>Eksempel.</b>
+
+<h2 id="___sec13" class="anchor">Eksempel: Transformator  </h2>
+
+<p>
+<!-- fig-inductance/inductance-example-transformer-14.3.2.mp4 Video 14.06 -->
+
+<iframe width="640" height="365" src="https://youtube.com/embed/u5gac2Ca1g8" frameborder="0" allowfullscreen></iframe>
+
+<p><em>(L&#230;rebok 14.3.2)</em></p>
+
+<p>
+</div>
+
+
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+<li><a href="._learningpath-11000.html">&laquo;</a></li>
+  <li><a href="._learningpath-11000.html">1</a></li>
+  <li class="active"><a href="._learningpath-11001.html">2</a></li>
+  <li><a href="._learningpath-11002.html">3</a></li>
+  <li><a href="._learningpath-11002.html">&raquo;</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+</body>
+</html>
+    
+
